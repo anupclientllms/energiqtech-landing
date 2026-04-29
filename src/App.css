@@ -68,6 +68,12 @@ a {
   gap: 14px;
 }
 
+.brandText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 🔥 THIS FIXES LEFT ALIGN */
+}
+
 .logo {
   width: 52px;
   height: 52px;
@@ -79,18 +85,21 @@ a {
   box-shadow: 0 14px 34px rgba(47, 102, 243, 0.35);
 }
 
+.logo {
+  flex-shrink: 0;
+}
+
 .brand strong {
-  display: block;
-  font-size: 23px;
-  line-height: 1;
+  font-size: 22px;
+  line-height: 1.1;
   letter-spacing: -0.03em;
+  margin: 0;
 }
 
 .brand span {
-  display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: #b9c7df;
-  margin-top: 6px;
+  margin: 2px 0 0 0;
 }
 
 .navActions {

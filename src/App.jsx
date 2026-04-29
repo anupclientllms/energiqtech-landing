@@ -126,13 +126,13 @@ export default function App() {
   return (
     <main className="page">
       <nav className="nav">
-        <a className="brand" href="#top">
+        <div className="brand">
           <div className="logo">⚡</div>
-          <div>
+          <div className="brandText">
             <strong>EnergIQ</strong>
             <span>AI-Driven Energy Optimisation & Control</span>
           </div>
-        </a>
+        </div>
 
         <div className="navActions">
           <a href="#features">Features</a>
