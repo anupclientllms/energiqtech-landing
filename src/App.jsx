@@ -130,7 +130,7 @@ export default function App() {
           <div className="logo">⚡</div>
           <div>
             <strong>EnergIQ</strong>
-            <span>AI-Powered Energy Intelligence Platform</span>
+            <span>AI-Driven Energy Optimisation & Control</span>
           </div>
         </a>
 
