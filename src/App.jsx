@@ -129,7 +129,7 @@ export default function App() {
         <a className="brand" href="#top">
           <div className="logo">⚡</div>
           <div>
-            <strong>EnergIQ Tech</strong>
+            <strong>EnergIQ</strong>
             <span>AI-Powered Energy Intelligence Platform</span>
           </div>
         </a>
