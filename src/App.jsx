@@ -156,8 +156,8 @@ export default function App() {
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            EnergIQ Tech combines an AI Energy Gateway, real-time analytics and guided control workflows
-            to reduce energy cost, optimise demand and prove measurable ROI.
+            Reduce energy costs and optimise demand across buildings using AI-driven insights and gateway-enabled control. 
+            Validate measurable savings within 30 days before scaling.
           </motion.p>
 
           <motion.div className="heroButtons" variants={fadeUp}>
@@ -171,10 +171,14 @@ export default function App() {
           </motion.div>
 
           <motion.div className="metrics" variants={fadeUp}>
-            <div><strong>30 days</strong><span>pilot validation</span></div>
-            <div><strong>10–20%</strong><span>target savings</span></div>
+            <div><strong>30 day</strong><span>ROI Validation Pilot</span></div>
+            <div><strong>10–20%</strong><span>proven savings</span></div>
             <div><strong>Edge + AI</strong><span>device-led architecture</span></div>
           </motion.div>
+
+          <motion.p variants={fadeUp}>
+            No long-term commitment - scale only after measurable savings are proven.
+          </motion.p>
         </motion.div>
 
         <motion.div
