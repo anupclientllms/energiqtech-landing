@@ -152,12 +152,12 @@ export default function App() {
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
-            AI energy optimisation for buildings, councils and portfolios.
+            AI-powered energy optimisation for buildings, councils and portfolios.
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            Reduce energy costs and optimise demand across buildings using AI-driven insights and gateway-enabled control. 
-            Validate measurable savings within 30 days before scaling.
+            Operational intelligence, digital twin visibility and AI-driven optimisation workflows designed to reduce operational inefficiencies, 
+            reduce peak demand and improve measurable energy outcomes. Validate measurable savings within 30 days before scaling.
           </motion.p>
 
           <motion.div className="heroButtons" variants={fadeUp}>
