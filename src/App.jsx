@@ -20,6 +20,13 @@ import {
   Sparkles,
   Zap,
   X,
+  Search,
+  Target,
+  ClipboardCheck,
+  Handshake,
+  Eye,
+  MapPinned,
+  Power,
 } from "lucide-react";
 
 const fadeUp = {
@@ -60,9 +67,10 @@ const features = [
   },
   {
     icon: ShieldCheck,
-    title: "Governed control",
-    text: "Enable approval-based recommendations and future assisted control via the gateway.",
+    title: "AI-assisted operational actions",
+    text: "Approve and trigger governed operational actions across HVAC, demand-response and connected building infrastructure through AI-assisted workflows.",
   },
+  
 ];
 
 const advanced = [
@@ -78,18 +86,57 @@ const advanced = [
 
 const comparison = [
   {
-    title: "Traditional dashboards",
+    title: "Reporting-only platforms",
     points: ["Mostly reporting-focused", "Manual root-cause analysis", "Limited action pathway"],
   },
   {
-    title: "Large building automation vendors",
+    title: "Traditional automation ecosystems",
     points: ["Strong infrastructure layer", "Often vendor-specific", "Large implementation footprint"],
   },
   {
     title: "EnergIQ Tech",
-    points: ["Device-led AI gateway", "AI insights + action pathway", "Outcome-focused pilot model"],
+    points: ["Device-led AI gateway", "Operational intelligence","Governed action", "Outcome-focused pilot model", "Vendor-neutral integration"],
     featured: true,
   },
+];
+
+const councilChallenges = [
+  {
+    icon: Eye,
+    title: "Visibility gaps",
+    text: "See where energy waste, abnormal usage and after-hours activity are occurring.",
+  },
+  {
+    icon: Zap,
+    title: "Peak demand pressure",
+    text: "Identify demand spikes early and understand the operational cause.",
+  },
+  {
+    icon: Gauge,
+    title: "HVAC optimisation",
+    text: "Find schedule, occupancy and control issues across HVAC operations.",
+  },
+  {
+    icon: Leaf,
+    title: "Energy & emissions evidence",
+    text: "Support sustainability reporting with clearer operational impact data.",
+  },
+];
+
+const discoverySteps = [
+  "Review current facilities, meters, BMS capability and available data.",
+  "Identify visibility gaps, inefficiencies and high-priority buildings.",
+  "Map AI optimisation opportunities across HVAC, demand and after-hours usage.",
+  "Define a low-risk pilot scope before broader rollout.",
+];
+
+const operationalOutcomes = [
+  "Facility visibility",
+  "Energy waste detection",
+  "Peak demand reduction",
+  "HVAC optimisation",
+  "Portfolio intelligence",
+  "Cost and emissions insight",
 ];
 
 export default function App() {
@@ -135,6 +182,7 @@ export default function App() {
         </div>
 
         <div className="navActions">
+          <a href="#problem-first">Operational Approach</a>
           <a href="#features">Features</a>
           <a href="#gateway">Gateway</a>
           <a href="#digital-twin">Digital Twin</a>
@@ -156,8 +204,9 @@ export default function App() {
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            Operational intelligence, digital twin visibility and AI-driven optimisation workflows designed to reduce operational inefficiencies, 
-            reduce peak demand and improve measurable energy outcomes. Validate measurable savings within 30 days before scaling.
+            EnergIQ Tech helps facility teams identify operational inefficiencies, simulate optimisation pathways and 
+            execute AI-assisted operational actions across buildings, HVAC systems and energy infrastructure through governed workflows and connected building systems.
+            Validate measurable optimisation opportunities within 30 days before scaling.
           </motion.p>
 
           <motion.div className="heroButtons" variants={fadeUp}>
@@ -222,10 +271,87 @@ export default function App() {
         <span>Detect</span><span>Explain</span><span>Recommend</span><span>Simulate</span><span>Control</span><span>Prove ROI</span>
       </section>
 
+      <motion.section
+        className="section problemFirstSection"
+        id="problem-first"
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div className="sectionHeader compactHeader" variants={fadeUp}>
+          <p>Problem-First Approach</p>
+          <h2>Understand the operational problem before applying AI.</h2>
+          <span>
+            EnergIQ Tech works with councils, facility teams and building operators to identify
+            real operational pain points before defining the right optimisation pathway.
+          </span>
+        </motion.div>
+
+        <div className="problemGrid">
+          {councilChallenges.map((item) => {
+            const Icon = item.icon;
+            return (
+              <motion.div className="problemCard" variants={fadeUp} key={item.title}>
+                <div className="problemIcon"><Icon size={22} /></div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </motion.section>
+
+      <section className="section discoveryOptimised">
+        <div className="discoveryPanel">
+          <div className="discoveryLeft">
+            <p>Operational Discovery & Pilot Workshops</p>
+            <h2>From uncertainty to clear optimisation priorities.</h2>
+            <span>
+              We help teams identify visibility gaps, inefficient operations and practical
+              AI-led optimisation opportunities before a pilot is scoped.
+            </span>
+            <button type="button" onClick={openPilotModal} className="primary">
+              Discuss Operational Discovery <ChevronRight size={18} />
+            </button>
+          </div>
+
+          <div className="discoveryRight">
+            {discoverySteps.map((step, index) => (
+              <div className="stepCard" key={step}>
+                <b>{index + 1}</b>
+                <p>{step}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section outcomeFlowSection">
+        <div className="flowCard">
+          <Target size={34} />
+          <p>AI as the Enabler</p>
+          <h2>Problem → Insight → Optimisation → Measurable Impact</h2>
+          <span>
+            EnergIQ Tech applies AI to help teams detect anomalies, understand root causes,
+            simulate actions and estimate operational impact.
+          </span>
+        </div>
+
+        <div className="outcomeGrid">
+          {operationalOutcomes.map((item) => (
+            <div className="outcomePill" key={item}>
+              <CheckCircle2 size={17} />
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+      
       <motion.section className="section" id="features" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Core Platform Capabilities</p>
-          <h2>From passive reporting to AI-driven operational control.</h2>
+          <h2>From passive monitoring to AI-assisted operational control.</h2>
         </motion.div>
 
         <div className="featureGrid">
@@ -242,17 +368,90 @@ export default function App() {
         </div>
       </motion.section>
 
+      <section className="section actionLayerSection">
+        <div className="actionLayerHeader">
+          <p>AI-assisted operational action layer</p>
+
+          <h2>
+            Move from operational insight to AI-assisted action.
+          </h2>
+
+          <span>
+            EnergIQ Tech enables facility teams to move beyond dashboards and
+            recommendations by supporting AI-assisted operational actions across
+            connected building systems, HVAC infrastructure and energy workflows
+            through approval-based execution pathways.
+          </span>
+        </div>
+
+        <div className="actionExecutionGrid">
+
+          <div className="executionCard">
+            <div className="executionIcon">
+              <ShieldCheck size={26} />
+            </div>
+
+            <h3>Approve HVAC optimisation actions</h3>
+
+            <p>
+              Review and approve AI-assisted HVAC optimisation pathways before
+              operational execution.
+            </p>
+          </div>
+
+          <div className="executionCard">
+            <div className="executionIcon">
+              <Zap size={26} />
+            </div>
+
+            <h3>Execute peak-demand response workflows</h3>
+
+            <p>
+              Trigger operational demand-response workflows during peak demand
+              periods to reduce load and operating costs.
+            </p>
+          </div>
+
+          <div className="executionCard">
+            <div className="executionIcon">
+              <Power size={26} />
+            </div>
+
+            <h3>Trigger after-hours operational controls</h3>
+
+            <p>
+              Execute governed operational actions across lighting, HVAC and
+              connected infrastructure during abnormal after-hours usage.
+            </p>
+          </div>
+
+          <div className="executionCard">
+            <div className="executionIcon">
+              <CheckCircle2 size={26} />
+            </div>
+
+            <h3>Validate operational impact and savings</h3>
+
+            <p>
+              Measure operational outcomes, estimated savings, carbon reduction
+              and optimisation effectiveness after execution.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       <motion.section className="section dark" id="gateway" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>AI Energy Gateway</p>
-          <h2>Edge intelligence deployed inside the building.</h2>
+          <h2>Real-time operational intelligence at the edge.</h2>
         </motion.div>
 
         <motion.div className="gatewayLayout" variants={fadeUp}>
           <div className="deviceBox">
             <Cpu size={38} />
             <strong>AI Energy Gateway</strong>
-            <span>On-site data processing • Secure integration • Edge AI</span>
+            <span>On-site data processing • Secure integration • Edge AI • Governed operational execution</span>
           </div>
 
           <div className="flow">
@@ -261,6 +460,8 @@ export default function App() {
             <span><Cpu size={20} /> AI Energy Gateway</span>
             <b>→</b>
             <span><LineChart size={20} /> EnergIQ Platform</span>
+            <b>→</b>
+            <span><ShieldCheck size={20} /> AI-assisted Operational Actions</span>
           </div>
         </motion.div>
       </motion.section>
@@ -268,7 +469,7 @@ export default function App() {
       <motion.section className="section twinSection" id="digital-twin" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Digital Twin Intelligence</p>
-          <h2>See where energy issues happen - not just that they happened.</h2>
+          <h2>See where operational issues occur in real time.</h2>
         </motion.div>
 
         <motion.div className="twinGrid" variants={fadeUp}>
@@ -284,14 +485,14 @@ export default function App() {
           </div>
 
           <div className="twinText">
-            <h3>Spatial intelligence for facility teams.</h3>
+            <h3>Spatial visibility across buildings, zones and assets.</h3>
             <p>
-              EnergIQ maps anomalies to buildings, levels, zones and rooms so operators can prioritise action quickly.
+              EnergIQ maps anomalies, inefficiencies and operational events to buildings, zones and assets for faster operational visibility and investigation.
             </p>
             <ul>
               <li><CheckCircle2 size={18} /> Building, zone and room-level context</li>
               <li><CheckCircle2 size={18} /> Peak demand, after-hours and low occupancy scenarios</li>
-              <li><CheckCircle2 size={18} /> Future-ready for assisted control workflows</li>
+              <li><CheckCircle2 size={18} /> Connected digital context across facilities and assets</li>
             </ul>
           </div>
         </motion.div>
@@ -311,7 +512,7 @@ export default function App() {
       <motion.section className="section comparisonSection" id="comparison" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Why EnergIQ Tech</p>
-          <h2>Built to complement existing infrastructure - not replace it.</h2>
+          <h2>Built around existing infrastructure, workflows and operational teams.</h2>
         </motion.div>
 
         <div className="comparisonGrid">
@@ -334,29 +535,29 @@ export default function App() {
       <section className="pilot" id="pilot">
         <div>
           <p>Pilot Model</p>
-          <h2>Device-led pilot designed to prove measurable value quickly.</h2>
+          <h2>Low-risk pilot model designed to validate operational value quickly.</h2>
           <p>
-            Start with a structured gateway pilot, validate savings opportunities, then scale into SaaS-based portfolio optimisation.
+            Start with a structured operational pilot, validate optimisation opportunities and measurable outcomes, then scale progressively across facilities and portfolios.
           </p>
         </div>
 
         <div className="pilotCard">
-          <h3>Phase 1: Pilot</h3>
+          <h3>Phase 1: Operational Pilot</h3>
           <ul>
             <li>Gateway deployed at 1–2 sites</li>
             <li>Time-bound validation period</li>
-            <li>AI insights and recommendations</li>
+            <li>Operational visibility and optimisation insights</li>
             <li>ROI and cost-saving evidence</li>
           </ul>
         </div>
 
         <div className="pilotCard green">
-          <h3>Phase 2: Scale</h3>
+          <h3>Phase 2: Portfolio Scale</h3>
           <ul>
             <li>SaaS subscription model</li>
             <li>Expanded gateway deployment</li>
-            <li>Alerts, governance and reporting</li>
-            <li>Portfolio-wide optimisation</li>
+            <li>Governance workflows and operational reporting</li>
+            <li>Portfolio-wide operational intelligence</li>
           </ul>
         </div>
       </section>
