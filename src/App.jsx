@@ -532,6 +532,34 @@ export default function App() {
         </div>
       </motion.section>
 
+      <div className="futureVisionPanel">
+        <div className="futureVisionContent">
+
+          <p className="visionLabel">
+            LOOKING AHEAD
+          </p>
+
+          <h3>
+            Building the Future of AI-Powered Energy Operations
+          </h3>
+
+          <p>
+            EnergIQ Tech combines operational intelligence, digital twins,
+            AI agents, human-in-the-loop governance and edge computing to help
+            organisations move beyond monitoring and reporting toward intelligent,
+            measurable and continuously optimised energy operations.
+          </p>
+
+          <p className="visionStatement">
+            Our long-term vision is to evolve EnergIQ Tech into an
+            <strong> AI-driven Energy Operating System </strong>
+            capable of continuously monitoring, optimising and coordinating energy operations across 
+            facilities, campuses, portfolios and critical infrastructure at scale.
+          </p>
+
+        </div>
+      </div>
+
       <section className="pilot" id="pilot">
         <div>
           <p>Pilot Model</p>
