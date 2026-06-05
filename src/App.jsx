@@ -553,7 +553,7 @@ export default function App() {
           <p className="visionStatement">
             Our long-term vision is to evolve EnergIQ Tech into an
             <strong> AI-driven Energy Operating System </strong>
-            capable of continuously monitoring, optimising and coordinating energy operations across 
+            capable of continuously monitoring, analysing, optimising and coordinating energy operations across 
             facilities, campuses, portfolios and critical infrastructure at scale.
           </p>
 
