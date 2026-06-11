@@ -98,7 +98,7 @@ a {
 
 .brand span {
   font-size: 13px;
-  color: #b9c7df;
+  color: #d7e3f5;
   margin: 2px 0 0 0;
 }
 
@@ -1654,6 +1654,12 @@ button {
   color: var(--navy);
 }
 
+.logoImage {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1100px) {

@@ -181,7 +181,7 @@ export default function App() {
     <main className="page">
       <nav className="nav">
         <div className="brand">
-          <div className="logo">⚡</div>
+          <img src="/energiq-logo.png" alt="EnergIQ Tech logo" className="logoImage" />
           <div className="brandText">
             <strong>EnergIQ</strong>
             <span>AI-Driven Energy Optimisation & Control</span>
