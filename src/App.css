@@ -1501,11 +1501,158 @@ button {
 
 
 
+/* =========================================================
+   COMMERCIAL CREDIBILITY / VALIDATION
+========================================================= */
 
+.validationSection,
+.proofSection,
+.pathwaySection,
+.tractionSection {
+  background: #f7faff;
+}
 
+.validationGrid,
+.proofGrid,
+.tractionGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
 
+.validationCard,
+.proofCard,
+.tractionGrid div {
+  background: white;
+  border-radius: 26px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 44px rgba(9, 30, 66, 0.06);
+}
 
+.validationCard {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-weight: 850;
+  line-height: 1.55;
+  color: var(--navy);
+}
 
+.validationCard svg {
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.proofCard strong,
+.tractionGrid strong {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.proofCard span,
+.tractionGrid span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* DEPLOYMENT PATHWAY */
+
+.pathwaySection {
+  background: white;
+}
+
+.pathwayFlow {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.pathwayFlow div {
+  background: #f5f8fd;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  min-height: 240px;
+  box-shadow: 0 16px 44px rgba(9, 30, 66, 0.05);
+}
+
+.pathwayFlow b {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+
+.pathwayFlow h3 {
+  margin: 0 0 12px;
+  font-size: 23px;
+  color: var(--navy);
+  letter-spacing: -0.03em;
+}
+
+.pathwayFlow p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.sectionHeader span {
+  display: block;
+  max-width: 780px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.caseStudyCard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 48px rgba(9, 30, 66, 0.06);
+}
+
+.caseStudyCard h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: var(--navy);
+}
+
+.caseStudyPoints {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.caseStudyPoints div {
+  padding: 18px;
+  border-radius: 18px;
+  background: #f7faff;
+  border: 1px solid var(--border);
+  font-weight: 700;
+  color: var(--navy);
+}
 
 /* RESPONSIVE */
 
@@ -1532,6 +1679,31 @@ button {
 
   .executionCard {
     min-height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .validationGrid,
+  .proofGrid,
+  .tractionGrid,
+  .pathwayFlow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .validationGrid,
+  .proofGrid,
+  .tractionGrid,
+  .pathwayFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .validationCard,
+  .proofCard,
+  .tractionGrid div,
+  .pathwayFlow div {
+    padding: 24px;
   }
 }
 

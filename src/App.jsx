@@ -139,6 +139,13 @@ const operationalOutcomes = [
   "Cost and emissions insight",
 ];
 
+const validationPoints = [
+  "Demonstrated to Victorian local government stakeholders",
+  "Operational energy optimisation workflows reviewed with facilities and sustainability teams",
+  "Pilot discussions underway across councils, universities and commercial facilities",
+  "AI Energy Gateway and Digital Twin concepts validated through stakeholder feedback",
+];
+
 export default function App() {
   const [pilotModalOpen, setPilotModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -465,6 +472,136 @@ export default function App() {
           </div>
         </motion.div>
       </motion.section>
+      <section className="section pathwaySection">
+
+        <div className="sectionHeader">
+          <p>Deployment Pathway</p>
+
+          <h2>
+            A low-risk pathway from pilot to portfolio-wide deployment.
+          </h2>
+        </div>
+
+        <div className="pathwayFlow">
+
+          <div>
+            <b>1</b>
+            <h3>Discovery</h3>
+            <p>Review facilities, systems and operational challenges.</p>
+          </div>
+
+          <div>
+            <b>2</b>
+            <h3>Pilot</h3>
+            <p>Deploy AI Gateway and validate optimisation opportunities.</p>
+          </div>
+
+          <div>
+            <b>3</b>
+            <h3>Measure</h3>
+            <p>Assess operational impact, ROI and savings potential.</p>
+          </div>
+
+          <div>
+            <b>4</b>
+            <h3>Scale</h3>
+            <p>Expand across buildings, campuses and portfolios.</p>
+          </div>
+
+        </div>
+
+      </section>
+      <section className="section proofSection">
+
+        <div className="sectionHeader">
+          <p>Pilot Proof Points</p>
+
+          <h2>
+            Demonstrating operational energy optimisation workflows.
+          </h2>
+
+          <span>
+            EnergIQ Tech has developed and demonstrated core operational
+            optimisation workflows across AI Energy Gateway,
+            Digital Twin and governed AI-assisted operational actions.
+          </span>
+
+        </div>
+
+        <div className="proofGrid">
+
+          <div className="proofCard">
+            <strong>AI Energy Gateway Prototype</strong>
+            <span>
+              Prototype architecture completed and operational workflows demonstrated.
+            </span>
+          </div>
+
+          <div className="proofCard">
+            <strong>Digital Twin Workflow</strong>
+            <span>
+              Building-level anomaly investigation and optimisation simulations demonstrated.
+            </span>
+          </div>
+
+          <div className="proofCard">
+            <strong>Human-in-the-loop Governance</strong>
+            <span>
+              Approval-based operational actions integrated into optimisation workflows.
+            </span>
+          </div>
+
+          <div className="proofCard">
+            <strong>Energy Optimisation Use Cases</strong>
+            <span>
+              Peak demand, HVAC optimisation and after-hours energy scenarios validated.
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="case-studies" className="section">
+
+        <div className="sectionHeader">
+          <p>Pilot Demonstration</p>
+
+          <h2>
+            Example operational energy optimisation workflow.
+          </h2>
+
+          <span>
+            Illustrative example showing how EnergIQ Tech identifies,
+            investigates and optimises operational energy events.
+          </span>
+        </div>
+
+        <div className="caseStudyCard">
+
+          <h3>
+            Representative Council Energy Optimisation Scenario
+          </h3>
+
+          <div className="caseStudyPoints">
+
+            <div>Operational energy review</div>
+
+            <div>Peak demand anomaly detection</div>
+
+            <div>Digital twin investigation workflow</div>
+
+            <div>AI-generated optimisation recommendations</div>
+
+            <div>Human-in-the-loop approval process</div>
+
+            <div>Estimated operational impact assessment</div>
+
+          </div>
+
+        </div>
+
+      </section>
 
       <motion.section className="section twinSection" id="digital-twin" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
@@ -559,7 +696,32 @@ export default function App() {
 
         </div>
       </div>
+      <section className="section validationSection">
 
+        <div className="sectionHeader">
+          <p>Customer Validation</p>
+
+          <h2>
+            Built through direct engagement with facility and sustainability stakeholders.
+          </h2>
+
+          <span>
+            EnergIQ Tech has been developed through discussions,
+            demonstrations and feedback from councils,
+            universities and commercial property stakeholders.
+          </span>
+        </div>
+
+        <div className="validationGrid">
+          {validationPoints.map((item) => (
+            <div className="validationCard" key={item}>
+              <CheckCircle2 size={20}/>
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+
+      </section>
       <section className="pilot" id="pilot">
         <div>
           <p>Pilot Model</p>
@@ -588,6 +750,50 @@ export default function App() {
             <li>Portfolio-wide operational intelligence</li>
           </ul>
         </div>
+      </section>
+
+      <section className="section tractionSection">
+
+        <div className="sectionHeader">
+          <p>Market Engagement</p>
+
+          <h2>
+            Building momentum through pilot discussions and industry engagement.
+          </h2>
+        </div>
+
+        <div className="tractionGrid">
+
+          <div>
+            <strong>Local Government</strong>
+            <span>
+              Demonstrations and discussions with Victorian councils.
+            </span>
+          </div>
+
+          <div>
+            <strong>Universities</strong>
+            <span>
+              Engagement with sustainability and facilities teams.
+            </span>
+          </div>
+
+          <div>
+            <strong>Commercialisation</strong>
+            <span>
+              Advisor-supported commercialisation and market validation activities.
+            </span>
+          </div>
+
+          <div>
+            <strong>Pilot Expansion</strong>
+            <span>
+              Building pilot opportunities across public and commercial sectors.
+            </span>
+          </div>
+
+        </div>
+
       </section>
 
       <section className="cta">
