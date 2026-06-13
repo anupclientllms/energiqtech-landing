@@ -180,62 +180,7 @@ export default function HomePage() {
 
   return (
     <main className="page">
-      <nav className="nav">
-        <div className="brand">
-          <img src="/energiq-logo.png" alt="EnergIQ Tech logo" className="logoImage" />
-          <div className="brandText">
-            <strong>EnergIQ</strong>
-            <span>AI-Driven Energy Optimisation & Control</span>
-          </div>
-        </div>
-
-        <div className="navActions">
-
-          <div className="dropdown">
-            <button className="navLink">
-              Solutions ▾
-            </button>
-
-            <div className="dropdownMenu">
-             
-              <Link to="/operational-energy-optimisation">                
-                Operational Energy Optimisation              
-              </Link>
-
-              <Link to="/digital-twin">
-                Digital Twin
-              </Link>
-
-              <Link to="/savings-intelligence">
-                Savings Intelligence
-              </Link>
-            </div>
-          </div>
-
-                    
-          <a href="#gateway">Gateway</a>
-          <Link to="/pilot-program">
-            Pilot Program
-          </Link>
-          
-          <Link to="/trust-security">
-            Trust & Security
-          </Link>
-
-          <Link to="/about">
-            About
-          </Link>
-
-          <button
-            type="button"
-            onClick={openPilotModal}
-            className="navBtn"
-          >
-            Contact
-          </button>
-
-        </div>
-      </nav>
+      
 
       <section className="hero" id="top">
         <motion.div className="heroText" variants={stagger} initial="hidden" animate="show">
@@ -844,61 +789,9 @@ export default function HomePage() {
         </button>
       </section>
 
-      <footer>
-        <strong>EnergIQ Tech</strong>
-        <span>Powered by Automation Spectrum Pty Ltd</span>
-      </footer>
+      
 
-      {pilotModalOpen && (
-        <div className="modalOverlay" onClick={closePilotModal}>
-          <div className="pilotModal" onClick={(e) => e.stopPropagation()}>
-            <button className="modalClose" onClick={closePilotModal} type="button">
-              ×
-            </button>
-
-            {!submitted ? (
-              <>
-                <div className="modalBadge">Pilot Program Active</div>
-
-                <h2>Start a pilot discussion</h2>
-
-                <p>
-                  We’re onboarding early partners to validate measurable energy savings,
-                  demand optimisation and ROI using the AI Energy Gateway.
-                </p>
-
-                <form onSubmit={handlePilotSubmit} className="pilotForm">
-                  <input type="hidden" name="to_email" value="anup.clientllms@gmail.com" />
-
-                  <input name="name" placeholder="Name" required />
-                  <input name="email" type="email" placeholder="Work Email" required />
-                  <input name="organisation" placeholder="Organisation" required />
-                  <textarea name="message" placeholder="Use case / building type / pilot interest" />
-
-                  <button type="submit" className="primary modalSubmit" disabled={sending}>
-                    {sending ? "Sending..." : "Request Pilot Discussion"}
-                  </button>
-                </form>
-
-                <span className="modalNote">
-                  Limited pilot slots available for councils, facilities and building portfolios.
-                </span>
-              </>
-            ) : (
-              <div className="successBox">
-                <div className="modalBadge">Request Received</div>
-                <h2>Thanks - we’ll get back within 24 hours.</h2>
-                <p>
-                  Your pilot discussion request has been sent to EnergIQ Tech.
-                </p>
-                <button className="primary modalSubmit" onClick={closePilotModal}>
-                  Close
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      
     </main>
   );
 }
