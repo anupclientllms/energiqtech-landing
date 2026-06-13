@@ -1,0 +1,397 @@
+.pilotPage {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.pilotHero {
+  padding: 120px 7%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47, 102, 243, 0.28), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(43, 220, 133, 0.16), transparent 30%),
+    linear-gradient(135deg, #061735, #0a2148 55%, #0d355f);
+  color: white;
+  text-align: center;
+}
+
+.pilotHeroContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pilotEyebrow,
+.pilotSectionHeader p,
+.pilotPathwayHeader p,
+.pilotDarkContent p,
+.pilotDeliverables p {
+  color: var(--green);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.pilotHero h1 {
+  font-size: clamp(46px, 5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0 auto 28px;
+  max-width: 1080px;
+}
+
+.pilotHeroContent > p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #dce9ff;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.pilotHeroActions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pilotPrimary,
+.pilotSecondary {
+  min-height: 54px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 950;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pilotPrimary {
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+  box-shadow: 0 18px 44px rgba(47, 102, 243, 0.32);
+}
+
+.pilotSecondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.pilotSection {
+  padding: 96px 7%;
+}
+
+.pilotSectionHeader,
+.pilotPathwayHeader {
+  max-width: 940px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.pilotSectionHeader p,
+.pilotPathwayHeader p {
+  color: var(--blue);
+}
+
+.pilotSectionHeader h2,
+.pilotPathwayHeader h2,
+.pilotDarkContent h2,
+.pilotDeliverables h2,
+.pilotCTA h2 {
+  font-size: clamp(36px, 4vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+  color: var(--text);
+}
+
+.pilotSectionHeader span {
+  display: block;
+  max-width: 780px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.pilotValueGrid,
+.pilotAudienceGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.pilotValueCard,
+.pilotAudienceGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.pilotValueCard svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+.pilotValueCard h3 {
+  font-size: 23px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  color: var(--navy);
+}
+
+.pilotValueCard p,
+.pilotAudienceGrid span {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pilotPathwaySection {
+  padding: 96px 7%;
+  background: white;
+}
+
+.pilotTimeline {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.pilotTimelineItem {
+  position: relative;
+  background: #f7faff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 28px;
+  min-height: 300px;
+  box-shadow: 0 16px 44px rgba(9, 30, 66, 0.05);
+}
+
+.pilotTimelineNumber {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  margin-bottom: 18px;
+}
+
+.pilotTimelineIcon svg {
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.pilotTimelineItem h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.pilotTimelineItem p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.pilotDarkSection {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(43,220,133,0.18), transparent 34%),
+    linear-gradient(135deg, #061735, #102f66);
+  color: white;
+}
+
+.pilotDarkContent {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.pilotDarkContent h2 {
+  color: white;
+}
+
+.pilotDarkContent span {
+  display: block;
+  color: #dce9ff;
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 20px;
+}
+
+.pilotValidationList {
+  display: grid;
+  gap: 16px;
+}
+
+.pilotValidationList div {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-weight: 850;
+  color: #e7eefb;
+}
+
+.pilotValidationList svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.pilotAudienceGrid strong {
+  display: block;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.pilotDeliverables {
+  margin: 40px auto 100px;
+  width: min(1180px, 86%);
+  padding: 60px;
+  border-radius: 34px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 70px rgba(9, 30, 66, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.pilotDeliverables p {
+  color: var(--blue);
+}
+
+.pilotDeliverables span {
+  display: block;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.pilotDeliverables ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.pilotDeliverables li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 850;
+  color: var(--navy);
+}
+
+.pilotDeliverables li svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.pilotCTA {
+  margin: 86px auto;
+  width: min(1180px, 86%);
+  padding: 76px 60px;
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(43, 220, 133, 0.18), transparent 35%),
+    linear-gradient(135deg, var(--navy), #123263);
+  color: white;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(9, 30, 66, 0.18);
+}
+
+.pilotCTA h2 {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 18px;
+}
+
+.pilotCTA p {
+  color: #dce9ff;
+  max-width: 780px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .pilotTimeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .pilotValueGrid,
+  .pilotAudienceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pilotDarkContent,
+  .pilotDeliverables {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .pilotHero,
+  .pilotSection,
+  .pilotPathwaySection,
+  .pilotDarkSection {
+    padding: 70px 6%;
+  }
+
+  .pilotValueGrid,
+  .pilotAudienceGrid,
+  .pilotTimeline {
+    grid-template-columns: 1fr;
+  }
+
+  .pilotHero h1 {
+    font-size: 44px;
+  }
+
+  .pilotDeliverables,
+  .pilotCTA {
+    width: 90%;
+    padding: 34px;
+  }
+
+  .pilotHeroActions {
+    flex-direction: column;
+  }
+
+  .pilotPrimary,
+  .pilotSecondary {
+    width: 100%;
+  }
+}

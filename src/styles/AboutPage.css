@@ -1,0 +1,452 @@
+.aboutPage {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.aboutHero {
+  padding: 120px 7%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47, 102, 243, 0.28), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(43, 220, 133, 0.16), transparent 30%),
+    linear-gradient(135deg, #061735, #0a2148 55%, #0d355f);
+  color: white;
+  text-align: center;
+}
+
+.aboutHeroContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.aboutEyebrow,
+.aboutSectionHeader p,
+.aboutMissionContent p,
+.aboutTrustText p {
+  color: var(--green);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.aboutHero h1 {
+  font-size: clamp(46px, 5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0 auto 28px;
+  max-width: 1080px;
+}
+
+.aboutHeroContent > p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #dce9ff;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.aboutHeroActions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.aboutPrimary,
+.aboutSecondary {
+  min-height: 54px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 950;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.aboutPrimary {
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+  box-shadow: 0 18px 44px rgba(47, 102, 243, 0.32);
+}
+
+.aboutSecondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.aboutSection {
+  padding: 96px 7%;
+}
+
+.aboutSectionHeader {
+  max-width: 940px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.aboutSectionHeader p {
+  color: var(--blue);
+}
+
+.aboutSectionHeader h2,
+.aboutMissionContent h2,
+.aboutTrustText h2,
+.aboutCTA h2 {
+  font-size: clamp(36px, 4vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+  color: var(--text);
+}
+
+.aboutSectionHeader span,
+.aboutMissionContent span,
+.aboutTrustText span {
+  display: block;
+  max-width: 820px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.aboutCompanyGrid,
+.aboutTrustGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.aboutCompanyGrid div,
+.aboutTrustGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.aboutCompanyGrid svg,
+.aboutTrustGrid svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+.aboutCompanyGrid strong,
+.aboutTrustGrid strong {
+  display: block;
+  font-size: 21px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.aboutCompanyGrid span,
+.aboutTrustGrid span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.aboutMission {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(43,220,133,0.18), transparent 34%),
+    linear-gradient(135deg, #061735, #102f66);
+  color: white;
+  text-align: center;
+}
+
+.aboutMissionContent {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.aboutMissionContent h2 {
+  color: white;
+}
+
+.aboutMissionContent span {
+  color: #dce9ff;
+}
+
+.aboutWhyGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.aboutWhyGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.aboutWhyGrid svg {
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.aboutWhyGrid h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: var(--navy);
+}
+
+.aboutWhyGrid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.aboutTrust {
+  padding: 96px 7%;
+  background: #ffffff;
+}
+
+.aboutTrustText {
+  max-width: 940px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.aboutTrustText p {
+  color: var(--blue);
+}
+
+.aboutCTA {
+  margin: 86px auto;
+  width: min(1180px, 86%);
+  padding: 76px 60px;
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(43, 220, 133, 0.18), transparent 35%),
+    linear-gradient(135deg, var(--navy), #123263);
+  color: white;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(9, 30, 66, 0.18);
+}
+
+.aboutCTA h2 {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 18px;
+}
+
+.aboutCTA p {
+  color: #dce9ff;
+  max-width: 780px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.aboutApproach {
+  padding: 96px 7%;
+  background: #ffffff;
+}
+
+.aboutApproachText {
+  max-width: 940px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.aboutApproachText p {
+  color: var(--blue);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.aboutApproachText h2,
+.aboutPilotContent h2 {
+  font-size: clamp(36px, 4vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+  color: var(--text);
+}
+
+.aboutApproachText span,
+.aboutPilotContent span {
+  display: block;
+  max-width: 820px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.aboutApproachGrid,
+.aboutMarketGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.aboutApproachGrid div,
+.aboutMarketGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.aboutApproachGrid svg,
+.aboutMarketGrid svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+.aboutApproachGrid strong,
+.aboutMarketGrid strong {
+  display: block;
+  font-size: 21px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.aboutApproachGrid span,
+.aboutMarketGrid span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.aboutPilotPhilosophy {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(43,220,133,0.18), transparent 34%),
+    linear-gradient(135deg, #061735, #102f66);
+  color: white;
+}
+
+.aboutPilotContent {
+  max-width: 980px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.aboutPilotContent p {
+  color: var(--green);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.aboutPilotContent h2 {
+  color: white;
+}
+
+.aboutPilotContent span {
+  color: #dce9ff;
+}
+
+.aboutPilotList {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.aboutPilotList div {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-weight: 850;
+  color: #e7eefb;
+}
+
+.aboutPilotList svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .aboutApproachGrid,
+  .aboutMarketGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .aboutApproach,
+  .aboutPilotPhilosophy {
+    padding: 70px 6%;
+  }
+
+  .aboutApproachGrid,
+  .aboutMarketGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1100px) {
+  .aboutCompanyGrid,
+  .aboutTrustGrid,
+  .aboutWhyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .aboutHero,
+  .aboutSection,
+  .aboutMission,
+  .aboutTrust {
+    padding: 70px 6%;
+  }
+
+  .aboutCompanyGrid,
+  .aboutTrustGrid,
+  .aboutWhyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutHero h1 {
+    font-size: 44px;
+  }
+
+  .aboutCTA {
+    width: 90%;
+    padding: 34px;
+  }
+
+  .aboutHeroActions {
+    flex-direction: column;
+  }
+
+  .aboutPrimary,
+  .aboutSecondary {
+    width: 100%;
+  }
+}

@@ -1,0 +1,522 @@
+.dtPage {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dtHero {
+  padding: 120px 7%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47, 102, 243, 0.28), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(43, 220, 133, 0.16), transparent 30%),
+    linear-gradient(135deg, #061735, #0a2148 55%, #0d355f);
+  color: white;
+  text-align: center;
+}
+
+.dtHeroContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dtEyebrow,
+.dtSectionHeader p,
+.dtTwinText p,
+.dtWorkflowHeader p,
+.dtProof p {
+  color: var(--green);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.dtHero h1 {
+  font-size: clamp(46px, 5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0 auto 28px;
+  max-width: 1050px;
+}
+
+.dtHeroContent > p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #dce9ff;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.dtHeroActions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dtPrimary,
+.dtSecondary {
+  min-height: 54px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 950;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dtPrimary {
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+}
+
+.dtSecondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.dtSection {
+  padding: 96px 7%;
+}
+
+.dtSectionHeader {
+  max-width: 920px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.dtSectionHeader p {
+  color: var(--blue);
+}
+
+.dtSectionHeader h2,
+.dtTwinText h2,
+.dtWorkflowHeader h2,
+.dtProof h2 {
+  font-size: clamp(36px, 4vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+  color: var(--text);
+}
+
+.dtGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.dtCard {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.dtCard svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+.dtCard h3 {
+  font-size: 23px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  color: var(--navy);
+}
+
+.dtCard p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.dtTwinShowcase {
+  padding: 96px 7%;
+  background: white;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.dtTwinVisual {
+  display: flex;
+  justify-content: center;
+}
+
+.dtBuilding {
+  position: relative;
+  width: min(620px, 100%);
+  min-height: 560px;
+  border-radius: 36px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(239,246,255,0.92)),
+    radial-gradient(circle at 50% 20%, rgba(47,102,243,0.18), transparent 50%);
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 90px rgba(9, 30, 66, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 28px;
+  padding: 80px 40px 104px;
+  overflow: hidden;
+}
+
+.dtBuilding::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(6,23,53,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,23,53,0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.dtTower {
+  position: relative;
+  z-index: 1;
+  width: 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 18px;
+  border-radius: 18px 18px 10px 10px;
+  background: linear-gradient(180deg, #dbe7f7, #aebfd6);
+  box-shadow: 0 18px 40px rgba(9, 30, 66, 0.2);
+}
+
+.dtTowerA {
+  height: 330px;
+}
+
+.dtTowerB {
+  height: 390px;
+}
+
+.dtTower span {
+  border-radius: 4px;
+  background: #10264f;
+  opacity: 0.82;
+  min-height: 22px;
+}
+
+.dtTower span.hot {
+  background: #ff6b35;
+  box-shadow: 0 0 24px rgba(255, 107, 53, 0.9);
+  opacity: 1;
+}
+
+.dtTower span.warn {
+  background: #ffd35a;
+  box-shadow: 0 0 22px rgba(255, 211, 90, 0.9);
+  opacity: 1;
+}
+
+.dtBase {
+  position: absolute;
+  z-index: 1;
+  bottom: 78px;
+  width: 360px;
+  height: 84px;
+  border-radius: 18px 18px 10px 10px;
+  background: linear-gradient(180deg, #c6d6ea, #91a7c3);
+  box-shadow: 0 18px 40px rgba(9, 30, 66, 0.16);
+}
+
+.dtCallout {
+  position: absolute;
+  z-index: 2;
+  right: 34px;
+  top: 52px;
+  width: 285px;
+  padding: 20px;
+  border-radius: 22px;
+  background: #251f18;
+  color: white;
+  border: 1px solid rgba(255, 107, 53, 0.9);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+.dtCallout::after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 62px;
+  width: 60px;
+  height: 3px;
+  background: #ff6b35;
+}
+
+.dtCallout strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.dtCallout span,
+.dtCallout small {
+  display: block;
+  color: #f5e7d6;
+  line-height: 1.5;
+}
+
+.dtTwinText p {
+  color: var(--blue);
+}
+
+.dtTwinText span {
+  display: block;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 18px;
+}
+
+.dtTwinText ul {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: grid;
+  gap: 16px;
+}
+
+.dtTwinText li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.dtTwinText li svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.dtDarkSection {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(43,220,133,0.18), transparent 34%),
+    linear-gradient(135deg, #061735, #102f66);
+  color: white;
+}
+
+.dtWorkflowHeader {
+  max-width: 900px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+
+.dtWorkflowHeader h2 {
+  color: white;
+}
+
+.dtSteps {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.dtStep {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dtStep b {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--green);
+  color: var(--navy);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-weight: 950;
+}
+
+.dtStep span {
+  color: #e7eefb;
+  font-weight: 850;
+}
+
+.dtUseCaseGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.dtUseCaseGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: 0 16px 44px rgba(9, 30, 66, 0.06);
+}
+
+.dtUseCaseGrid svg {
+  color: var(--blue);
+  margin-bottom: 18px;
+}
+
+.dtUseCaseGrid strong {
+  display: block;
+  font-size: 21px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.dtUseCaseGrid span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.dtProof {
+  margin: 40px auto 100px;
+  width: min(1180px, 86%);
+  padding: 60px;
+  border-radius: 34px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 70px rgba(9, 30, 66, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.dtProof p {
+  color: var(--blue);
+}
+
+.dtProof span {
+  display: block;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.dtProof ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.dtProof li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 850;
+  color: var(--navy);
+}
+
+.dtProof li svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .dtGrid,
+  .dtUseCaseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dtTwinShowcase,
+  .dtProof {
+    grid-template-columns: 1fr;
+  }
+
+  .dtSteps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .dtHero,
+  .dtSection,
+  .dtDarkSection,
+  .dtTwinShowcase {
+    padding: 70px 6%;
+  }
+
+  .dtGrid,
+  .dtUseCaseGrid,
+  .dtSteps {
+    grid-template-columns: 1fr;
+  }
+
+  .dtHero h1 {
+    font-size: 44px;
+  }
+
+  .dtBuilding {
+    min-height: 520px;
+    padding: 150px 20px 84px;
+  }
+
+  .dtTower {
+    width: 110px;
+  }
+
+  .dtTowerA {
+    height: 270px;
+  }
+
+  .dtTowerB {
+    height: 320px;
+  }
+
+  .dtBase {
+    width: 270px;
+  }
+
+  .dtCallout {
+    left: 20px;
+    right: 20px;
+    top: 24px;
+    width: auto;
+  }
+
+  .dtCallout::after {
+    display: none;
+  }
+
+  .dtProof {
+    width: 90%;
+    padding: 34px;
+  }
+
+  .dtHeroActions {
+    flex-direction: column;
+  }
+
+  .dtPrimary,
+  .dtSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

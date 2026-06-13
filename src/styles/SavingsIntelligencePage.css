@@ -1,0 +1,398 @@
+.savingsPage {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.savingsHero {
+  padding: 120px 7%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(47, 102, 243, 0.28), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(43, 220, 133, 0.16), transparent 30%),
+    linear-gradient(135deg, #061735, #0a2148 55%, #0d355f);
+  color: white;
+  text-align: center;
+}
+
+.savingsHeroContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.savingsEyebrow,
+.savingsSectionHeader p,
+.savingsWorkflowHeader p,
+.savingsProof p {
+  color: var(--green);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 18px;
+}
+
+.savingsHero h1 {
+  font-size: clamp(46px, 5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0 auto 28px;
+  max-width: 1080px;
+}
+
+.savingsHeroContent > p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #dce9ff;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.savingsHeroActions {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.savingsPrimary,
+.savingsSecondary {
+  min-height: 54px;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 950;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.savingsPrimary {
+  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  color: white;
+}
+
+.savingsSecondary {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+}
+
+.savingsSection {
+  padding: 96px 7%;
+}
+
+.savingsSectionHeader {
+  max-width: 920px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.savingsSectionHeader p {
+  color: var(--blue);
+}
+
+.savingsSectionHeader h2,
+.savingsWorkflowHeader h2,
+.savingsProof h2 {
+  font-size: clamp(36px, 4vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin: 0;
+  color: var(--text);
+}
+
+.savingsGrid,
+.savingsUseCaseGrid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.savingsCard,
+.savingsUseCaseGrid div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(9, 30, 66, 0.07);
+}
+
+.savingsCard svg,
+.savingsUseCaseGrid svg {
+  width: 52px;
+  height: 52px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #edf4ff;
+  color: var(--blue);
+  margin-bottom: 22px;
+}
+
+.savingsCard h3 {
+  font-size: 23px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  color: var(--navy);
+}
+
+.savingsCard p,
+.savingsUseCaseGrid span {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.savingsUseCaseGrid strong {
+  display: block;
+  font-size: 21px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.savingsDashboardSection {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(47, 102, 243, 0.18), transparent 36%),
+    #ffffff;
+}
+
+.savingsDashboardCard {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 36px;
+  padding: 34px;
+  box-shadow: 0 30px 90px rgba(9, 30, 66, 0.12);
+}
+
+.savingsDashTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.savingsDashTop span {
+  font-weight: 950;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+.savingsDashTop b {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #ecfff5;
+  color: #079455;
+  font-size: 13px;
+}
+
+.savingsKpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.savingsKpis div {
+  padding: 22px;
+  border-radius: 22px;
+  background: #f3f7fc;
+  border: 1px solid var(--border);
+}
+
+.savingsKpis small,
+.savingsKpis span {
+  color: var(--muted);
+}
+
+.savingsKpis strong {
+  display: block;
+  font-size: 31px;
+  line-height: 1.05;
+  margin: 8px 0;
+  color: var(--text);
+}
+
+.savingsInsight {
+  margin-top: 18px;
+  border-radius: 24px;
+  padding: 24px;
+  background: #ecfff5;
+  border: 1px solid rgba(43, 220, 133, 0.42);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.savingsInsight svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+.savingsInsight strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.savingsInsight p {
+  margin: 0;
+  color: #236347;
+  line-height: 1.6;
+}
+
+.savingsDarkSection {
+  padding: 96px 7%;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(43,220,133,0.18), transparent 34%),
+    linear-gradient(135deg, #061735, #102f66);
+  color: white;
+}
+
+.savingsWorkflowHeader {
+  max-width: 900px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+
+.savingsWorkflowHeader h2 {
+  color: white;
+}
+
+.savingsSteps {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.savingsStep {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.savingsStep b {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--green);
+  color: var(--navy);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-weight: 950;
+}
+
+.savingsStep span {
+  color: #e7eefb;
+  font-weight: 850;
+}
+
+.savingsProof {
+  margin: 40px auto 100px;
+  width: min(1180px, 86%);
+  padding: 60px;
+  border-radius: 34px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 70px rgba(9, 30, 66, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.savingsProof p {
+  color: var(--blue);
+}
+
+.savingsProof span {
+  display: block;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.savingsProof ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.savingsProof li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 850;
+  color: var(--navy);
+}
+
+.savingsProof li svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .savingsGrid,
+  .savingsUseCaseGrid,
+  .savingsKpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .savingsSteps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .savingsProof {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .savingsHero,
+  .savingsSection,
+  .savingsDashboardSection,
+  .savingsDarkSection {
+    padding: 70px 6%;
+  }
+
+  .savingsGrid,
+  .savingsUseCaseGrid,
+  .savingsKpis,
+  .savingsSteps {
+    grid-template-columns: 1fr;
+  }
+
+  .savingsHero h1 {
+    font-size: 44px;
+  }
+
+  .savingsProof {
+    width: 90%;
+    padding: 34px;
+  }
+
+  .savingsHeroActions {
+    flex-direction: column;
+  }
+
+  .savingsPrimary,
+  .savingsSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
