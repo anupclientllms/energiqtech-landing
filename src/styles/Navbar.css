@@ -166,12 +166,13 @@
     min-height: 92px;
     padding: 18px 6%;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .mobileMenuBtn {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
   }
 
   .navActions {

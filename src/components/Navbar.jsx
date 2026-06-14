@@ -28,7 +28,7 @@ export default function Navbar({ openPilotModal }) {
         type="button"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
       >
-        {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        {mobileMenuOpen ? <X size={34} /> : <Menu size={34} />}
       </button>
 
       <div className={`navActions ${mobileMenuOpen ? "open" : ""}`}>
