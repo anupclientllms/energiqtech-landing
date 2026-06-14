@@ -4,106 +4,67 @@ import { Menu, X } from "lucide-react";
 import "../styles/Navbar.css";
 
 export default function Navbar({ openPilotModal }) {
-  const [mobileMenuOpen, setMobileMenuOpen] =
-    useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    setSolutionsOpen(false);
+  };
 
   return (
     <nav className="nav">
-
-      <Link to="/" className="brand">
-        <img
-          src="/energiq-logo.png"
-          alt="EnergIQ Tech logo"
-          className="logoImage"
-        />
+      <Link to="/" className="brand" onClick={closeMenu}>
+        <img src="/energiq-logo.png" alt="EnergIQ Tech logo" className="logoImage" />
 
         <div className="brandText">
           <strong>EnergIQ Tech</strong>
-
-          <span>
-            AI-Driven Energy Optimisation & Control
-          </span>
+          <span>AI-Driven Energy Optimisation & Control</span>
         </div>
       </Link>
 
-      {/* Mobile Hamburger */}
       <button
         className="mobileMenuBtn"
-        onClick={() =>
-          setMobileMenuOpen(!mobileMenuOpen)
-        }
+        type="button"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
       >
-        {mobileMenuOpen ? (
-          <X size={28} />
-        ) : (
-          <Menu size={28} />
-        )}
+        {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
-      <div
-        className={`navActions ${
-          mobileMenuOpen ? "open" : ""
-        }`}
-      >
-        <div className="dropdown">
-          <button className="navLink">
+      <div className={`navActions ${mobileMenuOpen ? "open" : ""}`}>
+        <div className={`dropdown ${solutionsOpen ? "mobileOpen" : ""}`}>
+          <button
+            type="button"
+            className="navLink"
+            onClick={() => setSolutionsOpen(!solutionsOpen)}
+          >
             Solutions ▾
           </button>
 
           <div className="dropdownMenu">
-            <Link
-              to="/operational-energy-optimisation"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
-            >
+            <Link to="/operational-energy-optimisation" onClick={closeMenu}>
               Operational Energy Optimisation
             </Link>
 
-            <Link
-              to="/digital-twin"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
-            >
+            <Link to="/digital-twin" onClick={closeMenu}>
               Digital Twin
             </Link>
 
-            <Link
-              to="/savings-intelligence"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
-            >
+            <Link to="/savings-intelligence" onClick={closeMenu}>
               Savings Intelligence
             </Link>
           </div>
         </div>
 
-        <Link
-          to="/pilot-program"
-          onClick={() =>
-            setMobileMenuOpen(false)
-          }
-        >
+        <Link to="/pilot-program" onClick={closeMenu}>
           Pilot Program
         </Link>
 
-        <Link
-          to="/trust-security"
-          onClick={() =>
-            setMobileMenuOpen(false)
-          }
-        >
+        <Link to="/trust-security" onClick={closeMenu}>
           Trust & Security
         </Link>
 
-        <Link
-          to="/about"
-          onClick={() =>
-            setMobileMenuOpen(false)
-          }
-        >
+        <Link to="/about" onClick={closeMenu}>
           About
         </Link>
 
@@ -111,7 +72,7 @@ export default function Navbar({ openPilotModal }) {
           type="button"
           onClick={() => {
             openPilotModal();
-            setMobileMenuOpen(false);
+            closeMenu();
           }}
           className="navBtn"
         >

@@ -161,7 +161,6 @@
 /* Mobile */
 
 @media (max-width: 992px) {
-
   .mobileMenuBtn {
     display: flex;
     align-items: center;
@@ -179,19 +178,14 @@
   .navActions.open {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-
     background: #12284c;
-
     padding: 24px;
     gap: 20px;
-
     z-index: 1000;
-
     border-top: 1px solid rgba(255,255,255,0.1);
   }
 
@@ -203,12 +197,18 @@
   }
 
   .dropdownMenu {
+    display: none;
+  }
+
+  .dropdown.mobileOpen .dropdownMenu {
+    display: block;
     position: static;
     opacity: 1;
     visibility: visible;
     transform: none;
     box-shadow: none;
     margin-top: 12px;
+    border-radius: 18px;
   }
 }
 @media (max-width: 760px) {
