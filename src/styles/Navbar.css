@@ -150,7 +150,67 @@
   background: #f5f8fd;
   color: #2f66f3;
 }
+.mobileMenuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
+/* Mobile */
+
+@media (max-width: 992px) {
+
+  .mobileMenuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .navActions {
+    display: none;
+  }
+
+  .navActions.open {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background: #12284c;
+
+    padding: 24px;
+    gap: 20px;
+
+    z-index: 1000;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .navActions.open a,
+  .navActions.open button,
+  .navActions.open .navLink {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdownMenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 12px;
+  }
+}
 @media (max-width: 760px) {
   .nav {
     position: relative;
