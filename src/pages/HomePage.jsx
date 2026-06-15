@@ -185,7 +185,7 @@ export default function HomePage() {
       <section className="hero" id="top">
         <motion.div className="heroText" variants={stagger} initial="hidden" animate="show">
           <motion.div className="badge" variants={fadeUp}>
-            <Sparkles size={16} /> Device-Led • SaaS-Based • Outcome-Focused
+            <Sparkles size={16} /> AI-Driven • Outcome-Focused • Measurable Savings • Pilot-Ready 
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
