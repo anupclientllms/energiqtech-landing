@@ -392,6 +392,42 @@
   flex-shrink: 0;
 }
 
+.aboutIndustryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.aboutIndustryGrid > div {
+  background: #fff;
+  border: 1px solid #d7e3f5;
+  border-radius: 28px;
+  padding: 36px;
+}
+
+.aboutIndustryGrid svg {
+  color: #22c55e;
+  margin-bottom: 18px;
+}
+
+.aboutIndustryGrid h3 {
+  font-size: 1.85rem;
+  margin-bottom: 16px;
+  color: #041b4d;
+}
+
+.aboutIndustryGrid p {
+  color: #51698d;
+  line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+  .aboutIndustryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 1100px) {
   .aboutApproachGrid,
   .aboutMarketGrid {

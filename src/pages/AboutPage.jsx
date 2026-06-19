@@ -262,6 +262,60 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <section className="aboutSection">
+        <div className="aboutSectionHeader">
+          <p>Industry Engagement & Commercialisation</p>
+
+          <h2>
+            Building momentum through validation, engagement and commercial readiness.
+          </h2>
+
+          <span>
+            EnergIQ Tech has completed a Commercialisation & Growth assessment through the
+            Australian Government Industry Growth Program. The assessment identified pilot
+            validation, customer outcomes, deployment scalability and commercial growth as
+            key priorities as EnergIQ Tech progresses toward market deployment.
+          </span>
+        </div>
+
+        <div className="aboutIndustryGrid">
+          <div>
+            <CheckCircle2 />
+            <h3>Commercialisation & Growth Report Completed</h3>
+            <p>
+              Completed a Commercialisation & Growth assessment in June 2026,
+              focused on pilot validation, customer outcomes and scalable growth.
+            </p>
+          </div>
+
+          <div>
+            <CheckCircle2 />
+            <h3>Local Government Engagement</h3>
+            <p>
+              Active pilot discussions with local government stakeholders to
+              explore operational energy optimisation opportunities.
+            </p>
+          </div>
+
+          <div>
+            <CheckCircle2 />
+            <h3>University Outreach</h3>
+            <p>
+              Sustainability and facilities engagement underway with universities
+              seeking practical energy and emissions reduction initiatives.
+            </p>
+          </div>
+
+          <div>
+            <CheckCircle2 />
+            <h3>Pilot & Scale Strategy</h3>
+            <p>
+              Focused on measurable operational energy savings, pilot validation,
+              deployment scalability and long-term commercial growth.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="aboutSection">
         <div className="aboutSectionHeader">
