@@ -1,0 +1,88 @@
+/* src/styles/LegalPage.css */
+
+.legalPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #f6f9fc;
+  color: #07152f;
+}
+
+.legalHero {
+  padding: 96px 7% 48px;
+  background: linear-gradient(135deg, #07152f, #0b5570);
+  color: #ffffff;
+}
+
+.legalEyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8cc7ff;
+  margin-bottom: 12px;
+}
+
+.legalHero h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin-bottom: 16px;
+}
+
+.legalHero p {
+  max-width: 820px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #dce8f8;
+}
+
+.legalContent {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 56px 7% 80px;
+  background: #ffffff;
+}
+
+.legalContent h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  color: #07152f;
+}
+
+.legalContent p,
+.legalContent li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #465673;
+}
+
+.legalContent ul {
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+
+.legalContent a {
+  color: #1f7cff;
+  text-decoration: none;
+}
+
+.legalContent a:hover {
+  text-decoration: underline;
+}
+
+.legalDisclaimer {
+  margin-top: 40px;
+  padding: 18px;
+  border-left: 4px solid #1f7cff;
+  background: #f0f6ff;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .legalHero {
+    padding: 72px 7% 40px;
+  }
+
+  .legalContent {
+    padding: 40px 7% 64px;
+  }
+}

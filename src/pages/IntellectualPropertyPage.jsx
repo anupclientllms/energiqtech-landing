@@ -1,0 +1,190 @@
+// src/pages/IntellectualProperty.jsx
+
+import "../styles/LegalPage.css";
+
+export default function IntellectualProperty() {
+  return (
+    <main className="legalPage">
+      <section className="legalHero">
+        <div className="legalHeroInner">
+          <p className="legalEyebrow">Legal</p>
+
+          <h1>Intellectual Property Notice</h1>
+
+          <p>
+            This notice explains the ownership and permitted use of EnergIQ Tech
+            content, technology concepts, software materials, workflows and
+            related intellectual property.
+          </p>
+        </div>
+      </section>
+
+      <section className="legalContent">
+        <p>
+          <strong>Effective date:</strong> June 2026
+        </p>
+
+        <h2>1. Ownership</h2>
+
+        <p>
+          EnergIQ Tech is an AI-driven energy optimisation and control platform
+          developed by Automation Spectrum Pty Ltd. Unless otherwise stated, all
+          intellectual property associated with EnergIQ Tech is owned by
+          Automation Spectrum Pty Ltd and/or EnergIQ Tech.
+        </p>
+
+        <h2>2. Protected materials</h2>
+
+        <p>
+          Protected materials include, but are not limited to:
+        </p>
+
+        <ul>
+          <li>Website content, text, graphics, layouts and visual design</li>
+          <li>Software concepts, source code, platform architecture and APIs</li>
+          <li>AI workflows, decision logic and multi-agent orchestration</li>
+          <li>AI Energy Gateway concepts, architecture and integration methods</li>
+          <li>Digital Twin workflows, visualisations and operational models</li>
+          <li>Energy data normalisation, analytics and optimisation methods</li>
+          <li>Human-in-the-loop approval workflows and control processes</li>
+          <li>Reports, presentations, proposals, demonstrations and documentation</li>
+          <li>Brand names, logos, product names, icons and related brand assets</li>
+        </ul>
+
+        <h2>3. No licence or transfer of rights</h2>
+
+        <p>
+          Accessing, viewing, downloading or interacting with this website does
+          not grant any licence, right, title or interest in any EnergIQ Tech
+          software, source code, workflows, AI models, algorithms, system
+          architecture, Digital Twin methods, gateway technologies,
+          documentation, designs or related intellectual property.
+        </p>
+
+        <h2>4. Restrictions on use</h2>
+
+        <p>
+          You must not copy, reproduce, distribute, modify, reverse engineer,
+          scrape, commercially exploit, republish, create derivative works from,
+          or use any EnergIQ Tech materials without prior written permission.
+        </p>
+
+        <p>
+          This includes screenshots, diagrams, workflow descriptions, platform
+          concepts, product positioning, commercial materials, pilot materials
+          and technical descriptions published on this website.
+        </p>
+
+        <h2>5. Confidential and proprietary technology</h2>
+
+        <p>
+          Certain EnergIQ Tech platform components, methods, workflows,
+          architectures, software designs, algorithms, data processes and
+          operational models may be confidential, proprietary and protected as
+          trade secrets.
+        </p>
+
+        <p>
+          Public display of selected website content, product descriptions,
+          screenshots or demonstrations does not waive any confidentiality,
+          trade secret, copyright, trademark, design, patent or future
+          intellectual property rights.
+        </p>
+
+        <h2>6. Trademarks and brand assets</h2>
+
+        <p>
+          EnergIQ Tech, AI Energy Gateway and related names, logos, icons,
+          slogans and brand assets may function as trademarks or trade indicia
+          of Automation Spectrum Pty Ltd and/or EnergIQ Tech.
+        </p>
+
+        <p>
+          These names and brand assets must not be used in a way that may cause
+          confusion, imply endorsement, suggest partnership or misrepresent a
+          relationship with EnergIQ Tech without written permission.
+        </p>
+
+        <h2>7. Copyright</h2>
+
+        <p>
+          Website content, documentation, visual materials, software-related
+          materials, diagrams, designs, screenshots and written materials may be
+          protected by copyright. Unauthorised copying, adaptation, publication,
+          distribution or commercial use is prohibited.
+        </p>
+
+        <h2>8. Pilot, customer and partner materials</h2>
+
+        <p>
+          Any pilot proposals, technical documentation, demonstrations,
+          commercial materials or partner-specific materials shared by EnergIQ
+          Tech remain proprietary unless a separate written agreement states
+          otherwise.
+        </p>
+
+        <p>
+          No customer, partner, investor, grant assessor or website visitor
+          receives ownership rights in EnergIQ Tech technology, software,
+          architecture or intellectual property by reviewing such materials.
+        </p>
+
+        <h2>9. Government, grant and investor review</h2>
+
+        <p>
+          Materials shared for commercialisation, grant assessment, investor
+          review, government program engagement or pilot evaluation are provided
+          for review and discussion purposes only.
+        </p>
+
+        <p>
+          Such review does not create any licence, assignment, ownership
+          interest, partnership, agency relationship or right to copy, implement
+          or commercialise EnergIQ Tech materials without written agreement.
+        </p>
+
+        <h2>10. Future intellectual property rights</h2>
+
+        <p>
+          EnergIQ Tech may seek trademark, patent, design, copyright or other
+          intellectual property protection for current or future technology,
+          products, services, methods, workflows, brands or platform
+          capabilities.
+        </p>
+
+        <p>
+          Nothing on this website should be interpreted as limiting EnergIQ
+          Tech's ability to protect, register, commercialise or enforce its
+          intellectual property rights in the future.
+        </p>
+
+        <h2>11. Reporting misuse</h2>
+
+        <p>
+          If you believe EnergIQ Tech materials, brand assets or technology
+          concepts are being misused, copied or represented without permission,
+          please contact us.
+        </p>
+
+        <h2>12. Contact</h2>
+
+        <p>
+          <strong>Automation Spectrum Pty Ltd</strong>
+          <br />
+          EnergIQ Tech
+          <br />
+          Email:{" "}
+          <a href="mailto:ceo@aichatshoppie.com">
+            ceo@aichatshoppie.com
+          </a>
+        </p>
+
+        <div className="legalDisclaimer">
+          © 2026 EnergIQ Tech. All rights reserved.
+
+          Developed and owned by Automation Spectrum Pty Ltd.
+        </div>
+      </section>
+    </main>
+  );
+}
