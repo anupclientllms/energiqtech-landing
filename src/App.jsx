@@ -34,7 +34,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/intellectual-property" element={<IntellectualProperty />} />
-        <Route path="/connected-energy-platform" element = {<ConnectedEnergyAssetsPage />}  />
+        <Route path="/connected-energy-assets" element = {<ConnectedEnergyAssetsPage />}  />
         
         
         
