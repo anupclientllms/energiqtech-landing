@@ -11,6 +11,10 @@ import {
   Zap,
   Gauge,
   ShieldCheck,
+  BatteryCharging,
+  Sun,
+  PlugZap,
+  Activity,
 } from "lucide-react";
 
 export default function DigitalTwinPage() {
@@ -20,14 +24,14 @@ export default function DigitalTwinPage() {
         <div className="dtHeroContent">
           <p className="dtEyebrow">Digital Twin Intelligence</p>
 
-          <h1>
-            See where energy issues occur across buildings, zones and assets.
-          </h1>
+          <h1>See operational energy events across connected assets.</h1>
 
           <p>
-            EnergIQ Tech uses digital twin workflows to help facility teams
-            visualise operational energy events, investigate root causes and
-            simulate optimisation pathways before action is taken.
+            EnergIQ Tech uses Digital Twins to visualise operational energy events
+            across Building Management Systems, Solar PV, Battery Storage, EV
+            Charging, Smart Meters and other connected assets, helping teams
+            investigate root causes, simulate optimisation pathways and make
+            confident operational decisions before action is taken.
           </p>
 
           <div className="dtHeroActions">
@@ -44,10 +48,8 @@ export default function DigitalTwinPage() {
 
       <section className="dtSection">
         <div className="dtSectionHeader">
-          <p>Why digital twin</p>
-          <h2>
-            Energy data becomes more useful when teams can see where the issue is happening.
-          </h2>
+          <p>Digital Twin Intelligence</p>
+          <h2>Energy data becomes actionable when teams can see operational context.</h2>
         </div>
 
         <div className="dtGrid">
@@ -55,17 +57,17 @@ export default function DigitalTwinPage() {
             <Eye />
             <h3>Visual operational context</h3>
             <p>
-              Move from spreadsheet-style energy reporting to building, zone and
-              asset-level investigation.
+              Move beyond dashboards to visualise operational events across
+              buildings, zones and connected energy assets.
             </p>
           </div>
 
           <div className="dtCard">
             <MapPinned />
-            <h3>Locate anomalies faster</h3>
+            <h3>Locate operational events faster</h3>
             <p>
-              Map peak demand, after-hours usage and HVAC inefficiencies to the
-              relevant building or zone.
+              Map peak demand, DER performance, after-hours usage and equipment
+              anomalies to the relevant building, zone or connected asset.
             </p>
           </div>
 
@@ -73,17 +75,17 @@ export default function DigitalTwinPage() {
             <Search />
             <h3>Investigate root causes</h3>
             <p>
-              Combine energy patterns with occupancy, operating schedules and
-              asset behaviour.
+              Correlate energy patterns with occupancy, operating schedules,
+              equipment behaviour and connected energy asset performance.
             </p>
           </div>
 
           <div className="dtCard">
             <ShieldCheck />
-            <h3>Support governed action</h3>
+            <h3>Support AI-assisted decisions</h3>
             <p>
-              Use the twin as a decision layer before approving operational
-              changes.
+              Use the Digital Twin as the operational context for governed AI
+              recommendations and approval-based operational actions.
             </p>
           </div>
         </div>
@@ -115,16 +117,15 @@ export default function DigitalTwinPage() {
         </div>
 
         <div className="dtTwinText">
-          <p>Building intelligence layer</p>
+          <p>Connected asset intelligence</p>
 
-          <h2>
-            Connect energy events to physical spaces and operational workflows.
-          </h2>
+          <h2>Connect energy events to physical assets and operational workflows.</h2>
 
           <span>
-            Digital twin workflows help facility teams understand whether energy
-            waste is coming from scheduling, occupancy mismatch, equipment
-            behaviour, after-hours activity or demand pressure.
+            Digital Twin workflows help teams understand whether energy waste,
+            peak demand or asset inefficiency is caused by scheduling, occupancy
+            mismatch, equipment behaviour, after-hours activity, demand pressure
+            or connected energy asset performance.
           </span>
 
           <ul>
@@ -132,7 +133,7 @@ export default function DigitalTwinPage() {
               <CheckCircle2 /> Building, floor, zone and asset context
             </li>
             <li>
-              <CheckCircle2 /> Operational event mapping
+              <CheckCircle2 /> Operational event and anomaly mapping
             </li>
             <li>
               <CheckCircle2 /> AI-assisted investigation workflow
@@ -146,15 +147,14 @@ export default function DigitalTwinPage() {
 
       <section className="dtDarkSection">
         <div className="dtWorkflowHeader">
-          <p>Digital twin workflow</p>
-          <h2>
-            From anomaly detection to operational decision support.
-          </h2>
+          <p>Digital Twin Workflow</p>
+          <h2>From anomaly detection to operational decision support.</h2>
         </div>
 
         <div className="dtSteps">
           {[
-            "Detect abnormal energy event",
+            "Connect buildings and energy assets",
+            "Detect abnormal energy events",
             "Locate building, zone or asset",
             "Analyse operational context",
             "Simulate optimisation pathway",
@@ -171,28 +171,62 @@ export default function DigitalTwinPage() {
 
       <section className="dtSection">
         <div className="dtSectionHeader">
-          <p>Use cases</p>
-          <h2>
-            Designed for councils, universities, campuses and building portfolios.
-          </h2>
+          <p>Use Cases</p>
+          <h2>Designed for commercial buildings and connected energy assets.</h2>
         </div>
 
         <div className="dtUseCaseGrid">
           <div>
             <Building2 />
-            <strong>Council buildings</strong>
+            <strong>Commercial buildings</strong>
             <span>
               Identify operational waste across civic centres, libraries,
-              depots and community facilities.
+              depots, campuses and community facilities.
             </span>
           </div>
 
           <div>
             <Layers3 />
-            <strong>University campuses</strong>
+            <strong>Campuses and portfolios</strong>
             <span>
-              Map energy events across buildings, zones, teaching spaces and
-              operational areas.
+              Map energy events across buildings, zones, teaching spaces,
+              operational areas and multi-site portfolios.
+            </span>
+          </div>
+
+          <div>
+            <Sun />
+            <strong>Solar PV performance</strong>
+            <span>
+              Visualise generation behaviour, inverter performance and
+              renewable utilisation within the operational context.
+            </span>
+          </div>
+
+          <div>
+            <BatteryCharging />
+            <strong>Battery storage intelligence</strong>
+            <span>
+              Track charge, discharge, state of charge and optimisation
+              opportunities for peak demand and energy cost reduction.
+            </span>
+          </div>
+
+          <div>
+            <PlugZap />
+            <strong>EV charging optimisation</strong>
+            <span>
+              Understand charging demand, scheduling opportunities and load
+              impact across connected sites.
+            </span>
+          </div>
+
+          <div>
+            <Activity />
+            <strong>Smart meter intelligence</strong>
+            <span>
+              Analyse import, export, demand, tariffs and operational energy
+              patterns across connected assets.
             </span>
           </div>
 
@@ -200,7 +234,8 @@ export default function DigitalTwinPage() {
             <Gauge />
             <strong>HVAC optimisation</strong>
             <span>
-              Investigate comfort, scheduling, occupancy and control issues.
+              Investigate comfort, scheduling, occupancy and control issues
+              across connected building systems.
             </span>
           </div>
 
@@ -208,7 +243,8 @@ export default function DigitalTwinPage() {
             <Zap />
             <strong>Peak demand events</strong>
             <span>
-              Locate and explain peak load events before recommending action.
+              Locate and explain peak load events before recommending
+              AI-assisted optimisation actions.
             </span>
           </div>
         </div>
@@ -217,20 +253,27 @@ export default function DigitalTwinPage() {
       <section className="dtProof">
         <div>
           <p>Pilot-ready capability</p>
-          <h2>
-            Demonstrate digital twin value before portfolio-wide rollout.
-          </h2>
+          <h2>Demonstrate digital twin value before broader rollout.</h2>
           <span>
             EnergIQ Tech can be piloted with a focused building or site-level
-            workflow before scaling across multiple facilities or campuses.
+            workflow before scaling across commercial buildings, campuses and
+            connected energy infrastructure.
           </span>
         </div>
 
         <ul>
-          <li><CheckCircle2 /> Digital twin investigation workflow</li>
-          <li><CheckCircle2 /> Peak demand and after-hours scenarios</li>
-          <li><CheckCircle2 /> AI-generated optimisation recommendations</li>
-          <li><CheckCircle2 /> Operational impact and ROI review</li>
+          <li>
+            <CheckCircle2 /> Digital Twin investigation workflow
+          </li>
+          <li>
+            <CheckCircle2 /> Peak demand, HVAC and after-hours scenarios
+          </li>
+          <li>
+            <CheckCircle2 /> AI-generated optimisation recommendations
+          </li>
+          <li>
+            <CheckCircle2 /> Operational impact, carbon and ROI review
+          </li>
         </ul>
       </section>
     </main>

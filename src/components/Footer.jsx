@@ -9,7 +9,7 @@ export default function Footer() {
         <strong>EnergIQ Tech</strong>
 
         <span>
-          AI-Driven Energy Optimisation & Control
+          Edge AI for Connected Energy Systems
         </span>
       </div>
 

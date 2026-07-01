@@ -19,7 +19,7 @@ export default function Navbar({ openPilotModal }) {
 
         <div className="brandText">
           <strong>EnergIQ Tech</strong>
-          <span>AI-Driven Energy Optimisation & Control</span>
+          <span>Edge AI for Connected Energy Systems</span>
         </div>
       </Link>
 

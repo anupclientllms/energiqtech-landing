@@ -18,8 +18,7 @@ export default function PrivacyPolicy() {
 
         <h2>1. Who we are</h2>
         <p>
-          EnergIQ Tech is an AI-driven energy optimisation and control platform
-          developed by Automation Spectrum Pty Ltd.
+          EnergIQ Tech is an AI Energy Platform for connected energy assets developed by Automation Spectrum Pty Ltd.
         </p>
 
         <h2>2. Information we may collect</h2>
@@ -35,7 +34,7 @@ export default function PrivacyPolicy() {
           <li>Email address</li>
           <li>Phone number</li>
           <li>Role or job title</li>
-          <li>Project, pilot or building-related enquiry details</li>
+          <li>Project, pilot or building, DER or connected energy asset enquiry details</li>
           <li>Information voluntarily provided in messages or documents</li>
         </ul>
 
@@ -50,15 +49,17 @@ export default function PrivacyPolicy() {
         <h2>4. Pilot and technical information</h2>
         <p>
           Where pilot discussions involve building data, energy systems,
-          operational information, metering details, BMS information, gateway
-          integration details or technical architecture, such information will
-          be treated as confidential unless otherwise agreed in writing.
+          operational information, metering details, Building Management System
+          information, Solar PV, Battery Storage, EV Charging, Smart Meter, IoT,
+          Distributed Energy Resource integration details, AI Energy Gateway
+          integration details or technical architecture, such information will be
+          treated as confidential unless otherwise agreed in writing.
         </p>
 
         <h2>5. Intellectual property and confidential technology</h2>
 
         <p>
-          All content, software concepts, workflows, AI models, system architecture,
+          All content, software concepts, AI Energy Gateway, Digital Twin, Decision Agents and connected asset workflows, AI models, system architecture,
           digital twin concepts, gateway architecture, algorithms, designs,
           documentation, demonstrations and related materials displayed on this website
           remain the property of Automation Spectrum Pty Ltd and/or EnergIQ Tech unless

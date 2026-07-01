@@ -1,14 +1,18 @@
 import "../styles/PilotProgramPage.css";
 import { Link } from "react-router-dom";
 import {
+  BatteryCharging,
+  Building2,
   CheckCircle2,
   ChevronRight,
   ClipboardCheck,
   Gauge,
   Handshake,
   LineChart,
+  PlugZap,
   Search,
   ShieldCheck,
+  Sun,
   Target,
   Zap,
 } from "lucide-react";
@@ -21,13 +25,14 @@ export default function PilotProgramPage() {
           <p className="pilotEyebrow">Pilot Program</p>
 
           <h1>
-            A low-risk pilot pathway to validate operational energy savings.
+            A low-risk pilot pathway to validate connected energy optimisation.
           </h1>
 
           <p>
-            EnergIQ Tech helps councils, universities and facility teams start
-            with a focused pilot, identify optimisation opportunities, measure
-            operational impact and build confidence before broader rollout.
+            EnergIQ Tech helps councils, universities and commercial organisations
+            start with a focused pilot, connect building and energy assets,
+            identify optimisation opportunities, measure impact and build
+            confidence before broader rollout.
           </p>
 
           <div className="pilotHeroActions">
@@ -51,9 +56,9 @@ export default function PilotProgramPage() {
           </h2>
 
           <span>
-            The pilot model is designed to reduce commercial and operational
-            risk by validating the opportunity using a focused site, clear
-            scope and measurable outcomes.
+            The pilot model reduces commercial and operational risk by validating
+            the opportunity across a focused building, site, asset type or
+            connected energy workflow using measurable outcomes.
           </span>
         </div>
 
@@ -62,8 +67,8 @@ export default function PilotProgramPage() {
             <Target />
             <h3>Focused scope</h3>
             <p>
-              Start with one building, site or operational use case before
-              expanding across a wider portfolio.
+              Start with one building, site, connected asset or operational use
+              case before expanding across a wider portfolio.
             </p>
           </div>
 
@@ -71,8 +76,8 @@ export default function PilotProgramPage() {
             <Gauge />
             <h3>Measurable baseline</h3>
             <p>
-              Compare operational energy behaviour against a baseline to
-              identify variance and optimisation opportunity.
+              Compare energy behaviour, asset performance and operational
+              patterns against a baseline to identify optimisation opportunities.
             </p>
           </div>
 
@@ -80,8 +85,8 @@ export default function PilotProgramPage() {
             <LineChart />
             <h3>Savings evidence</h3>
             <p>
-              Build a practical savings and ROI view to support internal
-              decision-making.
+              Build a practical savings, carbon and ROI view to support internal
+              decision-making and future investment.
             </p>
           </div>
 
@@ -89,8 +94,8 @@ export default function PilotProgramPage() {
             <ShieldCheck />
             <h3>Governed adoption</h3>
             <p>
-              Keep facility teams in control through review, approval and
-              staged rollout.
+              Keep operational teams in control through review, approval,
+              human-in-the-loop workflows and staged rollout.
             </p>
           </div>
         </div>
@@ -110,27 +115,27 @@ export default function PilotProgramPage() {
             {
               icon: Search,
               title: "Discovery",
-              text: "Review facilities, systems, energy data availability and operational pain points.",
+              text: "Review facilities, BMS, meters, Solar PV, Battery Storage, EV Charging, IoT devices, available data and operational pain points.",
             },
             {
               icon: ClipboardCheck,
               title: "Pilot Scope",
-              text: "Select a focused building, scenario or portfolio segment for validation.",
+              text: "Select a focused building, site, connected asset group or optimisation scenario for validation.",
             },
             {
               icon: Zap,
               title: "Optimisation Review",
-              text: "Identify priority inefficiencies such as demand spikes, after-hours load or HVAC issues.",
+              text: "Identify priority inefficiencies such as demand spikes, after-hours load, HVAC issues, solar underperformance, battery usage or EV charging impact.",
             },
             {
               icon: LineChart,
               title: "Measure Impact",
-              text: "Estimate operational, cost and emissions impact using pilot evidence.",
+              text: "Estimate operational, cost, carbon and asset performance impact using pilot evidence.",
             },
             {
               icon: Handshake,
               title: "Commercial Decision",
-              text: "Use the pilot outcome to decide whether to scale, refine or expand.",
+              text: "Use the pilot outcome to decide whether to scale, refine, expand or integrate additional connected energy assets.",
             },
           ].map((item, index) => {
             const Icon = item.icon;
@@ -158,14 +163,14 @@ export default function PilotProgramPage() {
             <p>What the pilot validates</p>
 
             <h2>
-              Clear evidence for operational, financial and sustainability value.
+              Clear evidence for operational, financial, carbon and asset value.
             </h2>
 
             <span>
               The pilot is not intended to replace existing systems. It is
-              designed to identify where intelligence, visibility and
-              optimisation can create measurable value using a controlled
-              deployment model.
+              designed to show where the AI Energy Gateway, Digital Twin and AI
+              Decision Agents can create measurable value across buildings and
+              connected energy infrastructure.
             </span>
           </div>
 
@@ -182,7 +187,12 @@ export default function PilotProgramPage() {
 
             <div>
               <CheckCircle2 />
-              <span>Peak demand and HVAC optimisation opportunities</span>
+              <span>Peak demand, HVAC and building optimisation opportunities</span>
+            </div>
+
+            <div>
+              <CheckCircle2 />
+              <span>Solar PV, Battery Storage, EV Charging and Smart Meter readiness</span>
             </div>
 
             <div>
@@ -192,7 +202,7 @@ export default function PilotProgramPage() {
 
             <div>
               <CheckCircle2 />
-              <span>Readiness for broader rollout</span>
+              <span>Readiness for broader rollout across connected assets</span>
             </div>
           </div>
         </div>
@@ -203,12 +213,13 @@ export default function PilotProgramPage() {
           <p>Suitable pilot environments</p>
 
           <h2>
-            Designed for organisations managing buildings, campuses and portfolios.
+            Designed for organisations managing buildings, campuses and connected energy assets.
           </h2>
         </div>
 
         <div className="pilotAudienceGrid">
           <div>
+            <Building2 />
             <strong>Local Government</strong>
             <span>
               Civic centres, libraries, depots, community facilities and
@@ -217,23 +228,62 @@ export default function PilotProgramPage() {
           </div>
 
           <div>
-            <strong>Universities</strong>
+            <Building2 />
+            <strong>Universities & Campuses</strong>
             <span>
-              Campuses, learning spaces, administration buildings and facilities
-              teams seeking operational energy insight.
+              Learning spaces, administration buildings, research facilities and
+              campuses seeking operational energy intelligence.
             </span>
           </div>
 
           <div>
+            <Building2 />
             <strong>Commercial Buildings</strong>
             <span>
-              Offices, mixed-use assets and managed buildings where operational
-              efficiency and cost control matter.
+              Offices, mixed-use assets and managed buildings where efficiency,
+              cost control and carbon visibility matter.
             </span>
           </div>
 
           <div>
-            <strong>Property Portfolios</strong>
+            <Sun />
+            <strong>Solar PV Sites</strong>
+            <span>
+              Sites with rooftop or distributed solar seeking generation,
+              utilisation and performance visibility.
+            </span>
+          </div>
+
+          <div>
+            <BatteryCharging />
+            <strong>Battery Storage</strong>
+            <span>
+              Battery Energy Storage Systems requiring charge, discharge,
+              health and peak-shaving optimisation insights.
+            </span>
+          </div>
+
+          <div>
+            <PlugZap />
+            <strong>EV Charging Infrastructure</strong>
+            <span>
+              EV charging sites where load impact, scheduling and demand
+              management are important.
+            </span>
+          </div>
+
+          <div>
+            <Gauge />
+            <strong>Smart Meters & IoT</strong>
+            <span>
+              Metered environments with import, export, demand, tariff and
+              operational sensor data.
+            </span>
+          </div>
+
+          <div>
+            <LineChart />
+            <strong>Property & Energy Portfolios</strong>
             <span>
               Multi-site owners or operators seeking scalable visibility,
               optimisation and savings evidence.
@@ -258,7 +308,7 @@ export default function PilotProgramPage() {
 
         <ul>
           <li>
-            <CheckCircle2 /> Operational energy opportunity summary
+            <CheckCircle2 /> Connected energy asset opportunity summary
           </li>
 
           <li>
@@ -266,7 +316,11 @@ export default function PilotProgramPage() {
           </li>
 
           <li>
-            <CheckCircle2 /> Estimated cost and emissions impact
+            <CheckCircle2 /> Estimated cost, carbon and asset impact
+          </li>
+
+          <li>
+            <CheckCircle2 /> AI Energy Gateway integration assessment
           </li>
 
           <li>
@@ -281,8 +335,8 @@ export default function PilotProgramPage() {
         </h2>
 
         <p>
-          Start with a discovery discussion to understand your facilities,
-          operational challenges and potential pilot scope.
+          Start with a discovery discussion to understand your buildings,
+          connected energy assets, operational challenges and potential pilot scope.
         </p>
 
         <Link to="/" className="pilotPrimary">

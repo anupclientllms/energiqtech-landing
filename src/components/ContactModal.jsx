@@ -39,13 +39,14 @@ export default function ContactModal({ isOpen, onClose }) {
 
         {!submitted ? (
           <>
-            <div className="modalBadge">Pilot Program Active</div>
+            <div className="modalBadge">Pilot Program Open</div>
 
             <h2>Start a pilot discussion</h2>
 
             <p>
-              We’re onboarding early partners to validate measurable energy
-              savings, demand optimisation and ROI using EnergIQ Tech.
+              We’re onboarding early pilot partners to validate measurable energy
+              savings, demand optimisation, carbon impact and ROI across buildings
+              and connected energy assets.
             </p>
 
             <form onSubmit={handlePilotSubmit} className="pilotForm">
@@ -54,7 +55,10 @@ export default function ContactModal({ isOpen, onClose }) {
               <input name="name" placeholder="Name" required />
               <input name="email" type="email" placeholder="Work Email" required />
               <input name="organisation" placeholder="Organisation" required />
-              <textarea name="message" placeholder="Use case / building type / pilot interest" />
+              <textarea
+                name="message"
+                placeholder="Use case / site type / connected assets e.g. BMS, Solar PV, Battery, EV Charging, Smart Meters"
+              />
 
               <button type="submit" className="primary modalSubmit" disabled={sending}>
                 {sending ? "Sending..." : "Request Pilot Discussion"}

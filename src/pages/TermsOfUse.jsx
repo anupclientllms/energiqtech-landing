@@ -36,7 +36,7 @@ export default function TermsOfUse() {
         <p>
           This website is provided for general informational purposes regarding
           EnergIQ Tech, its products, services, pilot programs, commercial
-          offerings, technology capabilities and business activities.
+          offerings, technology capabilities, AI Energy Platform, connected energy asset solutions and commercialisation activities.
         </p>
 
         <p>
@@ -47,11 +47,13 @@ export default function TermsOfUse() {
         <h2>3. Intellectual property</h2>
 
         <p>
-          All website content, software concepts, AI workflows, gateway
-          architecture, digital twin concepts, visualisations, documentation,
-          graphics, logos, demonstrations, reports, presentations and related
-          materials are owned by Automation Spectrum Pty Ltd and/or EnergIQ Tech
-          unless otherwise stated.
+          All website content, software concepts, AI workflows, AI Energy Gateway
+          technologies, Digital Twin methodologies, AI Decision Agents,
+          connected energy asset integration methods, Distributed Energy Resource
+          (DER) architectures, optimisation workflows, software,
+          documentation, graphics, logos, demonstrations, reports,
+          presentations and related materials are owned by Automation Spectrum Pty Ltd
+          and/or EnergIQ Tech unless otherwise stated.
         </p>
 
         <p>
@@ -65,9 +67,14 @@ export default function TermsOfUse() {
         <p>
           Access to this website does not grant any licence, right, title or
           interest in any software, source code, AI models, workflows,
-          algorithms, system architecture, digital twin methodologies, gateway
-          technologies or other intellectual property associated with EnergIQ
-          Tech.
+          algorithms, system architecture, digital twin methodologies, AI Energy Gateway technologies,
+          Digital Twin methodologies,
+          AI Decision Agents,
+          connected energy asset integration methods,
+          Distributed Energy Resource orchestration,
+          algorithms,
+          software,
+          system architecture or other intellectual property associated with EnergIQ Tech.
         </p>
 
         <h2>5. Confidential and proprietary concepts</h2>
@@ -103,9 +110,16 @@ export default function TermsOfUse() {
 
         <p>
           Any references to pilot programs, demonstrations, simulations,
-          estimated savings, projected outcomes, future product capabilities or
-          commercial roadmaps are provided for informational purposes only and
-          do not constitute guarantees of performance or future results.
+          estimated savings, projected outcomes, future product capabilities, Building Management Systems (BMS),
+          Solar PV,
+          Battery Energy Storage Systems (BESS),
+          EV Charging,
+          Smart Meter integration,
+          IoT infrastructure,
+          Distributed Energy Resources (DER)
+          and commercial roadmaps are provided for informational purposes only and
+          do not constitute guarantees of performance or future results. 
+          Descriptions of current or future platform capabilities should not be interpreted as commitments that every capability is currently deployed or commercially available in all environments.
         </p>
 
         <h2>8. Third-party links</h2>

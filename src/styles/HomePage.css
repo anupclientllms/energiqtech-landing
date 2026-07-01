@@ -1709,6 +1709,48 @@ button {
   border-radius: 50%;
   border: 2px solid white;
 }
+
+
+.connectedAssets{
+    margin:18px 0;
+    padding:14px 18px;
+    background:#f8fbff;
+    border:1px solid #dfe8f4;
+    border-radius:16px;
+}
+
+.connectedAssets small{
+    display:block;
+    font-size:12px;
+    color:#667085;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.assetBadges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.asset{
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    border:1px solid #d9e4ef;
+}
+
+.asset.active{
+    background:#eafaf1;
+    color:#0f8b4c;
+    border-color:#8ed7ac;
+}
+
+.asset.future{
+    background:#f5f7fb;
+    color:#5f6b7a;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1100px) {

@@ -45,6 +45,10 @@ export default function IntellectualProperty() {
           <li>AI workflows, decision logic and multi-agent orchestration</li>
           <li>AI Energy Gateway concepts, architecture and integration methods</li>
           <li>Digital Twin workflows, visualisations and operational models</li>
+          <li>Building Management System (BMS), Solar PV, Battery Energy Storage (BESS), EV Charging, Smart Meter, IoT and Distributed Energy Resource (DER) integration architectures</li>
+          <li>Energy data normalisation, analytics, forecasting, optimisation and orchestration methods</li>
+          <li>AI Decision Agents, Human-in-the-loop workflows, recommendation engines and operational governance processes</li>
+          <li>Distributed Energy Resource orchestration, optimisation and control methodologies</li>
           <li>Energy data normalisation, analytics and optimisation methods</li>
           <li>Human-in-the-loop approval workflows and control processes</li>
           <li>Reports, presentations, proposals, demonstrations and documentation</li>
@@ -57,7 +61,8 @@ export default function IntellectualProperty() {
           Accessing, viewing, downloading or interacting with this website does
           not grant any licence, right, title or interest in any EnergIQ Tech
           software, source code, workflows, AI models, algorithms, system
-          architecture, Digital Twin methods, gateway technologies,
+          architecture, Digital Twin methods, AI Energy Gateway technologies, connected energy asset integration methods,
+          Digital Twin architectures, Decision Agent workflows, Distributed Energy Resource orchestration,
           documentation, designs or related intellectual property.
         </p>
 
@@ -78,10 +83,17 @@ export default function IntellectualProperty() {
         <h2>5. Confidential and proprietary technology</h2>
 
         <p>
-          Certain EnergIQ Tech platform components, methods, workflows,
-          architectures, software designs, algorithms, data processes and
-          operational models may be confidential, proprietary and protected as
-          trade secrets.
+          Certain EnergIQ Tech Certain EnergIQ Tech platform components, AI Energy Gateway technologies,
+          Digital Twin models, AI Decision Agents,
+          Distributed Energy Resource orchestration methods,
+          energy optimisation algorithms,
+          connected asset integration approaches,
+          software architectures,
+          operational workflows,
+          data processing techniques
+          and control methodologies
+          may constitute confidential information,
+          trade secrets and proprietary intellectual property. 
         </p>
 
         <p>
@@ -91,10 +103,19 @@ export default function IntellectualProperty() {
           intellectual property rights.
         </p>
 
-        <h2>6. Trademarks and brand assets</h2>
+        <h2>6. Connected Energy Platform</h2>
 
         <p>
-          EnergIQ Tech, AI Energy Gateway and related names, logos, icons,
+          The EnergIQ Tech platform is designed to support operational optimisation across commercial buildings and connected energy infrastructure, including Building Management Systems (BMS), Solar PV, Battery Energy Storage Systems (BESS), EV Charging Infrastructure, Smart Meters, IoT devices and other Distributed Energy Resources (DER).
+
+          Descriptions of these capabilities on this website are provided for informational purposes only and do not grant any licence, ownership interest or right to reproduce, implement or commercialise any associated methodologies, software or intellectual property.
+        </p>
+
+        <h2>7. Trademarks and brand assets</h2>
+
+        <p>
+          EnergIQ Tech, AI Energy Gateway, EnergIQ Software, Digital Twin Intelligence, Decision Agents,
+          Savings Intelligence and related names, logos, icons,
           slogans and brand assets may function as trademarks or trade indicia
           of Automation Spectrum Pty Ltd and/or EnergIQ Tech.
         </p>
@@ -105,7 +126,7 @@ export default function IntellectualProperty() {
           relationship with EnergIQ Tech without written permission.
         </p>
 
-        <h2>7. Copyright</h2>
+        <h2>8. Copyright</h2>
 
         <p>
           Website content, documentation, visual materials, software-related
@@ -114,7 +135,7 @@ export default function IntellectualProperty() {
           distribution or commercial use is prohibited.
         </p>
 
-        <h2>8. Pilot, customer and partner materials</h2>
+        <h2>9. Pilot, customer and partner materials</h2>
 
         <p>
           Any pilot proposals, technical documentation, demonstrations,
@@ -126,10 +147,13 @@ export default function IntellectualProperty() {
         <p>
           No customer, partner, investor, grant assessor or website visitor
           receives ownership rights in EnergIQ Tech technology, software,
-          architecture or intellectual property by reviewing such materials.
+          AI models, Digital Twin technology, AI Energy Gateway, Decision Agents,
+          Distributed Energy Resource integration methods,
+          connected asset workflows,
+          system architecture or intellectual property by reviewing such materials.
         </p>
 
-        <h2>9. Government, grant and investor review</h2>
+        <h2>10. Government, grant and investor review</h2>
 
         <p>
           Materials shared for commercialisation, grant assessment, investor
@@ -143,13 +167,37 @@ export default function IntellectualProperty() {
           or commercialise EnergIQ Tech materials without written agreement.
         </p>
 
-        <h2>10. Future intellectual property rights</h2>
+        <h2>11. Future intellectual property rights</h2>
 
         <p>
           EnergIQ Tech may seek trademark, patent, design, copyright or other
           intellectual property protection for current or future technology,
           products, services, methods, workflows, brands or platform
           capabilities.
+
+          Future protection may include, but is not limited to:
+
+          • AI Energy Gateway technologies
+
+          • Digital Twin methodologies
+
+          • Connected Energy Asset integration
+
+          • Distributed Energy Resource orchestration
+
+          • AI Decision Agents
+
+          • Operational optimisation workflows
+
+          • Human-in-the-loop governance methods
+
+          • Forecasting, recommendation and optimisation algorithms
+
+          • Software platforms
+
+          • Hardware reference architectures
+
+          • Trademarks, brands and visual assets
         </p>
 
         <p>
@@ -158,7 +206,7 @@ export default function IntellectualProperty() {
           intellectual property rights in the future.
         </p>
 
-        <h2>11. Reporting misuse</h2>
+        <h2>12. Reporting misuse</h2>
 
         <p>
           If you believe EnergIQ Tech materials, brand assets or technology
@@ -180,9 +228,17 @@ export default function IntellectualProperty() {
         </p>
 
         <div className="legalDisclaimer">
-          © 2026 EnergIQ Tech. All rights reserved.
+          © 2026 EnergIQ Tech.
 
-          Developed and owned by Automation Spectrum Pty Ltd.
+          All AI Energy Gateway technologies,
+          Digital Twin methodologies,
+          Decision Agent workflows,
+          connected energy asset integration methods,
+          software,
+          documentation,
+          designs
+          and associated intellectual property
+          are developed & owned by Automation Spectrum Pty Ltd unless otherwise stated.
         </div>
       </section>
     </main>

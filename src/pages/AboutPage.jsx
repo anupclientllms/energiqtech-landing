@@ -1,16 +1,20 @@
 import "../styles/AboutPage.css";
 import { Link } from "react-router-dom";
 import {
+  BatteryCharging,
+  Building2,
   CheckCircle2,
   ChevronRight,
-  Building2,
   Leaf,
   LineChart,
   MapPinned,
+  PlugZap,
   ShieldCheck,
+  Sun,
   Target,
   Users,
   Zap,
+  Gauge,
 } from "lucide-react";
 
 export default function AboutPage() {
@@ -21,14 +25,13 @@ export default function AboutPage() {
           <p className="aboutEyebrow">About EnergIQ Tech</p>
 
           <h1>
-            Helping organisations move from energy monitoring to intelligent optimisation.
+            Helping organisations move from energy monitoring to intelligent energy operations.
           </h1>
 
           <p>
-            EnergIQ Tech is developing AI-powered operational energy optimisation
-            capabilities for councils, universities, facilities and building
-            portfolios seeking measurable savings, emissions visibility and
-            safer operational decision-making.
+            EnergIQ Tech is developing an AI Energy Platform for commercial buildings,
+            campuses and connected energy assets, including Building Management Systems,
+            Solar PV, Battery Storage, EV Charging, Smart Meters and IoT infrastructure.
           </p>
 
           <div className="aboutHeroActions">
@@ -48,23 +51,23 @@ export default function AboutPage() {
           <p>Who we are</p>
 
           <h2>
-            A practical energy technology company focused on operational outcomes.
+            A practical energy technology company focused on connected asset optimisation.
           </h2>
 
           <span>
-            EnergIQ Tech is being built to help facility, sustainability and
-            asset teams identify operational inefficiencies, understand savings
-            opportunities and validate energy optimisation pathways before scaling.
+            EnergIQ Tech is being built to help facility, sustainability, energy and
+            asset teams identify inefficiencies, understand optimisation opportunities
+            and validate measurable outcomes before scaling.
           </span>
         </div>
 
         <div className="aboutCompanyGrid">
           <div>
             <Zap />
-            <strong>Operational energy focus</strong>
+            <strong>Connected energy focus</strong>
             <span>
-              Designed around real building operations, demand patterns, HVAC
-              behaviour and energy waste scenarios.
+              Designed around real operational environments including buildings,
+              meters, Solar PV, Battery Storage, EV Charging and IoT-connected assets.
             </span>
           </div>
 
@@ -81,7 +84,7 @@ export default function AboutPage() {
             <Leaf />
             <strong>Savings and emissions visibility</strong>
             <span>
-              Supports cost, energy and emissions impact assessment for
+              Supports cost, energy, carbon and asset impact assessment for
               operational decision-making.
             </span>
           </div>
@@ -105,11 +108,10 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            Many organisations already collect energy data, but still struggle to
-            translate that information into confident operational action. EnergIQ
-            Tech is being developed to bridge that gap through operational
-            visibility, digital twin context, savings evidence and governed
-            AI-assisted workflows.
+            Many organisations already collect energy and asset data, but still
+            struggle to translate that information into confident operational action.
+            EnergIQ Tech bridges that gap through the AI Energy Gateway, Digital Twin
+            context, savings intelligence and governed AI-assisted workflows.
           </span>
         </div>
       </section>
@@ -128,7 +130,8 @@ export default function AboutPage() {
             <CheckCircle2 />
             <h3>Problem-first approach</h3>
             <p>
-              Start with operational pain points, not technology assumptions.
+              Start with operational pain points, asset behaviour and measurable
+              energy outcomes, not technology assumptions.
             </p>
           </div>
 
@@ -144,7 +147,7 @@ export default function AboutPage() {
             <CheckCircle2 />
             <h3>Clear savings narrative</h3>
             <p>
-              Translate operational findings into business-case evidence.
+              Translate operational findings into cost, carbon and business-case evidence.
             </p>
           </div>
 
@@ -152,7 +155,8 @@ export default function AboutPage() {
             <CheckCircle2 />
             <h3>Designed for existing environments</h3>
             <p>
-              Works around current buildings, systems, teams and operational constraints.
+              Works around current buildings, systems, meters, assets, teams and
+              operational constraints.
             </p>
           </div>
 
@@ -183,9 +187,9 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            EnergIQ Tech is focused on helping teams understand where energy is
-            being wasted, why it is happening, what actions may reduce the
-            impact and whether the opportunity is strong enough to justify scale.
+            EnergIQ Tech helps teams understand where energy is being wasted,
+            why it is happening, which assets are affected, what actions may
+            reduce the impact and whether the opportunity is strong enough to scale.
           </span>
         </div>
 
@@ -194,7 +198,8 @@ export default function AboutPage() {
             <MapPinned />
             <strong>Locate</strong>
             <span>
-              Identify where abnormal usage or operational inefficiency is occurring.
+              Identify where abnormal usage, asset inefficiency or operational
+              variance is occurring.
             </span>
           </div>
 
@@ -202,7 +207,8 @@ export default function AboutPage() {
             <LineChart />
             <strong>Analyse</strong>
             <span>
-              Understand demand patterns, baselines, variance and likely impact.
+              Understand demand patterns, asset performance, baselines, variance
+              and likely impact.
             </span>
           </div>
 
@@ -218,7 +224,7 @@ export default function AboutPage() {
             <CheckCircle2 />
             <strong>Validate</strong>
             <span>
-              Build evidence for savings, emissions impact and pilot outcomes.
+              Build evidence for savings, emissions impact, asset outcomes and pilot value.
             </span>
           </div>
         </div>
@@ -233,17 +239,17 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            EnergIQ Tech is designed around a pilot-first commercialisation
-            pathway. Rather than asking organisations to commit to a large
-            deployment upfront, the focus is on validating measurable value in a
-            controlled environment first.
+            EnergIQ Tech is designed around a pilot-first commercialisation pathway.
+            Rather than asking organisations to commit to large deployment upfront,
+            the focus is on validating measurable value across a controlled site,
+            building or connected energy asset workflow first.
           </span>
         </div>
 
         <div className="aboutPilotList">
           <div>
             <CheckCircle2 />
-            <span>Focused discovery and site review</span>
+            <span>Focused discovery and connected asset review</span>
           </div>
 
           <div>
@@ -262,6 +268,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
       <section className="aboutSection">
         <div className="aboutSectionHeader">
           <p>Industry Engagement & Commercialisation</p>
@@ -292,8 +299,8 @@ export default function AboutPage() {
             <CheckCircle2 />
             <h3>Local Government Engagement</h3>
             <p>
-              Active pilot discussions with local government stakeholders to
-              explore operational energy optimisation opportunities.
+              Active pilot discussions with local government stakeholders to explore
+              operational energy optimisation and connected asset opportunities.
             </p>
           </div>
 
@@ -302,7 +309,7 @@ export default function AboutPage() {
             <h3>University Outreach</h3>
             <p>
               Sustainability and facilities engagement underway with universities
-              seeking practical energy and emissions reduction initiatives.
+              seeking practical energy, emissions and operational improvement initiatives.
             </p>
           </div>
 
@@ -310,8 +317,8 @@ export default function AboutPage() {
             <CheckCircle2 />
             <h3>Pilot & Scale Strategy</h3>
             <p>
-              Focused on measurable operational energy savings, pilot validation,
-              deployment scalability and long-term commercial growth.
+              Focused on measurable energy savings, connected asset intelligence,
+              pilot validation, deployment scalability and long-term commercial growth.
             </p>
           </div>
         </div>
@@ -322,7 +329,7 @@ export default function AboutPage() {
           <p>Market focus</p>
 
           <h2>
-            Built for organisations managing energy across buildings and portfolios.
+            Built for organisations managing buildings, campuses and connected energy assets.
           </h2>
         </div>
 
@@ -338,25 +345,61 @@ export default function AboutPage() {
 
           <div>
             <Users />
-            <strong>Universities</strong>
+            <strong>Universities & Campuses</strong>
             <span>
               Campuses, facilities teams, sustainability teams and operational
-              environments with complex building usage.
+              environments with complex energy usage.
             </span>
           </div>
 
           <div>
             <Building2 />
-            <strong>Commercial facilities</strong>
+            <strong>Commercial Facilities</strong>
             <span>
-              Buildings and managed assets where energy performance, comfort and
-              cost control matter.
+              Buildings and managed assets where energy performance, comfort,
+              carbon visibility and cost control matter.
+            </span>
+          </div>
+
+          <div>
+            <Sun />
+            <strong>Solar PV Sites</strong>
+            <span>
+              Sites with rooftop or distributed solar seeking generation,
+              utilisation and performance visibility.
+            </span>
+          </div>
+
+          <div>
+            <BatteryCharging />
+            <strong>Battery Storage</strong>
+            <span>
+              Battery Energy Storage Systems requiring charge, discharge,
+              health and peak-shaving optimisation insights.
+            </span>
+          </div>
+
+          <div>
+            <PlugZap />
+            <strong>EV Charging</strong>
+            <span>
+              Charging infrastructure where load impact, scheduling and demand
+              management are important.
+            </span>
+          </div>
+
+          <div>
+            <Gauge />
+            <strong>Smart Meters & IoT</strong>
+            <span>
+              Metered environments with import, export, demand, tariff and
+              operational sensor data.
             </span>
           </div>
 
           <div>
             <LineChart />
-            <strong>Portfolio operators</strong>
+            <strong>Portfolio Operators</strong>
             <span>
               Multi-site organisations seeking scalable visibility, savings
               evidence and operational intelligence.
@@ -371,8 +414,8 @@ export default function AboutPage() {
         </h2>
 
         <p>
-          Start with a pilot discussion to review your facilities, operational
-          challenges and potential optimisation opportunities.
+          Start with a pilot discussion to review your facilities, connected energy
+          assets, operational challenges and potential optimisation opportunities.
         </p>
 
         <Link to="/pilot-program" className="aboutPrimary">
