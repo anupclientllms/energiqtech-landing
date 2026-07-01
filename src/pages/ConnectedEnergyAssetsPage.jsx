@@ -187,37 +187,35 @@ export default function ConnectedEnergyAssetsPage() {
 
       <section className="ceaEvolution">
         <div className="ceaEvolutionText">
-          <p>Platform evolution</p>
-          <h2>Commercial buildings are the first deployment pathway.</h2>
+          <p>CONNECTED ENERGY PLATFORM</p>
+          <h2>One intelligent platform connecting buildings, DER and future grid participation.</h2>
           <span>
-            EnergIQ Tech starts with practical commercial building pilots while
-            the same AI Energy Gateway architecture supports expansion into
-            connected DER optimisation and future grid participation.
+            EnergIQ Tech connects Building Management Systems, Distributed Energy Resources (DER), AI decision intelligence and future grid integration through a common AI Energy Gateway. The same platform supports operational optimisation today while providing a pathway to demand response, flexible loads and future market participation.
           </span>
         </div>
 
         <div className="ceaPhases">
           <div>
             <b>1</b>
-            <strong>Commercial Buildings</strong>
+            <strong>Commercial Buildings Systems</strong>
             <span>BMS, HVAC, peak demand, Digital Twin and AI Gateway pilots.</span>
           </div>
 
           <div>
             <b>2</b>
-            <strong>Connected Energy Assets</strong>
+            <strong>Connected DER Assets</strong>
             <span>Solar PV, BESS, EV Charging, Smart Meters and IoT integration.</span>
           </div>
 
           <div>
             <b>3</b>
-            <strong>DER Optimisation</strong>
+            <strong>AI Intelligence Layer</strong>
             <span>Tariffs, forecasts, battery optimisation and scheduled loads.</span>
           </div>
 
           <div>
             <b>4</b>
-            <strong>Grid Participation</strong>
+            <strong>Grid Integration Pathways</strong>
             <span>Retailer, aggregator, DNSP and AEMO-related market pathways.</span>
           </div>
         </div>
