@@ -46,6 +46,10 @@ export default function Navbar({ openPilotModal }) {
               Operational Energy Optimisation
             </Link>
 
+            <Link to="/ai-energy-gateway" onClick={closeMenu}>
+              AI Energy Gateway
+            </Link>
+            
             <Link to="/connected-energy-assets" onClick={closeMenu}>
               Connected Energy Assets
             </Link>

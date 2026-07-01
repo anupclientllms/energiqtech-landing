@@ -15,6 +15,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicyPage";
 import TermsOfUse from "./pages/TermsOfUse";
 import IntellectualProperty from "./pages/IntellectualPropertyPage";
 import ConnectedEnergyAssetsPage from "./pages/ConnectedEnergyAssetsPage";
+import AIEnergyGatewayPage from "./pages/AIEnergyGatewayPage";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/intellectual-property" element={<IntellectualProperty />} />
         <Route path="/connected-energy-assets" element = {<ConnectedEnergyAssetsPage />}  />
+        <Route path="/ai-energy-gateway" element = {<AIEnergyGatewayPage />} />
         
         
         
