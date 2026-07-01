@@ -7,12 +7,12 @@
 /* HERO */
 
 .gatewayHero {
-  padding: 110px 7% 90px;
+  padding: 105px 7% 90px;
   background: linear-gradient(135deg, #071733, #0f4960);
   color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 70px;
   align-items: center;
 }
 
@@ -22,7 +22,6 @@
 
 .gatewayEyebrow,
 .gatewaySectionHeader p,
-.gatewayPanel p,
 .gatewayProof p {
   color: #2f66f6;
   text-transform: uppercase;
@@ -38,7 +37,7 @@
 }
 
 .gatewayHero h1 {
-  font-size: clamp(52px, 5.6vw, 86px);
+  font-size: clamp(48px, 5.2vw, 82px);
   line-height: 1;
   letter-spacing: -0.055em;
   font-weight: 950;
@@ -78,9 +77,9 @@
 }
 
 .gatewaySecondary {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255,255,255,0.12);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255,255,255,0.25);
 }
 
 /* HERO VISUAL */
@@ -91,7 +90,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
 }
 
 .gatewayCore {
@@ -99,8 +97,8 @@
   min-height: 230px;
   border-radius: 34px;
   background: linear-gradient(135deg, #102e56, #071733);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 0 70px rgba(47, 102, 246, 0.35);
+  border: 1px solid rgba(255,255,255,0.22);
+  box-shadow: 0 0 70px rgba(47,102,246,0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,8 +131,8 @@
   width: 170px;
   min-height: 125px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.22);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,42 +151,18 @@
   height: 30px;
 }
 
-.node1 {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+.node1 { top: 0; left: 50%; transform: translateX(-50%); }
+.node2 { top: 90px; right: -20px; }
+.node3 { top: 310px; right: -20px; }
+.node4 { bottom: -5px; left: 50%; transform: translateX(-50%); }
+.node5 { top: 310px; left: -20px; }
+.node6 { top: 90px; left: -20px; }
 
-.node2 {
-  top: 90px;
-  right: -35px;
-}
-
-.node3 {
-  top: 300px;
-  right: -35px;
-}
-
-.node4 {
-  bottom: -10px;
-  left: 250px;
-}
-
-.node5 {
-  top: 300px;
-  left: -35px;
-}
-
-.node6 {
-  top: 90px;
-  left: -35px;
-}
-
-/* GENERAL SECTIONS */
+/* SHARED SECTIONS */
 
 .gatewaySection,
-.gatewaySplit,
-.gatewayProof {
+.gatewayProof,
+.gatewayInteroperability {
   padding: 95px 7%;
 }
 
@@ -199,7 +173,6 @@
 }
 
 .gatewaySectionHeader h2,
-.gatewayPanel h2,
 .gatewayProof h2,
 .gatewayCTA h2 {
   font-size: clamp(42px, 4.7vw, 72px);
@@ -210,7 +183,6 @@
 }
 
 .gatewaySectionHeader span,
-.gatewayPanel span,
 .gatewayProof span,
 .gatewayCTA p {
   color: #526a8d;
@@ -218,7 +190,7 @@
   line-height: 1.7;
 }
 
-/* CARDS */
+/* WHY GATEWAY */
 
 .gatewayGrid {
   display: grid;
@@ -228,13 +200,14 @@
 
 .gatewayGrid > div,
 .gatewayStep,
-.gatewayPanel,
-.gatewayAssetMap > div {
+.gatewayAssetMap > div,
+.protocolGroupGrid > div,
+.gatewayFutureGrid > div {
   background: #fff;
   border: 1px solid #d8e4f3;
   border-radius: 24px;
   padding: 32px;
-  box-shadow: 0 16px 40px rgba(7, 23, 51, 0.06);
+  box-shadow: 0 16px 40px rgba(7,23,51,0.06);
 }
 
 .gatewayGrid svg,
@@ -267,13 +240,10 @@
 
 .gatewaySectionHeader.dark {
   max-width: 1100px;
-  margin-bottom: 58px;
-  background: transparent;
 }
 
 .gatewaySectionHeader.dark h2 {
   color: #fff;
-  font-size: clamp(44px, 5vw, 74px);
 }
 
 .gatewaySectionHeader.dark span {
@@ -355,59 +325,32 @@
   color: #27e68b;
 }
 
-/* SPLIT */
+/* INTEROPERABILITY */
 
-.gatewaySplit {
+.gatewayInteroperability {
+  background: #eef4fb;
+}
+
+.protocolGroupGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  background: #fff;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-.gatewayPanel {
-  min-height: 420px;
-}
-
-.gatewayPanel.light {
-  background: #f4f8fd;
-}
-
-.gatewayPanel ul,
-.gatewayProof ul {
-  list-style: none;
-  padding: 0;
-  margin: 28px 0 0;
-  display: grid;
-  gap: 16px;
-}
-
-.gatewayPanel li,
-.gatewayProof li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+.protocolGroupGrid h3 {
+  font-size: 26px;
+  font-weight: 950;
+  margin-bottom: 22px;
   color: #071733;
-  font-weight: 850;
 }
 
-.gatewayPanel li svg,
-.gatewayProof li svg {
-  color: #22d982;
-  flex-shrink: 0;
-}
-
-.protocolGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 32px;
-}
-
-.protocolGrid span {
-  background: #fff;
+.protocolGroupGrid span {
+  display: block;
+  background: #f4f8fd;
   border: 1px solid #d8e4f3;
   border-radius: 999px;
   padding: 14px 18px;
+  margin-bottom: 14px;
   font-weight: 900;
   text-align: center;
   color: #071733;
@@ -422,13 +365,8 @@
 }
 
 .gatewayFutureGrid > div {
-  background: #fff;
-  border: 1px solid #d8e4f3;
-  border-radius: 24px;
   min-height: 170px;
-  padding: 28px;
   text-align: center;
-  box-shadow: 0 16px 40px rgba(7, 23, 51, 0.06);
 }
 
 .gatewayFutureGrid svg {
@@ -447,7 +385,7 @@
 .gatewayFutureGrid .active {
   background: #071733;
   color: #fff;
-  box-shadow: 0 0 50px rgba(47, 102, 246, 0.25);
+  box-shadow: 0 0 50px rgba(47,102,246,0.25);
 }
 
 .gatewayFutureGrid .active svg {
@@ -464,11 +402,29 @@
   align-items: center;
 }
 
+.gatewayProof ul {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: grid;
+  gap: 16px;
+}
+
 .gatewayProof li {
   background: #f4f8fd;
   border: 1px solid #d8e4f3;
   border-radius: 18px;
   padding: 18px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #071733;
+  font-weight: 850;
+}
+
+.gatewayProof li svg {
+  color: #22d982;
+  flex-shrink: 0;
 }
 
 /* CTA */
@@ -495,94 +451,6 @@
 
 .gatewayCTA .gatewayPrimary {
   margin: 0 auto;
-}
-
-
-.protocolGroups{
-    display:flex;
-    flex-direction:column;
-    gap:38px;
-    margin-top:36px;
-}
-
-.protocolGroup h3{
-    margin-bottom:18px;
-    font-size:1.2rem;
-    font-weight:700;
-    color:#0d1b43;
-}
-
-.protocolGrid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-    gap:18px;
-}
-
-.protocolGrid span{
-    background:#fff;
-    border:1px solid #d8e4ff;
-    border-radius:999px;
-    padding:16px 22px;
-    text-align:center;
-    font-weight:700;
-    color:#0d1b43;
-    transition:.25s;
-}
-
-.protocolGrid span:hover{
-    transform:translateY(-2px);
-    box-shadow:0 10px 24px rgba(0,0,0,.08);
-}
-
-.gatewayNote{
-    margin-top:36px;
-    color:#5c6f90;
-    line-height:1.8;
-    max-width:900px;
-}
-
-.gatewayInteroperability {
-  padding: 95px 7%;
-  background: #eef4fb;
-}
-
-.protocolGroupGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.protocolGroupGrid > div {
-  background: #fff;
-  border: 1px solid #d8e4f3;
-  border-radius: 24px;
-  padding: 32px;
-  box-shadow: 0 16px 40px rgba(7, 23, 51, 0.06);
-}
-
-.protocolGroupGrid h3 {
-  font-size: 26px;
-  font-weight: 950;
-  margin-bottom: 22px;
-  color: #071733;
-}
-
-.protocolGroupGrid span {
-  display: block;
-  background: #f4f8fd;
-  border: 1px solid #d8e4f3;
-  border-radius: 999px;
-  padding: 14px 18px;
-  margin-bottom: 14px;
-  font-weight: 900;
-  text-align: center;
-  color: #071733;
-}
-
-@media (max-width: 900px) {
-  .protocolGroupGrid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* RESPONSIVE */
@@ -612,11 +480,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gatewaySteps {
+  .gatewaySteps,
+  .protocolGroupGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .gatewaySplit,
   .gatewayProof {
     grid-template-columns: 1fr;
   }
@@ -626,8 +494,8 @@
   .gatewayHero,
   .gatewaySection,
   .gatewayDark,
-  .gatewaySplit,
   .gatewayProof,
+  .gatewayInteroperability,
   .gatewayCTA {
     padding-left: 24px;
     padding-right: 24px;
@@ -643,7 +511,6 @@
 
   .gatewaySectionHeader h2,
   .gatewaySectionHeader.dark h2,
-  .gatewayPanel h2,
   .gatewayProof h2,
   .gatewayCTA h2 {
     font-size: 40px;
@@ -669,7 +536,7 @@
   .gatewayAssetMap,
   .gatewayFutureGrid,
   .gatewaySteps,
-  .protocolGrid {
+  .protocolGroupGrid {
     grid-template-columns: 1fr;
   }
 
