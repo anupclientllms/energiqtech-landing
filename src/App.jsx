@@ -14,6 +14,7 @@ import ContactModal from "./components/ContactModal";
 import PrivacyPolicy from "./pages/PrivacyPolicyPage";
 import TermsOfUse from "./pages/TermsOfUse";
 import IntellectualProperty from "./pages/IntellectualPropertyPage";
+import ConnectedEnergyAssetsPage from "./pages/ConnectedEnergyAssetsPage";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/intellectual-property" element={<IntellectualProperty />} />
+        <Route path="/connected-energy-platform" element = {<ConnectedEnergyAssetsPage />}  />
         
         
         

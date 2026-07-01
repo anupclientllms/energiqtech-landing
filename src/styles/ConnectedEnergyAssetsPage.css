@@ -1,0 +1,414 @@
+.ceaPage {
+  background: #eef4fb;
+  color: #071733;
+  overflow-x: hidden;
+}
+
+.ceaHero,
+.ceaDarkSection,
+.ceaCTA {
+  background: linear-gradient(135deg, #071733, #0f4960);
+  color: #fff;
+}
+
+.ceaHero {
+  padding: 120px 7% 100px;
+  text-align: center;
+}
+
+.ceaHeroContent {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.ceaEyebrow,
+.ceaSectionHeader p,
+.ceaDarkHeader p,
+.ceaEvolutionText p,
+.ceaProof p {
+  color: #2f66f6;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.ceaHero .ceaEyebrow,
+.ceaDarkHeader p,
+.ceaCTA p {
+  color: #27e68b;
+}
+
+.ceaHero h1 {
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 0 auto 28px;
+  max-width: 1100px;
+  font-weight: 950;
+}
+
+.ceaHero p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #d9e8f8;
+  font-size: 21px;
+  line-height: 1.7;
+}
+
+.ceaHeroActions {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.ceaPrimary,
+.ceaSecondary {
+  min-width: 220px;
+  padding: 18px 28px;
+  border-radius: 18px;
+  font-weight: 900;
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ceaPrimary {
+  background: #2f66f6;
+  color: #fff;
+}
+
+.ceaSecondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.ceaSection,
+.ceaEvolution,
+.ceaProof {
+  padding: 95px 7%;
+}
+
+.ceaSectionHeader,
+.ceaDarkHeader,
+.ceaEvolutionText {
+  max-width: 980px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+
+.ceaSectionHeader h2,
+.ceaDarkHeader h2,
+.ceaEvolutionText h2,
+.ceaProof h2,
+.ceaCTA h2 {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 950;
+  margin: 0 0 24px;
+}
+
+.ceaSectionHeader span,
+.ceaDarkHeader span,
+.ceaEvolutionText span,
+.ceaProof span,
+.ceaCTA p {
+  color: #526a8d;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.ceaDarkHeader span,
+.ceaCTA p {
+  color: #d9e8f8;
+}
+
+.ceaAssetGrid,
+.ceaActionGrid,
+.ceaPhases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.ceaAssetGrid > div,
+.ceaActionGrid > div,
+.ceaPhases > div {
+  background: #fff;
+  border: 1px solid #d8e4f3;
+  border-radius: 24px;
+  padding: 32px;
+  min-height: 210px;
+  box-shadow: 0 16px 40px rgba(7, 23, 51, 0.06);
+}
+
+.ceaAssetGrid svg,
+.ceaActionGrid svg {
+  width: 36px;
+  height: 36px;
+  color: #2f66f6;
+  margin-bottom: 22px;
+}
+
+.ceaAssetGrid strong,
+.ceaActionGrid strong,
+.ceaPhases strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 950;
+  margin-bottom: 14px;
+}
+
+.ceaAssetGrid span,
+.ceaActionGrid span,
+.ceaPhases span {
+  display: block;
+  color: #526a8d;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.ceaDarkSection {
+  padding: 100px 7%;
+}
+
+.ceaFlow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.ceaFlowItem {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 22px;
+  padding: 24px;
+  min-height: 130px;
+}
+
+.ceaFlowItem b,
+.ceaPhases b {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #27e68b;
+  color: #071733;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 950;
+  margin-bottom: 18px;
+}
+
+.ceaFlowItem span {
+  color: #fff;
+  display: block;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.ceaEvolution {
+  background: #eef4fb;
+}
+
+.ceaPhases > div {
+  min-height: 240px;
+}
+
+.ceaProof {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.ceaProof ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.ceaProof li {
+  background: #f4f8fd;
+  border: 1px solid #d8e4f3;
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 850;
+  color: #071733;
+}
+
+.ceaProof li svg {
+  color: #22d982;
+  flex-shrink: 0;
+}
+
+.ceaCTA {
+  text-align: center;
+  padding: 95px 7%;
+}
+
+.ceaCTA h2 {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.ceaCTA p {
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+
+.ceaCTA .ceaPrimary {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.ceaRoadmap,
+.ceaArenaAlignment {
+  padding: 95px 7%;
+  background: #eef4fb;
+}
+
+.ceaArenaAlignment {
+  background: #fff;
+}
+
+.ceaRoadmapGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.ceaRoadmapGrid > div {
+  background: #fff;
+  border: 1px solid #d8e4f3;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 16px 40px rgba(7, 23, 51, 0.06);
+}
+
+.ceaRoadmapGrid b {
+  display: block;
+  font-size: 24px;
+  font-weight: 950;
+  margin-bottom: 22px;
+  color: #071733;
+}
+
+.ceaRoadmapGrid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.ceaRoadmapGrid li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #526a8d;
+  font-weight: 800;
+}
+
+.ceaRoadmapGrid svg,
+.ceaChecklistGrid svg {
+  color: #22d982;
+  flex-shrink: 0;
+}
+
+.ceaChecklistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ceaChecklistGrid > div {
+  background: #f4f8fd;
+  border: 1px solid #d8e4f3;
+  border-radius: 18px;
+  padding: 20px 22px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-weight: 850;
+  color: #071733;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .ceaRoadmapGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .ceaRoadmap,
+  .ceaArenaAlignment {
+    padding: 70px 24px;
+  }
+
+  .ceaRoadmapGrid,
+  .ceaChecklistGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ceaAssetGrid,
+  .ceaActionGrid,
+  .ceaPhases,
+  .ceaFlow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ceaProof {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .ceaHero,
+  .ceaSection,
+  .ceaDarkSection,
+  .ceaEvolution,
+  .ceaProof,
+  .ceaCTA {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .ceaAssetGrid,
+  .ceaActionGrid,
+  .ceaPhases,
+  .ceaFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .ceaHeroActions {
+    flex-direction: column;
+  }
+
+  .ceaPrimary,
+  .ceaSecondary {
+    width: 100%;
+  }
+}

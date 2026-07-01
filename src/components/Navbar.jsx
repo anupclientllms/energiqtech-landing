@@ -46,6 +46,10 @@ export default function Navbar({ openPilotModal }) {
               Operational Energy Optimisation
             </Link>
 
+            <Link to="/connected-energy-platform" onClick={closeMenu}>
+              Connected Energy Assets
+            </Link>
+
             <Link to="/digital-twin" onClick={closeMenu}>
               Digital Twin
             </Link>
