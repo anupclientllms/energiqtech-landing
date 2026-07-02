@@ -93,8 +93,8 @@
 }
 
 .gatewayCore {
-  width: 360px;
-  min-height: 230px;
+  width: 340px;
+  min-height: 210px;
   border-radius: 34px;
   background: linear-gradient(135deg, #102e56, #071733);
   border: 1px solid rgba(255,255,255,0.22);
