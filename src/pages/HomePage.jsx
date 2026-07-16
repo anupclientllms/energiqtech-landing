@@ -1,7 +1,5 @@
 import "../styles/HomePage.css";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import {
   Activity,
@@ -28,6 +26,17 @@ import {
   Eye,
   MapPinned,
   Power,
+  Factory,
+  Snowflake,
+  Warehouse,
+  Hospital,
+  GraduationCap,
+  Hotel,
+  ShoppingCart,
+  Plane,
+  Database,
+  Landmark,
+  SunMedium,
 } from "lucide-react";
 
 const fadeUp = {
@@ -147,37 +156,109 @@ const validationPoints = [
   "AI Energy Gateway, Digital Twin and AI Platform concepts refined through stakeholder feedback",
 ];
 
-export default function HomePage() {
-  const [pilotModalOpen, setPilotModalOpen] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
+const heroIndustries = [
+  "Commercial Buildings",
+  "Cold Storage",
+  "Manufacturing",
+  "Warehousing",
+  "Healthcare",
+  "Universities",
+  "Hotels",
+  "Shopping Centres",
+  "Airports",
+  "Data Centres",
+  "Local Government",
+  "DER",
+];
 
-  const openPilotModal = () => setPilotModalOpen(true);
-  const closePilotModal = () => setPilotModalOpen(false);
+const industrySolutions = [
+  {
+    icon: Building2,
+    title: "Building AI",
+    path: "/building-ai",
+    text: "Optimise HVAC, lighting, BMS operations, occupancy-driven loads and whole-building energy performance.",
+    assets: "HVAC • Lighting • BMS • Smart Meters",
+  },
+  {
+    icon: Snowflake,
+    title: "Cold Storage AI",
+    path: "/cold-storage-ai",
+    text: "Reduce refrigeration energy costs while protecting temperature compliance, equipment reliability and product integrity.",
+    assets: "Compressors • Evaporators • Condensers • Freezers",
+  },
+  {
+    icon: Factory,
+    title: "Manufacturing AI",
+    path: "/manufacturing-ai",
+    text: "Improve energy performance across production systems, process loads, utilities and refrigeration-intensive operations.",
+    assets: "Boilers • Compressors • Motors • Production Lines",
+  },
+  {
+    icon: Warehouse,
+    title: "Warehouse & Logistics AI",
+    path: "/warehouse-logistics-ai",
+    text: "Optimise warehouse lighting, refrigeration, conveyors, charging infrastructure and peak operational demand.",
+    assets: "Lighting • Conveyors • Refrigeration • EV Charging",
+  },
+  {
+    icon: Hospital,
+    title: "Healthcare AI",
+    path: "/healthcare-ai",
+    text: "Reduce energy waste across critical facilities while maintaining comfort, resilience and operational safeguards.",
+    assets: "HVAC • Chillers • Medical Loads • Backup Power",
+  },
+  {
+    icon: GraduationCap,
+    title: "University AI",
+    path: "/university-ai",
+    text: "Coordinate campus buildings, laboratories, teaching spaces and distributed energy assets through one AI platform.",
+    assets: "Campus BMS • Labs • Solar • Battery",
+  },
+  {
+    icon: Hotel,
+    title: "Hotel AI",
+    path: "/hotel-ai",
+    text: "Optimise guest-room HVAC, hot water, central plant and occupancy-driven loads without compromising guest comfort.",
+    assets: "HVAC • Hot Water • Chillers • Guest Rooms",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Shopping Centre AI",
+    path: "/shopping-centre-ai",
+    text: "Improve energy performance across retail HVAC, common areas, refrigeration, lighting and vertical transport.",
+    assets: "HVAC • Lighting • Refrigeration • Escalators",
+  },
+  {
+    icon: Plane,
+    title: "Airport AI",
+    path: "/airport-ai",
+    text: "Coordinate terminal systems, baggage operations, passenger-flow loads and airside energy infrastructure.",
+    assets: "Terminal HVAC • Baggage • Airside Lighting • GSE",
+  },
+  {
+    icon: Database,
+    title: "Data Centre AI",
+    path: "/data-centre-ai",
+    text: "Optimise cooling, UPS systems, power distribution and compute-support infrastructure using governed AI workflows.",
+    assets: "Cooling • UPS • Power Distribution • Backup Power",
+  },
+  {
+    icon: Landmark,
+    title: "Local Government AI",
+    path: "/local-government-ai",
+    text: "Manage energy performance across civic buildings, libraries, depots, community facilities and council portfolios.",
+    assets: "Civic Buildings • Libraries • Depots • Solar",
+  },
+  {
+    icon: SunMedium,
+    title: "DER Portfolio AI",
+    path: "/der-ai",
+    text: "Coordinate solar, batteries, EV charging, flexible demand and grid-connected assets across distributed portfolios.",
+    assets: "Solar PV • BESS • EV • Grid Interfaces",
+  },
+];
 
-  const handlePilotSubmit = async (e) => {
-    e.preventDefault();
-    setSending(true);
-
-    const form = e.currentTarget;
-
-    try {
-      await emailjs.sendForm(
-        "service_vb1aryn",
-        "template_c9ag4vd",
-        form,
-        "qCBx0dmPttChUW8LU",
-      );
-
-      setSubmitted(true);
-    } catch (error) {
-      console.error("EmailJS error:", error);
-      alert("Something went wrong. Please email anup.clientllms@gmail.com directly.");
-    } finally {
-      setSending(false);
-    }
-  };
-
+export default function HomePage({ openPilotModal }) {
   return (
     <main className="page">
       
@@ -185,17 +266,25 @@ export default function HomePage() {
       <section className="hero" id="top">
         <motion.div className="heroText" variants={stagger} initial="hidden" animate="show">
           <motion.div className="badge" variants={fadeUp}>
-            <Sparkles size={16} /> Distributed Energy Resources • Edge AI • Digital Twins • Decision Intelligence 
+            <Sparkles size={16} /> Edge AI • Digital Twins • Decision Intelligence • Connected Energy Systems
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
-            One AI Platform for Buildings, Solar, Battery, EV & Grid Energy Systems.
+            One AI Platform for Energy-Intensive Operations & Connected Energy Systems.
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            EnergIQ Tech connects Building Management Systems, Solar PV, Battery Energy Storage Systems (BESS), EV Charging Infrastructure, Smart Meters, IoT Sensors and Utility Interfaces through the AI Energy Gateway. 
-            Edge AI analyses operational data in real time, recommends optimisation actions and enables organisations to reduce energy costs, lower emissions and prepare for future demand response and grid participation.
+            EnergIQ Tech connects building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage Systems (BESS), EV charging infrastructure, smart meters, IoT sensors and utility interfaces through the AI Energy Gateway.
+            Edge AI analyses operational data in real time, detects energy waste, peak-demand events and equipment inefficiencies, recommends optimisation actions and enables organisations to reduce energy costs, lower emissions and improve operational reliability.
           </motion.p>
+
+          <motion.div className="heroIndustryLine" variants={fadeUp} aria-label="Supported industries">
+            {heroIndustries.map((industry) => (
+              <span className="heroIndustryChip" key={industry}>
+                {industry}
+              </span>
+            ))}
+          </motion.div>
 
           <motion.div className="heroButtons" variants={fadeUp}>
             <button type="button" onClick={openPilotModal} className="primary">
@@ -209,12 +298,12 @@ export default function HomePage() {
 
           <motion.div className="metrics" variants={fadeUp}>
             <div><strong>30-Day Pilot</strong><span>Commercial Validation</span></div>
-            <div><strong>Multi-Asset</strong><span>BMS • Solar • BESS • EV</span></div>
+            <div><strong>12 Industry Packs</strong><span>One Shared AI Platform</span></div>
             <div><strong>Edge + AI</strong><span>Real-Time Decision Intelligence</span></div>
           </motion.div>
 
           <motion.p variants={fadeUp}>
-            Start with one building. Scale to connected energy assets across Distributed Energy Resources.
+            Start with one site and one high-value use case. Scale across facilities, industry portfolios and Distributed Energy Resources.
           </motion.p>
         </motion.div>
 
@@ -277,6 +366,64 @@ export default function HomePage() {
       </section>
 
       <motion.section
+        className="section industriesSection"
+        id="industries"
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.12 }}
+      >
+        <motion.div className="sectionHeader industriesHeader" variants={fadeUp}>
+          <p>Industry Solutions</p>
+          <h2>One Core AI Platform. Twelve Industry-Specific Operating Environments.</h2>
+          <span>
+            EnergIQ applies the same AI Energy Gateway, Digital Twin, Decision Agents,
+            human-in-the-loop governance and Savings Intelligence across energy-intensive
+            industries. Each Industry Pack adapts the shared platform to the assets,
+            operational risks and optimisation opportunities of that environment.
+          </span>
+        </motion.div>
+
+        <motion.div className="industryGrid" variants={stagger}>
+          {industrySolutions.map((industry) => {
+            const Icon = industry.icon;
+
+            return (
+              <motion.article className="industryCard" variants={fadeUp} key={industry.title}>
+                <div className="industryCardTop">
+                  <div className="industryIcon">
+                    <Icon size={24} />
+                  </div>
+                  <span>Industry Pack</span>
+                </div>
+
+                <h3>{industry.title}</h3>
+                <p>{industry.text}</p>
+                <small>{industry.assets}</small>
+
+                <Link className="industryLink" to={industry.path}>
+                  Explore {industry.title} <ChevronRight size={17} />
+                </Link>
+              </motion.article>
+            );
+          })}
+        </motion.div>
+
+        <motion.div className="industriesFooter" variants={fadeUp}>
+          <div>
+            <strong>Core Platform</strong>
+            <span>
+              AI Energy Gateway → Digital Twin → AI Decision Agents → Human Approval → Measurable Savings
+            </span>
+          </div>
+
+          <Link className="secondary industriesPageLink" to="/industries">
+            View All Industries <ChevronRight size={18} />
+          </Link>
+        </motion.div>
+      </motion.section>
+
+      <motion.section
         className="section problemFirstSection"
         id="problem-first"
         variants={stagger}
@@ -286,9 +433,9 @@ export default function HomePage() {
       >
         <motion.div className="sectionHeader compactHeader" variants={fadeUp}>
           <p>Problem-First Approach</p>
-          <h2>One AI Workflow Across Every Connected Energy Asset.</h2>
+          <h2>One AI Workflow Across Every Industry and Connected Energy Asset.</h2>
           <span>
-            EnergIQ Tech analyses operational data from Building Management Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters 
+            EnergIQ Tech analyses operational data from building systems, refrigeration plants, industrial equipment, Solar PV, Battery Energy Storage, EV charging, smart meters
             and IoT devices to identify inefficiencies before recommending AI-driven optimisation actions.
           </span>
         </motion.div>
@@ -313,7 +460,7 @@ export default function HomePage() {
             <p>Operational Discovery & Pilot Workshops</p>
             <h2>From Connected Energy Assets to Intelligent Optimisation</h2>
             <span>
-              We work with organisations to assess Building Management Systems, Solar PV, Battery Storage, EV Charging, Smart Meters 
+              We work with organisations across energy-intensive industries to assess operational systems, refrigeration and process equipment, Building Management Systems, Solar PV, Battery Storage, EV charging, smart meters
               and IoT infrastructure, identifying high-value AI optimisation opportunities before defining a pilot.
             </span>
             <button type="button" onClick={openPilotModal} className="primary">
@@ -338,7 +485,7 @@ export default function HomePage() {
           <p>AI as the Enabler</p>
           <h2>Connected Energy Assets → AI Intelligence → Intelligent Actions → Measurable Impact</h2>
           <span>
-            EnergIQ Tech transforms operational data from Building Management Systems, Solar PV, Battery Storage, EV Charging, Smart Meters 
+            EnergIQ Tech transforms operational data from buildings, refrigeration systems, industrial equipment, Solar PV, Battery Storage, EV charging, smart meters
             and IoT devices into AI-driven insights, optimisation recommendations and measurable operational outcomes.
           </span>
         </div>
@@ -499,7 +646,7 @@ export default function HomePage() {
           <div>
             <b>4</b>
             <h3>Scale</h3>
-            <p>Expand across buildings, campuses, distributed energy assets and enterprise portfolios.</p>
+            <p>Expand across sites, facilities, industry portfolios and distributed energy assets.</p>
           </div>
 
         </div>
@@ -516,7 +663,7 @@ export default function HomePage() {
 
           <span>
             EnergIQ Tech has developed a unified AI Energy Platform comprising the AI Energy Gateway, Digital Twin, AI Decision Agents and governed operational workflows.
-            The platform is designed to connect, analyse and optimise commercial buildings and distributed energy assets including Building Management Systems (BMS), Solar PV, Battery Energy Storage Systems (BESS), EV Charging, Smart Meters and IoT infrastructure.
+            The platform is designed to connect, analyse and optimise energy-intensive operations and distributed energy assets, including Building Management Systems (BMS), refrigeration systems, industrial equipment, Solar PV, Battery Energy Storage Systems (BESS), EV charging, smart meters and IoT infrastructure.
           </span>
 
         </div>
@@ -574,7 +721,7 @@ export default function HomePage() {
         <div className="caseStudyCard">
 
           <h3>
-            Phase 1 Demonstration – Commercial Buildings & Connected Energy Assets
+            Phase 1 Demonstration – Energy-Intensive Operations & Connected Energy Assets
           </h3>
 
           <div className="caseStudyPoints">
@@ -631,8 +778,8 @@ export default function HomePage() {
 
       <section className="section advancedSection">
         <div className="sectionHeader">
-          <p>A unified Edge AI platform connecting Building Management Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters, IoT Devices and utility interfaces into a single operational intelligence platform.</p>
-          <h2>One Platform. Every Connected Energy Asset.</h2>
+          <p>A unified Edge AI platform connecting building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage, EV charging, smart meters, IoT devices and utility interfaces into a single operational intelligence platform.</p>
+          <h2>One Platform. Every Industry. Every Connected Energy Asset.</h2>
         </div>
 
         <div className="advancedGrid">
@@ -671,7 +818,7 @@ export default function HomePage() {
           </p>
 
           <h3>
-            The AI Platform for Connected Energy Assets
+            The AI Platform for Energy-Intensive Operations
           </h3>
 
           <p>
@@ -682,8 +829,8 @@ export default function HomePage() {
           </p>
 
           <p className="visionStatement">
-            Our long-term vision is to establish EnergIQ Tech as the <strong> AI-driven Energy Operating System </strong> for connected energy infrastructure providing 
-            a common AI architecture across commercial buildings, campuses and Distributed Energy Resources (DER), including Building Management Systems (BMS), Solar PV, Battery Energy Storage (BESS), EV Charging, Smart Meters, IoT infrastructure and grid-connected energy systems.
+            Our long-term vision is to establish EnergIQ Tech as the <strong>AI-driven Energy Operating System</strong> for energy-intensive operations and connected energy infrastructure, providing
+            a common AI architecture across commercial buildings, cold storage, manufacturing, warehouses, healthcare, universities, hotels, shopping centres, airports, data centres, local government portfolios and Distributed Energy Resources (DER).
           </p>
 
         </div>
@@ -718,7 +865,7 @@ export default function HomePage() {
           <p>Pilot Model</p>
           <h2>Pilot-first deployment model designed to prove measurable operational value.</h2>
           <p>
-            Start with an AI Energy Gateway pilot to validate optimisation opportunities, operational outcomes and measurable ROI before scaling across buildings, campuses and connected energy assets.
+            Start with one priority site, operational problem or connected asset group. Validate optimisation opportunities, operational outcomes and measurable ROI before scaling across facilities, industry portfolios and connected energy assets.
           </p>
         </div>
 
@@ -726,7 +873,7 @@ export default function HomePage() {
           <h3>Phase 1: Pilot Deployment</h3>
           <ul>
             <li>AI Energy Gateway deployed at pilot site(s)</li>
-            <li>Connect BMS and available energy assets</li>
+            <li>Connect priority operational systems and available energy assets</li>
             <li>Validate AI optimisation workflows</li>
             <li>Measure operational, financial and carbon outcomes</li>
           </ul>
@@ -738,7 +885,7 @@ export default function HomePage() {
             <li>AI Gateway deployment across additional sites</li>
             <li>SaaS platform & AI Decision Agents</li>
             <li>Portfolio-wide operational intelligence</li>
-            <li>Connected energy asset optimisation (BMS, Solar PV, BESS, EV Charging)</li>
+            <li>Industry and asset optimisation across BMS, refrigeration, process loads, Solar PV, BESS and EV charging</li>
           </ul>
         </div>
       </section>
@@ -749,7 +896,7 @@ export default function HomePage() {
           <p>Market Engagement</p>
 
           <h2>
-            Building market momentum through customer engagement and pilot development.
+            Validating pilot demand across multiple energy-intensive industries.
           </h2>
         </div>
 
@@ -777,9 +924,9 @@ export default function HomePage() {
           </div>
 
           <div>
-            <strong>Pilot Expansion</strong>
+            <strong>Multi-Industry Pilot Search</strong>
             <span>
-              Expanding pilot opportunities across councils, campuses and commercial portfolios.
+              Expanding pilot outreach across cold storage, manufacturing, warehousing, healthcare, hospitality, airports, data centres and DER portfolios.
             </span>
           </div>
 
@@ -790,7 +937,7 @@ export default function HomePage() {
       <section className="cta">
         <h2>Now onboarding pilot partners.</h2>
         <p>
-          Built for councils, campuses, commercial buildings and energy portfolios seeking measurable cost savings, carbon visibility and operational intelligence.
+          Built for energy-intensive organisations seeking measurable cost savings, carbon visibility, operational reliability and governed AI decision intelligence.
         </p>
 
         <button type="button" onClick={openPilotModal} className="primary">

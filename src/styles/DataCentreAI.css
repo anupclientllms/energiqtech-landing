@@ -1,0 +1,765 @@
+/* Data Centre AI */
+
+.dataCentrePage {
+  background: #f4f7fb;
+  color: #0b1d3f;
+  overflow: hidden;
+}
+
+.dataCentrePage * {
+  box-sizing: border-box;
+}
+
+.dataCentreHero {
+  min-height: 760px;
+  padding: 90px 7%;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+  color: #ffffff;
+  background: linear-gradient(120deg, #0a2c69, #0b3d79 55%, #0d5a73);
+}
+
+.dataCentreHeroContent {
+  max-width: 780px;
+}
+
+.dataCentreBadge {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: #d9ebff;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dataCentreHero h1 {
+  margin: 0;
+  max-width: 850px;
+  color: #ffffff;
+  font-size: clamp(3rem, 5vw, 5.3rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.dataCentreLead {
+  margin: 28px 0 0;
+  color: #e7f1ff;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.dataCentreDescription {
+  margin: 14px 0 0;
+  color: #bfd2e8;
+  line-height: 1.7;
+}
+
+.dataCentreHeroButtons,
+.dataCentreCtaActions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dataCentrePrimaryBtn,
+.dataCentreSecondaryBtn {
+  min-height: 50px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dataCentrePrimaryBtn {
+  border: 0;
+  color: #ffffff;
+  background: #2468df;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+.dataCentreSecondaryBtn {
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  background: rgba(255,255,255,0.08);
+}
+
+.dataCentreHeroTags {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.dataCentreHeroTags span {
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 9px;
+  background: rgba(255,255,255,0.06);
+  color: #d9e7f7;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dataCentreHeroVisual {
+  width: 100%;
+  max-width: 620px;
+  justify-self: end;
+}
+
+.dataCentreDashboard {
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+}
+
+.dataCentreDashboardTop,
+.dataCentreApproval {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dataCentreDashboardTop > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dataCentreDashboardTop strong {
+  color: #ffffff;
+}
+
+.dataCentreDashboardTop span {
+  color: #abc1dc;
+  font-size: 12px;
+}
+
+.dataCentreDashboardTop b {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  color: #c8f7df;
+  background: rgba(27,190,124,0.15);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.dataCentreKpis {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px;
+}
+
+.dataCentreKpis > div {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 13px;
+  background: rgba(4,25,59,0.48);
+}
+
+.dataCentreKpis small {
+  color: #9fb8d6;
+}
+
+.dataCentreKpis strong {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.dataCentreKpis span {
+  color: #a9bfd7;
+  font-size: 11px;
+}
+
+.dataCentreInsightCard {
+  margin-top: 14px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  border-radius: 14px;
+  background: rgba(31,92,188,0.22);
+}
+
+.dataCentreInsightIcon,
+.dataCentreIcon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3479ef, #194fbd);
+}
+
+.dataCentreInsightCard strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.dataCentreInsightCard p {
+  margin: 5px 0 0;
+  color: #bfd0e3;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.dataCentreApproval {
+  margin-top: 12px;
+  padding: 11px 12px;
+  border-radius: 11px;
+  background: rgba(4,20,48,0.45);
+}
+
+.dataCentreApproval span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #bdd0e7;
+  font-size: 11px;
+}
+
+.dataCentreApproval button {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #2468df;
+  font-weight: 700;
+}
+
+.dataCentreStrip {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  background: #071a3c;
+  color: #dceaff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.dataCentreStrip svg {
+  color: #4d86e8;
+}
+
+.dataCentreSection {
+  padding: 95px 7%;
+}
+
+.dataCentreSectionHeader {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.dataCentreSectionHeader > p,
+.dataCentrePlatformCopy > p,
+.dataCentrePilotCopy > p,
+.dataCentreCta p {
+  margin: 0 0 14px;
+  color: #2260d8;
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.dataCentreSectionHeader h2,
+.dataCentrePlatformCopy h2,
+.dataCentrePilotCopy h2,
+.dataCentreCta h2 {
+  margin: 0;
+  color: #081a39;
+  font-size: clamp(2.2rem, 4vw, 4.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.dataCentreSectionHeader span,
+.dataCentrePlatformCopy > span,
+.dataCentrePilotCopy > span,
+.dataCentreCta span {
+  max-width: 780px;
+  margin: 20px auto 0;
+  display: block;
+  color: #62738f;
+  line-height: 1.75;
+}
+
+.dataCentreChallengeSection {
+  background: #f5f8fc;
+}
+
+.dataCentreChallengeGrid,
+.dataCentreAssetsGrid,
+.dataCentreScenarioGrid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.dataCentreChallengeGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dataCentreChallengeGrid article,
+.dataCentreAssetCard,
+.dataCentreScenarioCard {
+  padding: 25px;
+  border: 1px solid #dbe5f2;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(28,58,102,0.06);
+}
+
+.dataCentreChallengeGrid article {
+  min-height: 245px;
+}
+
+.dataCentreChallengeGrid h3,
+.dataCentreAssetCard h3,
+.dataCentreScenarioCard h3 {
+  margin: 20px 0 9px;
+  color: #102344;
+}
+
+.dataCentreChallengeGrid p,
+.dataCentreAssetCard p,
+.dataCentreScenarioCard p {
+  margin: 0;
+  color: #667894;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.dataCentreAssetsSection {
+  background: #ffffff;
+}
+
+.dataCentreAssetsGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dataCentreAssetCard {
+  min-height: 230px;
+  background: #f9fbfe;
+}
+
+.dataCentreScenarioSection {
+  background: #eef3fa;
+}
+
+.dataCentreScenarioGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dataCentreScenarioCard {
+  min-height: 280px;
+}
+
+.dataCentreScenarioTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataCentreScenarioTop > span {
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #205acb;
+  background: #edf3ff;
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.dataCentreOutcome {
+  margin-top: 18px;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #e5ebf4;
+  color: #1857c9;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dataCentreWorkflowSection {
+  background: #071a3c;
+}
+
+.dataCentreSectionHeaderLight > p {
+  color: #78a8ff;
+}
+
+.dataCentreSectionHeaderLight h2 {
+  color: #ffffff;
+}
+
+.dataCentreSectionHeaderLight span {
+  color: #b9cae1;
+}
+
+.dataCentreWorkflow {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.dataCentreWorkflowStep {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+}
+
+.dataCentreWorkflowStep b {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  color: #ffffff;
+  background: #2468df;
+}
+
+.dataCentreWorkflowStep h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.dataCentreWorkflowStep p {
+  margin: 5px 0 0;
+  color: #b8c9df;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dataCentrePlatformSection {
+  background: #f5f8fc;
+}
+
+.dataCentrePlatformPanel {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 54px 56px;
+  border: 1px solid #d6e2f2;
+  border-radius: 24px;
+  background: #f7fafe;
+}
+
+.dataCentrePlatformCopy {
+  max-width: 920px;
+}
+
+.dataCentrePlatformCopy > span {
+  margin-left: 0;
+}
+
+.dataCentrePlatformCopy ul {
+  max-width: 920px;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px 70px;
+  list-style: none;
+}
+
+.dataCentrePlatformCopy li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #122c57;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.dataCentrePlatformFlow {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.dataCentrePlatformFlow > svg {
+  justify-self: center;
+  color: #6f94d4;
+}
+
+.dataCentrePlatformNode {
+  min-height: 116px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #cbdcf3;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #184485;
+  text-align: center;
+}
+
+.dataCentrePlatformNode span {
+  color: #0d2c62;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.dataCentrePlatformNode.featured {
+  border-color: transparent;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3479ec, #1d51c7);
+}
+
+.dataCentrePlatformNode.featured svg,
+.dataCentrePlatformNode.featured span {
+  color: #ffffff;
+}
+
+.dataCentrePilotSection {
+  background: #f4f7fb;
+}
+
+.dataCentrePilotBox {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  border-radius: 24px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b2f72, #071b40);
+}
+
+.dataCentrePilotCopy > p {
+  color: #82adff;
+}
+
+.dataCentrePilotCopy h2 {
+  color: #ffffff;
+}
+
+.dataCentrePilotCopy > span {
+  margin-left: 0;
+  color: #c0d0e5;
+}
+
+.dataCentrePilotList {
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 17px;
+  background: rgba(255,255,255,0.06);
+}
+
+.dataCentrePilotList h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.dataCentrePilotList ul {
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.dataCentrePilotList li {
+  display: flex;
+  gap: 9px;
+  color: #d3e0f0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dataCentreCta {
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #ffffff;
+  background: linear-gradient(110deg, #113d91, #0a5c78);
+}
+
+.dataCentreCta > div:first-child {
+  max-width: 820px;
+}
+
+.dataCentreCta p {
+  color: #a8c9ff;
+}
+
+.dataCentreCta h2 {
+  color: #ffffff;
+}
+
+.dataCentreCta span {
+  margin-left: 0;
+  color: #c4d7eb;
+}
+
+@media (max-width: 1150px) {
+  .dataCentreHero {
+    grid-template-columns: 1fr;
+  }
+
+  .dataCentreHeroVisual {
+    justify-self: center;
+    max-width: 760px;
+  }
+
+  .dataCentreChallengeGrid,
+  .dataCentreAssetsGrid,
+  .dataCentreScenarioGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dataCentrePlatformFlow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dataCentrePlatformFlow > svg {
+    display: none;
+  }
+
+  .dataCentrePlatformNode:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 850px) {
+  .dataCentrePilotBox {
+    grid-template-columns: 1fr;
+  }
+
+  .dataCentreCta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dataCentrePlatformCopy ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .dataCentreHero {
+    min-height: auto;
+    padding: 65px 20px;
+  }
+
+  .dataCentreHero h1 {
+    font-size: 2.7rem;
+  }
+
+  .dataCentreHeroButtons,
+  .dataCentreCtaActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dataCentrePrimaryBtn,
+  .dataCentreSecondaryBtn {
+    width: 100%;
+  }
+
+  .dataCentreKpis,
+  .dataCentreChallengeGrid,
+  .dataCentreAssetsGrid,
+  .dataCentreScenarioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dataCentreSection {
+    padding: 75px 20px;
+  }
+
+  .dataCentreSectionHeader {
+    text-align: left;
+  }
+
+  .dataCentreSectionHeader span {
+    margin-left: 0;
+  }
+
+  .dataCentrePlatformPanel,
+  .dataCentrePilotBox {
+    padding: 25px 20px;
+  }
+
+  .dataCentrePlatformFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .dataCentrePlatformNode:last-child {
+    grid-column: auto;
+  }
+
+  .dataCentreCta {
+    padding: 60px 20px;
+  }
+
+  .dataCentreApproval {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

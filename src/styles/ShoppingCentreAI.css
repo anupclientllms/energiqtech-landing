@@ -1,0 +1,765 @@
+/* Shopping Centre AI */
+
+.shoppingCentrePage {
+  background: #f4f7fb;
+  color: #0b1d3f;
+  overflow: hidden;
+}
+
+.shoppingCentrePage * {
+  box-sizing: border-box;
+}
+
+.shoppingCentreHero {
+  min-height: 760px;
+  padding: 90px 7%;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+  color: #ffffff;
+  background: linear-gradient(120deg, #0a2c69, #0b3d79 55%, #0d5a73);
+}
+
+.shoppingCentreHeroContent {
+  max-width: 780px;
+}
+
+.shoppingCentreBadge {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 9px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d9ebff;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.shoppingCentreHero h1 {
+  margin: 0;
+  max-width: 850px;
+  color: #ffffff;
+  font-size: clamp(3rem, 5vw, 5.3rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.shoppingCentreLead {
+  margin: 28px 0 0;
+  color: #e7f1ff;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.shoppingCentreDescription {
+  margin: 14px 0 0;
+  color: #bfd2e8;
+  line-height: 1.7;
+}
+
+.shoppingCentreHeroButtons,
+.shoppingCentreCtaActions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.shoppingCentrePrimaryBtn,
+.shoppingCentreSecondaryBtn {
+  min-height: 50px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shoppingCentrePrimaryBtn {
+  border: 0;
+  color: #ffffff;
+  background: #2468df;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+.shoppingCentreSecondaryBtn {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.shoppingCentreHeroTags {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.shoppingCentreHeroTags span {
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #d9e7f7;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.shoppingCentreHeroVisual {
+  width: 100%;
+  max-width: 620px;
+  justify-self: end;
+}
+
+.shoppingCentreDashboard {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+.shoppingCentreDashboardTop,
+.shoppingCentreApproval {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.shoppingCentreDashboardTop > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shoppingCentreDashboardTop strong {
+  color: #ffffff;
+}
+
+.shoppingCentreDashboardTop span {
+  color: #abc1dc;
+  font-size: 12px;
+}
+
+.shoppingCentreDashboardTop b {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  color: #c8f7df;
+  background: rgba(27, 190, 124, 0.15);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.shoppingCentreKpis {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px;
+}
+
+.shoppingCentreKpis > div {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 13px;
+  background: rgba(4, 25, 59, 0.48);
+}
+
+.shoppingCentreKpis small {
+  color: #9fb8d6;
+}
+
+.shoppingCentreKpis strong {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.shoppingCentreKpis span {
+  color: #a9bfd7;
+  font-size: 11px;
+}
+
+.shoppingCentreInsightCard {
+  margin-top: 14px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  border-radius: 14px;
+  background: rgba(31, 92, 188, 0.22);
+}
+
+.shoppingCentreInsightIcon,
+.shoppingCentreIcon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3479ef, #194fbd);
+}
+
+.shoppingCentreInsightCard strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.shoppingCentreInsightCard p {
+  margin: 5px 0 0;
+  color: #bfd0e3;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.shoppingCentreApproval {
+  margin-top: 12px;
+  padding: 11px 12px;
+  border-radius: 11px;
+  background: rgba(4, 20, 48, 0.45);
+}
+
+.shoppingCentreApproval span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #bdd0e7;
+  font-size: 11px;
+}
+
+.shoppingCentreApproval button {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #2468df;
+  font-weight: 700;
+}
+
+.shoppingCentreStrip {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  background: #071a3c;
+  color: #dceaff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.shoppingCentreStrip svg {
+  color: #4d86e8;
+}
+
+.shoppingCentreSection {
+  padding: 95px 7%;
+}
+
+.shoppingCentreSectionHeader {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.shoppingCentreSectionHeader > p,
+.shoppingCentrePlatformCopy > p,
+.shoppingCentrePilotCopy > p,
+.shoppingCentreCta p {
+  margin: 0 0 14px;
+  color: #2260d8;
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.shoppingCentreSectionHeader h2,
+.shoppingCentrePlatformCopy h2,
+.shoppingCentrePilotCopy h2,
+.shoppingCentreCta h2 {
+  margin: 0;
+  color: #081a39;
+  font-size: clamp(2.2rem, 4vw, 4.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.shoppingCentreSectionHeader span,
+.shoppingCentrePlatformCopy > span,
+.shoppingCentrePilotCopy > span,
+.shoppingCentreCta span {
+  max-width: 780px;
+  margin: 20px auto 0;
+  display: block;
+  color: #62738f;
+  line-height: 1.75;
+}
+
+.shoppingCentreChallengeSection {
+  background: #f5f8fc;
+}
+
+.shoppingCentreChallengeGrid,
+.shoppingCentreAssetsGrid,
+.shoppingCentreScenarioGrid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.shoppingCentreChallengeGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.shoppingCentreChallengeGrid article,
+.shoppingCentreAssetCard,
+.shoppingCentreScenarioCard {
+  padding: 25px;
+  border: 1px solid #dbe5f2;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(28, 58, 102, 0.06);
+}
+
+.shoppingCentreChallengeGrid article {
+  min-height: 245px;
+}
+
+.shoppingCentreChallengeGrid h3,
+.shoppingCentreAssetCard h3,
+.shoppingCentreScenarioCard h3 {
+  margin: 20px 0 9px;
+  color: #102344;
+}
+
+.shoppingCentreChallengeGrid p,
+.shoppingCentreAssetCard p,
+.shoppingCentreScenarioCard p {
+  margin: 0;
+  color: #667894;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.shoppingCentreAssetsSection {
+  background: #ffffff;
+}
+
+.shoppingCentreAssetsGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.shoppingCentreAssetCard {
+  min-height: 230px;
+  background: #f9fbfe;
+}
+
+.shoppingCentreScenarioSection {
+  background: #eef3fa;
+}
+
+.shoppingCentreScenarioGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.shoppingCentreScenarioCard {
+  min-height: 280px;
+}
+
+.shoppingCentreScenarioTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shoppingCentreScenarioTop > span {
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #205acb;
+  background: #edf3ff;
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.shoppingCentreOutcome {
+  margin-top: 18px;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #e5ebf4;
+  color: #1857c9;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.shoppingCentreWorkflowSection {
+  background: #071a3c;
+}
+
+.shoppingCentreSectionHeaderLight > p {
+  color: #78a8ff;
+}
+
+.shoppingCentreSectionHeaderLight h2 {
+  color: #ffffff;
+}
+
+.shoppingCentreSectionHeaderLight span {
+  color: #b9cae1;
+}
+
+.shoppingCentreWorkflow {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.shoppingCentreWorkflowStep {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.shoppingCentreWorkflowStep b {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  color: #ffffff;
+  background: #2468df;
+}
+
+.shoppingCentreWorkflowStep h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.shoppingCentreWorkflowStep p {
+  margin: 5px 0 0;
+  color: #b8c9df;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.shoppingCentrePlatformSection {
+  background: #f5f8fc;
+}
+
+.shoppingCentrePlatformPanel {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 54px 56px;
+  border: 1px solid #d6e2f2;
+  border-radius: 24px;
+  background: #f7fafe;
+}
+
+.shoppingCentrePlatformCopy {
+  max-width: 920px;
+}
+
+.shoppingCentrePlatformCopy > span {
+  margin-left: 0;
+}
+
+.shoppingCentrePlatformCopy ul {
+  max-width: 920px;
+  margin: 28px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px 70px;
+  list-style: none;
+}
+
+.shoppingCentrePlatformCopy li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #122c57;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.shoppingCentrePlatformFlow {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr)
+    28px
+    minmax(150px, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.shoppingCentrePlatformFlow > svg {
+  justify-self: center;
+  color: #6f94d4;
+}
+
+.shoppingCentrePlatformNode {
+  min-height: 116px;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #cbdcf3;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #184485;
+  text-align: center;
+}
+
+.shoppingCentrePlatformNode span {
+  color: #0d2c62;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.shoppingCentrePlatformNode.featured {
+  border-color: transparent;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3479ec, #1d51c7);
+}
+
+.shoppingCentrePlatformNode.featured svg,
+.shoppingCentrePlatformNode.featured span {
+  color: #ffffff;
+}
+
+.shoppingCentrePilotSection {
+  background: #f4f7fb;
+}
+
+.shoppingCentrePilotBox {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  border-radius: 24px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b2f72, #071b40);
+}
+
+.shoppingCentrePilotCopy > p {
+  color: #82adff;
+}
+
+.shoppingCentrePilotCopy h2 {
+  color: #ffffff;
+}
+
+.shoppingCentrePilotCopy > span {
+  margin-left: 0;
+  color: #c0d0e5;
+}
+
+.shoppingCentrePilotList {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.shoppingCentrePilotList h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.shoppingCentrePilotList ul {
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.shoppingCentrePilotList li {
+  display: flex;
+  gap: 9px;
+  color: #d3e0f0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.shoppingCentreCta {
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  color: #ffffff;
+  background: linear-gradient(110deg, #113d91, #0a5c78);
+}
+
+.shoppingCentreCta > div:first-child {
+  max-width: 820px;
+}
+
+.shoppingCentreCta p {
+  color: #a8c9ff;
+}
+
+.shoppingCentreCta h2 {
+  color: #ffffff;
+}
+
+.shoppingCentreCta span {
+  margin-left: 0;
+  color: #c4d7eb;
+}
+
+@media (max-width: 1150px) {
+  .shoppingCentreHero {
+    grid-template-columns: 1fr;
+  }
+
+  .shoppingCentreHeroVisual {
+    justify-self: center;
+    max-width: 760px;
+  }
+
+  .shoppingCentreChallengeGrid,
+  .shoppingCentreAssetsGrid,
+  .shoppingCentreScenarioGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shoppingCentrePlatformFlow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shoppingCentrePlatformFlow > svg {
+    display: none;
+  }
+
+  .shoppingCentrePlatformNode:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 850px) {
+  .shoppingCentrePilotBox {
+    grid-template-columns: 1fr;
+  }
+
+  .shoppingCentreCta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .shoppingCentrePlatformCopy ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .shoppingCentreHero {
+    min-height: auto;
+    padding: 65px 20px;
+  }
+
+  .shoppingCentreHero h1 {
+    font-size: 2.7rem;
+  }
+
+  .shoppingCentreHeroButtons,
+  .shoppingCentreCtaActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shoppingCentrePrimaryBtn,
+  .shoppingCentreSecondaryBtn {
+    width: 100%;
+  }
+
+  .shoppingCentreKpis,
+  .shoppingCentreChallengeGrid,
+  .shoppingCentreAssetsGrid,
+  .shoppingCentreScenarioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .shoppingCentreSection {
+    padding: 75px 20px;
+  }
+
+  .shoppingCentreSectionHeader {
+    text-align: left;
+  }
+
+  .shoppingCentreSectionHeader span {
+    margin-left: 0;
+  }
+
+  .shoppingCentrePlatformPanel,
+  .shoppingCentrePilotBox {
+    padding: 25px 20px;
+  }
+
+  .shoppingCentrePlatformFlow {
+    grid-template-columns: 1fr;
+  }
+
+  .shoppingCentrePlatformNode:last-child {
+    grid-column: auto;
+  }
+
+  .shoppingCentreCta {
+    padding: 60px 20px;
+  }
+
+  .shoppingCentreApproval {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

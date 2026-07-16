@@ -1,0 +1,1222 @@
+/* =====================================================
+   COLD STORAGE AI PAGE
+===================================================== */
+
+.coldStoragePage {
+  width: 100%;
+  overflow: hidden;
+  color: #0b1d3f;
+  background: #f4f7fc;
+}
+
+.coldStoragePage *,
+.coldStoragePage *::before,
+.coldStoragePage *::after {
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.coldStorageHero {
+  position: relative;
+  min-height: 790px;
+  padding: 96px clamp(24px, 6vw, 110px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(480px, 0.98fr);
+  align-items: center;
+  gap: clamp(44px, 6vw, 92px);
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    linear-gradient(
+      118deg,
+      rgba(8, 34, 88, 0.98) 0%,
+      rgba(12, 45, 100, 0.98) 50%,
+      rgba(5, 61, 94, 0.96) 100%
+    );
+}
+
+.coldStorageHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.12)
+  );
+}
+
+.coldStorageHeroGlow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(8px);
+}
+
+.coldStorageHeroGlowOne {
+  top: -180px;
+  left: -100px;
+  width: 510px;
+  height: 510px;
+  background: rgba(34, 104, 255, 0.2);
+}
+
+.coldStorageHeroGlowTwo {
+  right: -170px;
+  bottom: -220px;
+  width: 600px;
+  height: 600px;
+  background: rgba(26, 200, 218, 0.16);
+}
+
+.coldStorageHeroContent,
+.coldStorageHeroVisual {
+  position: relative;
+  z-index: 2;
+}
+
+.coldStorageHeroContent {
+  max-width: 790px;
+}
+
+.coldStorageEyebrow {
+  width: fit-content;
+  margin-bottom: 22px;
+  padding: 9px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(133, 199, 255, 0.28);
+  border-radius: 999px;
+  color: #cae7ff;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coldStorageHero h1 {
+  max-width: 850px;
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(3rem, 5.4vw, 5.65rem);
+  font-weight: 850;
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+}
+
+.coldStorageHeroLead {
+  max-width: 780px;
+  margin: 30px 0 0;
+  color: #eaf4ff;
+  font-size: clamp(1.08rem, 1.45vw, 1.34rem);
+  font-weight: 650;
+  line-height: 1.68;
+}
+
+.coldStorageHeroDescription {
+  max-width: 760px;
+  margin: 15px 0 0;
+  color: #bfd2eb;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.coldStorageHeroActions {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.coldStoragePrimaryButton,
+.coldStorageSecondaryButton {
+  min-height: 52px;
+  padding: 0 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 13px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.coldStoragePrimaryButton {
+  border: 0;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2c75f3, #1753d0);
+  box-shadow: 0 16px 34px rgba(12, 66, 180, 0.36);
+}
+
+.coldStoragePrimaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(12, 66, 180, 0.45);
+}
+
+.coldStorageSecondaryButton {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.coldStorageSecondaryButton:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.coldStorageHeroPills {
+  margin-top: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.coldStorageHeroPills span {
+  padding: 9px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(163, 211, 255, 0.17);
+  border-radius: 10px;
+  color: #dcecff;
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+/* =====================================================
+   HERO DASHBOARD
+===================================================== */
+
+.coldStorageHeroVisual {
+  width: 100%;
+  max-width: 650px;
+  justify-self: end;
+}
+
+.coldStorageDashboard {
+  padding: 21px;
+  border: 1px solid rgba(160, 204, 255, 0.18);
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.055)
+    );
+  box-shadow:
+    0 35px 85px rgba(1, 13, 40, 0.44),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(24px);
+}
+
+.coldStorageDashboardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.coldStorageDashboardTop > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.coldStorageDashboardTop span {
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.coldStorageDashboardTop small {
+  color: #9fb8d8;
+  font-size: 0.72rem;
+}
+
+.coldStorageDashboardTop b {
+  padding: 7px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  color: #bdf8df;
+  background: rgba(24, 194, 129, 0.14);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.coldStorageKpiGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.coldStorageKpiGrid > div {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid rgba(180, 214, 255, 0.11);
+  border-radius: 14px;
+  background: rgba(3, 22, 57, 0.43);
+}
+
+.coldStorageKpiGrid small {
+  color: #9fb9da;
+  font-size: 0.68rem;
+}
+
+.coldStorageKpiGrid strong {
+  color: #ffffff;
+  font-size: 1.22rem;
+}
+
+.coldStorageKpiGrid span {
+  color: #a9c0dd;
+  font-size: 0.65rem;
+}
+
+.coldStorageChartCard {
+  margin-top: 13px;
+  padding: 15px;
+  border: 1px solid rgba(180, 214, 255, 0.11);
+  border-radius: 16px;
+  background: rgba(3, 22, 57, 0.43);
+}
+
+.coldStorageChartHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.coldStorageChartHeader > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.coldStorageChartHeader strong {
+  color: #ffffff;
+  font-size: 0.82rem;
+}
+
+.coldStorageChartHeader span {
+  color: #94afcf;
+  font-size: 0.64rem;
+}
+
+.coldStoragePriorityBadge {
+  padding: 6px 8px;
+  border-radius: 999px;
+  color: #ffd4d4 !important;
+  background: rgba(232, 69, 69, 0.15);
+  font-size: 0.61rem !important;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.coldStorageChart {
+  position: relative;
+  height: 135px;
+  margin-top: 15px;
+  padding: 12px 3px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 7px;
+  border-bottom: 1px solid rgba(180, 214, 255, 0.15);
+}
+
+.coldStorageChart span {
+  width: 9%;
+  min-height: 18px;
+  border-radius: 5px 5px 2px 2px;
+  background: linear-gradient(to top, #2769df, #65b9ff);
+  box-shadow: 0 5px 14px rgba(40, 110, 225, 0.24);
+}
+
+.coldStorageChart span.alertBar {
+  background: linear-gradient(to top, #ea5a62, #ff9a7c);
+}
+
+.coldStorageBaseline {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
+  border-top: 1px dashed rgba(132, 211, 255, 0.55);
+}
+
+.coldStorageInsight {
+  margin-top: 13px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  border: 1px solid rgba(87, 157, 255, 0.2);
+  border-radius: 15px;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 91, 202, 0.2),
+    rgba(20, 103, 133, 0.11)
+  );
+}
+
+.coldStorageInsightIcon {
+  width: 39px;
+  height: 39px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  color: #d9ecff;
+  background: rgba(56, 128, 246, 0.2);
+}
+
+.coldStorageInsight strong {
+  color: #ffffff;
+  font-size: 0.78rem;
+}
+
+.coldStorageInsight p {
+  margin: 5px 0 0;
+  color: #b9cde5;
+  font-size: 0.69rem;
+  line-height: 1.55;
+}
+
+.coldStorageApproval {
+  margin-top: 12px;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 12px;
+  background: rgba(3, 18, 46, 0.46);
+}
+
+.coldStorageApproval > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b9cee8;
+  font-size: 0.68rem;
+}
+
+.coldStorageApproval button {
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #2264db;
+  font-family: inherit;
+  font-size: 0.64rem;
+  font-weight: 800;
+}
+
+/* =====================================================
+   PROCESS STRIP
+===================================================== */
+
+.coldStorageValueStrip {
+  min-height: 75px;
+  padding: 18px clamp(24px, 7vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(8px, 2vw, 24px);
+  color: #dceaff;
+  background: #071a3c;
+  font-size: 0.81rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.coldStorageValueStrip svg {
+  color: #3b7ff0;
+}
+
+/* =====================================================
+   SHARED SECTION
+===================================================== */
+
+.coldStorageSection {
+  padding: 105px clamp(24px, 7vw, 120px);
+}
+
+.coldStorageSectionHeader {
+  max-width: 900px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.coldStorageSectionHeader > p {
+  margin: 0 0 15px;
+  color: #2260db;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.coldStorageSectionHeader h2 {
+  margin: 0;
+  color: #071936;
+  font-size: clamp(2.15rem, 4.1vw, 4.3rem);
+  font-weight: 850;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.coldStorageSectionHeader span {
+  max-width: 770px;
+  margin: 23px auto 0;
+  display: block;
+  color: #5d708f;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* =====================================================
+   CHALLENGES
+===================================================== */
+
+.coldStorageIntroSection {
+  background: #f5f8fd;
+}
+
+.coldStorageChallengeGrid {
+  max-width: 1310px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.coldStorageChallengeCard {
+  min-height: 255px;
+  padding: 27px;
+  border: 1px solid #dce6f4;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(31, 62, 110, 0.065);
+}
+
+.coldStorageChallengeIcon,
+.coldStorageAssetIcon,
+.coldStorageScenarioIcon,
+.coldStorageBenefitIcon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #3279f5, #154fc8);
+  box-shadow: 0 10px 22px rgba(32, 92, 208, 0.23);
+}
+
+.coldStorageChallengeCard h3 {
+  margin: 22px 0 10px;
+  color: #102344;
+  font-size: 1.05rem;
+}
+
+.coldStorageChallengeCard p {
+  margin: 0;
+  color: #657794;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   ASSETS
+===================================================== */
+
+.coldStorageAssetsSection {
+  background: #ffffff;
+}
+
+.coldStorageAssetsGrid {
+  max-width: 1310px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.coldStorageAssetCard {
+  min-height: 230px;
+  padding: 25px;
+  border: 1px solid #dde7f4;
+  border-radius: 18px;
+  background: #f9fbfe;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.coldStorageAssetCard:hover {
+  transform: translateY(-5px);
+  border-color: #b8cff4;
+  box-shadow: 0 18px 44px rgba(32, 73, 137, 0.1);
+}
+
+.coldStorageAssetCard h3 {
+  margin: 19px 0 9px;
+  color: #102344;
+  font-size: 1rem;
+}
+
+.coldStorageAssetCard p {
+  margin: 0;
+  color: #667895;
+  font-size: 0.84rem;
+  line-height: 1.68;
+}
+
+/* =====================================================
+   SCENARIOS
+===================================================== */
+
+.coldStorageScenariosSection {
+  background:
+    linear-gradient(
+      180deg,
+      #edf3fc 0%,
+      #f7f9fd 100%
+    );
+}
+
+.coldStorageScenarioGrid {
+  max-width: 1310px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.coldStorageScenarioCard {
+  min-height: 285px;
+  padding: 27px;
+  border: 1px solid #d8e3f3;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 14px 38px rgba(34, 68, 118, 0.06);
+}
+
+.coldStorageScenarioTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.coldStorageScenarioTop > span {
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #1e5bcf;
+  background: #edf3ff;
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.coldStorageScenarioCard h3 {
+  margin: 22px 0 10px;
+  color: #102344;
+  font-size: 1.08rem;
+}
+
+.coldStorageScenarioCard > p {
+  min-height: 72px;
+  margin: 0;
+  color: #657693;
+  font-size: 0.87rem;
+  line-height: 1.7;
+}
+
+.coldStorageScenarioOutcome {
+  margin-top: 21px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #e5ebf4;
+  color: #1755ca;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* =====================================================
+   WORKFLOW
+===================================================== */
+
+.coldStorageWorkflowSection {
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(25, 118, 189, 0.25),
+      transparent 34%
+    ),
+    #071a3c;
+}
+
+.coldStorageLightHeader > p {
+  color: #76a9ff;
+}
+
+.coldStorageLightHeader h2 {
+  color: #ffffff;
+}
+
+.coldStorageLightHeader span {
+  color: #b8cbe4;
+}
+
+.coldStorageWorkflow {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.coldStorageWorkflowStep {
+  position: relative;
+  min-height: 105px;
+  padding: 20px 55px 20px 21px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid rgba(148, 190, 245, 0.13);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.coldStorageWorkflowNumber {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2d75ed, #174fc0);
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.coldStorageWorkflowStep h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.coldStorageWorkflowStep p {
+  margin: 5px 0 0;
+  color: #afc3dd;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.coldStorageWorkflowArrow {
+  position: absolute;
+  right: 20px;
+  color: #548ce5;
+}
+
+/* =====================================================
+   PLATFORM
+===================================================== */
+
+.coldStoragePlatformSection {
+  background: #ffffff;
+}
+
+.coldStoragePlatformPanel {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 65px);
+  border: 1px solid #dae5f4;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      135deg,
+      #f3f7fd,
+      #ffffff 58%,
+      #eff7fa
+    );
+  box-shadow: 0 24px 70px rgba(24, 57, 106, 0.09);
+}
+
+.coldStoragePlatformCopy {
+  max-width: 850px;
+}
+
+.coldStoragePlatformCopy > p {
+  margin: 0 0 14px;
+  color: #205ed8;
+  font-size: 0.77rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.coldStoragePlatformCopy h2 {
+  margin: 0;
+  color: #071936;
+  font-size: clamp(2.1rem, 3.7vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.coldStoragePlatformCopy > span {
+  max-width: 800px;
+  margin-top: 20px;
+  display: block;
+  color: #61738f;
+  line-height: 1.75;
+}
+
+.coldStoragePlatformCopy ul {
+  margin: 27px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+  list-style: none;
+}
+
+.coldStoragePlatformCopy li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #233a60;
+  font-size: 0.87rem;
+  font-weight: 750;
+}
+
+.coldStoragePlatformCopy li svg {
+  color: #1b65dd;
+}
+
+.coldStoragePlatformFlow {
+  margin-top: 50px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.coldStoragePlatformFlow > svg {
+  align-self: center;
+  flex-shrink: 0;
+  color: #7594c4;
+}
+
+.coldStoragePlatformNode {
+  min-width: 150px;
+  min-height: 115px;
+  padding: 18px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 1px solid #d5e0ef;
+  border-radius: 16px;
+  color: #1c407c;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(31, 67, 118, 0.06);
+}
+
+.coldStoragePlatformNode.featured {
+  color: #ffffff;
+  border-color: transparent;
+  background: linear-gradient(135deg, #286ee7, #1348ba);
+  box-shadow: 0 16px 34px rgba(30, 88, 197, 0.24);
+}
+
+.coldStoragePlatformNode span {
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.coldStorageBenefitsSection {
+  background: #f4f7fc;
+}
+
+.coldStorageBenefitsGrid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.coldStorageBenefitCard {
+  min-height: 285px;
+  padding: 27px;
+  border: 1px solid #dbe5f3;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(32, 68, 120, 0.06);
+}
+
+.coldStorageBenefitCard > strong {
+  margin-top: 23px;
+  display: block;
+  color: #1356cd;
+  font-size: 2.15rem;
+  line-height: 1;
+}
+
+.coldStorageBenefitCard h3 {
+  margin: 11px 0 9px;
+  color: #102344;
+  font-size: 1rem;
+}
+
+.coldStorageBenefitCard p {
+  margin: 0;
+  color: #667894;
+  font-size: 0.83rem;
+  line-height: 1.65;
+}
+
+/* =====================================================
+   PILOT
+===================================================== */
+
+.coldStoragePilotSection {
+  background: #ffffff;
+}
+
+.coldStoragePilotPanel {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 65px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+  gap: 55px;
+  border-radius: 28px;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(36, 176, 197, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #0b2f72, #071b40);
+  box-shadow: 0 28px 72px rgba(8, 36, 86, 0.23);
+}
+
+.coldStoragePilotCopy > p {
+  margin: 0 0 14px;
+  color: #83afff;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.coldStoragePilotCopy h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.15rem, 3.7vw, 4.05rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.coldStoragePilotCopy > span {
+  margin: 21px 0 27px;
+  display: block;
+  color: #bfd0e7;
+  line-height: 1.75;
+}
+
+.coldStoragePilotChecklist {
+  padding: 26px;
+  border: 1px solid rgba(168, 202, 246, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.coldStoragePilotChecklist h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.coldStoragePilotChecklist ul {
+  margin: 23px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 13px;
+  list-style: none;
+}
+
+.coldStoragePilotChecklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #d3e1f2;
+  font-size: 0.86rem;
+  line-height: 1.52;
+}
+
+.coldStoragePilotChecklist li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #77b6ff;
+}
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.coldStorageFinalCta {
+  padding: 75px clamp(24px, 7vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  color: #ffffff;
+  background: linear-gradient(110deg, #113c91, #095a78);
+}
+
+.coldStorageFinalCta > div:first-child {
+  max-width: 820px;
+}
+
+.coldStorageFinalCta p {
+  margin: 0 0 11px;
+  color: #a9c9ff;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.coldStorageFinalCta h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.5vw, 3.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.coldStorageFinalCta span {
+  max-width: 700px;
+  margin-top: 15px;
+  display: block;
+  color: #c3d7ed;
+  line-height: 1.7;
+}
+
+.coldStorageFinalActions {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1180px) {
+  .coldStorageHero {
+    grid-template-columns: 1fr;
+  }
+
+  .coldStorageHeroContent {
+    max-width: 950px;
+  }
+
+  .coldStorageHeroVisual {
+    max-width: 780px;
+    justify-self: center;
+  }
+
+  .coldStorageChallengeGrid,
+  .coldStorageAssetsGrid,
+  .coldStorageBenefitsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coldStorageScenarioGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coldStoragePlatformFlow {
+    flex-wrap: wrap;
+  }
+
+  .coldStoragePlatformNode {
+    flex: 1 1 190px;
+  }
+
+  .coldStoragePlatformFlow > svg {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .coldStorageHero {
+    min-height: auto;
+    padding-top: 78px;
+  }
+
+  .coldStoragePilotPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .coldStorageFinalCta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .coldStoragePlatformCopy ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .coldStorageHero {
+    padding: 64px 20px 72px;
+  }
+
+  .coldStorageHero h1 {
+    font-size: clamp(2.55rem, 13vw, 4.25rem);
+  }
+
+  .coldStorageHeroLead {
+    font-size: 1rem;
+  }
+
+  .coldStorageHeroDescription {
+    font-size: 0.92rem;
+  }
+
+  .coldStorageHeroActions,
+  .coldStorageFinalActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .coldStoragePrimaryButton,
+  .coldStorageSecondaryButton {
+    width: 100%;
+  }
+
+  .coldStorageDashboard {
+    padding: 15px;
+    border-radius: 18px;
+  }
+
+  .coldStorageKpiGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coldStorageApproval {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .coldStorageSection {
+    padding: 78px 20px;
+  }
+
+  .coldStorageSectionHeader {
+    margin-bottom: 38px;
+    text-align: left;
+  }
+
+  .coldStorageSectionHeader span {
+    margin-left: 0;
+  }
+
+  .coldStorageChallengeGrid,
+  .coldStorageAssetsGrid,
+  .coldStorageScenarioGrid,
+  .coldStorageBenefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .coldStorageChallengeCard,
+  .coldStorageAssetCard,
+  .coldStorageScenarioCard,
+  .coldStorageBenefitCard {
+    min-height: auto;
+  }
+
+  .coldStorageScenarioCard > p {
+    min-height: auto;
+  }
+
+  .coldStorageWorkflowStep {
+    padding-right: 20px;
+  }
+
+  .coldStorageWorkflowArrow {
+    display: none;
+  }
+
+  .coldStoragePlatformPanel,
+  .coldStoragePilotPanel {
+    padding: 27px 21px;
+    border-radius: 20px;
+  }
+
+  .coldStoragePlatformFlow {
+    flex-direction: column;
+  }
+
+  .coldStoragePlatformNode {
+    width: 100%;
+  }
+
+  .coldStorageFinalCta {
+    padding: 65px 20px;
+  }
+}
