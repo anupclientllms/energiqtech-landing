@@ -16,7 +16,7 @@ import IntellectualProperty from "./pages/IntellectualPropertyPage";
 import ConnectedEnergyAssetsPage from "./pages/ConnectedEnergyAssetsPage";
 import AIEnergyGatewayPage from "./pages/AIEnergyGatewayPage";
 
-import ColdStorageAI from "./pages/ColdstorageAI";
+import ColdStorageAI from "./pages/ColdStorageAI";
 import ManufacturingAI from "./pages/ManufacturingAI";
 import HealthcareAI from "./pages/HealthCareAI";
 import UniversityAI from "./pages/UniversityAI";
