@@ -645,9 +645,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
             <ChevronRight size={18} />
           </button>
 
-          <Link to="/industries" className="warehouseLogisticsSecondaryBtn">
-            Explore Other Industries
-          </Link>
+          
         </div>
       </section>
     </main>

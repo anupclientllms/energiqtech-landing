@@ -623,9 +623,7 @@ export default function AirportAI({ openPilotModal }) {
             <ChevronRight size={18} />
           </button>
 
-          <Link to="/industries" className="airportSecondaryBtn">
-            Explore Other Industries
-          </Link>
+          
         </div>
       </section>
     </main>

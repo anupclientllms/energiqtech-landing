@@ -636,9 +636,7 @@ export default function HotelAI({ openPilotModal }) {
             <ChevronRight size={18} />
           </button>
 
-          <Link to="/industries" className="hotelSecondaryBtn">
-            Explore Other Industries
-          </Link>
+          
         </div>
       </section>
     </main>

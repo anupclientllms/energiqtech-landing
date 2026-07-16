@@ -289,7 +289,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
           <button type="button" className="shoppingCentrePrimaryBtn" onClick={handlePilotClick}>
             Request Pilot <ChevronRight size={18} />
           </button>
-          <Link to="/industries" className="shoppingCentreSecondaryBtn">Explore Other Industries</Link>
+          
         </div>
       </section>
     </main>

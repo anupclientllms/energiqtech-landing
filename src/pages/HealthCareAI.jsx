@@ -683,9 +683,7 @@ export default function HealthcareAI({ openPilotModal }) {
             <ChevronRight size={18} />
           </button>
 
-          <Link to="/industries" className="healthcareSecondaryBtn">
-            Explore Other Industries
-          </Link>
+          
         </div>
       </section>
     </main>

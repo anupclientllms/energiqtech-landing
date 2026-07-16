@@ -283,7 +283,7 @@ export default function UniversityAI({ openPilotModal }) {
           <button type="button" className="universityPrimaryBtn" onClick={handlePilotClick}>
             Request Pilot <ChevronRight size={18} />
           </button>
-          <Link to="/industries" className="universitySecondaryBtn">Explore Other Industries</Link>
+          
         </div>
       </section>
     </main>

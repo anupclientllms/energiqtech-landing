@@ -278,7 +278,7 @@ export default function BuildingAI({ openPilotModal }) {
           <button type="button" className="buildingAIPrimaryBtn" onClick={handlePilotClick}>
             Request Pilot <ChevronRight size={18} />
           </button>
-          <Link to="/industries" className="buildingAISecondaryBtn">Explore Other Industries</Link>
+          
         </div>
       </section>
     </main>

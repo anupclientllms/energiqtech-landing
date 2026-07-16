@@ -849,9 +849,7 @@ export default function ColdStorageAI({ openPilotModal }) {
             <ChevronRight size={19} />
           </button>
 
-          <Link to="/industries" className="coldStorageSecondaryButton">
-            Explore Other Industries
-          </Link>
+          
         </div>
       </section>
     </main>

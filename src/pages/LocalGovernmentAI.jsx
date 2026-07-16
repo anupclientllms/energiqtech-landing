@@ -290,7 +290,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
           <button type="button" className="localGovernmentPrimaryBtn" onClick={handlePilotClick}>
             Request Council Pilot <ChevronRight size={18} />
           </button>
-          <Link to="/industries" className="localGovernmentSecondaryBtn">Explore Other Industries</Link>
+          
         </div>
       </section>
     </main>

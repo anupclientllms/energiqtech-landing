@@ -289,7 +289,7 @@ export default function ManufacturingAI({ openPilotModal }) {
 
       <section className="manufacturingFinalCta">
         <div><p>Now Onboarding Pilot Partners</p><h2>Reduce Industrial Energy Costs While Protecting Production Reliability.</h2><span>EnergIQ is seeking manufacturers, industrial operators, refrigeration-intensive production sites and technology partners for pilot collaboration.</span></div>
-        <div className="manufacturingFinalActions"><button type="button" className="manufacturingPrimaryButton" onClick={handlePilotClick}>Request Pilot <ChevronRight size={19} /></button><Link to="/industries" className="manufacturingSecondaryButton">Explore Other Industries</Link></div>
+        <div className="manufacturingFinalActions"><button type="button" className="manufacturingPrimaryButton" onClick={handlePilotClick}>Request Pilot <ChevronRight size={19} /></button></div>
       </section>
     </main>
   );
