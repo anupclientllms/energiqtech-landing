@@ -28,7 +28,7 @@ import {
   Waves,
   Zap,
 } from "lucide-react";
-import "../styles/HealthcareAI.css";
+import "../styles/HealthCareAI.css";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
