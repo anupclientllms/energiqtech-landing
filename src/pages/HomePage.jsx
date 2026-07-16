@@ -252,7 +252,7 @@ const industrySolutions = [
   {
     icon: SunMedium,
     title: "DER Portfolio AI",
-    path: "/der-ai",
+    path: "/connected-energy-assets",
     text: "Coordinate solar, batteries, EV charging, flexible demand and grid-connected assets across distributed portfolios.",
     assets: "Solar PV • BESS • EV • Grid Interfaces",
   },
@@ -417,9 +417,7 @@ export default function HomePage({ openPilotModal }) {
             </span>
           </div>
 
-          <Link className="secondary industriesPageLink" to="/industries">
-            View All Industries <ChevronRight size={18} />
-          </Link>
+          
         </motion.div>
       </motion.section>
 
