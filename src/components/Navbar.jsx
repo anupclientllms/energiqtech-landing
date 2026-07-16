@@ -355,13 +355,7 @@ export default function Navbar({ openPilotModal }) {
                 </span>
               </div>
 
-              <Link
-                to="/industries"
-                onClick={closeMenu}
-                className="viewIndustriesLink"
-              >
-                View all industries →
-              </Link>
+              
             </div>
           </div>
         </div>
