@@ -74,7 +74,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
       <section className="localGovernmentHero">
         <motion.div className="localGovernmentHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="localGovernmentBadge" variants={fadeUp}>
-            <Landmark size={17} /> EnergIQ Local Government AI
+            <Landmark size={17} /> Energ IQ Tech Local Government AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -82,7 +82,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="localGovernmentLead" variants={fadeUp}>
-            EnergIQ Local Government AI applies the Building AI workspace across civic centres,
+            Energ IQ Tech Local Government AI applies the Building AI workspace across civic centres,
             libraries, community facilities, depots and administrative offices. It connects HVAC,
             lighting, workstations, printers, kitchens, refrigeration, lifts, pumps, motors,
             solar, battery and EV charging through the AI Energy Gateway.
@@ -214,7 +214,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
         <div className="localGovernmentSectionHeader localGovernmentSectionHeaderLight">
           <p>End-to-End AI Workflow</p>
           <h2>From Council Telemetry to Governed Operational Action.</h2>
-          <span>EnergIQ converts operational data into explainable recommendations while keeping council facilities and sustainability teams in control.</span>
+          <span>Energ IQ Tech converts operational data into explainable recommendations while keeping council facilities and sustainability teams in control.</span>
         </div>
 
         <div className="localGovernmentWorkflow">
@@ -230,8 +230,8 @@ export default function LocalGovernmentAI({ openPilotModal }) {
       <section className="localGovernmentSection localGovernmentPlatformSection">
         <div className="localGovernmentPlatformPanel">
           <div className="localGovernmentPlatformCopy">
-            <p>Shared EnergIQ Platform</p>
-            <h2>Local Government AI Uses the Shared Building AI Workspace and EnergIQ Architecture.</h2>
+            <p>Shared Energ IQ Tech Platform</p>
+            <h2>Local Government AI Uses the Shared Building AI Workspace and Energ IQ Tech Architecture.</h2>
             <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support commercial buildings and council-owned facilities.</span>
             <ul>
               <li><CheckCircle2 size={18} /> Shared Building AI workspace</li>
@@ -283,7 +283,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
         <div>
           <p>Now Onboarding Council Pilot Partners</p>
           <h2>Reduce Council Energy Costs Across Buildings, Community Facilities and Connected Energy Assets.</h2>
-          <span>EnergIQ is seeking councils, facility teams, sustainability leaders and technology partners for pilot collaboration.</span>
+          <span>Energ IQ Tech is seeking councils, facility teams, sustainability leaders and technology partners for pilot collaboration.</span>
         </div>
 
         <div className="localGovernmentCtaActions">

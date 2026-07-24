@@ -165,12 +165,12 @@ export default function Navbar({ openPilotModal }) {
       <Link to="/" className="brand" onClick={closeMenu}>
         <img
           src="/energiq-logo.png"
-          alt="EnergIQ Tech logo"
+          alt="Energ IQ Tech logo"
           className="logoImage"
         />
 
         <div className="brandText">
-          <strong>EnergIQ Tech</strong>
+          <strong>Energ IQ Tech</strong>
           <span>Edge AI for Connected Energy Systems</span>
         </div>
       </Link>

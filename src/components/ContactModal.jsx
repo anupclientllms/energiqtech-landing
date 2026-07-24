@@ -70,7 +70,7 @@ export default function ContactModal({ isOpen, onClose }) {
           <div className="successBox">
             <div className="modalBadge">Request Received</div>
             <h2>Thanks — we’ll get back within 24 hours.</h2>
-            <p>Your pilot discussion request has been sent to EnergIQ Tech.</p>
+            <p>Your pilot discussion request has been sent to Energ IQ Tech.</p>
             <button className="primary modalSubmit" onClick={onClose}>
               Close
             </button>

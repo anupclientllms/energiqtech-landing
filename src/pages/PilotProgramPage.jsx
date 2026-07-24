@@ -29,7 +29,7 @@ export default function PilotProgramPage() {
           </h1>
 
           <p>
-            EnergIQ Tech helps councils, universities and commercial organisations
+            Energ IQ Tech helps councils, universities and commercial organisations
             start with a focused pilot, connect building and energy assets,
             identify optimisation opportunities, measure impact and build
             confidence before broader rollout.
@@ -331,7 +331,7 @@ export default function PilotProgramPage() {
 
       <section className="pilotCTA">
         <h2>
-          Ready to assess whether EnergIQ Tech is suitable for your site?
+          Ready to assess whether Energ IQ Tech is suitable for your site?
         </h2>
 
         <p>

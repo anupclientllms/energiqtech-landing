@@ -227,7 +227,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
         >
           <motion.div className="warehouseLogisticsBadge" variants={fadeUp}>
             <Warehouse size={17} />
-            EnergIQ Warehouse & Logistics AI
+            Energ IQ Tech Warehouse & Logistics AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -236,7 +236,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="warehouseLogisticsLead" variants={fadeUp}>
-            EnergIQ Warehouse & Logistics AI connects conveyors, sortation,
+            Energ IQ Tech Warehouse & Logistics AI connects conveyors, sortation,
             warehouse HVAC, cold storage, dock systems, lighting, automation,
             robotics, forklift and AGV charging, fleet EV charging, compressed
             air, water systems, solar and battery assets through the AI Energy
@@ -500,7 +500,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
             From Warehouse Telemetry to Governed Operational Action.
           </h2>
           <span>
-            EnergIQ converts operational data into explainable recommendations
+            Energ IQ Tech converts operational data into explainable recommendations
             while keeping warehouse and facilities teams in control.
           </span>
         </div>
@@ -521,17 +521,17 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
       <section className="warehouseLogisticsSection warehouseLogisticsPlatformSection">
         <div className="warehouseLogisticsPlatformPanel">
           <div className="warehouseLogisticsPlatformCopy">
-            <p>Shared EnergIQ Platform</p>
+            <p>Shared Energ IQ Tech Platform</p>
 
             <h2>
               Warehouse & Logistics AI Is an Industry Pack Built on the Shared
-              EnergIQ Architecture.
+              Energ IQ Tech Architecture.
             </h2>
 
             <span>
               The same AI Energy Gateway, Digital Twin, Decision Agents,
               human-in-the-loop governance and Savings Intelligence support all
-              EnergIQ industry environments.
+              Energ IQ Tech industry environments.
             </span>
 
             <ul>
@@ -629,7 +629,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
             Temperature and Operational Reliability.
           </h2>
           <span>
-            EnergIQ is seeking warehouse operators, logistics groups,
+            Energ IQ Tech is seeking warehouse operators, logistics groups,
             distribution centres and technology partners for pilot
             collaboration.
           </span>

@@ -75,7 +75,7 @@ export default function DataCentreAI({ openPilotModal }) {
       <section className="dataCentreHero">
         <motion.div className="dataCentreHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="dataCentreBadge" variants={fadeUp}>
-            <Database size={17} /> EnergIQ Data Centre AI
+            <Database size={17} /> Energ IQ Tech Data Centre AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -83,7 +83,7 @@ export default function DataCentreAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="dataCentreLead" variants={fadeUp}>
-            EnergIQ Data Centre AI connects cooling systems, CRAC and CRAH units, chiller plants,
+            Energ IQ Tech Data Centre AI connects cooling systems, CRAC and CRAH units, chiller plants,
             server racks, UPS systems, power distribution, batteries, generators, thermal zones,
             cooling water, grid supply and workload data through the AI Energy Gateway.
           </motion.p>
@@ -212,7 +212,7 @@ export default function DataCentreAI({ openPilotModal }) {
         <div className="dataCentreSectionHeader dataCentreSectionHeaderLight">
           <p>End-to-End AI Workflow</p>
           <h2>From Data Centre Telemetry to Governed Operational Action.</h2>
-          <span>EnergIQ converts infrastructure data into explainable recommendations while keeping engineering and operations teams in control.</span>
+          <span>Energ IQ Tech converts infrastructure data into explainable recommendations while keeping engineering and operations teams in control.</span>
         </div>
 
         <div className="dataCentreWorkflow">
@@ -228,9 +228,9 @@ export default function DataCentreAI({ openPilotModal }) {
       <section className="dataCentreSection dataCentrePlatformSection">
         <div className="dataCentrePlatformPanel">
           <div className="dataCentrePlatformCopy">
-            <p>Shared EnergIQ Platform</p>
-            <h2>Data Centre AI Is an Industry Pack Built on the Shared EnergIQ Architecture.</h2>
-            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all EnergIQ industry environments.</span>
+            <p>Shared Energ IQ Tech Platform</p>
+            <h2>Data Centre AI Is an Industry Pack Built on the Shared Energ IQ Tech Architecture.</h2>
+            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all Energ IQ Tech industry environments.</span>
             <ul>
               <li><CheckCircle2 size={18} /> Reusable AI Energy Gateway</li>
               <li><CheckCircle2 size={18} /> Shared Digital Twin architecture</li>
@@ -280,7 +280,7 @@ export default function DataCentreAI({ openPilotModal }) {
         <div>
           <p>Now Onboarding Pilot Partners</p>
           <h2>Reduce Data Centre Energy Costs While Protecting Uptime, Capacity and Thermal Reliability.</h2>
-          <span>EnergIQ is seeking data centre operators, colocation providers, infrastructure teams and technology partners for pilot collaboration.</span>
+          <span>Energ IQ Tech is seeking data centre operators, colocation providers, infrastructure teams and technology partners for pilot collaboration.</span>
         </div>
 
         <div className="dataCentreCtaActions">

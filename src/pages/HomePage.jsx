@@ -104,7 +104,7 @@ const comparison = [
     points: ["Excellent control", "Limited intelligence", "Often vendor-specific", "Large implementation footprint"],
   },
   {
-    title: "EnergIQ Tech",
+    title: "Energ IQ Tech",
     points: ["Device-led AI Gateway", "Connected Energy Assets","Operational Intelligence","Governed action", "Vendor-neutral integration"],
     featured: true,
   },
@@ -274,7 +274,7 @@ export default function HomePage({ openPilotModal }) {
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            EnergIQ Tech connects building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage Systems (BESS), EV charging infrastructure, smart meters, IoT sensors and utility interfaces through the AI Energy Gateway.
+            Energ IQ Tech connects building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage Systems (BESS), EV charging infrastructure, smart meters, IoT sensors and utility interfaces through the AI Energy Gateway.
             Edge AI analyses operational data in real time, detects energy waste, peak-demand events and equipment inefficiencies, recommends optimisation actions and enables organisations to reduce energy costs, lower emissions and improve operational reliability.
           </motion.p>
 
@@ -377,7 +377,7 @@ export default function HomePage({ openPilotModal }) {
           <p>Industry Solutions</p>
           <h2>One Core AI Platform. Twelve Industry-Specific Operating Environments.</h2>
           <span>
-            EnergIQ applies the same AI Energy Gateway, Digital Twin, Decision Agents,
+            Energ IQ Tech applies the same AI Energy Gateway, Digital Twin, Decision Agents,
             human-in-the-loop governance and Savings Intelligence across energy-intensive
             industries. Each Industry Pack adapts the shared platform to the assets,
             operational risks and optimisation opportunities of that environment.
@@ -433,7 +433,7 @@ export default function HomePage({ openPilotModal }) {
           <p>Problem-First Approach</p>
           <h2>One AI Workflow Across Every Industry and Connected Energy Asset.</h2>
           <span>
-            EnergIQ Tech analyses operational data from building systems, refrigeration plants, industrial equipment, Solar PV, Battery Energy Storage, EV charging, smart meters
+            Energ IQ Tech analyses operational data from building systems, refrigeration plants, industrial equipment, Solar PV, Battery Energy Storage, EV charging, smart meters
             and IoT devices to identify inefficiencies before recommending AI-driven optimisation actions.
           </span>
         </motion.div>
@@ -483,7 +483,7 @@ export default function HomePage({ openPilotModal }) {
           <p>AI as the Enabler</p>
           <h2>Connected Energy Assets → AI Intelligence → Intelligent Actions → Measurable Impact</h2>
           <span>
-            EnergIQ Tech transforms operational data from buildings, refrigeration systems, industrial equipment, Solar PV, Battery Storage, EV charging, smart meters
+            Energ IQ Tech transforms operational data from buildings, refrigeration systems, industrial equipment, Solar PV, Battery Storage, EV charging, smart meters
             and IoT devices into AI-driven insights, optimisation recommendations and measurable operational outcomes.
           </span>
         </div>
@@ -527,7 +527,7 @@ export default function HomePage({ openPilotModal }) {
           </h2>
 
           <span>
-           EnergIQ Tech transforms AI insights into governed operational actions across Building Management Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters and 
+           Energ IQ Tech transforms AI insights into governed operational actions across Building Management Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters and 
            other Distributed Energy Resources through approval-based workflows.
           </span>
         </div>
@@ -605,7 +605,7 @@ export default function HomePage({ openPilotModal }) {
             <b>→</b>
             <span><Cpu size={20} /> AI Energy Gateway</span>
             <b>→</b>
-            <span><LineChart size={20} /> EnergIQ Platform</span>
+            <span><LineChart size={20} /> Energ IQ Tech Platform</span>
             <b>→</b>
             <span><ShieldCheck size={20} /> Human-approved Actions</span>
           </div>
@@ -660,7 +660,7 @@ export default function HomePage({ openPilotModal }) {
           </h2>
 
           <span>
-            EnergIQ Tech has developed a unified AI Energy Platform comprising the AI Energy Gateway, Digital Twin, AI Decision Agents and governed operational workflows.
+            Energ IQ Tech has developed a unified AI Energy Platform comprising the AI Energy Gateway, Digital Twin, AI Decision Agents and governed operational workflows.
             The platform is designed to connect, analyse and optimise energy-intensive operations and distributed energy assets, including Building Management Systems (BMS), refrigeration systems, industrial equipment, Solar PV, Battery Energy Storage Systems (BESS), EV charging, smart meters and IoT infrastructure.
           </span>
 
@@ -711,7 +711,7 @@ export default function HomePage({ openPilotModal }) {
           </h2>
 
           <span>
-            Illustrative Phase 1 workflow demonstrating how the EnergIQ Platform connects energy assets, detects anomalies, recommends actions 
+            Illustrative Phase 1 workflow demonstrating how the Energ IQ Tech Platform connects energy assets, detects anomalies, recommends actions 
             and validates operational outcomes.
           </span>
         </div>
@@ -763,7 +763,7 @@ export default function HomePage({ openPilotModal }) {
           <div className="twinText">
             <h3>Spatial visibility across buildings and connected energy assets.</h3>
             <p>
-              EnergIQ maps anomalies, inefficiencies and operational events to buildings, zones, equipment and connected energy assets, enabling faster investigation and AI-assisted operational decisions.
+              Energ IQ Tech maps anomalies, inefficiencies and operational events to buildings, zones, equipment and connected energy assets, enabling faster investigation and AI-assisted operational decisions.
             </p>
             <ul>
               <li><CheckCircle2 size={18} /> Building, zone, room and equipment-level context</li>
@@ -787,7 +787,7 @@ export default function HomePage({ openPilotModal }) {
 
       <motion.section className="section comparisonSection" id="comparison" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
-          <p>Why EnergIQ Tech</p>
+          <p>Why Energ IQ Tech</p>
           <h2>Built around existing energy infrastructure, operational workflows and asset owners.</h2>
         </motion.div>
 
@@ -820,14 +820,14 @@ export default function HomePage({ openPilotModal }) {
           </h3>
 
           <p>
-            EnergIQ Tech combines the AI Energy Gateway, Digital Twins, AI Decision Agents 
+            Energ IQ Tech combines the AI Energy Gateway, Digital Twins, AI Decision Agents 
             and governed operational workflows into a unified AI platform for connected energy infrastructure. 
             The platform enables organisations to move beyond monitoring toward intelligent optimisation, 
             operational automation and measurable business outcomes.
           </p>
 
           <p className="visionStatement">
-            Our long-term vision is to establish EnergIQ Tech as the <strong>AI-driven Energy Operating System</strong> for energy-intensive operations and connected energy infrastructure, providing
+            Our long-term vision is to establish Energ IQ Tech as the <strong>AI-driven Energy Operating System</strong> for energy-intensive operations and connected energy infrastructure, providing
             a common AI architecture across commercial buildings, cold storage, manufacturing, warehouses, healthcare, universities, hotels, shopping centres, airports, data centres, local government portfolios and Distributed Energy Resources (DER).
           </p>
 
@@ -843,7 +843,7 @@ export default function HomePage({ openPilotModal }) {
           </h2>
 
           <span>
-            EnergIQ Tech has been shaped through stakeholder discussions, platform demonstrations and operational feedback from local government, universities and commercial property organisations,
+            Energ IQ Tech has been shaped through stakeholder discussions, platform demonstrations and operational feedback from local government, universities and commercial property organisations,
             helping prioritise practical energy optimisation use cases and deployment pathways.
           </span>
         </div>

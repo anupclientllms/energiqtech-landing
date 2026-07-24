@@ -28,7 +28,7 @@ export default function ConnectedEnergyAssetsPage() {
           <h1>AI platform for buildings, DER and grid-aware energy operations.</h1>
 
           <p>
-            EnergIQ Tech provides a common AI architecture for Building Management
+            Energ IQ Tech provides a common AI architecture for Building Management
             Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters,
             IoT devices and utility interfaces — enabling intelligent operational
             optimisation today and supporting future demand response and grid participation.
@@ -52,7 +52,7 @@ export default function ConnectedEnergyAssetsPage() {
           <h2>Energy systems are becoming distributed, dynamic and data-rich.</h2>
           <span>
             Buildings, solar, batteries, EV charging and meters often operate as
-            separate systems. EnergIQ Tech uses the AI Energy Gateway and AI Decision
+            separate systems. Energ IQ Tech uses the AI Energy Gateway and AI Decision
             Agents to bring these assets into a common operational intelligence layer.
           </span>
         </div>
@@ -190,7 +190,7 @@ export default function ConnectedEnergyAssetsPage() {
           <p>CONNECTED ENERGY PLATFORM</p>
           <h2>One intelligent platform connecting buildings, DER and future grid participation.</h2>
           <span>
-            EnergIQ Tech connects Building Management Systems, Distributed Energy Resources (DER), AI decision intelligence and future grid integration through a common AI Energy Gateway. The same platform supports operational optimisation today while providing a pathway to demand response, flexible loads and future market participation.
+            Energ IQ Tech connects Building Management Systems, Distributed Energy Resources (DER), AI decision intelligence and future grid integration through a common AI Energy Gateway. The same platform supports operational optimisation today while providing a pathway to demand response, flexible loads and future market participation.
           </span>
         </div>
 
@@ -231,7 +231,7 @@ export default function ConnectedEnergyAssetsPage() {
             </h2>
 
             <span>
-            EnergIQ Tech provides a common AI platform that connects operational
+            Energ IQ Tech provides a common AI platform that connects operational
             building systems, Distributed Energy Resources (DER), AI decision
             intelligence and future grid integration through a shared AI Energy
             Gateway architecture.
@@ -300,7 +300,7 @@ export default function ConnectedEnergyAssetsPage() {
             </h2>
 
             <span>
-            EnergIQ Tech combines AI Energy Gateway technology, Digital Twins and AI
+            Energ IQ Tech combines AI Energy Gateway technology, Digital Twins and AI
             Decision Agents into a unified architecture designed to support
             coordinated energy asset operation, forecasting, tariff-aware
             optimisation, interoperable DER communication and future grid
@@ -379,7 +379,7 @@ export default function ConnectedEnergyAssetsPage() {
             <p>Grid-aware architecture</p>
             <h2>Designed to support future demand response and market participation.</h2>
             <span>
-                EnergIQ Tech does not replace existing systems. It creates an AI
+                Energ IQ Tech does not replace existing systems. It creates an AI
                 coordination layer that can connect assets, recommend actions and support
                 governed participation in future grid and demand-response programs.
             </span>
@@ -395,7 +395,7 @@ export default function ConnectedEnergyAssetsPage() {
         </section>
 
         <section className="ceaCTA">
-            <h2>Explore how EnergIQ Tech can support connected energy assets.</h2>
+            <h2>Explore how Energ IQ Tech can support connected energy assets.</h2>
             <p>
             Start with a pilot discussion to review your buildings, energy assets,
             operational data and potential DER optimisation pathways.

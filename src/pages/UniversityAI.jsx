@@ -75,7 +75,7 @@ export default function UniversityAI({ openPilotModal }) {
       <section className="universityHero">
         <motion.div className="universityHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="universityBadge" variants={fadeUp}>
-            <GraduationCap size={17} /> EnergIQ University AI
+            <GraduationCap size={17} /> Energ IQ Tech University AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -83,7 +83,7 @@ export default function UniversityAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="universityLead" variants={fadeUp}>
-            EnergIQ University AI connects teaching-space HVAC, laboratories, central plant, research computing,
+            Energ IQ Tech University AI connects teaching-space HVAC, laboratories, central plant, research computing,
             libraries, student accommodation, lighting, sports facilities, food services, lifts, water systems,
             EV charging, solar and battery assets through the AI Energy Gateway.
           </motion.p>
@@ -208,7 +208,7 @@ export default function UniversityAI({ openPilotModal }) {
         <div className="universitySectionHeader universitySectionHeaderLight">
           <p>End-to-End AI Workflow</p>
           <h2>From Campus Telemetry to Governed Operational Action.</h2>
-          <span>EnergIQ converts operational data into explainable recommendations while keeping facilities, sustainability and campus teams in control.</span>
+          <span>Energ IQ Tech converts operational data into explainable recommendations while keeping facilities, sustainability and campus teams in control.</span>
         </div>
 
         <div className="universityWorkflow">
@@ -224,9 +224,9 @@ export default function UniversityAI({ openPilotModal }) {
       <section className="universitySection universityPlatformSection">
         <div className="universityPlatformPanel">
           <div className="universityPlatformCopy">
-            <p>Shared EnergIQ Platform</p>
-            <h2>University AI Is an Industry Pack Built on the Shared EnergIQ Architecture.</h2>
-            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all EnergIQ industry environments.</span>
+            <p>Shared Energ IQ Tech Platform</p>
+            <h2>University AI Is an Industry Pack Built on the Shared Energ IQ Tech Architecture.</h2>
+            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all Energ IQ Tech industry environments.</span>
             <ul>
               <li><CheckCircle2 size={18} /> Reusable AI Energy Gateway</li>
               <li><CheckCircle2 size={18} /> Shared Digital Twin architecture</li>
@@ -276,7 +276,7 @@ export default function UniversityAI({ openPilotModal }) {
         <div>
           <p>Now Onboarding Pilot Partners</p>
           <h2>Reduce Campus Energy Costs and Accelerate University Sustainability Outcomes.</h2>
-          <span>EnergIQ is seeking universities, campus facility teams, sustainability leaders and technology partners for pilot collaboration.</span>
+          <span>Energ IQ Tech is seeking universities, campus facility teams, sustainability leaders and technology partners for pilot collaboration.</span>
         </div>
 
         <div className="universityCtaActions">
