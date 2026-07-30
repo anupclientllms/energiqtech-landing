@@ -215,7 +215,7 @@ export default function AirportAI({ openPilotModal }) {
         >
           <motion.div className="airportBadge" variants={fadeUp}>
             <Plane size={17} />
-            Energ IQ Tech Airport AI
+            EnerG IQ Tech Airport AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -224,7 +224,7 @@ export default function AirportAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="airportLead" variants={fadeUp}>
-            Energ IQ Tech Airport AI connects terminal HVAC, gates and jet bridges,
+            EnerG IQ Tech Airport AI connects terminal HVAC, gates and jet bridges,
             baggage systems, airside lighting, passenger flow, chiller plants,
             GSE and EV charging, security screening, retail refrigeration,
             water systems, backup power, solar and battery assets through the AI
@@ -482,7 +482,7 @@ export default function AirportAI({ openPilotModal }) {
             From Airport Telemetry to Governed Operational Action.
           </h2>
           <span>
-            Energ IQ Tech converts operational data into explainable recommendations
+            EnerG IQ Tech converts operational data into explainable recommendations
             while keeping engineering and airport operations teams in control.
           </span>
         </div>
@@ -503,17 +503,17 @@ export default function AirportAI({ openPilotModal }) {
       <section className="airportSection airportPlatformSection">
         <div className="airportPlatformPanel">
           <div className="airportPlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
+            <p>Shared EnerG IQ Tech Platform</p>
 
             <h2>
-              Airport AI Is an Industry Pack Built on the Shared Energ IQ Tech
+              Airport AI Is an Industry Pack Built on the Shared EnerG IQ Tech
               Architecture.
             </h2>
 
             <span>
               The same AI Energy Gateway, Digital Twin, Decision Agents,
               human-in-the-loop governance and Savings Intelligence support all
-              Energ IQ Tech industry environments.
+              EnerG IQ Tech industry environments.
             </span>
 
             <ul>
@@ -608,7 +608,7 @@ export default function AirportAI({ openPilotModal }) {
             Experience and Operational Resilience.
           </h2>
           <span>
-            Energ IQ Tech is seeking airports, terminal operators, facility teams and
+            EnerG IQ Tech is seeking airports, terminal operators, facility teams and
             technology partners for pilot collaboration.
           </span>
         </div>

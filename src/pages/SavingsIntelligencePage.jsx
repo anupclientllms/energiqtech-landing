@@ -27,7 +27,7 @@ export default function SavingsIntelligencePage() {
           </h1>
 
           <p>
-            Energ IQ Tech helps organisations identify savings opportunities,
+            EnerG IQ Tech helps organisations identify savings opportunities,
             estimate operational impact, track optimisation outcomes and build
             evidence across commercial buildings, Solar PV, Battery Storage, EV
             Charging, Smart Meters and connected energy infrastructure.

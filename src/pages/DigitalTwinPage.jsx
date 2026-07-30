@@ -27,7 +27,7 @@ export default function DigitalTwinPage() {
           <h1>See operational energy events across connected assets.</h1>
 
           <p>
-            Energ IQ Tech uses Digital Twins to visualise operational energy events
+            EnerG IQ Tech uses Digital Twins to visualise operational energy events
             across Building Management Systems, Solar PV, Battery Storage, EV
             Charging, Smart Meters and other connected assets, helping teams
             investigate root causes, simulate optimisation pathways and make
@@ -255,7 +255,7 @@ export default function DigitalTwinPage() {
           <p>Pilot-ready capability</p>
           <h2>Demonstrate digital twin value before broader rollout.</h2>
           <span>
-            Energ IQ Tech can be piloted with a focused building or site-level
+            EnerG IQ Tech can be piloted with a focused building or site-level
             workflow before scaling across commercial buildings, campuses and
             connected energy infrastructure.
           </span>

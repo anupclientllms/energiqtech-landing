@@ -12,7 +12,7 @@ export default function TermsOfUse() {
           <h1>Terms of Use</h1>
 
           <p>
-            These Terms of Use govern access to and use of the Energ IQ Tech
+            These Terms of Use govern access to and use of the EnerG IQ Tech
             website and related materials.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function TermsOfUse() {
 
         <p>
           This website is provided for general informational purposes regarding
-          Energ IQ Tech, its products, services, pilot programs, commercial
+          EnerG IQ Tech, its products, services, pilot programs, commercial
           offerings, technology capabilities, AI Energy Platform, connected energy asset solutions and commercialisation activities.
         </p>
 
@@ -53,7 +53,7 @@ export default function TermsOfUse() {
           (DER) architectures, optimisation workflows, software,
           documentation, graphics, logos, demonstrations, reports,
           presentations and related materials are owned by Automation Spectrum Pty Ltd
-          and/or Energ IQ Tech unless otherwise stated.
+          and/or EnerG IQ Tech unless otherwise stated.
         </p>
 
         <p>
@@ -74,7 +74,7 @@ export default function TermsOfUse() {
           Distributed Energy Resource orchestration,
           algorithms,
           software,
-          system architecture or other intellectual property associated with Energ IQ Tech.
+          system architecture or other intellectual property associated with EnerG IQ Tech.
         </p>
 
         <h2>5. Confidential and proprietary concepts</h2>
@@ -96,7 +96,7 @@ export default function TermsOfUse() {
 
         <p>
           While reasonable efforts are made to ensure information is accurate,
-          current and complete, Energ IQ Tech makes no representation or warranty
+          current and complete, EnerG IQ Tech makes no representation or warranty
           regarding the accuracy, reliability or completeness of information on
           this website.
         </p>
@@ -126,7 +126,7 @@ export default function TermsOfUse() {
 
         <p>
           This website may contain links to third-party websites, platforms or
-          resources. Energ IQ Tech is not responsible for the content, security
+          resources. EnerG IQ Tech is not responsible for the content, security
           or privacy practices of external websites.
         </p>
 
@@ -134,7 +134,7 @@ export default function TermsOfUse() {
 
         <p>
           To the maximum extent permitted by law, Automation Spectrum Pty Ltd
-          and Energ IQ Tech shall not be liable for any direct, indirect,
+          and EnerG IQ Tech shall not be liable for any direct, indirect,
           incidental, consequential or special damages arising from access to or
           use of this website.
         </p>
@@ -142,7 +142,7 @@ export default function TermsOfUse() {
         <h2>10. Changes to these terms</h2>
 
         <p>
-          Energ IQ Tech reserves the right to modify these Terms of Use at any
+          EnerG IQ Tech reserves the right to modify these Terms of Use at any
           time. Updated versions will be published on this page.
         </p>
 
@@ -151,7 +151,7 @@ export default function TermsOfUse() {
         <p>
           <strong>Automation Spectrum Pty Ltd</strong>
           <br />
-          Energ IQ Tech
+          EnerG IQ Tech
           <br />
           Email:{" "}
           <a href="mailto:ceo@aichatshoppie.com">

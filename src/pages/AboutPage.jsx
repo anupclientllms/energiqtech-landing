@@ -22,14 +22,14 @@ export default function AboutPage() {
     <main className="aboutPage">
       <section className="aboutHero">
         <div className="aboutHeroContent">
-          <p className="aboutEyebrow">About Energ IQ Tech</p>
+          <p className="aboutEyebrow">About EnerG IQ Tech</p>
 
           <h1>
             Helping organisations move from energy monitoring to intelligent energy operations.
           </h1>
 
           <p>
-            Energ IQ Tech is developing an AI Energy Platform for commercial buildings,
+            EnerG IQ Tech is developing an AI Energy Platform for commercial buildings,
             campuses and connected energy assets, including Building Management Systems,
             Solar PV, Battery Storage, EV Charging, Smart Meters and IoT infrastructure.
           </p>
@@ -55,7 +55,7 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            Energ IQ Tech is being built to help facility, sustainability, energy and
+            EnerG IQ Tech is being built to help facility, sustainability, energy and
             asset teams identify inefficiencies, understand optimisation opportunities
             and validate measurable outcomes before scaling.
           </span>
@@ -110,7 +110,7 @@ export default function AboutPage() {
           <span>
             Many organisations already collect energy and asset data, but still
             struggle to translate that information into confident operational action.
-            Energ IQ Tech bridges that gap through the AI Energy Gateway, Digital Twin
+            EnerG IQ Tech bridges that gap through the AI Energy Gateway, Digital Twin
             context, savings intelligence and governed AI-assisted workflows.
           </span>
         </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
 
       <section className="aboutSection">
         <div className="aboutSectionHeader">
-          <p>Why Energ IQ Tech</p>
+          <p>Why EnerG IQ Tech</p>
 
           <h2>
             Designed for organisations that need confidence before scale.
@@ -187,7 +187,7 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            Energ IQ Tech helps teams understand where energy is being wasted,
+            EnerG IQ Tech helps teams understand where energy is being wasted,
             why it is happening, which assets are affected, what actions may
             reduce the impact and whether the opportunity is strong enough to scale.
           </span>
@@ -239,7 +239,7 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            Energ IQ Tech is designed around a pilot-first commercialisation pathway.
+            EnerG IQ Tech is designed around a pilot-first commercialisation pathway.
             Rather than asking organisations to commit to large deployment upfront,
             the focus is on validating measurable value across a controlled site,
             building or connected energy asset workflow first.
@@ -278,10 +278,10 @@ export default function AboutPage() {
           </h2>
 
           <span>
-            Energ IQ Tech has completed a Commercialisation & Growth assessment through the
+            EnerG IQ Tech has completed a Commercialisation & Growth assessment through the
             Australian Government Industry Growth Program. The assessment identified pilot
             validation, customer outcomes, deployment scalability and commercial growth as
-            key priorities as Energ IQ Tech progresses toward market deployment.
+            key priorities as EnerG IQ Tech progresses toward market deployment.
           </span>
         </div>
 
@@ -410,7 +410,7 @@ export default function AboutPage() {
 
       <section className="aboutCTA">
         <h2>
-          Interested in exploring whether Energ IQ Tech is suitable for your organisation?
+          Interested in exploring whether EnerG IQ Tech is suitable for your organisation?
         </h2>
 
         <p>

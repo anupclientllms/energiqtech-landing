@@ -24,7 +24,7 @@ export default function OperationalEnergyPage() {
           </h1>
 
           <p>
-            Energ IQ Tech helps councils, universities and commercial organisations detect operational inefficiencies, 
+            EnerG IQ Tech helps councils, universities and commercial organisations detect operational inefficiencies, 
             analyse connected energy assets, simulate optimisation scenarios 
             and execute AI-assisted workflows across buildings, campuses and energy infrastructure.
           </p>
@@ -137,7 +137,7 @@ export default function OperationalEnergyPage() {
           <p>Built for pilot validation</p>
           <h2>Start small, prove value, then scale.</h2>
           <span>
-            Energ IQ Tech is designed for low-risk operational pilots across commercial buildings, campuses and connected energy infrastructure, 
+            EnerG IQ Tech is designed for low-risk operational pilots across commercial buildings, campuses and connected energy infrastructure, 
             enabling organisations to validate measurable operational, financial and sustainability outcomes before scaling.
           </span>
         </div>

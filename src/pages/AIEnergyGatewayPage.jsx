@@ -111,7 +111,7 @@ export default function AIEnergyGatewayPage() {
           <h2>One gateway. Multiple energy systems.</h2>
           <span>
             The AI Energy Gateway is designed as the integration point between
-            connected assets and Energ IQ Tech’s AI platform.
+            connected assets and EnerG IQ Tech’s AI platform.
           </span>
         </div>
 

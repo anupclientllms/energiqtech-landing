@@ -234,7 +234,7 @@ export default function ColdStorageAI({ openPilotModal }) {
         >
           <motion.div className="coldStorageEyebrow" variants={fadeUp}>
             <Snowflake size={17} />
-            Energ IQ Tech Cold Storage AI
+            EnerG IQ Tech Cold Storage AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -243,7 +243,7 @@ export default function ColdStorageAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="coldStorageHeroLead" variants={fadeUp}>
-            Energ IQ Tech Cold Storage AI connects refrigeration systems,
+            EnerG IQ Tech Cold Storage AI connects refrigeration systems,
             compressors, evaporators, condensers, cold rooms, freezers, smart
             meters, BMS, PLC and IoT sensors through the AI Energy Gateway.
           </motion.p>
@@ -443,7 +443,7 @@ export default function ColdStorageAI({ openPilotModal }) {
           <motion.span variants={fadeUp}>
             Cold-storage operators must reduce electricity costs and peak
             demand while maintaining strict temperature conditions, equipment
-            reliability and product integrity. Energ IQ Tech provides one AI
+            reliability and product integrity. EnerG IQ Tech provides one AI
             operating layer across these competing priorities.
           </motion.span>
         </motion.div>
@@ -582,7 +582,7 @@ export default function ColdStorageAI({ openPilotModal }) {
           </h2>
 
           <span>
-            Each scenario uses the same Energ IQ Tech AI Energy Gateway, Digital Twin,
+            Each scenario uses the same EnerG IQ Tech AI Energy Gateway, Digital Twin,
             Decision Agents and governed approval workflow.
           </span>
         </div>
@@ -639,7 +639,7 @@ export default function ColdStorageAI({ openPilotModal }) {
           </h2>
 
           <span>
-            Energ IQ Tech transforms operational data into explainable and measurable
+            EnerG IQ Tech transforms operational data into explainable and measurable
             energy optimisation decisions while keeping people in control.
           </span>
         </div>
@@ -668,7 +668,7 @@ export default function ColdStorageAI({ openPilotModal }) {
       <section className="coldStorageSection coldStoragePlatformSection">
         <div className="coldStoragePlatformPanel">
           <div className="coldStoragePlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
+            <p>Shared EnerG IQ Tech Platform</p>
 
             <h2>
               Cold Storage AI Is an Industry Pack, Not a Separate Technology
@@ -676,7 +676,7 @@ export default function ColdStorageAI({ openPilotModal }) {
             </h2>
 
             <span>
-              The same Energ IQ Tech architecture supports commercial buildings,
+              The same EnerG IQ Tech architecture supports commercial buildings,
               manufacturing, warehouses, healthcare, universities, hotels,
               airports, data centres and distributed energy assets.
             </span>
@@ -793,7 +793,7 @@ export default function ColdStorageAI({ openPilotModal }) {
             </h2>
 
             <span>
-              A staged pilot allows the customer and Energ IQ Tech to validate
+              A staged pilot allows the customer and EnerG IQ Tech to validate
               available data, AI optimisation scenarios, operational safeguards
               and commercial value before portfolio-scale deployment.
             </span>
@@ -833,7 +833,7 @@ export default function ColdStorageAI({ openPilotModal }) {
           </h2>
 
           <span>
-            Energ IQ Tech is seeking cold-storage operators, food distributors,
+            EnerG IQ Tech is seeking cold-storage operators, food distributors,
             refrigerated warehouses and industrial refrigeration partners for
             pilot collaboration.
           </span>

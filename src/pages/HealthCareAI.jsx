@@ -245,7 +245,7 @@ export default function HealthcareAI({ openPilotModal }) {
           >
             <motion.div className="healthcareBadge" variants={fadeUp}>
               <Hospital size={17} />
-              Energ IQ Tech Healthcare AI
+              EnerG IQ Tech Healthcare AI
             </motion.div>
 
             <motion.h1 variants={fadeUp}>
@@ -254,7 +254,7 @@ export default function HealthcareAI({ openPilotModal }) {
             </motion.h1>
 
             <motion.p className="healthcareLead" variants={fadeUp}>
-              Energ IQ Tech Healthcare AI connects hospital HVAC, chiller plants,
+              EnerG IQ Tech Healthcare AI connects hospital HVAC, chiller plants,
               operating theatres, ICU, imaging, medical refrigeration,
               sterilisation, laboratories, critical power, water, steam, hot
               water, solar and battery systems through the AI Energy Gateway.
@@ -385,7 +385,7 @@ export default function HealthcareAI({ openPilotModal }) {
           <span>
             Healthcare facilities combine critical power, strict environmental
             requirements, intensive HVAC, medical equipment and continuous
-            operations. Energ IQ Tech provides one governed AI layer across these
+            operations. EnerG IQ Tech provides one governed AI layer across these
             systems.
           </span>
         </div>
@@ -477,7 +477,7 @@ export default function HealthcareAI({ openPilotModal }) {
             Reduce Waste, Improve Resilience and Protect Clinical Operations.
           </h2>
           <span>
-            Each scenario uses the same Energ IQ Tech AI Energy Gateway, Digital Twin,
+            Each scenario uses the same EnerG IQ Tech AI Energy Gateway, Digital Twin,
             Decision Agents and human-in-the-loop approval workflow.
           </span>
         </div>
@@ -518,7 +518,7 @@ export default function HealthcareAI({ openPilotModal }) {
             From Hospital Telemetry to Governed Operational Action.
           </h2>
           <span>
-            Energ IQ Tech converts operational data into explainable recommendations
+            EnerG IQ Tech converts operational data into explainable recommendations
             while preserving clinical controls and human oversight.
           </span>
         </div>
@@ -539,15 +539,15 @@ export default function HealthcareAI({ openPilotModal }) {
         <section className="healthcareSection healthcarePlatformSection">
             <div className="healthcarePlatformPanel">
                 <div className="healthcarePlatformCopy">
-                <p>Shared Energ IQ Tech Platform</p>
+                <p>Shared EnerG IQ Tech Platform</p>
 
                 <h2>
-                    Healthcare AI Is an Industry Pack Built on the Shared Energ IQ Tech
+                    Healthcare AI Is an Industry Pack Built on the Shared EnerG IQ Tech
                     Architecture.
                 </h2>
 
                 <span>
-                    The same Energ IQ Tech architecture supports commercial buildings, cold
+                    The same EnerG IQ Tech architecture supports commercial buildings, cold
                     storage, manufacturing, warehouses, universities, hotels, shopping
                     centres, airports, data centres, local government and Distributed
                     Energy Resources.
@@ -668,7 +668,7 @@ export default function HealthcareAI({ openPilotModal }) {
             Operational Resilience.
           </h2>
           <span>
-            Energ IQ Tech is seeking hospitals, healthcare networks, facility
+            EnerG IQ Tech is seeking hospitals, healthcare networks, facility
             operators and technology partners for pilot collaboration.
           </span>
         </div>

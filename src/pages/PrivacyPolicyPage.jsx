@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
         <p className="legalEyebrow">Legal</p>
         <h1>Privacy Policy</h1>
         <p>
-          Energ IQ Tech is committed to protecting the privacy of customers,
+          EnerG IQ Tech is committed to protecting the privacy of customers,
           pilot partners, investors, grant assessors and website visitors.
         </p>
       </section>
@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
 
         <h2>1. Who we are</h2>
         <p>
-          Energ IQ Tech is an AI Energy Platform for connected energy assets developed by Automation Spectrum Pty Ltd.
+          EnerG IQ Tech is an AI Energy Platform for connected energy assets developed by Automation Spectrum Pty Ltd.
         </p>
 
         <h2>2. Information we may collect</h2>
@@ -62,13 +62,13 @@ export default function PrivacyPolicy() {
           All content, software concepts, AI Energy Gateway, Digital Twin, Decision Agents and connected asset workflows, AI models, system architecture,
           digital twin concepts, gateway architecture, algorithms, designs,
           documentation, demonstrations and related materials displayed on this website
-          remain the property of Automation Spectrum Pty Ltd and/or Energ IQ Tech unless
+          remain the property of Automation Spectrum Pty Ltd and/or EnerG IQ Tech unless
           otherwise stated.
         </p>
 
         <p>
           Accessing or viewing this website does not grant any licence, right, title or
-          interest in any Energ IQ Tech software, source code, workflows, AI models,
+          interest in any EnerG IQ Tech software, source code, workflows, AI models,
           system architecture, digital twin concepts, gateway architecture, algorithms,
           designs, documentation or related intellectual property.
         </p>
@@ -105,7 +105,7 @@ export default function PrivacyPolicy() {
         <h2>9. External links</h2>
         <p>
           This website may contain links to third-party websites or services.
-          Energ IQ Tech is not responsible for the privacy practices, content or
+          EnerG IQ Tech is not responsible for the privacy practices, content or
           security of external websites.
         </p>
 
@@ -122,12 +122,12 @@ export default function PrivacyPolicy() {
 
         <p>
           <strong>Automation Spectrum Pty Ltd</strong><br />
-          Energ IQ Tech<br />
+          EnerG IQ Tech<br />
           Email: <a href="mailto:ceo@aichatshoppie.com">ceo@aichatshoppie.com</a>
         </p>
 
         <p className="legalDisclaimer">
-          This Privacy Policy outlines how Energ IQ Tech collects, uses, stores and protects information provided by 
+          This Privacy Policy outlines how EnerG IQ Tech collects, uses, stores and protects information provided by 
           website visitors, customers, pilot partners, investors and other stakeholders.
         </p>
       </section>

@@ -230,7 +230,7 @@ export default function HotelAI({ openPilotModal }) {
         >
           <motion.div className="hotelBadge" variants={fadeUp}>
             <Hotel size={17} />
-            Energ IQ Tech Hotel AI
+            EnerG IQ Tech Hotel AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -239,7 +239,7 @@ export default function HotelAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="hotelLead" variants={fadeUp}>
-            Energ IQ Tech Hotel AI connects guest-room HVAC, common-area systems,
+            EnerG IQ Tech Hotel AI connects guest-room HVAC, common-area systems,
             central plant, hot water, kitchens, laundry, refrigeration, lifts,
             wellness facilities, event spaces, EV charging, solar and battery
             assets through the AI Energy Gateway.
@@ -494,7 +494,7 @@ export default function HotelAI({ openPilotModal }) {
             From Hotel Telemetry to Governed Operational Action.
           </h2>
           <span>
-            Energ IQ Tech converts operational data into explainable recommendations
+            EnerG IQ Tech converts operational data into explainable recommendations
             while keeping engineering and hotel operations teams in control.
           </span>
         </div>
@@ -515,17 +515,17 @@ export default function HotelAI({ openPilotModal }) {
       <section className="hotelSection hotelPlatformSection">
         <div className="hotelPlatformPanel">
           <div className="hotelPlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
+            <p>Shared EnerG IQ Tech Platform</p>
 
             <h2>
-              Hotel AI Is an Industry Pack Built on the Shared Energ IQ Tech
+              Hotel AI Is an Industry Pack Built on the Shared EnerG IQ Tech
               Architecture.
             </h2>
 
             <span>
               The same AI Energy Gateway, Digital Twin, Decision Agents,
               human-in-the-loop governance and Savings Intelligence support all
-              Energ IQ Tech industry environments.
+              EnerG IQ Tech industry environments.
             </span>
 
             <ul>
@@ -621,7 +621,7 @@ export default function HotelAI({ openPilotModal }) {
             Service Quality.
           </h2>
           <span>
-            Energ IQ Tech is seeking hotels, hospitality groups, facility teams and
+            EnerG IQ Tech is seeking hotels, hospitality groups, facility teams and
             technology partners for pilot collaboration.
           </span>
         </div>

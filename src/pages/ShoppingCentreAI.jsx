@@ -78,7 +78,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
       <section className="shoppingCentreHero">
         <motion.div className="shoppingCentreHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="shoppingCentreBadge" variants={fadeUp}>
-            <ShoppingCart size={17} /> Energ IQ Tech Shopping Centre AI
+            <ShoppingCart size={17} /> EnerG IQ Tech Shopping Centre AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -86,7 +86,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="shoppingCentreLead" variants={fadeUp}>
-            Energ IQ Tech Shopping Centre AI connects common-area HVAC, central chillers, food-court systems,
+            EnerG IQ Tech Shopping Centre AI connects common-area HVAC, central chillers, food-court systems,
             retail refrigeration, lighting, car parks, lifts, tenant metering, signage, EV charging,
             solar, battery, water and back-of-house systems through the AI Energy Gateway.
           </motion.p>
@@ -214,7 +214,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
         <div className="shoppingCentreSectionHeader shoppingCentreSectionHeaderLight">
           <p>End-to-End AI Workflow</p>
           <h2>From Shopping Centre Telemetry to Governed Operational Action.</h2>
-          <span>Energ IQ Tech converts operational data into explainable recommendations while keeping centre management and facilities teams in control.</span>
+          <span>EnerG IQ Tech converts operational data into explainable recommendations while keeping centre management and facilities teams in control.</span>
         </div>
 
         <div className="shoppingCentreWorkflow">
@@ -230,9 +230,9 @@ export default function ShoppingCentreAI({ openPilotModal }) {
       <section className="shoppingCentreSection shoppingCentrePlatformSection">
         <div className="shoppingCentrePlatformPanel">
           <div className="shoppingCentrePlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
-            <h2>Shopping Centre AI Is an Industry Pack Built on the Shared Energ IQ Tech Architecture.</h2>
-            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all Energ IQ Tech industry environments.</span>
+            <p>Shared EnerG IQ Tech Platform</p>
+            <h2>Shopping Centre AI Is an Industry Pack Built on the Shared EnerG IQ Tech Architecture.</h2>
+            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all EnerG IQ Tech industry environments.</span>
             <ul>
               <li><CheckCircle2 size={18} /> Reusable AI Energy Gateway</li>
               <li><CheckCircle2 size={18} /> Shared Digital Twin architecture</li>
@@ -282,7 +282,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
         <div>
           <p>Now Onboarding Pilot Partners</p>
           <h2>Reduce Shopping Centre Energy Costs Across Common Areas, Tenants and Connected Energy Assets.</h2>
-          <span>Energ IQ Tech is seeking shopping centre owners, retail property groups, facility teams and technology partners for pilot collaboration.</span>
+          <span>EnerG IQ Tech is seeking shopping centre owners, retail property groups, facility teams and technology partners for pilot collaboration.</span>
         </div>
 
         <div className="shoppingCentreCtaActions">

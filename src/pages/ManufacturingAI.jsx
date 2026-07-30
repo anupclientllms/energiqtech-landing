@@ -126,7 +126,7 @@ export default function ManufacturingAI({ openPilotModal }) {
         <motion.div className="manufacturingHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="manufacturingEyebrow" variants={fadeUp}>
             <Factory size={17} />
-            Energ IQ Tech Manufacturing AI
+            EnerG IQ Tech Manufacturing AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -134,7 +134,7 @@ export default function ManufacturingAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="manufacturingHeroLead" variants={fadeUp}>
-            Energ IQ Tech Manufacturing AI connects production lines, CNC machines, air compressors, boilers, refrigeration systems, cold rooms, cooling towers, pumps, process fans, motors, conveyors, robotics, factory HVAC, lighting, charging infrastructure, solar and battery systems through the AI Energy Gateway.
+            EnerG IQ Tech Manufacturing AI connects production lines, CNC machines, air compressors, boilers, refrigeration systems, cold rooms, cooling towers, pumps, process fans, motors, conveyors, robotics, factory HVAC, lighting, charging infrastructure, solar and battery systems through the AI Energy Gateway.
           </motion.p>
 
           <motion.p className="manufacturingHeroDescription" variants={fadeUp}>
@@ -202,7 +202,7 @@ export default function ManufacturingAI({ openPilotModal }) {
         <div className="manufacturingSectionHeader">
           <p>Manufacturing Energy Challenge</p>
           <h2>Industrial Energy Performance Depends on Production, Utilities and Equipment Working Together.</h2>
-          <span>Manufacturers must reduce electricity, gas and peak-demand costs without disrupting production, quality, safety or delivery schedules. Energ IQ Tech provides one AI operating layer across production assets, industrial utilities and connected energy systems.</span>
+          <span>Manufacturers must reduce electricity, gas and peak-demand costs without disrupting production, quality, safety or delivery schedules. EnerG IQ Tech provides one AI operating layer across production assets, industrial utilities and connected energy systems.</span>
         </div>
 
         <div className="manufacturingChallengeGrid">
@@ -237,7 +237,7 @@ export default function ManufacturingAI({ openPilotModal }) {
         <div className="manufacturingSectionHeader">
           <p>AI Optimisation Scenarios</p>
           <h2>Identify Waste, Improve Reliability and Protect Production Performance.</h2>
-          <span>Each scenario uses the same Energ IQ Tech AI Energy Gateway, Digital Twin, Decision Agents and governed approval workflow.</span>
+          <span>Each scenario uses the same EnerG IQ Tech AI Energy Gateway, Digital Twin, Decision Agents and governed approval workflow.</span>
         </div>
 
         <motion.div className="manufacturingScenarioGrid" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.08 }}>
@@ -252,7 +252,7 @@ export default function ManufacturingAI({ openPilotModal }) {
         <div className="manufacturingSectionHeader manufacturingLightHeader">
           <p>End-to-End AI Workflow</p>
           <h2>From Industrial Telemetry to Governed Operational Action.</h2>
-          <span>Energ IQ Tech transforms operational and energy data into explainable, measurable decisions while keeping production teams in control.</span>
+          <span>EnerG IQ Tech transforms operational and energy data into explainable, measurable decisions while keeping production teams in control.</span>
         </div>
 
         <div className="manufacturingWorkflow">
@@ -263,9 +263,9 @@ export default function ManufacturingAI({ openPilotModal }) {
       <section className="manufacturingSection manufacturingPlatformSection">
         <div className="manufacturingPlatformPanel">
           <div className="manufacturingPlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
-            <h2>Manufacturing AI Is an Industry Pack Built on the Shared Energ IQ Tech Architecture.</h2>
-            <span>The same Energ IQ Tech architecture supports commercial buildings, cold storage, warehouses, healthcare, universities, hotels, airports, data centres and distributed energy assets.</span>
+            <p>Shared EnerG IQ Tech Platform</p>
+            <h2>Manufacturing AI Is an Industry Pack Built on the Shared EnerG IQ Tech Architecture.</h2>
+            <span>The same EnerG IQ Tech architecture supports commercial buildings, cold storage, warehouses, healthcare, universities, hotels, airports, data centres and distributed energy assets.</span>
             <ul><li><CheckCircle2 size={18} /> Reusable AI Energy Gateway</li><li><CheckCircle2 size={18} /> Shared Digital Twin architecture</li><li><CheckCircle2 size={18} /> Configurable AI Decision Agents</li><li><CheckCircle2 size={18} /> Human-in-the-loop governance</li><li><CheckCircle2 size={18} /> Savings and ROI intelligence</li></ul>
           </div>
 
@@ -282,7 +282,7 @@ export default function ManufacturingAI({ openPilotModal }) {
 
       <section className="manufacturingSection manufacturingPilotSection" id="manufacturing-pilot">
         <div className="manufacturingPilotPanel">
-          <div className="manufacturingPilotCopy"><p>Manufacturing Pilot Program</p><h2>Start With One Site, One Operational Problem and Measurable ROI.</h2><span>A staged pilot allows the customer and Energ IQ Tech to validate available data, AI optimisation scenarios, production safeguards and commercial value before portfolio-scale deployment.</span><button type="button" className="manufacturingPrimaryButton" onClick={handlePilotClick}>Discuss a Manufacturing Pilot <ChevronRight size={19} /></button></div>
+          <div className="manufacturingPilotCopy"><p>Manufacturing Pilot Program</p><h2>Start With One Site, One Operational Problem and Measurable ROI.</h2><span>A staged pilot allows the customer and EnerG IQ Tech to validate available data, AI optimisation scenarios, production safeguards and commercial value before portfolio-scale deployment.</span><button type="button" className="manufacturingPrimaryButton" onClick={handlePilotClick}>Discuss a Manufacturing Pilot <ChevronRight size={19} /></button></div>
           <div className="manufacturingPilotChecklist"><h3>Indicative Pilot Scope</h3><ul>{pilotIncludes.map((item) => <li key={item}><CheckCircle2 size={18} /><span>{item}</span></li>)}</ul></div>
         </div>
       </section>

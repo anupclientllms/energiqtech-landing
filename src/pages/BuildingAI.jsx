@@ -68,7 +68,7 @@ export default function BuildingAI({ openPilotModal }) {
       <section className="buildingAIHero">
         <motion.div className="buildingAIHeroContent" variants={stagger} initial="hidden" animate="show">
           <motion.div className="buildingAIBadge" variants={fadeUp}>
-            <Building2 size={17} /> Energ IQ Tech Commercial Building AI
+            <Building2 size={17} /> EnerG IQ Tech Commercial Building AI
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
@@ -76,7 +76,7 @@ export default function BuildingAI({ openPilotModal }) {
           </motion.h1>
 
           <motion.p className="buildingAILead" variants={fadeUp}>
-            Energ IQ Tech Building AI connects HVAC, lighting, workstations, printers, kitchens,
+            EnerG IQ Tech Building AI connects HVAC, lighting, workstations, printers, kitchens,
             refrigeration, lifts, pumps and motors through the AI Energy Gateway.
           </motion.p>
 
@@ -203,7 +203,7 @@ export default function BuildingAI({ openPilotModal }) {
         <div className="buildingAISectionHeader buildingAISectionHeaderLight">
           <p>End-to-End AI Workflow</p>
           <h2>From Building Telemetry to Governed Operational Action.</h2>
-          <span>Energ IQ Tech converts operational data into explainable recommendations while keeping facilities and building teams in control.</span>
+          <span>EnerG IQ Tech converts operational data into explainable recommendations while keeping facilities and building teams in control.</span>
         </div>
 
         <div className="buildingAIWorkflow">
@@ -219,9 +219,9 @@ export default function BuildingAI({ openPilotModal }) {
       <section className="buildingAISection buildingAIPlatformSection">
         <div className="buildingAIPlatformPanel">
           <div className="buildingAIPlatformCopy">
-            <p>Shared Energ IQ Tech Platform</p>
-            <h2>Building AI Is an Industry Pack Built on the Shared Energ IQ Tech Architecture.</h2>
-            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all Energ IQ Tech industry environments.</span>
+            <p>Shared EnerG IQ Tech Platform</p>
+            <h2>Building AI Is an Industry Pack Built on the Shared EnerG IQ Tech Architecture.</h2>
+            <span>The same AI Energy Gateway, Digital Twin, Decision Agents, human-in-the-loop governance and Savings Intelligence support all EnerG IQ Tech industry environments.</span>
             <ul>
               <li><CheckCircle2 size={18} /> Reusable AI Energy Gateway</li>
               <li><CheckCircle2 size={18} /> Shared Digital Twin architecture</li>
@@ -271,7 +271,7 @@ export default function BuildingAI({ openPilotModal }) {
         <div>
           <p>Now Onboarding Pilot Partners</p>
           <h2>Reduce Commercial Building Energy Costs While Protecting Comfort and Operational Performance.</h2>
-          <span>Energ IQ Tech is seeking commercial building owners, councils, facility managers and technology partners for pilot collaboration.</span>
+          <span>EnerG IQ Tech is seeking commercial building owners, councils, facility managers and technology partners for pilot collaboration.</span>
         </div>
 
         <div className="buildingAICtaActions">

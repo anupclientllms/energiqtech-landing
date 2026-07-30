@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
 
       <div className="footerLeft">
-        <strong>Energ IQ Tech</strong>
+        <strong>EnerG IQ Tech</strong>
 
         <span>
           Edge AI for Connected Energy Systems
@@ -15,7 +15,7 @@ export default function Footer() {
 
       <div className="footerRight">
         <span>
-          © {new Date().getFullYear()} Energ IQ Tech
+          © {new Date().getFullYear()} EnerG IQ Tech
         </span>
 
         <span>

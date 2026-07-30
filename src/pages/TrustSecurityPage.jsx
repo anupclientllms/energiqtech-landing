@@ -29,7 +29,7 @@ export default function TrustSecurityPage() {
           </h1>
 
           <p>
-            Energ IQ Tech is designed to support secure, governed adoption across
+            EnerG IQ Tech is designed to support secure, governed adoption across
             commercial buildings, campuses and connected energy assets including
             BMS, Solar PV, Battery Storage, EV Charging, Smart Meters and IoT
             infrastructure, with clear data boundaries, controlled access and
@@ -42,7 +42,7 @@ export default function TrustSecurityPage() {
             </Link>
 
             <Link to="/about" className="trustSecondary">
-              About Energ IQ Tech
+              About EnerG IQ Tech
             </Link>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function TrustSecurityPage() {
           </h2>
 
           <span>
-            Energ IQ Tech is designed for environments where facility managers,
+            EnerG IQ Tech is designed for environments where facility managers,
             sustainability teams, energy teams, IT stakeholders and asset owners
             need confidence before introducing AI-enabled optimisation across
             buildings and connected energy infrastructure.
@@ -89,7 +89,7 @@ export default function TrustSecurityPage() {
             <ShieldCheck />
             <strong>Governance-first approach</strong>
             <span>
-              Energ IQ Tech supports reviewed, staged and accountable adoption
+              EnerG IQ Tech supports reviewed, staged and accountable adoption
               rather than uncontrolled automation across connected assets.
             </span>
           </div>
@@ -115,7 +115,7 @@ export default function TrustSecurityPage() {
             </h2>
 
             <span>
-              Energ IQ Tech can support staged deployment pathways, from focused
+              EnerG IQ Tech can support staged deployment pathways, from focused
               pilots through to longer-term arrangements where operational,
               meter and connected asset data can remain within client-controlled
               environments or approved storage locations.
@@ -157,7 +157,7 @@ export default function TrustSecurityPage() {
           <span>
             For councils, universities, commercial buildings and connected energy
             infrastructure, deployment can be structured so operational datasets
-            remain within client-approved infrastructure while Energ IQ Tech
+            remain within client-approved infrastructure while EnerG IQ Tech
             provides the application, intelligence and optimisation layer.
           </span>
         </div>
@@ -314,7 +314,7 @@ export default function TrustSecurityPage() {
 
       <section className="trustSection">
         <div className="trustSectionHeader">
-          <p>What Energ IQ Tech avoids</p>
+          <p>What EnerG IQ Tech avoids</p>
 
           <h2>
             Responsible adoption means avoiding unnecessary risk.
@@ -353,7 +353,7 @@ export default function TrustSecurityPage() {
 
       <section className="trustCTA">
         <h2>
-          Want to understand how Energ IQ Tech could be scoped safely?
+          Want to understand how EnerG IQ Tech could be scoped safely?
         </h2>
 
         <p>
