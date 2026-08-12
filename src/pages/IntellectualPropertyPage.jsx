@@ -222,8 +222,8 @@ export default function IntellectualProperty() {
           EnerG IQ Tech
           <br />
           Email:{" "}
-          <a href="mailto:ceo@aichatshoppie.com">
-            ceo@aichatshoppie.com
+          <a href="mailto:contact@automationspectrum.com.au">
+            contact@automationspectrum.com.au
           </a>
         </p>
 

@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
         <p>
           <strong>Automation Spectrum Pty Ltd</strong><br />
           EnerG IQ Tech<br />
-          Email: <a href="mailto:ceo@aichatshoppie.com">ceo@aichatshoppie.com</a>
+          Email: <a href="mailto:contact@automationspectrum.com.au">contact@automationspectrum.com.au</a>
         </p>
 
         <p className="legalDisclaimer">
