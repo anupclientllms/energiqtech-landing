@@ -164,8 +164,8 @@ export default function Navbar({ openPilotModal }) {
     <nav className="nav">
       <Link to="/" className="brand" onClick={closeMenu}>
         <img
-          src="/energiq-logo.png"
-          alt="Energ IQ Tech logo"
+          src="/favicon.png"
+          alt="EnerG IQ Tech logo"
           className="logoImage"
         />
 
