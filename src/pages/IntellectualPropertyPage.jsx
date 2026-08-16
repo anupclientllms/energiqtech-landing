@@ -2,245 +2,547 @@
 
 import "../styles/LegalPage.css";
 
+
 export default function IntellectualProperty() {
   return (
     <main className="legalPage">
+
+      {/* =========================================================
+          HERO
+      ========================================================= */}
+
       <section className="legalHero">
         <div className="legalHeroInner">
-          <p className="legalEyebrow">Legal</p>
 
-          <h1>Intellectual Property Notice</h1>
+          <p className="legalEyebrow">
+            Legal
+          </p>
+
+          <h1>
+            Intellectual Property Notice
+          </h1>
 
           <p>
-            This notice explains the ownership and permitted use of EnerG IQ Tech
-            content, technology concepts, software materials, workflows and
-            related intellectual property.
+            This notice explains the ownership and permitted use of
+            EnerG IQ Tech content, software, AI energy optimisation
+            technologies, workflows, system architectures and related
+            intellectual property.
           </p>
+
         </div>
       </section>
 
+
+      {/* =========================================================
+          LEGAL CONTENT
+      ========================================================= */}
+
       <section className="legalContent">
-        <p>
-          <strong>Effective date:</strong> June 2026
-        </p>
-
-        <h2>1. Ownership</h2>
 
         <p>
-          EnerG IQ Tech is an AI-driven energy optimisation and control platform
-          developed by Automation Spectrum Pty Ltd. Unless otherwise stated, all
-          intellectual property associated with EnerG IQ Tech is owned by
-          Automation Spectrum Pty Ltd and/or EnerG IQ Tech.
+          <strong>Effective date:</strong> August 2026
         </p>
 
-        <h2>2. Protected materials</h2>
+
+        {/* =====================================================
+            1. OWNERSHIP
+        ===================================================== */}
+
+        <h2>
+          1. Ownership
+        </h2>
+
+        <p>
+          EnerG IQ Tech is an AI-driven energy optimisation platform
+          developed by Automation Spectrum Pty Ltd to support the reduction
+          of energy waste, operating costs, peak demand and associated CO₂
+          emissions across energy-intensive operations and connected energy
+          infrastructure.
+        </p>
+
+        <p>
+          Unless otherwise stated, intellectual property associated with
+          EnerG IQ Tech, including its software, architectures, workflows,
+          optimisation methodologies, documentation, product concepts and
+          related materials, is owned by Automation Spectrum Pty Ltd and/or
+          its applicable licensors.
+        </p>
+
+
+        {/* =====================================================
+            2. PROTECTED MATERIALS
+        ===================================================== */}
+
+        <h2>
+          2. Protected Materials
+        </h2>
 
         <p>
           Protected materials include, but are not limited to:
         </p>
 
         <ul>
-          <li>Website content, text, graphics, layouts and visual design</li>
-          <li>Software concepts, source code, platform architecture and APIs</li>
-          <li>AI workflows, decision logic and multi-agent orchestration</li>
-          <li>AI Energy Gateway concepts, architecture and integration methods</li>
-          <li>Digital Twin workflows, visualisations and operational models</li>
-          <li>Building Management System (BMS), Solar PV, Battery Energy Storage (BESS), EV Charging, Smart Meter, IoT and Distributed Energy Resource (DER) integration architectures</li>
-          <li>Energy data normalisation, analytics, forecasting, optimisation and orchestration methods</li>
-          <li>AI Decision Agents, Human-in-the-loop workflows, recommendation engines and operational governance processes</li>
-          <li>Distributed Energy Resource orchestration, optimisation and control methodologies</li>
-          <li>Energy data normalisation, analytics and optimisation methods</li>
-          <li>Human-in-the-loop approval workflows and control processes</li>
-          <li>Reports, presentations, proposals, demonstrations and documentation</li>
-          <li>Brand names, logos, product names, icons and related brand assets</li>
+
+          <li>
+            Website content, text, graphics, layouts and visual design
+          </li>
+
+          <li>
+            Software concepts, source code, application logic, platform
+            architecture and APIs
+          </li>
+
+          <li>
+            Edge AI technologies, models, algorithms and data-processing
+            methods
+          </li>
+
+          <li>
+            AI workflows, decision logic and multi-agent orchestration
+          </li>
+
+          <li>
+            AI Energy Gateway concepts, architectures, software,
+            connectivity and integration methods
+          </li>
+
+          <li>
+            Digital Twin architectures, workflows, visualisations,
+            simulations and operational models
+          </li>
+
+          <li>
+            Building Management System (BMS), refrigeration, industrial
+            equipment, Solar PV, Battery Energy Storage System (BESS),
+            EV charging, smart-meter, IoT and Distributed Energy Resource
+            integration architectures
+          </li>
+
+          <li>
+            Energy data ingestion, normalisation, analytics, forecasting,
+            anomaly detection and optimisation methods
+          </li>
+
+          <li>
+            Energy waste, peak-demand and equipment-efficiency detection
+            methodologies
+          </li>
+
+          <li>
+            Energy cost, tariff and Savings Intelligence methodologies
+          </li>
+
+          <li>
+            Carbon and associated CO₂ emissions measurement,
+            attribution and optimisation methodologies
+          </li>
+
+          <li>
+            AI Decision Agents, recommendation engines and decision
+            intelligence methodologies
+          </li>
+
+          <li>
+            Human-in-the-loop approval, governance and operational-control
+            workflows
+          </li>
+
+          <li>
+            Distributed Energy Resource coordination, orchestration and
+            optimisation methodologies
+          </li>
+
+          <li>
+            Measurement and verification methods relating to energy,
+            peak-demand, financial, carbon and operational outcomes
+          </li>
+
+          <li>
+            Reports, presentations, proposals, pilot materials,
+            demonstrations and documentation
+          </li>
+
+          <li>
+            Brand names, logos, product names, icons, slogans and related
+            brand assets
+          </li>
+
         </ul>
 
-        <h2>3. No licence or transfer of rights</h2>
+
+        {/* =====================================================
+            3. NO LICENCE
+        ===================================================== */}
+
+        <h2>
+          3. No Licence or Transfer of Rights
+        </h2>
 
         <p>
-          Accessing, viewing, downloading or interacting with this website does
-          not grant any licence, right, title or interest in any EnerG IQ Tech
-          software, source code, workflows, AI models, algorithms, system
-          architecture, Digital Twin methods, AI Energy Gateway technologies, connected energy asset integration methods,
-          Digital Twin architectures, Decision Agent workflows, Distributed Energy Resource orchestration,
+          Accessing, viewing, downloading or interacting with this website
+          does not grant any licence, right, title or interest in any
+          EnerG IQ Tech software, source code, AI models, algorithms,
+          workflows, system architecture, Digital Twin methodologies,
+          AI Energy Gateway technologies, Decision Agent workflows,
+          connected-energy-asset integration methods, Distributed Energy
+          Resource orchestration methods, optimisation methodologies,
           documentation, designs or related intellectual property.
         </p>
 
-        <h2>4. Restrictions on use</h2>
+
+        {/* =====================================================
+            4. RESTRICTIONS
+        ===================================================== */}
+
+        <h2>
+          4. Restrictions on Use
+        </h2>
 
         <p>
-          You must not copy, reproduce, distribute, modify, reverse engineer,
-          scrape, commercially exploit, republish, create derivative works from,
-          or use any EnerG IQ Tech materials without prior written permission.
+          Except where permitted by applicable law or expressly authorised
+          in writing, EnerG IQ Tech materials must not be copied,
+          reproduced, distributed, modified, reverse engineered,
+          commercially exploited, republished or used to create derivative
+          works without prior written permission from the relevant rights
+          holder.
         </p>
 
         <p>
-          This includes screenshots, diagrams, workflow descriptions, platform
-          concepts, product positioning, commercial materials, pilot materials
-          and technical descriptions published on this website.
+          This includes website screenshots, diagrams, architecture
+          descriptions, workflow descriptions, optimisation concepts,
+          product materials, pilot materials, technical descriptions and
+          commercial documentation published or otherwise provided by
+          EnerG IQ Tech.
         </p>
 
-        <h2>5. Confidential and proprietary technology</h2>
+
+        {/* =====================================================
+            5. CONFIDENTIAL & PROPRIETARY TECHNOLOGY
+        ===================================================== */}
+
+        <h2>
+          5. Confidential and Proprietary Technology
+        </h2>
 
         <p>
-          Certain EnerG IQ Tech Certain EnerG IQ Tech platform components, AI Energy Gateway technologies,
-          Digital Twin models, AI Decision Agents,
-          Distributed Energy Resource orchestration methods,
-          energy optimisation algorithms,
-          connected asset integration approaches,
-          software architectures,
-          operational workflows,
-          data processing techniques
-          and control methodologies
-          may constitute confidential information,
-          trade secrets and proprietary intellectual property. 
+          Certain EnerG IQ Tech platform components, AI Energy Gateway
+          technologies, Digital Twin models, AI Decision Agents,
+          energy-optimisation algorithms, Distributed Energy Resource
+          orchestration methods, connected-asset integration approaches,
+          software architectures, operational workflows, data-processing
+          techniques and control methodologies may constitute confidential
+          information, proprietary know-how or other protectable
+          intellectual property.
         </p>
 
         <p>
           Public display of selected website content, product descriptions,
-          screenshots or demonstrations does not waive any confidentiality,
-          trade secret, copyright, trademark, design, patent or future
-          intellectual property rights.
+          screenshots, demonstrations or high-level architecture information
+          does not, by itself, grant permission to reproduce, implement,
+          commercialise or otherwise use the underlying technology or
+          intellectual property.
         </p>
 
-        <h2>6. Connected Energy Platform</h2>
+
+        {/* =====================================================
+            6. ENERGY & CARBON OPTIMISATION PLATFORM
+        ===================================================== */}
+
+        <h2>
+          6. Energy & Carbon Optimisation Platform
+        </h2>
 
         <p>
-          The EnerG IQ Tech platform is designed to support operational optimisation across commercial buildings and connected energy infrastructure, including Building Management Systems (BMS), Solar PV, Battery Energy Storage Systems (BESS), EV Charging Infrastructure, Smart Meters, IoT devices and other Distributed Energy Resources (DER).
-
-          Descriptions of these capabilities on this website are provided for informational purposes only and do not grant any licence, ownership interest or right to reproduce, implement or commercialise any associated methodologies, software or intellectual property.
-        </p>
-
-        <h2>7. Trademarks and brand assets</h2>
-
-        <p>
-          EnerG IQ Tech, AI Energy Gateway, EnerG IQ Tech Software, Digital Twin Intelligence, Decision Agents,
-          Savings Intelligence and related names, logos, icons,
-          slogans and brand assets may function as trademarks or trade indicia
-          of Automation Spectrum Pty Ltd and/or EnerG IQ Tech.
+          EnerG IQ Tech is designed to support AI-driven operational energy
+          optimisation across energy-intensive facilities and connected
+          energy infrastructure.
         </p>
 
         <p>
-          These names and brand assets must not be used in a way that may cause
-          confusion, imply endorsement, suggest partnership or misrepresent a
-          relationship with EnerG IQ Tech without written permission.
+          Its technologies may be used to identify energy waste, analyse
+          peak demand, investigate equipment inefficiencies, evaluate
+          optimisation opportunities and measure potential or realised
+          energy, financial and associated CO₂ outcomes.
         </p>
 
-        <h2>8. Copyright</h2>
+        <p>
+          The platform architecture is designed to work across systems
+          including Building Management Systems (BMS), HVAC, refrigeration,
+          industrial equipment, Solar PV, Battery Energy Storage Systems
+          (BESS), EV charging infrastructure, smart meters, IoT devices,
+          utility interfaces and other Distributed Energy Resources (DER).
+        </p>
+
+        <p>
+          Descriptions of these capabilities are provided for informational
+          purposes only and do not grant any licence, ownership interest or
+          right to reproduce, implement or commercialise any associated
+          software, algorithms, methodologies, architectures or intellectual
+          property.
+        </p>
+
+
+        {/* =====================================================
+            7. TRADEMARKS
+        ===================================================== */}
+
+        <h2>
+          7. Trademarks and Brand Assets
+        </h2>
+
+        <p>
+          EnerG IQ Tech, AI Energy Gateway, Digital Twin Intelligence,
+          Decision Agents, Savings Intelligence and related names, logos,
+          icons, slogans and brand assets may function as trademarks,
+          service marks or trade indicia of Automation Spectrum Pty Ltd
+          and/or their respective rights holders.
+        </p>
+
+        <p>
+          These names and brand assets must not be used in a manner that
+          may cause confusion, imply endorsement, suggest partnership or
+          misrepresent a relationship with EnerG IQ Tech or Automation
+          Spectrum Pty Ltd without appropriate permission.
+        </p>
+
+
+        {/* =====================================================
+            8. COPYRIGHT
+        ===================================================== */}
+
+        <h2>
+          8. Copyright
+        </h2>
 
         <p>
           Website content, documentation, visual materials, software-related
-          materials, diagrams, designs, screenshots and written materials may be
-          protected by copyright. Unauthorised copying, adaptation, publication,
-          distribution or commercial use is prohibited.
-        </p>
-
-        <h2>9. Pilot, customer and partner materials</h2>
-
-        <p>
-          Any pilot proposals, technical documentation, demonstrations,
-          commercial materials or partner-specific materials shared by EnerG IQ Tech
-          Tech remain proprietary unless a separate written agreement states
-          otherwise.
+          materials, diagrams, designs, screenshots and written materials
+          may be protected by copyright.
         </p>
 
         <p>
-          No customer, partner, investor, grant assessor or website visitor
-          receives ownership rights in EnerG IQ Tech technology, software,
-          AI models, Digital Twin technology, AI Energy Gateway, Decision Agents,
-          Distributed Energy Resource integration methods,
-          connected asset workflows,
-          system architecture or intellectual property by reviewing such materials.
+          Unauthorised reproduction, adaptation, publication, distribution
+          or commercial use may infringe applicable intellectual property
+          rights.
         </p>
 
-        <h2>10. Government, grant and investor review</h2>
+
+        {/* =====================================================
+            9. CUSTOMER & PARTNER MATERIALS
+        ===================================================== */}
+
+        <h2>
+          9. Pilot, Customer and Partner Materials
+        </h2>
 
         <p>
-          Materials shared for commercialisation, grant assessment, investor
-          review, government program engagement or pilot evaluation are provided
-          for review and discussion purposes only.
-        </p>
-
-        <p>
-          Such review does not create any licence, assignment, ownership
-          interest, partnership, agency relationship or right to copy, implement
-          or commercialise EnerG IQ Tech materials without written agreement.
-        </p>
-
-        <h2>11. Future intellectual property rights</h2>
-
-        <p>
-          EnerG IQ Tech may seek trademark, patent, design, copyright or other
-          intellectual property protection for current or future technology,
-          products, services, methods, workflows, brands or platform
-          capabilities.
-
-          Future protection may include, but is not limited to:
-
-          • AI Energy Gateway technologies
-
-          • Digital Twin methodologies
-
-          • Connected Energy Asset integration
-
-          • Distributed Energy Resource orchestration
-
-          • AI Decision Agents
-
-          • Operational optimisation workflows
-
-          • Human-in-the-loop governance methods
-
-          • Forecasting, recommendation and optimisation algorithms
-
-          • Software platforms
-
-          • Hardware reference architectures
-
-          • Trademarks, brands and visual assets
+          Pilot proposals, technical documentation, demonstrations,
+          commercial materials, optimisation assessments and
+          customer-specific or partner-specific materials shared by
+          EnerG IQ Tech remain subject to the applicable intellectual
+          property and confidentiality arrangements unless a separate
+          written agreement states otherwise.
         </p>
 
         <p>
-          Nothing on this website should be interpreted as limiting EnerG IQ Tech
-          Tech's ability to protect, register, commercialise or enforce its
+          Reviewing such materials does not by itself transfer ownership
+          rights in EnerG IQ Tech technology, software, AI models,
+          Digital Twin technology, AI Energy Gateway technologies,
+          Decision Agents, optimisation methodologies, connected-asset
+          workflows or system architectures.
+        </p>
+
+
+        {/* =====================================================
+            10. GOVERNMENT / GRANT / INVESTOR REVIEW
+        ===================================================== */}
+
+        <h2>
+          10. Government, Grant and Investor Review
+        </h2>
+
+        <p>
+          Materials shared for commercialisation assessment, government
+          programs, grant assessment, investor review, technical evaluation
+          or pilot discussions are provided for the relevant review and
+          discussion purposes.
+        </p>
+
+        <p>
+          Unless otherwise agreed in writing, such review does not create
+          an assignment, licence, ownership interest, partnership, agency
+          relationship or right to reproduce, implement or commercialise
+          EnerG IQ Tech intellectual property.
+        </p>
+
+
+        {/* =====================================================
+            11. FUTURE INTELLECTUAL PROPERTY
+        ===================================================== */}
+
+        <h2>
+          11. Future Intellectual Property Rights
+        </h2>
+
+        <p>
+          Automation Spectrum Pty Ltd and/or the applicable rights holder
+          may seek patent, trademark, design, copyright or other available
+          intellectual property protection for current or future EnerG IQ
+          Tech technologies, products, services, methods, workflows,
+          software and brands.
+        </p>
+
+        <p>
+          Areas of present or future intellectual property development may
+          include:
+        </p>
+
+        <ul>
+
+          <li>
+            AI Energy Gateway technologies
+          </li>
+
+          <li>
+            Edge AI energy optimisation technologies
+          </li>
+
+          <li>
+            Digital Twin methodologies and simulation workflows
+          </li>
+
+          <li>
+            Connected energy asset integration
+          </li>
+
+          <li>
+            Distributed Energy Resource coordination and orchestration
+          </li>
+
+          <li>
+            AI Decision Agents and decision intelligence
+          </li>
+
+          <li>
+            Energy waste and anomaly detection methodologies
+          </li>
+
+          <li>
+            Peak-demand forecasting and optimisation
+          </li>
+
+          <li>
+            Energy cost and tariff optimisation
+          </li>
+
+          <li>
+            Energy and associated CO₂ measurement methodologies
+          </li>
+
+          <li>
+            Savings Intelligence and measurement-and-verification methods
+          </li>
+
+          <li>
+            Operational optimisation workflows
+          </li>
+
+          <li>
+            Human-in-the-loop governance and control methods
+          </li>
+
+          <li>
+            Forecasting, recommendation and optimisation algorithms
+          </li>
+
+          <li>
+            Software platforms and AI models
+          </li>
+
+          <li>
+            Hardware and edge-computing reference architectures
+          </li>
+
+          <li>
+            Trademarks, brands and visual assets
+          </li>
+
+        </ul>
+
+        <p>
+          Nothing on this website should be interpreted as limiting the
+          ability of Automation Spectrum Pty Ltd or another applicable
+          rights holder to seek, register, commercialise or enforce
           intellectual property rights in the future.
         </p>
 
-        <h2>12. Reporting misuse</h2>
+
+        {/* =====================================================
+            12. REPORTING MISUSE
+        ===================================================== */}
+
+        <h2>
+          12. Reporting Misuse
+        </h2>
 
         <p>
           If you believe EnerG IQ Tech materials, brand assets or technology
-          concepts are being misused, copied or represented without permission,
-          please contact us.
+          concepts are being copied, misused or represented without
+          permission, please contact us.
         </p>
 
-        <h2>12. Contact</h2>
+
+        {/* =====================================================
+            13. CONTACT
+        ===================================================== */}
+
+        <h2>
+          13. Contact
+        </h2>
 
         <p>
-          <strong>Automation Spectrum Pty Ltd</strong>
+          <strong>
+            Automation Spectrum Pty Ltd
+          </strong>
+
           <br />
+
           EnerG IQ Tech
+
           <br />
+
           Email:{" "}
+
           <a href="mailto:contact@automationspectrum.com.au">
             contact@automationspectrum.com.au
           </a>
         </p>
 
+
+        {/* =====================================================
+            DISCLAIMER
+        ===================================================== */}
+
         <div className="legalDisclaimer">
+
           © 2026 EnerG IQ Tech.
 
-          All AI Energy Gateway technologies,
-          Digital Twin methodologies,
-          Decision Agent workflows,
-          connected energy asset integration methods,
-          software,
-          documentation,
-          designs
-          and associated intellectual property
-          are developed & owned by Automation Spectrum Pty Ltd unless otherwise stated.
+          <br />
+          <br />
+
+          AI Energy Gateway technologies, Edge AI methodologies,
+          Digital Twin methodologies, Decision Agent workflows,
+          energy optimisation methodologies, energy and carbon
+          intelligence methods, connected-energy-asset integration
+          approaches, software, documentation, designs and associated
+          intellectual property are developed and/or owned by
+          Automation Spectrum Pty Ltd or the applicable rights holder,
+          unless otherwise stated.
+
         </div>
+
       </section>
+
     </main>
   );
 }

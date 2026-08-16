@@ -52,35 +52,34 @@ const stagger = {
 const features = [
   {
     icon: Activity,
-    title: "Multi-Asset Anomaly Detection",
-    text: "Detect abnormal behaviour across Building Management Systems, Solar PV, Battery Storage, EV Charging, Smart Meters and IoT devices.",
+    title: "Energy Waste & Anomaly Detection",
+    text: "Detect abnormal consumption, equipment inefficiencies and avoidable energy waste across BMS, refrigeration, industrial assets, Solar PV, Battery Storage, EV Charging, Smart Meters and IoT devices.",
   },
   {
     icon: BarChart3,
-    title: "Real-Time Energy Intelligence",
-    text: "Continuously compare generation, consumption, storage and demand against adaptive operating baselines.",
+    title: "Real-Time Energy & Cost Intelligence",
+    text: "Compare consumption, generation, storage, demand and tariff exposure against adaptive baselines to identify measurable savings opportunities.",
   },
   {
     icon: Brain,
     title: "AI Root Cause Analysis",
-    text: "Explain why anomalies occur across buildings, batteries, solar, EV charging and connected assets.",
+    text: "Explain why energy waste, demand spikes and asset anomalies occur so teams can prioritise the highest-value optimisation actions.",
   },
   {
     icon: Gauge,
-    title: "DER Optimisation",
-    text: "Optimise energy demand, solar self-consumption, battery dispatch and EV charging schedules.",
+    title: "Peak Demand & DER Optimisation",
+    text: "Optimise facility demand, solar self-consumption, battery dispatch and EV charging to reduce peak costs and improve renewable utilisation.",
   },
   {
     icon: Leaf,
-    title: "Carbon & Grid Intelligence",
-    text: "Track emissions, renewable utilisation, grid imports/exports and ESG performance.",
+    title: "CO₂ & Sustainability Intelligence",
+    text: "Measure associated CO₂ emissions, renewable utilisation and carbon outcomes alongside energy and financial performance.",
   },
   {
     icon: ShieldCheck,
-    title: "AI Decision Workflows",
-    text: "Human-in-the-loop recommendations and governed actions across BMS, DER assets and grid-connected infrastructure.",
+    title: "Governed AI Decision Workflows",
+    text: "Turn AI recommendations into human-approved optimisation actions while maintaining operational constraints and safeguards.",
   },
-  
 ];
 
 const advanced = [
@@ -105,7 +104,7 @@ const comparison = [
   },
   {
     title: "EnerG IQ Tech",
-    points: ["Device-led AI Gateway", "Connected Energy Assets","Operational Intelligence","Governed action", "Vendor-neutral integration"],
+    points: ["Energy waste detection", "Cost & CO₂ optimisation", "Connected Energy Assets", "Governed action", "Measured savings"],
     featured: true,
   },
 ];
@@ -141,12 +140,12 @@ const discoverySteps = [
 ];
 
 const operationalOutcomes = [
-  "Connected Energy Assets",
-  "AI Decision Intelligence",
-  "Operational Optimisation",
-  "Demand Response Ready",
-  "Carbon & ESG Reporting",
-  "Grid-Ready Platform",
+  "Lower Energy Consumption",
+  "Lower Peak Demand",
+  "Lower Energy Costs",
+  "Lower Associated CO₂ Emissions",
+  "Improved Operational Efficiency",
+  "Measured ROI",
 ];
 
 const validationPoints = [
@@ -176,84 +175,84 @@ const industrySolutions = [
     icon: Building2,
     title: "Building AI",
     path: "/building-ai",
-    text: "Optimise HVAC, lighting, BMS operations, occupancy-driven loads and whole-building energy performance.",
+    text: "Reduce building energy costs and associated CO₂ emissions by optimising HVAC, lighting, BMS operations and occupancy-driven loads.",
     assets: "HVAC • Lighting • BMS • Smart Meters",
   },
   {
     icon: Snowflake,
     title: "Cold Storage AI",
     path: "/cold-storage-ai",
-    text: "Reduce refrigeration energy costs while protecting temperature compliance, equipment reliability and product integrity.",
+    text: "Reduce refrigeration energy costs, peak demand and associated CO₂ emissions while protecting temperature compliance, equipment reliability and product integrity.",
     assets: "Compressors • Evaporators • Condensers • Freezers",
   },
   {
     icon: Factory,
     title: "Manufacturing AI",
     path: "/manufacturing-ai",
-    text: "Improve energy performance across production systems, process loads, utilities and refrigeration-intensive operations.",
+    text: "Reduce energy costs and associated CO₂ emissions across production systems, process loads, utilities, motors and refrigeration-intensive operations.",
     assets: "Boilers • Compressors • Motors • Production Lines",
   },
   {
     icon: Warehouse,
     title: "Warehouse & Logistics AI",
     path: "/warehouse-logistics-ai",
-    text: "Optimise warehouse lighting, refrigeration, conveyors, charging infrastructure and peak operational demand.",
+    text: "Reduce facility energy costs, peak demand and associated CO₂ emissions across lighting, refrigeration, conveyors and EV charging infrastructure.",
     assets: "Lighting • Conveyors • Refrigeration • EV Charging",
   },
   {
     icon: Hospital,
     title: "Healthcare AI",
     path: "/healthcare-ai",
-    text: "Reduce energy waste across critical facilities while maintaining comfort, resilience and operational safeguards.",
+    text: "Reduce energy waste, operating costs and associated CO₂ emissions across critical facilities while maintaining comfort, resilience and operational safeguards.",
     assets: "HVAC • Chillers • Medical Loads • Backup Power",
   },
   {
     icon: GraduationCap,
     title: "University AI",
     path: "/university-ai",
-    text: "Coordinate campus buildings, laboratories, teaching spaces and distributed energy assets through one AI platform.",
+    text: "Reduce campus energy costs and associated CO₂ emissions across buildings, laboratories and distributed energy assets while maintaining operational requirements.",
     assets: "Campus BMS • Labs • Solar • Battery",
   },
   {
     icon: Hotel,
     title: "Hotel AI",
     path: "/hotel-ai",
-    text: "Optimise guest-room HVAC, hot water, central plant and occupancy-driven loads without compromising guest comfort.",
+    text: "Reduce hotel energy costs and associated CO₂ emissions by optimising HVAC, hot water, central plant and occupancy-driven loads without compromising guest comfort.",
     assets: "HVAC • Hot Water • Chillers • Guest Rooms",
   },
   {
     icon: ShoppingCart,
     title: "Shopping Centre AI",
     path: "/shopping-centre-ai",
-    text: "Improve energy performance across retail HVAC, common areas, refrigeration, lighting and vertical transport.",
+    text: "Reduce energy costs, peak demand and associated CO₂ emissions across HVAC, lighting, refrigeration, common areas and vertical transport.",
     assets: "HVAC • Lighting • Refrigeration • Escalators",
   },
   {
     icon: Plane,
     title: "Airport AI",
     path: "/airport-ai",
-    text: "Coordinate terminal systems, baggage operations, passenger-flow loads and airside energy infrastructure.",
+    text: "Reduce airport energy costs and associated CO₂ emissions across terminal HVAC, baggage operations, airside infrastructure and other energy-intensive systems.",
     assets: "Terminal HVAC • Baggage • Airside Lighting • GSE",
   },
   {
     icon: Database,
     title: "Data Centre AI",
     path: "/data-centre-ai",
-    text: "Optimise cooling, UPS systems, power distribution and compute-support infrastructure using governed AI workflows.",
+    text: "Reduce cooling and infrastructure energy costs and associated CO₂ emissions while protecting availability, resilience and critical operating requirements.",
     assets: "Cooling • UPS • Power Distribution • Backup Power",
   },
   {
     icon: Landmark,
     title: "Local Government AI",
     path: "/local-government-ai",
-    text: "Manage energy performance across civic buildings, libraries, depots, community facilities and council portfolios.",
+    text: "Reduce council energy costs and associated CO₂ emissions across civic buildings, libraries, depots and community facilities while supporting sustainability targets.",
     assets: "Civic Buildings • Libraries • Depots • Solar",
   },
   {
     icon: SunMedium,
     title: "DER Portfolio AI",
     path: "/connected-energy-assets",
-    text: "Coordinate solar, batteries, EV charging, flexible demand and grid-connected assets across distributed portfolios.",
+    text: "Reduce energy costs and carbon impact by intelligently coordinating solar, batteries, EV charging, flexible demand and grid-connected assets.",
     assets: "Solar PV • BESS • EV • Grid Interfaces",
   },
 ];
@@ -266,16 +265,16 @@ export default function HomePage({ openPilotModal }) {
       <section className="hero" id="top">
         <motion.div className="heroText" variants={stagger} initial="hidden" animate="show">
           <motion.div className="badge" variants={fadeUp}>
-            <Sparkles size={16} /> Edge AI • Digital Twins • Decision Intelligence • Connected Energy Systems
+            <Sparkles size={16} /> Energy Cost Reduction • CO₂ Reduction • Operational Efficiency
           </motion.div>
 
           <motion.h1 variants={fadeUp}>
-            One AI Platform for Energy-Intensive Operations & Connected Energy Systems.
+            Reduce Energy Costs & CO₂ Emissions with AI
           </motion.h1>
 
           <motion.p variants={fadeUp}>
-            EnerG IQ Tech connects building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage Systems (BESS), EV charging infrastructure, smart meters, IoT sensors and utility interfaces through the AI Energy Gateway.
-            Edge AI analyses operational data in real time, detects energy waste, peak-demand events and equipment inefficiencies, recommends optimisation actions and enables organisations to reduce energy costs, lower emissions and improve operational reliability.
+            EnerG IQ Tech helps energy-intensive organisations reduce energy costs, peak demand and associated CO₂ emissions by identifying 
+            and eliminating operational energy waste in real time. Edge AI continuously analyses how buildings, refrigeration equipment and industrial assets consume energy, while the AI Energy Gateway connects operational systems with Solar PV, Battery Energy Storage Systems (BESS), EV charging, smart meters and IoT sensors. EnerG IQ Tech then recommends optimisation actions that improve energy efficiency, lower operating costs and emissions, and maintain operational reliability.
           </motion.p>
 
           <motion.div className="heroIndustryLine" variants={fadeUp} aria-label="Supported industries">
@@ -288,7 +287,7 @@ export default function HomePage({ openPilotModal }) {
 
           <motion.div className="heroButtons" variants={fadeUp}>
             <button type="button" onClick={openPilotModal} className="primary">
-              Request Pilot <ChevronRight size={18} />
+              Start a 30-Day Energy Optimisation Pilot <ChevronRight size={18} />
             </button>
 
             <a href="#platform-preview" className="secondary">
@@ -297,9 +296,9 @@ export default function HomePage({ openPilotModal }) {
           </motion.div>
 
           <motion.div className="metrics" variants={fadeUp}>
-            <div><strong>30-Day Pilot</strong><span>Commercial Validation</span></div>
-            <div><strong>12 Industry Packs</strong><span>One Shared AI Platform</span></div>
-            <div><strong>Edge + AI</strong><span>Real-Time Decision Intelligence</span></div>
+            <div><strong>30-Day Pilot</strong><span>Prove Energy, Cost & CO₂ Value</span></div>
+            <div><strong>12 Industry Packs</strong><span>Industry-Specific Energy Optimisation</span></div>
+            <div><strong>Edge + AI</strong><span>Real-Time Energy Optimisation</span></div>
           </motion.div>
 
           <motion.p variants={fadeUp}>
@@ -362,7 +361,7 @@ export default function HomePage({ openPilotModal }) {
       </section>
 
       <section className="strip">
-        <span>Detect</span><span>Explain</span><span>Recommend</span><span>Simulate</span><span>Control</span><span>Prove ROI</span>
+        <span>Detect Waste</span><span>Explain</span><span>Recommend</span><span>Simulate</span><span>Approve</span><span>Measure Savings</span>
       </section>
 
       <motion.section
@@ -375,7 +374,7 @@ export default function HomePage({ openPilotModal }) {
       >
         <motion.div className="sectionHeader industriesHeader" variants={fadeUp}>
           <p>Industry Solutions</p>
-          <h2>One Core AI Platform. Twelve Industry-Specific Operating Environments.</h2>
+          <h2>Reduce Energy Costs & Carbon Across 12 Energy-Intensive Industries.</h2>
           <span>
             EnerG IQ Tech applies the same AI Energy Gateway, Digital Twin, Decision Agents,
             human-in-the-loop governance and Savings Intelligence across energy-intensive
@@ -411,9 +410,9 @@ export default function HomePage({ openPilotModal }) {
 
         <motion.div className="industriesFooter" variants={fadeUp}>
           <div>
-            <strong>Core Platform</strong>
+            <strong>From Energy Waste to Measurable Savings</strong>
             <span>
-              AI Energy Gateway → Digital Twin → AI Decision Agents → Human Approval → Measurable Savings
+              AI Energy Gateway → Digital Twin → AI Decision Agents → Human Approval → Energy, Cost & CO₂ Outcomes
             </span>
           </div>
 
@@ -431,7 +430,7 @@ export default function HomePage({ openPilotModal }) {
       >
         <motion.div className="sectionHeader compactHeader" variants={fadeUp}>
           <p>Problem-First Approach</p>
-          <h2>One AI Workflow Across Every Industry and Connected Energy Asset.</h2>
+          <h2>From Energy Waste to Measurable Cost & Carbon Reduction.</h2>
           <span>
             EnerG IQ Tech analyses operational data from building systems, refrigeration plants, industrial equipment, Solar PV, Battery Energy Storage, EV charging, smart meters
             and IoT devices to identify inefficiencies before recommending AI-driven optimisation actions.
@@ -456,10 +455,9 @@ export default function HomePage({ openPilotModal }) {
         <div className="discoveryPanel">
           <div className="discoveryLeft">
             <p>Operational Discovery & Pilot Workshops</p>
-            <h2>From Connected Energy Assets to Intelligent Optimisation</h2>
+            <h2>Find the Highest-Value Energy Cost & CO₂ Reduction Opportunities.</h2>
             <span>
-              We work with organisations across energy-intensive industries to assess operational systems, refrigeration and process equipment, Building Management Systems, Solar PV, Battery Storage, EV charging, smart meters
-              and IoT infrastructure, identifying high-value AI optimisation opportunities before defining a pilot.
+              We work with energy-intensive organisations to establish operational context, review available energy and asset data, identify avoidable consumption and peak demand, and prioritise AI optimisation opportunities with measurable financial and associated CO₂ outcomes before defining a pilot.
             </span>
             <button type="button" onClick={openPilotModal} className="primary">
               Book Discovery Workshop <ChevronRight size={18} />
@@ -481,10 +479,9 @@ export default function HomePage({ openPilotModal }) {
         <div className="flowCard">
           <Target size={34} />
           <p>AI as the Enabler</p>
-          <h2>Connected Energy Assets → AI Intelligence → Intelligent Actions → Measurable Impact</h2>
+          <h2>Energy Data → AI Intelligence → Governed Optimisation → Measurable Savings</h2>
           <span>
-            EnerG IQ Tech transforms operational data from buildings, refrigeration systems, industrial equipment, Solar PV, Battery Storage, EV charging, smart meters
-            and IoT devices into AI-driven insights, optimisation recommendations and measurable operational outcomes.
+            EnerG IQ Tech transforms operational data from buildings, refrigeration systems, industrial equipment and connected energy assets into AI-driven recommendations that can reduce energy consumption, peak demand, operating costs and associated CO₂ emissions while maintaining operational requirements.
           </span>
         </div>
 
@@ -501,7 +498,7 @@ export default function HomePage({ openPilotModal }) {
       <motion.section className="section" id="features" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Core Platform Capabilities</p>
-          <h2>From Connected Energy Assets to AI-Driven Operational Intelligence.</h2>
+          <h2>AI Capabilities Built to Reduce Energy Waste, Cost & Carbon.</h2>
         </motion.div>
 
         <div className="featureGrid">
@@ -523,12 +520,11 @@ export default function HomePage({ openPilotModal }) {
           <p>AI-assisted operational action layer</p>
 
           <h2>
-            AI-Assisted Control Across Connected Energy Assets.
+            Turn AI Energy Intelligence Into Measurable Cost & Carbon Reduction.
           </h2>
 
           <span>
-           EnerG IQ Tech transforms AI insights into governed operational actions across Building Management Systems, Solar PV, Battery Energy Storage, EV Charging, Smart Meters and 
-           other Distributed Energy Resources through approval-based workflows.
+            EnerG IQ Tech converts AI insights into governed optimisation actions across buildings, operational equipment and connected energy assets, with human approval before execution and measurement of energy, financial and associated CO₂ outcomes afterwards.
           </span>
         </div>
 
@@ -551,10 +547,10 @@ export default function HomePage({ openPilotModal }) {
               <Zap size={26} />
             </div>
 
-            <h3>Optimise Demand Response</h3>
+            <h3>Reduce Peak Demand</h3>
 
             <p>
-              Coordinate peak demand reduction, battery dispatch and flexible load management.
+              Coordinate flexible loads, battery dispatch and operating schedules to reduce costly demand peaks.
             </p>
           </div>
 
@@ -575,11 +571,10 @@ export default function HomePage({ openPilotModal }) {
               <CheckCircle2 size={26} />
             </div>
 
-            <h3>Measure Operational Outcomes</h3>
+            <h3>Measure Energy, Cost & CO₂ Outcomes</h3>
 
             <p>
-              Validate energy savings, carbon reduction, renewable utilisation
-              and operational performance after execution.
+              Compare results against established baselines to validate energy savings, peak-demand reduction, financial value, associated CO₂ outcomes and operational performance.
             </p>
           </div>
 
@@ -589,15 +584,16 @@ export default function HomePage({ openPilotModal }) {
       <motion.section className="section dark" id="gateway" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>AI Energy Gateway</p>
-          <h2>Real-Time AI Across Connected Energy Assets.</h2>
+          <h2>Edge AI Where Energy Is Consumed.</h2>
         </motion.div>
 
         <motion.div className="gatewayLayout" variants={fadeUp}>
           <div className="deviceBox">
             <Cpu size={38} />
             <strong>AI Energy Gateway</strong>
-            <span>Industrial Edge AI
-                  Secure integration • Local intelligence • Protocol translation • Resilient operation</span>
+              <span>
+                Connect operational systems and energy assets through secure Edge AI so energy waste and optimisation opportunities can be analysed in real time.
+              </span>
           </div>
 
           <div className="flow">
@@ -617,7 +613,7 @@ export default function HomePage({ openPilotModal }) {
           <p>Deployment Pathway</p>
 
           <h2>
-            A low-risk pathway from pilot to enterprise-scale deployment.
+            Start Small. Prove Savings. Scale Across Sites.
           </h2>
         </div>
 
@@ -638,7 +634,7 @@ export default function HomePage({ openPilotModal }) {
           <div>
             <b>3</b>
             <h3>Measure</h3>
-            <p>Validate energy savings, renewable utilisation, operational performance and ROI.</p>
+            <p>Validate energy reduction, peak-demand reduction, financial savings, associated CO₂ outcomes, operational performance and ROI.</p>
           </div>
 
           <div>
@@ -656,12 +652,11 @@ export default function HomePage({ openPilotModal }) {
           <p>Pilot Proof Points</p>
 
           <h2>
-            Demonstrating the AI Platform across connected energy assets.
+            Proving Energy, Financial & CO₂ Outcomes Before Scale.
           </h2>
 
           <span>
-            EnerG IQ Tech has developed a unified AI Energy Platform comprising the AI Energy Gateway, Digital Twin, AI Decision Agents and governed operational workflows.
-            The platform is designed to connect, analyse and optimise energy-intensive operations and distributed energy assets, including Building Management Systems (BMS), refrigeration systems, industrial equipment, Solar PV, Battery Energy Storage Systems (BESS), EV charging, smart meters and IoT infrastructure.
+            EnerG IQ Tech pilots are designed to establish an energy baseline, identify avoidable consumption and peak demand, evaluate governed optimisation actions and quantify potential or realised energy, financial and associated CO₂ outcomes before broader deployment.
           </span>
 
         </div>
@@ -677,9 +672,9 @@ export default function HomePage({ openPilotModal }) {
 
           <div className="proofCard">
             <strong>Digital Twin & Asset Intelligence</strong>
-            <span>
-              Building-level operational visibility with an architecture extendable to batteries, EV chargers and renewable energy assets.
-            </span>
+              <span>
+                Locate energy waste and peak-demand events in operational context, investigate root causes and evaluate optimisation pathways before action.
+              </span>
           </div>
 
           <div className="proofCard">
@@ -690,11 +685,10 @@ export default function HomePage({ openPilotModal }) {
           </div>
 
           <div className="proofCard">
-            <strong>Energy Optimisation Workflows</strong>
-            <span>
-              Demonstrated workflows include peak demand optimisation, HVAC efficiency and after-hours energy management, 
-              with an architecture designed to support Solar PV, Battery Storage, EV Charging and demand-response.
-            </span>
+            <strong>Energy, Cost & Carbon Optimisation</strong>
+              <span>
+                Evaluate peak-demand, HVAC, refrigeration, after-hours and connected-asset optimisation opportunities and measure their energy, financial and associated CO₂ impact.
+              </span>
           </div>
 
         </div>
@@ -707,12 +701,11 @@ export default function HomePage({ openPilotModal }) {
           <p>Pilot Demonstration</p>
 
           <h2>
-            Example AI Energy Optimisation Workflow.
+            Example Workflow From Energy Waste to Measurable Savings.
           </h2>
 
           <span>
-            Illustrative Phase 1 workflow demonstrating how the EnerG IQ Tech Platform connects energy assets, detects anomalies, recommends actions 
-            and validates operational outcomes.
+            Illustrative Phase 1 workflow showing how EnerG IQ Tech establishes context, detects energy waste, recommends governed actions and measures energy, financial and associated CO₂ outcomes.
           </span>
         </div>
 
@@ -734,7 +727,7 @@ export default function HomePage({ openPilotModal }) {
 
             <div>Human-in-the-Loop Actions</div>
 
-            <div>Operational Impact & ROI</div>
+            <div>Energy, Cost, CO₂ & ROI</div>
 
           </div>
 
@@ -745,7 +738,7 @@ export default function HomePage({ openPilotModal }) {
       <motion.section className="section twinSection" id="digital-twin" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Digital Twin Intelligence</p>
-          <h2>See where operational issues occur across connected energy assets.</h2>
+          <h2>See Where Energy Waste Occurs and What It Costs.</h2>
         </motion.div>
 
         <motion.div className="twinGrid" variants={fadeUp}>
@@ -763,7 +756,7 @@ export default function HomePage({ openPilotModal }) {
           <div className="twinText">
             <h3>Spatial visibility across buildings and connected energy assets.</h3>
             <p>
-              EnerG IQ Tech maps anomalies, inefficiencies and operational events to buildings, zones, equipment and connected energy assets, enabling faster investigation and AI-assisted operational decisions.
+              EnerG IQ Tech maps energy waste, demand peaks and equipment inefficiencies to buildings, zones and connected assets, helping teams investigate root causes, evaluate optimisation actions and quantify potential energy-cost and associated CO₂ outcomes.
             </p>
             <ul>
               <li><CheckCircle2 size={18} /> Building, zone, room and equipment-level context</li>
@@ -776,8 +769,8 @@ export default function HomePage({ openPilotModal }) {
 
       <section className="section advancedSection">
         <div className="sectionHeader">
-          <p>A unified Edge AI platform connecting building systems, refrigeration equipment, industrial assets, Solar PV, Battery Energy Storage, EV charging, smart meters, IoT devices and utility interfaces into a single operational intelligence platform.</p>
-          <h2>One Platform. Every Industry. Every Connected Energy Asset.</h2>
+          <p>One Edge AI architecture connecting energy-intensive operations and distributed energy assets to governed optimisation and measurable outcomes.</p>
+          <h2>One Platform for Lower Energy Costs & CO₂ Across Every Industry.</h2>
         </div>
 
         <div className="advancedGrid">
@@ -788,7 +781,7 @@ export default function HomePage({ openPilotModal }) {
       <motion.section className="section comparisonSection" id="comparison" variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
         <motion.div className="sectionHeader" variants={fadeUp}>
           <p>Why EnerG IQ Tech</p>
-          <h2>Built around existing energy infrastructure, operational workflows and asset owners.</h2>
+          <h2>Built to Reduce Energy Cost & Carbon Using Existing Infrastructure.</h2>
         </motion.div>
 
         <div className="comparisonGrid">
@@ -816,14 +809,11 @@ export default function HomePage({ openPilotModal }) {
           </p>
 
           <h3>
-            The AI Platform for Energy-Intensive Operations
+            The AI Energy Operating System for Lower Cost & Carbon
           </h3>
 
           <p>
-            EnerG IQ Tech combines the AI Energy Gateway, Digital Twins, AI Decision Agents 
-            and governed operational workflows into a unified AI platform for connected energy infrastructure. 
-            The platform enables organisations to move beyond monitoring toward intelligent optimisation, 
-            operational automation and measurable business outcomes.
+            EnerG IQ Tech combines the AI Energy Gateway, Digital Twins, AI Decision Agents and governed operational workflows into a unified optimisation layer designed to reduce energy waste, operating costs, peak demand and associated CO₂ emissions across energy-intensive operations.
           </p>
 
           <p className="visionStatement">
@@ -861,9 +851,9 @@ export default function HomePage({ openPilotModal }) {
       <section className="pilot" id="pilot">
         <div>
           <p>Pilot Model</p>
-          <h2>Pilot-first deployment model designed to prove measurable operational value.</h2>
+          <h2>Start With One Energy Problem. Prove the Cost & CO₂ Value Before Scaling.</h2>
           <p>
-            Start with one priority site, operational problem or connected asset group. Validate optimisation opportunities, operational outcomes and measurable ROI before scaling across facilities, industry portfolios and connected energy assets.
+            Establish a baseline for one priority site, system or connected asset group. Identify energy waste, evaluate governed optimisation actions and quantify energy, peak-demand, financial and associated CO₂ outcomes before scaling across facilities and portfolios.
           </p>
         </div>
 
@@ -873,7 +863,7 @@ export default function HomePage({ openPilotModal }) {
             <li>AI Energy Gateway deployed at pilot site(s)</li>
             <li>Connect priority operational systems and available energy assets</li>
             <li>Validate AI optimisation workflows</li>
-            <li>Measure operational, financial and carbon outcomes</li>
+            <li>Measure energy reduction, peak demand, financial savings and associated CO₂ outcomes</li>
           </ul>
         </div>
 
@@ -894,7 +884,7 @@ export default function HomePage({ openPilotModal }) {
           <p>Market Engagement</p>
 
           <h2>
-            Validating pilot demand across multiple energy-intensive industries.
+            Validating Demand for Measurable Energy Cost & CO₂ Reduction Across Industries.
           </h2>
         </div>
 
@@ -933,9 +923,9 @@ export default function HomePage({ openPilotModal }) {
       </section>
 
       <section className="cta">
-        <h2>Now onboarding pilot partners.</h2>
+        <h2>Start With One Site. Prove the Energy & Carbon Savings.</h2>
         <p>
-          Built for energy-intensive organisations seeking measurable cost savings, carbon visibility, operational reliability and governed AI decision intelligence.
+          Reduce Energy Costs. Reduce CO₂. Prove the Results Before You Scale.
         </p>
 
         <button type="button" onClick={openPilotModal} className="primary">

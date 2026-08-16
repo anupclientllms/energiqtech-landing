@@ -1,348 +1,665 @@
 import "../styles/PilotProgramPage.css";
 import { Link } from "react-router-dom";
+
 import {
   BatteryCharging,
   Building2,
   CheckCircle2,
   ChevronRight,
   ClipboardCheck,
+  Factory,
   Gauge,
   Handshake,
+  Leaf,
   LineChart,
   PlugZap,
   Search,
   ShieldCheck,
+  Snowflake,
   Sun,
   Target,
+  TrendingDown,
   Zap,
 } from "lucide-react";
+
 
 export default function PilotProgramPage() {
   return (
     <main className="pilotPage">
+
+      {/* =========================================================
+          HERO
+      ========================================================= */}
+
       <section className="pilotHero">
+
         <div className="pilotHeroContent">
-          <p className="pilotEyebrow">Pilot Program</p>
 
-          <h1>
-            A low-risk pilot pathway to validate connected energy optimisation.
-          </h1>
-
-          <p>
-            EnerG IQ Tech helps councils, universities and commercial organisations
-            start with a focused pilot, connect building and energy assets,
-            identify optimisation opportunities, measure impact and build
-            confidence before broader rollout.
+          <p className="pilotEyebrow">
+            EnerG IQ Tech Pilot Program
           </p>
 
+
+          <h1>
+            Start With One Energy Problem. Prove the Cost & CO₂ Savings
+            Before You Scale.
+          </h1>
+
+
+          <p>
+            EnerG IQ Tech gives energy-intensive organisations a focused,
+            low-risk way to establish an energy baseline, identify operational
+            energy waste and peak-demand opportunities, evaluate AI-driven
+            optimisation actions and quantify potential energy-cost and
+            associated CO₂ outcomes before committing to broader deployment.
+          </p>
+
+
           <div className="pilotHeroActions">
-            <a href="#pilot-pathway" className="pilotPrimary">
-              View Pilot Pathway <ChevronRight size={18} />
+
+            <a
+              href="#pilot-pathway"
+              className="pilotPrimary"
+            >
+              View Pilot Pathway
+              <ChevronRight size={18} />
             </a>
 
-            <Link to="/savings-intelligence" className="pilotSecondary">
+
+            <Link
+              to="/savings-intelligence"
+              className="pilotSecondary"
+            >
               Savings Intelligence
             </Link>
+
           </div>
+
         </div>
+
       </section>
+
+
+      {/* =========================================================
+          WHY PILOT FIRST
+      ========================================================= */}
 
       <section className="pilotSection">
+
         <div className="pilotSectionHeader">
-          <p>Why pilot first</p>
+
+          <p>
+            Why Pilot First
+          </p>
+
 
           <h2>
-            Prove value in a controlled environment before committing to scale.
+            Prove the Energy, Financial & Carbon Business Case Before
+            Committing to Scale.
           </h2>
+
 
           <span>
-            The pilot model reduces commercial and operational risk by validating
-            the opportunity across a focused building, site, asset type or
-            connected energy workflow using measurable outcomes.
+            Rather than beginning with a large technology rollout, the
+            EnerG IQ Tech pilot focuses on one site, facility, operational
+            system or high-value energy problem. The objective is to establish
+            evidence that supports a clear decision about whether broader
+            deployment makes operational and financial sense.
           </span>
+
         </div>
+
 
         <div className="pilotValueGrid">
+
           <div className="pilotValueCard">
+
             <Target />
-            <h3>Focused scope</h3>
+
+            <h3>
+              Focused Energy Problem
+            </h3>
+
             <p>
-              Start with one building, site, connected asset or operational use
-              case before expanding across a wider portfolio.
+              Start with one site, operational system or measurable use case
+              where energy consumption, peak demand or equipment inefficiency
+              creates a meaningful business problem.
             </p>
+
           </div>
 
+
           <div className="pilotValueCard">
+
             <Gauge />
-            <h3>Measurable baseline</h3>
+
+            <h3>
+              Measurable Energy Baseline
+            </h3>
+
             <p>
-              Compare energy behaviour, asset performance and operational
-              patterns against a baseline to identify optimisation opportunities.
+              Establish current energy consumption, demand and operating
+              behaviour so optimisation opportunities and resulting outcomes
+              can be measured against evidence.
             </p>
+
           </div>
 
-          <div className="pilotValueCard">
-            <LineChart />
-            <h3>Savings evidence</h3>
-            <p>
-              Build a practical savings, carbon and ROI view to support internal
-              decision-making and future investment.
-            </p>
-          </div>
 
           <div className="pilotValueCard">
+
+            <TrendingDown />
+
+            <h3>
+              Cost & CO₂ Evidence
+            </h3>
+
+            <p>
+              Quantify potential or realised energy reduction, peak-demand
+              reduction, financial savings and associated CO₂ outcomes to
+              support the business case.
+            </p>
+
+          </div>
+
+
+          <div className="pilotValueCard">
+
             <ShieldCheck />
-            <h3>Governed adoption</h3>
+
+            <h3>
+              Governed Operational Validation
+            </h3>
+
             <p>
-              Keep operational teams in control through review, approval,
-              human-in-the-loop workflows and staged rollout.
+              Keep facilities, engineering and operational teams in control
+              through review, approval, human-in-the-loop workflows and
+              agreed operating safeguards.
             </p>
+
           </div>
+
         </div>
+
       </section>
 
-      <section className="pilotPathwaySection" id="pilot-pathway">
+
+      {/* =========================================================
+          PILOT PATHWAY
+      ========================================================= */}
+
+      <section
+        className="pilotPathwaySection"
+        id="pilot-pathway"
+      >
+
         <div className="pilotPathwayHeader">
-          <p>Pilot pathway</p>
+
+          <p>
+            Pilot Pathway
+          </p>
+
 
           <h2>
-            From discovery to scale in a structured, low-risk process.
+            Baseline. Identify Waste. Optimise. Measure. Decide.
           </h2>
+
+
+          <span>
+            Each stage is designed to move from an identified energy problem
+            toward measurable evidence of financial and sustainability value.
+          </span>
+
         </div>
 
+
         <div className="pilotTimeline">
+
           {[
             {
               icon: Search,
-              title: "Discovery",
-              text: "Review facilities, BMS, meters, Solar PV, Battery Storage, EV Charging, IoT devices, available data and operational pain points.",
+
+              title: "1. Discovery & Baseline",
+
+              text:
+                "Review the site, operational systems, energy bills, BMS, meters, equipment and available telemetry to understand current energy consumption, demand and operating conditions.",
             },
+
             {
               icon: ClipboardCheck,
-              title: "Pilot Scope",
-              text: "Select a focused building, site, connected asset group or optimisation scenario for validation.",
+
+              title: "2. Define Pilot Scope",
+
+              text:
+                "Select one site, facility, asset group or high-value energy problem and define measurable success criteria for energy, cost, CO₂ and operational performance.",
             },
+
             {
               icon: Zap,
-              title: "Optimisation Review",
-              text: "Identify priority inefficiencies such as demand spikes, after-hours load, HVAC issues, solar underperformance, battery usage or EV charging impact.",
+
+              title: "3. Identify & Optimise",
+
+              text:
+                "Detect energy waste, peak-demand events and equipment inefficiencies, then evaluate AI-recommended optimisation actions against operational constraints.",
             },
+
             {
               icon: LineChart,
-              title: "Measure Impact",
-              text: "Estimate operational, cost, carbon and asset performance impact using pilot evidence.",
+
+              title: "4. Measure Outcomes",
+
+              text:
+                "Compare pilot performance against the established baseline to quantify energy reduction, peak-demand reduction, financial savings and associated CO₂ outcomes.",
             },
+
             {
               icon: Handshake,
-              title: "Commercial Decision",
-              text: "Use the pilot outcome to decide whether to scale, refine, expand or integrate additional connected energy assets.",
+
+              title: "5. Business Case & Scale Decision",
+
+              text:
+                "Use the measured pilot evidence, ROI and operational results to decide whether to scale, refine or expand EnerG IQ Tech across additional sites and systems.",
             },
-          ].map((item, index) => {
+          ].map((item) => {
             const Icon = item.icon;
 
             return (
-              <div className="pilotTimelineItem" key={item.title}>
-                <div className="pilotTimelineNumber">{index + 1}</div>
+              <div
+                className="pilotTimelineItem"
+                key={item.title}
+              >
 
                 <div className="pilotTimelineIcon">
                   <Icon />
                 </div>
 
-                <h3>{item.title}</h3>
+                <h3>
+                  {item.title}
+                </h3>
 
-                <p>{item.text}</p>
+                <p>
+                  {item.text}
+                </p>
+
               </div>
             );
           })}
+
         </div>
+
       </section>
+
+
+      {/* =========================================================
+          WHAT THE PILOT VALIDATES
+      ========================================================= */}
 
       <section className="pilotDarkSection">
+
         <div className="pilotDarkContent">
+
           <div>
-            <p>What the pilot validates</p>
+
+            <p>
+              What the Pilot Validates
+            </p>
+
 
             <h2>
-              Clear evidence for operational, financial, carbon and asset value.
+              Evidence of Energy Savings, Financial Value & CO₂ Impact.
             </h2>
 
+
             <span>
-              The pilot is not intended to replace existing systems. It is
-              designed to show where the AI Energy Gateway, Digital Twin and AI
-              Decision Agents can create measurable value across buildings and
-              connected energy infrastructure.
+              The pilot is not simply a demonstration of the EnerG IQ Tech
+              platform. Its purpose is to establish whether a defined
+              operational energy problem can be addressed with measurable
+              technical, financial and sustainability outcomes.
             </span>
+
           </div>
+
 
           <div className="pilotValidationList">
-            <div>
-              <CheckCircle2 />
-              <span>Operational visibility gaps</span>
-            </div>
 
             <div>
               <CheckCircle2 />
-              <span>Energy waste and abnormal usage patterns</span>
+
+              <span>
+                Current energy-consumption and peak-demand baseline
+              </span>
             </div>
+
 
             <div>
               <CheckCircle2 />
-              <span>Peak demand, HVAC and building optimisation opportunities</span>
+
+              <span>
+                Energy waste and abnormal operating patterns
+              </span>
             </div>
+
 
             <div>
               <CheckCircle2 />
-              <span>Solar PV, Battery Storage, EV Charging and Smart Meter readiness</span>
+
+              <span>
+                Highest-value cost-reduction opportunities
+              </span>
             </div>
+
 
             <div>
               <CheckCircle2 />
-              <span>Estimated savings, ROI and emissions impact</span>
+
+              <span>
+                Equipment, operational and optimisation constraints
+              </span>
             </div>
+
 
             <div>
               <CheckCircle2 />
-              <span>Readiness for broader rollout across connected assets</span>
+
+              <span>
+                Potential or measured energy and peak-demand reduction
+              </span>
             </div>
+
+
+            <div>
+              <CheckCircle2 />
+
+              <span>
+                Financial savings, ROI and associated CO₂ impact
+              </span>
+            </div>
+
+
+            <div>
+              <CheckCircle2 />
+
+              <span>
+                Business case for broader deployment
+              </span>
+            </div>
+
           </div>
+
         </div>
+
       </section>
+
+
+      {/* =========================================================
+          PILOT ENVIRONMENTS
+      ========================================================= */}
 
       <section className="pilotSection">
+
         <div className="pilotSectionHeader">
-          <p>Suitable pilot environments</p>
+
+          <p>
+            Suitable Pilot Environments
+          </p>
+
 
           <h2>
-            Designed for organisations managing buildings, campuses and connected energy assets.
+            Built for Energy-Intensive Organisations Across Multiple
+            Industries.
           </h2>
-        </div>
 
-        <div className="pilotAudienceGrid">
-          <div>
-            <Building2 />
-            <strong>Local Government</strong>
-            <span>
-              Civic centres, libraries, depots, community facilities and
-              multi-building council portfolios.
-            </span>
-          </div>
-
-          <div>
-            <Building2 />
-            <strong>Universities & Campuses</strong>
-            <span>
-              Learning spaces, administration buildings, research facilities and
-              campuses seeking operational energy intelligence.
-            </span>
-          </div>
-
-          <div>
-            <Building2 />
-            <strong>Commercial Buildings</strong>
-            <span>
-              Offices, mixed-use assets and managed buildings where efficiency,
-              cost control and carbon visibility matter.
-            </span>
-          </div>
-
-          <div>
-            <Sun />
-            <strong>Solar PV Sites</strong>
-            <span>
-              Sites with rooftop or distributed solar seeking generation,
-              utilisation and performance visibility.
-            </span>
-          </div>
-
-          <div>
-            <BatteryCharging />
-            <strong>Battery Storage</strong>
-            <span>
-              Battery Energy Storage Systems requiring charge, discharge,
-              health and peak-shaving optimisation insights.
-            </span>
-          </div>
-
-          <div>
-            <PlugZap />
-            <strong>EV Charging Infrastructure</strong>
-            <span>
-              EV charging sites where load impact, scheduling and demand
-              management are important.
-            </span>
-          </div>
-
-          <div>
-            <Gauge />
-            <strong>Smart Meters & IoT</strong>
-            <span>
-              Metered environments with import, export, demand, tariff and
-              operational sensor data.
-            </span>
-          </div>
-
-          <div>
-            <LineChart />
-            <strong>Property & Energy Portfolios</strong>
-            <span>
-              Multi-site owners or operators seeking scalable visibility,
-              optimisation and savings evidence.
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="pilotDeliverables">
-        <div>
-          <p>Pilot deliverables</p>
-
-          <h2>
-            What stakeholders should expect at the end of the pilot.
-          </h2>
 
           <span>
-            The pilot is designed to create useful decision evidence, not just
-            another dashboard demonstration.
+            A pilot can begin wherever energy consumption, peak demand,
+            equipment operation or connected energy assets create a
+            measurable opportunity to reduce operating costs and associated
+            CO₂ emissions.
           </span>
+
         </div>
 
-        <ul>
-          <li>
-            <CheckCircle2 /> Connected energy asset opportunity summary
-          </li>
 
-          <li>
-            <CheckCircle2 /> Priority optimisation scenarios
-          </li>
+        <div className="pilotAudienceGrid">
 
-          <li>
-            <CheckCircle2 /> Estimated cost, carbon and asset impact
-          </li>
+          <div>
 
-          <li>
-            <CheckCircle2 /> AI Energy Gateway integration assessment
-          </li>
+            <Snowflake />
 
-          <li>
-            <CheckCircle2 /> Pilot outcome and scale recommendation
-          </li>
-        </ul>
+            <strong>
+              Cold Storage & Refrigeration
+            </strong>
+
+            <span>
+              Compressors, evaporators, condensers, cold rooms and defrost
+              systems where refrigeration energy is a major operating cost.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <Factory />
+
+            <strong>
+              Manufacturing & Industrial
+            </strong>
+
+            <span>
+              Production equipment, compressed air, boilers, motors,
+              refrigeration and utilities with high energy intensity.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <Building2 />
+
+            <strong>
+              Commercial Buildings
+            </strong>
+
+            <span>
+              HVAC, lighting, BMS and after-hours loads where energy costs
+              and building emissions can be reduced.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <Building2 />
+
+            <strong>
+              Local Government & Campuses
+            </strong>
+
+            <span>
+              Civic buildings, libraries, depots, universities and
+              multi-building portfolios with energy and sustainability
+              targets.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <Sun />
+
+            <strong>
+              Solar PV
+            </strong>
+
+            <span>
+              Sites seeking to improve onsite renewable utilisation and
+              understand generation performance against facility demand.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <BatteryCharging />
+
+            <strong>
+              Battery Storage
+            </strong>
+
+            <span>
+              Battery Energy Storage Systems where dispatch can support
+              peak-demand reduction, tariff optimisation and renewable
+              utilisation.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <PlugZap />
+
+            <strong>
+              EV & Fleet Charging
+            </strong>
+
+            <span>
+              Charging infrastructure where scheduling can reduce demand
+              peaks and electricity costs.
+            </span>
+
+          </div>
+
+
+          <div>
+
+            <Gauge />
+
+            <strong>
+              Multi-Site Energy Portfolios
+            </strong>
+
+            <span>
+              Organisations seeking to prove the value at one site before
+              scaling optimisation across a broader portfolio.
+            </span>
+
+          </div>
+
+        </div>
+
       </section>
+
+
+      {/* =========================================================
+          PILOT DELIVERABLES
+      ========================================================= */}
+
+      <section className="pilotDeliverables">
+
+        <div>
+
+          <p>
+            Pilot Deliverables
+          </p>
+
+
+          <h2>
+            A Business Case — Not Just Another Dashboard.
+          </h2>
+
+
+          <span>
+            At the end of the pilot, stakeholders should have evidence showing
+            where energy is being wasted, what optimisation opportunities
+            exist and whether the expected or measured financial and carbon
+            outcomes justify broader deployment.
+          </span>
+
+        </div>
+
+
+        <ul>
+
+          <li>
+            <CheckCircle2 />
+            Energy baseline and operational asset assessment
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            Prioritised energy-waste and optimisation opportunities
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            Peak-demand reduction opportunities
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            Estimated or measured energy-cost savings
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            Associated CO₂ emissions impact
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            AI Energy Gateway integration assessment
+          </li>
+
+
+          <li>
+            <CheckCircle2 />
+            ROI and broader deployment recommendation
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      {/* =========================================================
+          CTA
+      ========================================================= */}
 
       <section className="pilotCTA">
+
         <h2>
-          Ready to assess whether EnerG IQ Tech is suitable for your site?
+          Start With One Site. Prove the Energy & Carbon Savings.
         </h2>
 
+
         <p>
-          Start with a discovery discussion to understand your buildings,
-          connected energy assets, operational challenges and potential pilot scope.
+          Identify one measurable energy problem, establish the baseline and
+          determine whether EnerG IQ Tech can deliver a compelling financial
+          and sustainability business case before you scale.
         </p>
 
-        <Link to="/" className="pilotPrimary">
-          Back to Home <ChevronRight size={18} />
+
+        <Link
+          to="/"
+          className="pilotPrimary"
+        >
+          Back to Home
+          <ChevronRight size={18} />
         </Link>
+
       </section>
+
     </main>
   );
 }

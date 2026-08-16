@@ -5,162 +5,369 @@ import "../styles/LegalPage.css";
 export default function TermsOfUse() {
   return (
     <main className="legalPage">
+
+      {/* =========================================================
+          HERO
+      ========================================================= */}
+
       <section className="legalHero">
         <div className="legalHeroInner">
-          <p className="legalEyebrow">Legal</p>
 
-          <h1>Terms of Use</h1>
+          <p className="legalEyebrow">
+            Legal
+          </p>
+
+          <h1>
+            Terms of Use
+          </h1>
 
           <p>
             These Terms of Use govern access to and use of the EnerG IQ Tech
-            website and related materials.
+            website, product information, pilot materials and related content.
           </p>
+
         </div>
       </section>
 
+
+      {/* =========================================================
+          CONTENT
+      ========================================================= */}
+
       <section className="legalContent">
+
         <p>
-          <strong>Effective date:</strong> June 2026
+          <strong>Effective date:</strong> August 2026
         </p>
 
-        <h2>1. Acceptance of terms</h2>
+
+        {/* =====================================================
+            1. ACCEPTANCE
+        ===================================================== */}
+
+        <h2>
+          1. Acceptance of Terms
+        </h2>
 
         <p>
           By accessing or using this website, you agree to comply with these
-          Terms of Use. If you do not agree with these terms, you should not use
-          this website.
+          Terms of Use. If you do not agree with these terms, you should not
+          use this website.
         </p>
 
-        <h2>2. Website purpose</h2>
+
+        {/* =====================================================
+            2. WEBSITE PURPOSE
+        ===================================================== */}
+
+        <h2>
+          2. Website Purpose
+        </h2>
 
         <p>
-          This website is provided for general informational purposes regarding
-          EnerG IQ Tech, its products, services, pilot programs, commercial
-          offerings, technology capabilities, AI Energy Platform, connected energy asset solutions and commercialisation activities.
+          This website provides general information regarding EnerG IQ Tech,
+          an AI-driven energy optimisation platform developed by Automation
+          Spectrum Pty Ltd.
         </p>
 
         <p>
-          Information provided on this website does not constitute professional,
-          engineering, legal, financial, energy management or investment advice.
+          EnerG IQ Tech is designed to help energy-intensive organisations
+          identify energy waste, reduce operating costs and peak demand,
+          improve operational energy efficiency and reduce associated CO₂
+          emissions through technologies including Edge AI, the AI Energy
+          Gateway, Digital Twin intelligence, AI Decision Agents, Savings
+          Intelligence and governed operational workflows.
         </p>
 
-        <h2>3. Intellectual property</h2>
+        <p>
+          The website may also contain information regarding EnerG IQ Tech
+          products, services, industry solutions, pilot programs, connected
+          energy assets, commercial offerings, technology capabilities,
+          demonstrations and future development pathways.
+        </p>
 
         <p>
-          All website content, software concepts, AI workflows, AI Energy Gateway
+          Information provided on this website is general in nature and does
+          not constitute engineering, legal, financial, investment, energy
+          management, sustainability or other professional advice.
+        </p>
+
+
+        {/* =====================================================
+            3. INTELLECTUAL PROPERTY
+        ===================================================== */}
+
+        <h2>
+          3. Intellectual Property
+        </h2>
+
+        <p>
+          Website content, software concepts, AI workflows, AI Energy Gateway
           technologies, Digital Twin methodologies, AI Decision Agents,
-          connected energy asset integration methods, Distributed Energy Resource
-          (DER) architectures, optimisation workflows, software,
-          documentation, graphics, logos, demonstrations, reports,
-          presentations and related materials are owned by Automation Spectrum Pty Ltd
-          and/or EnerG IQ Tech unless otherwise stated.
+          Savings Intelligence methods, connected-energy-asset integration
+          approaches, Distributed Energy Resource architectures,
+          optimisation workflows, algorithms, software, documentation,
+          graphics, logos, demonstrations, reports, presentations and related
+          materials may be protected by intellectual property rights.
         </p>
 
         <p>
-          Users may view website content for informational purposes only.
-          Reproduction, redistribution, modification, commercial use or creation
-          of derivative works without prior written permission is prohibited.
+          Unless otherwise stated, applicable rights in EnerG IQ Tech
+          materials are owned by Automation Spectrum Pty Ltd and/or the
+          applicable rights holder.
         </p>
 
-        <h2>4. No licence granted</h2>
+        <p>
+          Users may view website content for general informational purposes.
+          Reproduction, redistribution, modification, commercial exploitation
+          or creation of derivative works without appropriate permission is
+          prohibited except where permitted by applicable law.
+        </p>
+
+
+        {/* =====================================================
+            4. NO LICENCE
+        ===================================================== */}
+
+        <h2>
+          4. No Licence Granted
+        </h2>
 
         <p>
           Access to this website does not grant any licence, right, title or
-          interest in any software, source code, AI models, workflows,
-          algorithms, system architecture, digital twin methodologies, AI Energy Gateway technologies,
-          Digital Twin methodologies,
-          AI Decision Agents,
-          connected energy asset integration methods,
-          Distributed Energy Resource orchestration,
-          algorithms,
-          software,
-          system architecture or other intellectual property associated with EnerG IQ Tech.
+          ownership interest in EnerG IQ Tech software, source code, AI
+          models, algorithms, operational workflows, system architectures,
+          Digital Twin methodologies, AI Energy Gateway technologies,
+          AI Decision Agents, Savings Intelligence methods,
+          connected-energy-asset integration approaches, Distributed Energy
+          Resource orchestration methods or related intellectual property.
         </p>
 
-        <h2>5. Confidential and proprietary concepts</h2>
+
+        {/* =====================================================
+            5. PROPRIETARY TECHNOLOGY
+        ===================================================== */}
+
+        <h2>
+          5. Confidential and Proprietary Concepts
+        </h2>
 
         <p>
-          Certain technical concepts, workflows, operational methodologies,
-          optimisation processes, software designs and architectural approaches
-          described on this website may contain proprietary and confidential
-          information.
-        </p>
-
-        <p>
-          Public disclosure of information on this website should not be
-          interpreted as a waiver of intellectual property rights, trade secret
-          protection or future intellectual property registration rights.
-        </p>
-
-        <h2>6. Accuracy of information</h2>
-
-        <p>
-          While reasonable efforts are made to ensure information is accurate,
-          current and complete, EnerG IQ Tech makes no representation or warranty
-          regarding the accuracy, reliability or completeness of information on
-          this website.
+          Certain technical concepts, methodologies, algorithms, workflows,
+          operational optimisation processes, software designs, integration
+          approaches and system architectures described on this website may
+          represent proprietary technology or know-how.
         </p>
 
         <p>
-          Information, features, capabilities, roadmaps and commercial offerings
-          may change without notice.
+          Publication of high-level product, architecture or technology
+          information on this website does not grant permission to reproduce,
+          implement or commercialise the underlying technology.
         </p>
 
-        <h2>7. Pilot programs and future capabilities</h2>
+
+        {/* =====================================================
+            6. ACCURACY
+        ===================================================== */}
+
+        <h2>
+          6. Accuracy of Information
+        </h2>
 
         <p>
-          Any references to pilot programs, demonstrations, simulations,
-          estimated savings, projected outcomes, future product capabilities, Building Management Systems (BMS),
-          Solar PV,
-          Battery Energy Storage Systems (BESS),
-          EV Charging,
-          Smart Meter integration,
-          IoT infrastructure,
-          Distributed Energy Resources (DER)
-          and commercial roadmaps are provided for informational purposes only and
-          do not constitute guarantees of performance or future results. 
-          Descriptions of current or future platform capabilities should not be interpreted as commitments that every capability is currently deployed or commercially available in all environments.
+          Reasonable efforts may be made to provide accurate and current
+          information. However, EnerG IQ Tech and Automation Spectrum Pty Ltd
+          do not guarantee that all website information will always be
+          complete, current, accurate or suitable for a particular purpose.
         </p>
 
-        <h2>8. Third-party links</h2>
-
         <p>
-          This website may contain links to third-party websites, platforms or
-          resources. EnerG IQ Tech is not responsible for the content, security
-          or privacy practices of external websites.
+          Product features, technical capabilities, integrations, industry
+          solutions, pilot structures, roadmaps, pricing and commercial
+          offerings may change without notice.
         </p>
 
-        <h2>9. Limitation of liability</h2>
+
+        {/* =====================================================
+            7. ENERGY, COST & CO₂ OUTCOMES
+        ===================================================== */}
+
+        <h2>
+          7. Energy, Cost and CO₂ Outcomes
+        </h2>
 
         <p>
-          To the maximum extent permitted by law, Automation Spectrum Pty Ltd
-          and EnerG IQ Tech shall not be liable for any direct, indirect,
-          incidental, consequential or special damages arising from access to or
-          use of this website.
+          References on this website to potential energy savings, operating
+          cost reductions, peak-demand reductions, CO₂ emissions reductions,
+          return on investment, payback periods or other operational outcomes
+          are illustrative or indicative unless expressly identified as
+          verified results from a specific deployment.
         </p>
 
-        <h2>10. Changes to these terms</h2>
-
         <p>
-          EnerG IQ Tech reserves the right to modify these Terms of Use at any
-          time. Updated versions will be published on this page.
+          Actual outcomes will vary depending on factors including site
+          conditions, equipment condition, available data, operating
+          schedules, production or service requirements, tariffs, energy
+          consumption patterns, grid emissions factors, existing control
+          strategies and the optimisation actions approved by the customer.
         </p>
 
-        <h2>11. Contact</h2>
+        <p>
+          EnerG IQ Tech does not guarantee a particular percentage of energy
+          savings, financial savings, CO₂ reduction, ROI or payback period
+          unless such performance commitments are expressly agreed in a
+          separate written contract.
+        </p>
+
+
+        {/* =====================================================
+            8. PILOTS & FUTURE CAPABILITIES
+        ===================================================== */}
+
+        <h2>
+          8. Pilot Programs and Future Capabilities
+        </h2>
 
         <p>
-          <strong>Automation Spectrum Pty Ltd</strong>
+          EnerG IQ Tech pilot programs are intended to help organisations
+          establish energy baselines, identify operational energy waste,
+          evaluate optimisation opportunities and assess potential or
+          measured energy, financial and associated CO₂ outcomes before
+          considering broader deployment.
+        </p>
+
+        <p>
+          References to pilot programs, demonstrations, simulations,
+          AI-generated recommendations, future capabilities, Building
+          Management Systems (BMS), refrigeration systems, industrial
+          equipment, Solar PV, Battery Energy Storage Systems (BESS),
+          EV charging, smart meters, IoT infrastructure, Distributed Energy
+          Resources (DER), demand response or grid participation are provided
+          for informational purposes.
+        </p>
+
+        <p>
+          Descriptions of existing or future capabilities should not be
+          interpreted as a commitment that every feature, integration or
+          capability is currently deployed, commercially available or
+          suitable for every customer environment.
+        </p>
+
+
+        {/* =====================================================
+            9. OPERATIONAL DECISIONS
+        ===================================================== */}
+
+        <h2>
+          9. AI Recommendations and Operational Decisions
+        </h2>
+
+        <p>
+          EnerG IQ Tech may provide AI-assisted analysis, simulations,
+          optimisation recommendations, anomaly detection or decision-support
+          information relating to operational energy systems.
+        </p>
+
+        <p>
+          Unless otherwise expressly agreed in writing, such information is
+          intended to support authorised customer personnel and should not be
+          treated as a substitute for appropriate engineering, operational,
+          safety or professional judgement.
+        </p>
+
+        <p>
+          Customers and authorised operators remain responsible for reviewing
+          operational requirements, safety constraints, compliance
+          requirements and site-specific conditions before approving or
+          applying operational changes.
+        </p>
+
+
+        {/* =====================================================
+            10. THIRD-PARTY LINKS
+        ===================================================== */}
+
+        <h2>
+          10. Third-Party Links and Services
+        </h2>
+
+        <p>
+          This website may contain links to third-party websites, platforms,
+          technology providers or other resources.
+        </p>
+
+        <p>
+          EnerG IQ Tech and Automation Spectrum Pty Ltd are not responsible
+          for the content, availability, security, privacy practices or terms
+          of third-party websites or services that they do not control.
+        </p>
+
+
+        {/* =====================================================
+            11. LIMITATION OF LIABILITY
+        ===================================================== */}
+
+        <h2>
+          11. Limitation of Liability
+        </h2>
+
+        <p>
+          To the maximum extent permitted by applicable law, Automation
+          Spectrum Pty Ltd and EnerG IQ Tech exclude liability for loss or
+          damage arising solely from reliance on general information
+          published on this website or from access to or use of this website,
+          except where liability cannot lawfully be excluded or limited.
+        </p>
+
+
+        {/* =====================================================
+            12. CHANGES
+        ===================================================== */}
+
+        <h2>
+          12. Changes to These Terms
+        </h2>
+
+        <p>
+          These Terms of Use may be updated from time to time to reflect
+          changes to the website, technology, business operations or
+          applicable requirements.
+        </p>
+
+        <p>
+          Updated versions will be published on this page with the applicable
+          effective date.
+        </p>
+
+
+        {/* =====================================================
+            13. CONTACT
+        ===================================================== */}
+
+        <h2>
+          13. Contact
+        </h2>
+
+        <p>
+          <strong>
+            Automation Spectrum Pty Ltd
+          </strong>
+
           <br />
+
           EnerG IQ Tech
+
           <br />
+
           Email:{" "}
+
           <a href="mailto:contact@automationspectrum.com.au">
             contact@automationspectrum.com.au
           </a>
         </p>
 
-        
       </section>
+
     </main>
   );
 }

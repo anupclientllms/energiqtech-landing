@@ -1,136 +1,530 @@
 // src/pages/PrivacyPolicy.jsx
+
 import "../styles/LegalPage.css";
+
 
 export default function PrivacyPolicy() {
   return (
     <main className="legalPage">
+
+      {/* =========================================================
+          HERO
+      ========================================================= */}
+
       <section className="legalHero">
-        <p className="legalEyebrow">Legal</p>
-        <h1>Privacy Policy</h1>
-        <p>
-          EnerG IQ Tech is committed to protecting the privacy of customers,
-          pilot partners, investors, grant assessors and website visitors.
+
+        <p className="legalEyebrow">
+          Legal
         </p>
+
+        <h1>
+          Privacy Policy
+        </h1>
+
+        <p>
+          EnerG IQ Tech is committed to protecting the privacy of website
+          visitors, customers, pilot partners and other stakeholders who
+          engage with our AI-driven energy optimisation technology.
+        </p>
+
       </section>
 
+
+      {/* =========================================================
+          CONTENT
+      ========================================================= */}
+
       <section className="legalContent">
-        <p><strong>Effective date:</strong> June 2026</p>
 
-        <h2>1. Who we are</h2>
         <p>
-          EnerG IQ Tech is an AI Energy Platform for connected energy assets developed by Automation Spectrum Pty Ltd.
+          <strong>Effective date:</strong> August 2026
         </p>
 
-        <h2>2. Information we may collect</h2>
+
+        {/* =====================================================
+            1. WHO WE ARE
+        ===================================================== */}
+
+        <h2>
+          1. Who We Are
+        </h2>
+
         <p>
-          We may collect information submitted through this website, contact
-          forms, pilot enquiries, investor discussions, grant-related
-          communications or direct business correspondence.
+          EnerG IQ Tech is an AI-driven energy optimisation platform
+          developed by Automation Spectrum Pty Ltd.
         </p>
+
+        <p>
+          The platform is designed to help energy-intensive organisations
+          identify energy waste, reduce operating costs and peak demand,
+          improve operational energy efficiency and reduce associated CO₂
+          emissions through Edge AI, Digital Twin intelligence,
+          AI-assisted optimisation and governed operational workflows.
+        </p>
+
+
+        {/* =====================================================
+            2. INFORMATION WE MAY COLLECT
+        ===================================================== */}
+
+        <h2>
+          2. Information We May Collect
+        </h2>
+
+        <p>
+          We may collect information that you provide through this website,
+          contact forms, pilot enquiries, discovery discussions,
+          demonstrations, customer or partner communications and other
+          direct business correspondence.
+        </p>
+
 
         <ul>
-          <li>Name</li>
-          <li>Organisation name</li>
-          <li>Email address</li>
-          <li>Phone number</li>
-          <li>Role or job title</li>
-          <li>Project, pilot or building, DER or connected energy asset enquiry details</li>
-          <li>Information voluntarily provided in messages or documents</li>
+
+          <li>
+            Name
+          </li>
+
+          <li>
+            Organisation name
+          </li>
+
+          <li>
+            Email address
+          </li>
+
+          <li>
+            Phone number
+          </li>
+
+          <li>
+            Role or job title
+          </li>
+
+          <li>
+            Industry, facility or site information provided as part of an
+            enquiry
+          </li>
+
+          <li>
+            Pilot, project or operational energy challenge details
+          </li>
+
+          <li>
+            Information about buildings, equipment or connected energy
+            assets voluntarily provided during discussions
+          </li>
+
+          <li>
+            Information voluntarily provided in messages, documents,
+            meetings or demonstrations
+          </li>
+
         </ul>
 
-        <h2>3. How we use information</h2>
-        <p>
-          Information may be used to respond to enquiries, discuss pilot
-          opportunities, provide demonstrations, support commercialisation
-          activities, communicate with customers and partners, and improve our
-          website, services and technology.
-        </p>
 
-        <h2>4. Pilot and technical information</h2>
-        <p>
-          Where pilot discussions involve building data, energy systems,
-          operational information, metering details, Building Management System
-          information, Solar PV, Battery Storage, EV Charging, Smart Meter, IoT,
-          Distributed Energy Resource integration details, AI Energy Gateway
-          integration details or technical architecture, such information will be
-          treated as confidential unless otherwise agreed in writing.
-        </p>
+        {/* =====================================================
+            3. HOW WE USE INFORMATION
+        ===================================================== */}
 
-        <h2>5. Intellectual property and confidential technology</h2>
+        <h2>
+          3. How We Use Information
+        </h2>
 
         <p>
-          All content, software concepts, AI Energy Gateway, Digital Twin, Decision Agents and connected asset workflows, AI models, system architecture,
-          digital twin concepts, gateway architecture, algorithms, designs,
-          documentation, demonstrations and related materials displayed on this website
-          remain the property of Automation Spectrum Pty Ltd and/or EnerG IQ Tech unless
-          otherwise stated.
+          Information may be used to:
+        </p>
+
+
+        <ul>
+
+          <li>
+            Respond to enquiries and requests for information
+          </li>
+
+          <li>
+            Discuss EnerG IQ Tech pilot and discovery opportunities
+          </li>
+
+          <li>
+            Assess whether a site or operational energy problem may be
+            suitable for an EnerG IQ Tech pilot
+          </li>
+
+          <li>
+            Prepare demonstrations, proposals or pilot scopes
+          </li>
+
+          <li>
+            Understand potential energy-cost, peak-demand and associated
+            CO₂ reduction opportunities
+          </li>
+
+          <li>
+            Provide and improve our technology, website and services
+          </li>
+
+          <li>
+            Communicate with customers, prospective customers, partners
+            and service providers
+          </li>
+
+          <li>
+            Support business, commercialisation and technology-development
+            activities
+          </li>
+
+          <li>
+            Comply with applicable legal and regulatory obligations
+          </li>
+
+        </ul>
+
+
+        {/* =====================================================
+            4. PILOT & TECHNICAL INFORMATION
+        ===================================================== */}
+
+        <h2>
+          4. Pilot and Technical Information
+        </h2>
+
+        <p>
+          Pilot or technical discussions may involve information relating
+          to a customer's facilities, energy consumption, operational
+          systems, equipment or connected energy infrastructure.
         </p>
 
         <p>
-          Accessing or viewing this website does not grant any licence, right, title or
-          interest in any EnerG IQ Tech software, source code, workflows, AI models,
-          system architecture, digital twin concepts, gateway architecture, algorithms,
-          designs, documentation or related intellectual property.
+          Depending on the pilot scope, this may include information
+          relating to:
+        </p>
+
+
+        <ul>
+
+          <li>
+            Energy consumption and peak-demand data
+          </li>
+
+          <li>
+            Electricity tariffs or energy-cost information
+          </li>
+
+          <li>
+            Building Management Systems (BMS)
+          </li>
+
+          <li>
+            HVAC, refrigeration and industrial equipment
+          </li>
+
+          <li>
+            Smart meters, sub-meters and IoT sensors
+          </li>
+
+          <li>
+            Solar PV systems
+          </li>
+
+          <li>
+            Battery Energy Storage Systems (BESS)
+          </li>
+
+          <li>
+            EV charging infrastructure
+          </li>
+
+          <li>
+            Distributed Energy Resources (DER)
+          </li>
+
+          <li>
+            Equipment schedules and operational information
+          </li>
+
+          <li>
+            AI Energy Gateway integration requirements
+          </li>
+
+          <li>
+            Data required to establish energy, financial or associated
+            CO₂ baselines and evaluate optimisation opportunities
+          </li>
+
+        </ul>
+
+
+        <p>
+          Technical, operational and pilot information provided to
+          EnerG IQ Tech will be handled in accordance with applicable
+          agreements and confidentiality obligations.
+        </p>
+
+
+        {/* =====================================================
+            5. OPERATIONAL ENERGY DATA
+        ===================================================== */}
+
+        <h2>
+          5. Operational Energy Data
+        </h2>
+
+        <p>
+          Where EnerG IQ Tech is deployed as part of a pilot or customer
+          engagement, operational energy data may be processed to identify
+          energy waste, equipment inefficiencies, abnormal consumption,
+          peak-demand events and potential optimisation opportunities.
         </p>
 
         <p>
-          Certain platform methods, technical workflows, software components and
-          operational processes may be protected by copyright, trade secret, trademark
-          and other intellectual property rights.
+          Depending on the agreed scope, this information may also be used
+          to establish operational baselines and measure energy consumption,
+          financial savings, peak-demand reduction and associated CO₂
+          outcomes.
         </p>
 
-        <h2>6. Disclosure of information</h2>
         <p>
-          We do not sell personal information. We may share information only
-          where required to respond to enquiries, support service delivery,
-          comply with legal obligations, or work with trusted advisors,
-          contractors, partners or service providers under appropriate
-          confidentiality expectations.
+          The specific data collected, processing arrangements, retention
+          requirements, system access and responsibilities for a customer
+          deployment should be defined through the applicable pilot,
+          commercial, technical or data-processing arrangements.
         </p>
 
-        <h2>7. Website analytics and security</h2>
+
+        {/* =====================================================
+            6. INTELLECTUAL PROPERTY
+        ===================================================== */}
+
+        <h2>
+          6. Intellectual Property and Confidential Technology
+        </h2>
+
         <p>
-          We may collect limited technical information such as browser type,
-          device type, pages visited, date and time of visit and general usage
-          patterns to improve website performance, reliability and security.
+          EnerG IQ Tech technology, including software, AI Energy Gateway
+          technologies, Digital Twin methodologies, AI Decision Agents,
+          energy optimisation workflows, system architectures, algorithms,
+          designs and documentation, may be protected by intellectual
+          property rights.
         </p>
 
-        <h2>8. Data protection</h2>
         <p>
-          We take reasonable steps to protect information from unauthorised
-          access, misuse, loss, interference or disclosure. However, no online
-          system can be guaranteed to be completely secure.
+          Accessing or viewing this website does not transfer ownership of
+          EnerG IQ Tech intellectual property.
         </p>
 
-        <h2>9. External links</h2>
         <p>
-          This website may contain links to third-party websites or services.
-          EnerG IQ Tech is not responsible for the privacy practices, content or
-          security of external websites.
+          Further information is provided in the EnerG IQ Tech
+          Intellectual Property Notice.
         </p>
 
-        <h2>10. Updates to this policy</h2>
+
+        {/* =====================================================
+            7. DISCLOSURE
+        ===================================================== */}
+
+        <h2>
+          7. Disclosure of Information
+        </h2>
+
         <p>
-          We may update this Privacy Policy from time to time. Updates will be
-          published on this page.
+          We do not sell personal information.
         </p>
 
-        <h2>11. Contact</h2>
+        <p>
+          Information may be disclosed where reasonably necessary to:
+        </p>
+
+
+        <ul>
+
+          <li>
+            Respond to an enquiry or provide requested services
+          </li>
+
+          <li>
+            Support an agreed pilot or customer engagement
+          </li>
+
+          <li>
+            Work with trusted contractors, professional advisors or
+            technology service providers
+          </li>
+
+          <li>
+            Protect the security, rights or legitimate interests of
+            Automation Spectrum Pty Ltd, EnerG IQ Tech or other parties
+          </li>
+
+          <li>
+            Comply with applicable laws, legal processes or regulatory
+            obligations
+          </li>
+
+        </ul>
+
+
+        {/* =====================================================
+            8. WEBSITE ANALYTICS
+        ===================================================== */}
+
+        <h2>
+          8. Website Analytics and Technical Information
+        </h2>
+
+        <p>
+          We may collect limited technical or usage information such as
+          browser type, device type, pages visited, referring pages, date
+          and time of access and general website usage patterns.
+        </p>
+
+        <p>
+          This information may be used to improve website performance,
+          usability, reliability and security.
+        </p>
+
+
+        {/* =====================================================
+            9. DATA PROTECTION
+        ===================================================== */}
+
+        <h2>
+          9. Data Protection
+        </h2>
+
+        <p>
+          We take reasonable technical and organisational steps to protect
+          information from unauthorised access, misuse, interference, loss,
+          modification or disclosure.
+        </p>
+
+        <p>
+          However, no online service, network or information system can be
+          guaranteed to be completely secure.
+        </p>
+
+
+        {/* =====================================================
+            10. RETENTION
+        ===================================================== */}
+
+        <h2>
+          10. Data Retention
+        </h2>
+
+        <p>
+          Information may be retained for as long as reasonably necessary
+          for the purpose for which it was collected, to maintain business
+          records, support customer or pilot engagements, resolve disputes
+          or comply with applicable legal obligations.
+        </p>
+
+
+        {/* =====================================================
+            11. THIRD-PARTY SERVICES
+        ===================================================== */}
+
+        <h2>
+          11. Third-Party Services and External Links
+        </h2>
+
+        <p>
+          This website or EnerG IQ Tech services may use or link to
+          third-party technology, hosting, analytics, communications or
+          other service providers.
+        </p>
+
+        <p>
+          Third-party services may operate under their own privacy policies
+          and terms. EnerG IQ Tech is not responsible for the privacy
+          practices or content of external websites that it does not
+          control.
+        </p>
+
+
+        {/* =====================================================
+            12. PRIVACY REQUESTS
+        ===================================================== */}
+
+        <h2>
+          12. Privacy Requests
+        </h2>
+
+        <p>
+          You may contact us if you have a question about personal
+          information you have provided to us, wish to request correction
+          of information, or have a privacy-related concern.
+        </p>
+
+
+        {/* =====================================================
+            13. POLICY UPDATES
+        ===================================================== */}
+
+        <h2>
+          13. Updates to This Policy
+        </h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes to our website, services, technology, business operations
+          or applicable requirements.
+        </p>
+
+        <p>
+          Updated versions will be published on this page with the
+          applicable effective date.
+        </p>
+
+
+        {/* =====================================================
+            14. CONTACT
+        ===================================================== */}
+
+        <h2>
+          14. Contact
+        </h2>
+
         <p>
           For privacy-related enquiries, please contact:
         </p>
 
+
         <p>
-          <strong>Automation Spectrum Pty Ltd</strong><br />
-          EnerG IQ Tech<br />
-          Email: <a href="mailto:contact@automationspectrum.com.au">contact@automationspectrum.com.au</a>
+
+          <strong>
+            Automation Spectrum Pty Ltd
+          </strong>
+
+          <br />
+
+          EnerG IQ Tech
+
+          <br />
+
+          Email:{" "}
+
+          <a href="mailto:contact@automationspectrum.com.au">
+            contact@automationspectrum.com.au
+          </a>
+
         </p>
 
+
+        {/* =====================================================
+            DISCLAIMER
+        ===================================================== */}
+
         <p className="legalDisclaimer">
-          This Privacy Policy outlines how EnerG IQ Tech collects, uses, stores and protects information provided by 
-          website visitors, customers, pilot partners, investors and other stakeholders.
+          This Privacy Policy describes how EnerG IQ Tech handles
+          information provided by website visitors, prospective customers,
+          customers, pilot partners and other stakeholders. Customer and
+          pilot deployments may be subject to additional contractual,
+          security, confidentiality and data-processing arrangements.
         </p>
+
       </section>
+
     </main>
   );
 }

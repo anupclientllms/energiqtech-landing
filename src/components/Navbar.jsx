@@ -171,7 +171,7 @@ export default function Navbar({ openPilotModal }) {
 
         <div className="brandText">
           <strong>EnerG IQ Tech</strong>
-          <span>Edge AI for Connected Energy Systems</span>
+          <span>Edge AI for Lower Energy Costs & CO₂ Emissions</span>
         </div>
       </Link>
 
@@ -209,7 +209,7 @@ export default function Navbar({ openPilotModal }) {
           <div className="dropdownMenu solutionsMegaMenu">
             <div className="solutionMenuColumn">
               <span className="solutionMenuHeading">
-                Platform & Connectivity
+                Energy Optimisation Platform
               </span>
 
               {solutions.platform.map((solution) => {
@@ -259,11 +259,11 @@ export default function Navbar({ openPilotModal }) {
 
             <div className="solutionMenuFooter">
               <div>
-                <strong>Operational Energy Intelligence</strong>
+                <strong>From Energy Waste to Measurable Savings</strong>
 
                 <span>
-                  Connect assets, detect waste, simulate actions and measure
-                  energy, cost and carbon outcomes.
+                  Connect assets, detect energy waste and optimise operations to reduce
+                  energy costs, peak demand and associated CO₂ emissions.
                 </span>
               </div>
 
@@ -347,11 +347,11 @@ export default function Navbar({ openPilotModal }) {
 
             <div className="industryMenuFooter">
               <div>
-                <strong>One Core AI Platform</strong>
+                <strong>AI-Powered Energy & Carbon Optimisation</strong>
 
                 <span>
-                  AI Energy Gateway, Digital Twin, Decision Agents and Savings
-                  Intelligence across 12 industries.
+                  Connect assets, detect energy waste and optimise operations to reduce
+                  energy costs and associated CO₂ emissions across 12 industries.
                 </span>
               </div>
 

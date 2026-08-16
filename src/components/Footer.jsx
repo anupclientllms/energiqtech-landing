@@ -9,7 +9,7 @@ export default function Footer() {
         <strong>EnerG IQ Tech</strong>
 
         <span>
-          Edge AI for Connected Energy Systems
+          Edge AI for Lower Energy Costs & CO₂ Emissions
         </span>
       </div>
 
