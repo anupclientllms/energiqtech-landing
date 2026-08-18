@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -342,14 +342,11 @@ export default function ShoppingCentreAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="shoppingCentrePrimaryBtn"
-              onClick={handlePilotClick}
-            >
+          
+            <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
               Request Shopping Centre Pilot
-              <ChevronRight size={18} />
-            </button>
+              <ChevronRight size={19} />
+            </Link>
 
 
             <a
@@ -1112,14 +1109,11 @@ export default function ShoppingCentreAI({ openPilotModal }) {
 
         <div className="shoppingCentreCtaActions">
 
-          <button
-            type="button"
-            className="shoppingCentrePrimaryBtn"
-            onClick={handlePilotClick}
-          >
+          
+          <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

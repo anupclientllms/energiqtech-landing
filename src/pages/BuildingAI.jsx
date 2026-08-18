@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -297,14 +298,11 @@ export default function BuildingAI({ openPilotModal }) {
             className="buildingAIHeroButtons"
             variants={fadeUp}
           >
-            <button
-              type="button"
-              className="buildingAIPrimaryBtn"
-              onClick={handlePilotClick}
-            >
+         
+            <Link to="/book-pilot" className="buildingAIPrimaryBtn">
               Request Building Pilot
               <ChevronRight size={18} />
-            </button>
+            </Link>
 
             <a
               href="#building-workflow"
@@ -1038,14 +1036,11 @@ export default function BuildingAI({ openPilotModal }) {
 
         <div className="buildingAICtaActions">
 
-          <button
-            type="button"
-            className="buildingAIPrimaryBtn"
-            onClick={handlePilotClick}
-          >
+         
+          <Link to="/book-pilot" className="buildingAIPrimaryBtn">
             Request Pilot
             <ChevronRight size={18} />
-          </button>
+          </Link>
 
         </div>
 

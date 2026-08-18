@@ -32,6 +32,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactModal from "./components/ContactModal";
 import ScrollToTop from "./components/ScrollToTop";
+import BookPilotPage from "./pages/BookPilotPage";
+import BookPilotDetailsPage from "./pages/BookPilotDetailsPage";
+import DERPortfolioAI from "./pages/DERPortfolioAI";
 
 function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -107,7 +110,7 @@ function App() {
         <Route
           path="/connected-energy-assets"
           element={
-            <ConnectedEnergyAssetsPage
+            <DERPortfolioAI
               openPilotModal={openPilotModal}
             />
           }
@@ -199,6 +202,16 @@ function App() {
               openPilotModal={openPilotModal}
             />
           }
+        />
+        
+        <Route
+          path="/book-pilot"
+          element={<BookPilotPage />}
+        />
+
+        <Route
+          path="/book-pilot/details"
+          element={<BookPilotDetailsPage />}
         />
       </Routes>
 

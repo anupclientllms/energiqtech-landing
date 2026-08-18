@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -343,14 +343,11 @@ export default function UniversityAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="universityPrimaryBtn"
-              onClick={handlePilotClick}
-            >
+           
+            <Link to="/book-pilot" className="universityPrimaryBtn">
               Request University Pilot
-              <ChevronRight size={18} />
-            </button>
+              <ChevronRight size={19} />
+            </Link>
 
 
             <a
@@ -1093,14 +1090,12 @@ export default function UniversityAI({ openPilotModal }) {
 
         <div className="universityCtaActions">
 
-          <button
-            type="button"
-            className="universityPrimaryBtn"
-            onClick={handlePilotClick}
-          >
+        
+           
+          <Link to="/book-pilot" className="universityPrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

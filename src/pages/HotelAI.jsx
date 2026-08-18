@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -368,15 +368,11 @@ export default function HotelAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="hotelPrimaryBtn"
-              onClick={handlePilotClick}
-            >
+           
+            <Link to="/book-pilot" className="hotelPrimaryBtn">
               Request Hotel Pilot
-              <ChevronRight size={18} />
-            </button>
-
+              <ChevronRight size={19} />
+            </Link>
 
             <a
               href="#hotel-workflow"
@@ -1117,14 +1113,11 @@ export default function HotelAI({ openPilotModal }) {
 
         <div className="hotelCtaActions">
 
-          <button
-            type="button"
-            className="hotelPrimaryBtn"
-            onClick={handlePilotClick}
-          >
+        
+          <Link to="/book-pilot" className="hotelPrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

@@ -372,13 +372,13 @@ export default function Navbar({ openPilotModal }) {
           About
         </Link>
 
-        <button
-          type="button"
-          onClick={handleContactClick}
-          className="navBtn"
-        >
-          Contact
-        </button>
+      <Link
+        to="/book-pilot"
+        className="navBtn"
+        onClick={closeMenu}
+      >
+        Book a Discussion
+      </Link>
       </div>
     </nav>
   );

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   AlertTriangle,
@@ -447,14 +447,10 @@ export default function ManufacturingAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="manufacturingPrimaryButton"
-              onClick={handlePilotClick}
-            >
+            <Link to="/book-pilot" className="manufacturingPrimaryButton">
               Request Manufacturing Pilot
               <ChevronRight size={19} />
-            </button>
+            </Link>
 
 
             <a
@@ -1339,14 +1335,12 @@ export default function ManufacturingAI({ openPilotModal }) {
 
         <div className="manufacturingFinalActions">
 
-          <button
-            type="button"
-            className="manufacturingPrimaryButton"
-            onClick={handlePilotClick}
-          >
+          
+
+          <Link to="/book-pilot" className="manufacturingPrimaryButton">
             Request Pilot
             <ChevronRight size={19} />
-          </button>
+          </Link>
 
         </div>
 

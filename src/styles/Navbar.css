@@ -74,14 +74,41 @@
 }
 
 .navBtn {
-  padding: 13px 22px;
-  border-radius: 16px;
-  background: white;
-  color: var(--navy);
-  border: none;
-  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0 26px;
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  background: #ffffff;
+
+  color: #10284f !important;
+
+  font-size: 0.95rem;
   font-weight: 800;
-  font-family: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.navBtn:hover {
+  background: #18d99a;
+
+  color: #082547 !important;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 8px 24px rgba(24, 217, 154, 0.22);
 }
 
 /* ==========================================

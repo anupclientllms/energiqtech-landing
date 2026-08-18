@@ -1,0 +1,831 @@
+/* src/styles/BookPilotDetailsPage.css */
+
+.pilotDetailsPage {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 12% 12%,
+      rgba(22, 103, 255, 0.11),
+      transparent 30%
+    ),
+    #f5f8fc;
+
+  color: #071a3d;
+}
+
+
+.pilotDetailsHeader {
+  min-height: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 18px 6%;
+
+  background: #0b1d3f;
+}
+
+
+.pilotDetailsBack {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #10284f !important;
+
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.pilotDetailsBack svg {
+  color: #10284f;
+  stroke: #10284f;
+}
+
+.pilotDetailsBack:hover {
+  color: #1468ff !important;
+}
+
+.pilotDetailsBack:hover svg {
+  color: #1468ff;
+  stroke: #1468ff;
+}
+
+.pilotDetailsBrand {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.pilotDetailsBrand img {
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+
+.pilotDetailsBrand div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.pilotDetailsBrand strong {
+  color: white;
+
+  font-size: 1.12rem;
+}
+
+
+.pilotDetailsBrand span {
+  color: #bed0e9;
+
+  font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.pilotDetailsLayout {
+  width:
+    min(
+      1250px,
+      calc(100% - 48px)
+    );
+
+  margin: 55px auto 90px;
+
+  display: grid;
+
+  grid-template-columns:
+    0.72fr 1.28fr;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background: white;
+
+  border:
+    1px solid #dce7f3;
+
+  box-shadow:
+    0 30px 80px
+    rgba(9, 42, 89, 0.1);
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.pilotDetailsSummary {
+  padding: 48px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      155deg,
+      #0b1e41,
+      #11447f
+    );
+}
+
+
+.pilotDetailsSummary > p {
+  color: #61e3b6;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+}
+
+
+.pilotDetailsSummary h1 {
+  margin:
+    14px 0
+    20px;
+
+  font-size:
+    clamp(
+      2.1rem,
+      4vw,
+      3.5rem
+    );
+
+  line-height: 1.02;
+
+  letter-spacing: -0.05em;
+}
+
+
+.pilotDetailsSummary > span {
+  color: #c4d5eb;
+
+  line-height: 1.7;
+}
+
+
+.pilotBookingSummary {
+  margin-top: 40px;
+
+  padding:
+    22px 0;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.13);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.13);
+}
+
+
+.pilotBookingSummary > div,
+.pilotSummaryBenefits > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin:
+    12px 0;
+}
+
+
+.pilotBookingSummary svg,
+.pilotSummaryBenefits svg {
+  color: #66e1b6;
+
+  flex-shrink: 0;
+}
+
+
+.pilotSummaryBenefits {
+  margin-top: 28px;
+
+  color: #d7e5f5;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.pilotDetailsFormPanel {
+  padding: 48px;
+}
+
+
+.pilotDetailsFormHeader > p {
+  color: #1565ff;
+
+  font-size: .72rem;
+
+  font-weight: 900;
+
+  letter-spacing: .14em;
+}
+
+
+.pilotDetailsFormHeader h2 {
+  margin:
+    9px 0
+    7px;
+
+  font-size: 2rem;
+}
+
+
+.pilotDetailsFormHeader span {
+  color: #77879d;
+
+  font-size: .9rem;
+}
+
+
+.pilotDetailsForm {
+  margin-top: 34px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+
+.pilotFormTwoColumns {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 18px;
+}
+
+
+.pilotDetailsForm label,
+.pilotTopics legend {
+  color: #243d5c;
+
+  font-weight: 750;
+
+  font-size: .91rem;
+}
+
+
+.pilotDetailsForm input,
+.pilotDetailsForm select,
+.pilotDetailsForm textarea {
+  width: 100%;
+
+  margin-top: 8px;
+
+  border:
+    1px solid #ccd9e8;
+
+  border-radius: 10px;
+
+  background: #fbfdff;
+
+  color: #102a4d;
+
+  padding: 13px 14px;
+
+  font: inherit;
+
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+
+.pilotDetailsForm input,
+.pilotDetailsForm select {
+  min-height: 50px;
+}
+
+
+.pilotDetailsForm input:focus,
+.pilotDetailsForm select:focus,
+.pilotDetailsForm textarea:focus {
+  border-color: #1768ff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(23,104,255,.08);
+}
+
+
+.pilotInputIcon {
+  position: relative;
+}
+
+
+.pilotInputIcon svg {
+  position: absolute;
+
+  top: 24px;
+  left: 14px;
+
+  color: #758aa6;
+
+  pointer-events: none;
+}
+
+
+.pilotInputIcon input {
+  padding-left: 42px;
+}
+
+
+/* =========================================================
+   TOPICS
+========================================================= */
+
+.pilotTopics {
+  border: none;
+
+  padding: 0;
+  margin: 2px 0;
+}
+
+
+.pilotTopics > p {
+  margin:
+    5px 0
+    13px;
+
+  color: #7d8ca0;
+
+  font-size: .84rem;
+}
+
+
+.pilotTopicGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 9px;
+}
+
+
+.pilotTopic {
+  min-height: 48px;
+
+  padding: 10px 13px;
+
+  border:
+    1px solid #d6e1ed;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  cursor: pointer;
+
+  transition:
+    .18s ease;
+}
+
+
+.pilotTopic input {
+  width: 16px;
+  height: 16px;
+
+  min-height: auto;
+
+  margin: 0;
+}
+
+
+.pilotTopic.selected {
+  border-color: #1768ff;
+
+  background: #eff5ff;
+
+  color: #1152c5;
+}
+
+
+.pilotDetailsPrivacy {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  background: #f3f8fd;
+
+  color: #64778e;
+
+  font-size: .83rem;
+
+  line-height: 1.5;
+}
+
+
+.pilotDetailsPrivacy svg {
+  color: #12a87c;
+
+  flex-shrink: 0;
+}
+
+
+.pilotDetailsPrimary {
+  min-height: 56px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 0 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1768ff,
+      #12b98c
+    );
+
+  color: white;
+
+  font: inherit;
+
+  font-weight: 850;
+
+  cursor: pointer;
+}
+
+
+.pilotDetailsPrimary:disabled {
+  opacity: .48;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   CONFIRMATION
+========================================================= */
+
+.pilotConfirmation {
+  width:
+    min(
+      650px,
+      calc(100% - 36px)
+    );
+
+  margin:
+    80px auto;
+
+  text-align: center;
+
+  padding: 55px;
+
+  border-radius: 24px;
+
+  background: white;
+
+  border:
+    1px solid #dce6f3;
+
+  box-shadow:
+    0 25px 70px
+    rgba(13,44,88,.11);
+}
+
+
+.pilotConfirmationIcon {
+  width: 80px;
+  height: 80px;
+
+  margin:
+    0 auto 20px;
+
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1768ff,
+      #10b987
+    );
+}
+
+
+.pilotConfirmation > p:first-of-type {
+  color: #1266f5;
+
+  font-weight: 900;
+
+  font-size: .72rem;
+
+  letter-spacing: .14em;
+}
+
+
+.pilotConfirmation h1 {
+  margin:
+    12px 0
+    16px;
+
+  font-size:
+    clamp(
+      2.1rem,
+      5vw,
+      3.4rem
+    );
+
+  line-height: 1.03;
+}
+
+
+.pilotConfirmation > span {
+  display: block;
+
+  color: #63758d;
+
+  line-height: 1.7;
+}
+
+
+.pilotConfirmationCard {
+  margin:
+    30px 0;
+
+  padding: 20px;
+
+  display: flex;
+
+  text-align: left;
+
+  gap: 14px;
+
+  border-radius: 14px;
+
+  background: #f4f8fd;
+}
+
+
+.pilotConfirmationCard svg {
+  color: #1768ff;
+}
+
+
+.pilotConfirmationCard div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.pilotConfirmationCard span {
+  color: #697c94;
+
+  font-size: .9rem;
+}
+
+
+.pilotConfirmationNote {
+  color: #8997a9;
+
+  line-height: 1.6;
+
+  font-size: .84rem;
+}
+
+/* =========================================================
+   BOOKING API / EMAIL STATUS
+========================================================= */
+
+.pilotDetailsError {
+  margin-top: 4px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #f0b8b8;
+
+  border-radius: 10px;
+
+  background: #fff3f3;
+
+  color: #a61b1b;
+
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+
+.pilotDetailsSubmittingNote {
+  margin: 12px 0 0;
+
+  text-align: center;
+
+  color: #687a91;
+
+  font-size: 0.84rem;
+}
+
+
+.pilotDetailsPrimary:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+.pilotConfirmationEmailWarning {
+  width: min(
+    620px,
+    100%
+  );
+
+  margin: 24px auto;
+
+  padding: 16px 18px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  border-radius: 12px;
+
+  border: 1px solid #f0d58a;
+
+  background: #fff9e8;
+
+  color: #725615;
+
+  line-height: 1.55;
+
+  text-align: left;
+}
+
+
+.pilotConfirmationEmailWarning svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+}
+
+
+.pilotZoomJoinButton {
+  width: fit-content;
+
+  margin:
+    24px auto 14px;
+
+  text-decoration: none;
+}
+
+
+.pilotConfirmationSupport {
+  margin:
+    18px auto 0;
+
+  color: #718198;
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+}
+
+
+.pilotConfirmationSupport a {
+  color: #1768ff;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.pilotConfirmationSupport a:hover {
+  text-decoration: underline;
+}
+
+
+.pilotConfirmationReturn {
+  margin-top: 22px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #173b69;
+
+  font: inherit;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.pilotConfirmationReturn:hover {
+  color: #1768ff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .pilotDetailsLayout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .pilotDetailsSummary {
+    padding: 38px;
+  }
+
+}
+
+
+@media (max-width: 620px) {
+
+  .pilotDetailsLayout {
+    width:
+      calc(100% - 20px);
+
+    margin-top: 24px;
+  }
+
+
+  .pilotDetailsSummary,
+  .pilotDetailsFormPanel {
+    padding: 28px 20px;
+  }
+
+
+  .pilotFormTwoColumns,
+  .pilotTopicGrid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .pilotDetailsBrand span {
+    display: none;
+  }
+
+
+  .pilotDetailsBack {
+    font-size: 0;
+  }
+
+
+  .pilotDetailsBack svg {
+    width: 22px;
+    height: 22px;
+  }
+
+}

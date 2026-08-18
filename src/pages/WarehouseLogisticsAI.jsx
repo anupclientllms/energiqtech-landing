@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -370,14 +370,12 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="warehouseLogisticsPrimaryBtn"
-              onClick={handlePilotClick}
-            >
+          
+             
+            <Link to="/book-pilot" className="warehouseLogisticsPrimaryBtn">
               Request Warehouse Pilot
-              <ChevronRight size={18} />
-            </button>
+              <ChevronRight size={19} />
+            </Link>
 
 
             <a
@@ -1199,14 +1197,11 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
 
         <div className="warehouseLogisticsCtaActions">
 
-          <button
-            type="button"
-            className="warehouseLogisticsPrimaryBtn"
-            onClick={handlePilotClick}
-          >
+        
+          <Link to="/book-pilot" className="warehouseLogisticsPrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

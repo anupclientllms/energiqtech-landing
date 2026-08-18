@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -327,14 +327,11 @@ export default function DataCentreAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="dataCentrePrimaryBtn"
-              onClick={handlePilotClick}
-            >
+          
+            <Link to="/book-pilot" className="dataCentrePrimaryBtn">
               Request Data Centre Pilot
-              <ChevronRight size={18} />
-            </button>
+              <ChevronRight size={19} />
+            </Link>
 
 
             <a
@@ -1102,14 +1099,11 @@ export default function DataCentreAI({ openPilotModal }) {
 
         <div className="dataCentreCtaActions">
 
-          <button
-            type="button"
-            className="dataCentrePrimaryBtn"
-            onClick={handlePilotClick}
-          >
+        
+          <Link to="/book-pilot" className="dataCentrePrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

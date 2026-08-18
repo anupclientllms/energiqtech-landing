@@ -317,14 +317,10 @@ export default function AirportAI({ openPilotModal }) {
             className="airportHeroButtons"
             variants={fadeUp}
           >
-            <button
-              type="button"
-              className="airportPrimaryBtn"
-              onClick={handlePilotClick}
-            >
+            <Link to="/book-pilot" className="airportPrimaryBtn">
               Request Airport Pilot
               <ChevronRight size={18} />
-            </button>
+            </Link>
 
             <a
               href="#airport-workflow"
@@ -903,14 +899,11 @@ export default function AirportAI({ openPilotModal }) {
 
 
         <div className="airportCtaActions">
-          <button
-            type="button"
-            className="airportPrimaryBtn"
-            onClick={handlePilotClick}
-          >
+        
+          <Link to="/book-pilot" className="airportPrimaryBtn">
             Request Airport Pilot
             <ChevronRight size={18} />
-          </button>
+          </Link>
         </div>
       </section>
 

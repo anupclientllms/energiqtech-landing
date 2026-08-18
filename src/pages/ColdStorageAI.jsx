@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Activity,
   AlertTriangle,
@@ -359,15 +360,11 @@ export default function ColdStorageAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <button
-              type="button"
-              className="coldStoragePrimaryButton"
-              onClick={handlePilotClick}
-            >
-              Request Cold Storage Pilot
+           
+            <Link to="/book-pilot" className="coldStoragePrimaryButton">
+              Request Coldstorage Pilot
               <ChevronRight size={19} />
-            </button>
-
+            </Link>
 
             <a
               href="#cold-storage-workflow"
@@ -1255,15 +1252,11 @@ export default function ColdStorageAI({ openPilotModal }) {
 
         <div className="coldStorageFinalActions">
 
-          <button
-            type="button"
-            className="coldStoragePrimaryButton"
-            onClick={handlePilotClick}
-          >
+     
+          <Link to="/book-pilot" className="coldStoragePrimaryButton">
             Request Pilot
             <ChevronRight size={19} />
-          </button>
-
+          </Link>
         </div>
 
       </section>

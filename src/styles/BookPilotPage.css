@@ -1,0 +1,843 @@
+/* src/styles/BookPilotPage.css */
+
+.bookPilotPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(31, 105, 255, 0.12),
+      transparent 30%
+    ),
+    #f5f8fd;
+
+  color: #071a3d;
+}
+
+
+.bookPilotTopBar {
+  min-height: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 18px 6%;
+
+  background: #0b1d3f;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+}
+
+
+.bookPilotBack {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 0;
+  background: transparent;
+
+  color: #dbe7ff;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.bookPilotTopBrand {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.bookPilotTopBrand img {
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+
+.bookPilotTopBrand div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bookPilotTopBrand strong {
+  color: #ffffff;
+
+  font-size: 1.15rem;
+}
+
+
+.bookPilotTopBrand span {
+  color: #c6d4ec;
+
+  font-size: 0.82rem;
+
+  margin-top: 3px;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.bookPilotIntro {
+  max-width: 940px;
+  margin: 0 auto;
+
+  padding:
+    0px 24px
+    45px;
+
+  text-align: center;
+}
+
+
+.bookPilotEyebrow {
+  color: #1565ff;
+
+  font-weight: 900;
+
+  letter-spacing: 0.16em;
+
+  font-size: 0.78rem;
+}
+
+
+.bookPilotIntro h1 {
+  max-width: 800px;
+
+  margin:
+    16px auto
+    20px;
+
+  font-size:
+    clamp(
+      2.4rem,
+      5vw,
+      4.5rem
+    );
+
+  line-height: 0.99;
+
+  letter-spacing: -0.055em;
+}
+
+
+.bookPilotIntro > p:last-child {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #5c6f8c;
+
+  line-height: 1.75;
+
+  font-size: 1.03rem;
+}
+
+
+/* =========================================================
+   BOOKING
+========================================================= */
+
+.bookPilotBooking {
+  width:
+    min(
+      1480px,
+      calc(100% - 48px)
+    );
+
+  margin:
+    0 auto 90px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr 0.82fr;
+
+  background: #ffffff;
+
+  border-radius: 26px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px
+    rgba(10, 42, 92, 0.12);
+
+  border:
+    1px solid #dce7f5;
+}
+
+
+/* =========================================================
+   CALENDAR
+========================================================= */
+
+.bookPilotCalendarPanel {
+  padding: 38px;
+
+  background:
+    linear-gradient(
+      155deg,
+      #0b1d3f,
+      #113d79
+    );
+
+  color: white;
+}
+
+
+.bookPilotMeetingInfo {
+  text-align: center;
+}
+
+
+.bookPilotMeetingIcon {
+  width: 68px;
+  height: 68px;
+
+  margin:
+    0 auto 18px;
+
+  border-radius: 20px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #176dff,
+      #12c79c
+    );
+}
+
+
+.bookPilotMeetingInfo p {
+  color: #64e6b8;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+
+.bookPilotMeetingInfo h2 {
+  margin:
+    12px 0
+    20px;
+
+  font-size: 1.75rem;
+
+  line-height: 1.15;
+}
+
+
+.bookPilotMeetingMeta {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  color: #bed0eb;
+
+  font-size: 0.87rem;
+}
+
+
+.bookPilotMeetingMeta span {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.bookPilotMonthNav {
+  display: grid;
+
+  grid-template-columns:
+    42px 1fr 42px;
+
+  align-items: center;
+
+  margin:
+    42px 0
+    24px;
+}
+
+
+.bookPilotMonthNav strong {
+  text-align: center;
+
+  font-size: 1.13rem;
+}
+
+
+.bookPilotMonthNav button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 12px;
+
+  border:
+    1px solid
+    rgba(255,255,255,0.16);
+
+  background:
+    rgba(255,255,255,0.06);
+
+  color: white;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+}
+
+
+.bookPilotWeekdays,
+.bookPilotCalendarGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(7, 1fr);
+}
+
+
+.bookPilotWeekdays {
+  margin-bottom: 8px;
+}
+
+
+.bookPilotWeekdays span {
+  text-align: center;
+
+  color: #aebfdb;
+
+  font-size: 0.73rem;
+
+  font-weight: 800;
+}
+
+
+.bookPilotCalendarGrid {
+  gap: 6px;
+}
+
+
+.calendarEmpty,
+.calendarDay {
+  aspect-ratio: 1 / 1;
+}
+
+
+.calendarDay {
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    0.18s ease;
+}
+
+
+.calendarDay:hover:not(:disabled) {
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.12
+    );
+}
+
+
+.calendarDay.selected {
+  background: #ffffff;
+
+  color: #0a3269;
+}
+
+
+.calendarDay:disabled {
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.25
+    );
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   TIME PANEL
+========================================================= */
+
+.bookPilotTimePanel {
+  padding: 40px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 680px;
+}
+
+
+.bookPilotTimeHeader > p {
+  color: #1565ff;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+}
+
+
+.bookPilotTimeHeader h2 {
+  margin:
+    10px 0;
+
+  font-size: 1.75rem;
+}
+
+
+.bookPilotTimeHeader > span {
+  display: block;
+
+  min-height: 46px;
+
+  color: #61748f;
+
+  line-height: 1.55;
+}
+
+
+.bookPilotTimezone {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin:
+    22px 0;
+
+  padding:
+    12px 14px;
+
+  border-radius: 12px;
+
+  background: #f3f7fc;
+
+  color: #315478;
+
+  font-size: 0.87rem;
+
+  font-weight: 700;
+}
+
+
+.bookPilotEmptyState {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #8091a9;
+
+  gap: 8px;
+}
+
+
+.bookPilotSlots {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 10px;
+
+  max-height: 390px;
+
+  overflow-y: auto;
+
+  padding-right: 5px;
+}
+
+
+.bookPilotSlot {
+  min-height: 58px;
+
+  border-radius: 12px;
+
+  border:
+    1px solid #ccdaed;
+
+  background: white;
+
+  color: #24496f;
+
+  font: inherit;
+
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    0.18s ease;
+}
+
+
+.bookPilotSlot:hover {
+  border-color: #1565ff;
+
+  color: #1565ff;
+}
+
+
+.bookPilotSlot.selected {
+  color: white;
+
+  border-color: #1565ff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1565ff,
+      #1855cd
+    );
+}
+
+
+.bookPilotContinueBox {
+  margin-top: auto;
+
+  padding-top: 25px;
+
+  border-top:
+    1px solid #e4ebf4;
+}
+
+
+.bookPilotContinueBox > div {
+  display: flex;
+
+  gap: 8px;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+
+  color: #315478;
+
+  font-size: 0.9rem;
+}
+
+
+.bookPilotContinueBox svg {
+  color: #10af7a;
+}
+
+
+.bookPilotContinue {
+  width: 100%;
+
+  min-height: 56px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1468ff,
+      #10ba8d
+    );
+
+  color: white;
+
+  font: inherit;
+  font-weight: 850;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   VALUE PANEL
+========================================================= */
+
+.bookPilotValuePanel {
+  padding: 40px;
+
+  background: #f7faff;
+
+  border-left:
+    1px solid #e3ebf5;
+}
+
+
+.bookPilotValuePanel > p {
+  color: #10a77b;
+
+  font-weight: 900;
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.14em;
+}
+
+
+.bookPilotValuePanel h2 {
+  margin:
+    12px 0
+    32px;
+
+  font-size: 1.8rem;
+
+  line-height: 1.14;
+}
+
+
+.bookPilotBenefit {
+  display: grid;
+
+  grid-template-columns:
+    42px 1fr;
+
+  gap: 13px;
+
+  margin-bottom: 26px;
+}
+
+
+.bookPilotBenefit > svg {
+  color: #1565ff;
+}
+
+
+.bookPilotBenefit div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.bookPilotBenefit strong {
+  font-size: 0.98rem;
+}
+
+
+.bookPilotBenefit span {
+  color: #697b93;
+
+  line-height: 1.55;
+
+  font-size: 0.88rem;
+}
+
+
+.bookPilotValueFooter {
+  margin-top: 35px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: #eaf8f3;
+
+  display: flex;
+
+  gap: 9px;
+
+  color: #226451;
+
+  line-height: 1.5;
+
+  font-size: 0.86rem;
+}
+.bookPilotBackRow {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 28px 32px 0;
+}
+
+.bookPilotBack {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #17345f;
+
+  font: inherit;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.bookPilotBack:hover {
+  color: #1468ff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .bookPilotBooking {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .bookPilotValuePanel {
+    grid-column:
+      1 / -1;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 18px 30px;
+  }
+
+
+  .bookPilotValuePanel > p,
+  .bookPilotValuePanel h2,
+  .bookPilotValueFooter {
+    grid-column:
+      1 / -1;
+  }
+
+}
+
+
+@media (max-width: 780px) {
+
+  .bookPilotTopBar {
+    padding: 14px 20px;
+  }
+
+
+  .bookPilotTopBrand span {
+    display: none;
+  }
+
+
+  .bookPilotBooking {
+    width:
+      calc(100% - 24px);
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .bookPilotTimePanel {
+    min-height: auto;
+  }
+
+
+  .bookPilotValuePanel {
+    grid-column: auto;
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .bookPilotValuePanel > p,
+  .bookPilotValuePanel h2,
+  .bookPilotValueFooter {
+    grid-column: auto;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .bookPilotIntro {
+    padding:
+      50px 18px
+      35px;
+  }
+
+
+  .bookPilotCalendarPanel,
+  .bookPilotTimePanel,
+  .bookPilotValuePanel {
+    padding: 26px 20px;
+  }
+
+
+  .bookPilotSlots {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .bookPilotBack {
+    font-size: 0;
+  }
+
+
+  .bookPilotBack svg {
+    width: 22px;
+    height: 22px;
+  }
+
+}

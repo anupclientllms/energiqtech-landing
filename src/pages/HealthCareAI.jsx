@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import {
   Activity,
   ArrowRight,
@@ -393,14 +393,11 @@ export default function HealthcareAI({ openPilotModal }) {
               variants={fadeUp}
             >
 
-              <button
-                type="button"
-                className="healthcarePrimaryBtn"
-                onClick={handlePilotClick}
-              >
+              
+              <Link to="/book-pilot" className="healthcarePrimaryBtn">
                 Request Healthcare Pilot
-                <ChevronRight size={18} />
-              </button>
+                <ChevronRight size={19} />
+              </Link>
 
 
               <a
@@ -1204,14 +1201,13 @@ export default function HealthcareAI({ openPilotModal }) {
 
         <div className="healthcareCtaActions">
 
-          <button
-            type="button"
-            className="healthcarePrimaryBtn"
-            onClick={handlePilotClick}
-          >
+       
+          
+
+          <Link to="/book-pilot" className="healthcarePrimaryBtn">
             Request Pilot
-            <ChevronRight size={18} />
-          </button>
+            <ChevronRight size={19} />
+          </Link>
 
         </div>
 

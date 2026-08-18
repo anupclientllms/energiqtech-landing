@@ -286,9 +286,10 @@ export default function HomePage({ openPilotModal }) {
           </motion.div>
 
           <motion.div className="heroButtons" variants={fadeUp}>
-            <button type="button" onClick={openPilotModal} className="primary">
-              Start a 30-Day Energy Optimisation Pilot <ChevronRight size={18} />
-            </button>
+            <Link to="/book-pilot" className="primary">
+              Start a 30-Day Energy Optimisation Pilot
+              <ChevronRight size={18} />
+            </Link>
 
             <a href="#platform-preview" className="secondary">
               View Platform
@@ -928,9 +929,9 @@ export default function HomePage({ openPilotModal }) {
           Reduce Energy Costs. Reduce CO₂. Prove the Results Before You Scale.
         </p>
 
-        <button type="button" onClick={openPilotModal} className="primary">
+        <Link to="/book-pilot" className="primary">
           Discuss Pilot <ChevronRight size={18} />
-        </button>
+        </Link>
       </section>
 
       
