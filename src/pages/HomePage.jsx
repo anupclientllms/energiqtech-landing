@@ -286,7 +286,7 @@ export default function HomePage({ openPilotModal }) {
           </motion.div>
 
           <motion.div className="heroButtons" variants={fadeUp}>
-            <Link to="/book-pilot" className="primary">
+            <Link to="/book-discussion" className="primary">
               Book an Energy Optimisation Discussion
               <ChevronRight size={18} />
             </Link>
@@ -929,7 +929,7 @@ export default function HomePage({ openPilotModal }) {
           Reduce Energy Costs. Reduce CO₂. Prove the Results Before You Scale.
         </p>
 
-        <Link to="/book-pilot" className="primary">
+        <Link to="/book-discussion" className="primary">
           Book a Discussion <ChevronRight size={18} />
         </Link>
       </section>
