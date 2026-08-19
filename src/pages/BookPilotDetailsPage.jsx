@@ -674,7 +674,7 @@ export default function BookPilotDetailsPage() {
                 } minutes`,
 
               reply_to:
-                "contact@automationspectrum.com.au",
+                "contact@energiqtech.com",
             };
 
 
@@ -951,9 +951,9 @@ export default function BookPilotDetailsPage() {
             Email{" "}
 
             <a
-              href="mailto:contact@automationspectrum.com.au"
+              href="mailto:contact@energiqtech.com"
             >
-              contact@automationspectrum.com.au
+              contact@energiqtech.com
             </a>.
 
           </p>
