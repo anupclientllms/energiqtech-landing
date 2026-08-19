@@ -311,7 +311,7 @@ async def create_zoom_meeting(
         app_timezone,
     )
 
-    topic = "EnerG IQ Tech | Energy Optimisation Discussion",
+    topic = "EnerG IQ Tech | Energy Optimisation Discussion"
 
     agenda_lines = [
         "EnerG IQ Tech Energy Optimisation Discussion",
@@ -471,3 +471,4 @@ async def book_pilot(request_data: BookPilotRequest):
             "organisation": request_data.visitor.organisation,
         },
     }
+
