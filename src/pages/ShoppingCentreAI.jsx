@@ -343,7 +343,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
           >
 
           
-            <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
+            <Link to="/book-discussion" className="shoppingCentrePrimaryBtn">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1110,7 +1110,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
         <div className="shoppingCentreCtaActions">
 
           
-          <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
+          <Link to="/book-discussion" className="shoppingCentrePrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

@@ -344,7 +344,7 @@ export default function UniversityAI({ openPilotModal }) {
           >
 
            
-            <Link to="/book-pilot" className="universityPrimaryBtn">
+            <Link to="/book-discussion" className="universityPrimaryBtn">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1092,7 +1092,7 @@ export default function UniversityAI({ openPilotModal }) {
 
         
            
-          <Link to="/book-pilot" className="universityPrimaryBtn">
+          <Link to="/book-discussion" className="universityPrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

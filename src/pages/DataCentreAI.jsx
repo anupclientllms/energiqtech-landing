@@ -328,7 +328,7 @@ export default function DataCentreAI({ openPilotModal }) {
           >
 
           
-            <Link to="/book-pilot" className="dataCentrePrimaryBtn">
+            <Link to="/book-discussion" className="dataCentrePrimaryBtn">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1100,7 +1100,7 @@ export default function DataCentreAI({ openPilotModal }) {
         <div className="dataCentreCtaActions">
 
         
-          <Link to="/book-pilot" className="dataCentrePrimaryBtn">
+          <Link to="/book-discussion" className="dataCentrePrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

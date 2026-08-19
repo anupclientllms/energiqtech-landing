@@ -373,7 +373,7 @@ export default function Navbar({ openPilotModal }) {
         </Link>
 
       <Link
-        to="/book-pilot"
+        to="/book-discussion"
         className="navBtn"
         onClick={closeMenu}
       >

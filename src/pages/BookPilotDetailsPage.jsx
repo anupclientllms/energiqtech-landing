@@ -300,7 +300,7 @@ export default function BookPilotDetailsPage() {
     ) {
 
       navigate(
-        "/book-pilot",
+        "/book-discussion",
         {
           replace: true,
         }
@@ -421,7 +421,7 @@ export default function BookPilotDetailsPage() {
        * Local:
        *
        * VITE_BOOKING_API_URL=
-       * http://localhost:8000/api/book-pilot
+       * http://localhost:8000/api/book-discussion
        *
        *
        * Production:
@@ -434,7 +434,7 @@ export default function BookPilotDetailsPage() {
       const bookingApiUrl =
         import.meta.env
           .VITE_BOOKING_API_URL ||
-        "/api/book-pilot";
+        "/api/book-discussion";
 
 
       try {
@@ -801,7 +801,7 @@ export default function BookPilotDetailsPage() {
 
 
           <p>
-            PILOT DISCUSSION
+            ENERGY OPTIMISATION DISCUSSION
           </p>
 
 
@@ -820,7 +820,7 @@ export default function BookPilotDetailsPage() {
             </strong>.
 
             {" "}Your EnerG IQ Tech
-            Pilot Discussion is scheduled
+            Energy Optimisation Discussion is scheduled
             for{" "}
 
             <strong>
@@ -847,7 +847,7 @@ export default function BookPilotDetailsPage() {
             <div>
 
               <strong>
-                EnerG IQ Tech Pilot Discussion
+                EnerG IQ Tech Energy Optimisation Discussion
               </strong>
 
 
@@ -997,7 +997,7 @@ export default function BookPilotDetailsPage() {
           type="button"
           onClick={() =>
             navigate(
-              "/book-pilot"
+              "/book-discussion"
             )
           }
           className="pilotDetailsBack"
@@ -1028,7 +1028,7 @@ export default function BookPilotDetailsPage() {
 
 
           <p>
-            YOUR PILOT DISCUSSION
+            YOUR ENERGY OPTIMISATION DISCUSSION
           </p>
 
 
@@ -1156,7 +1156,7 @@ export default function BookPilotDetailsPage() {
 
             <h2>
               Book Your EnerG IQ Tech
-              Pilot Discussion
+              Energy Optimisation Discussion
             </h2>
 
 
@@ -1622,7 +1622,7 @@ export default function BookPilotDetailsPage() {
 
               {submitting
                 ? "Confirming Your Meeting..."
-                : "Confirm Pilot Discussion"
+                : "Confirm Discussion"
               }
 
             </button>

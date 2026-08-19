@@ -239,7 +239,7 @@ export default function BookPilotPage() {
 
 
     navigate(
-      "/book-pilot/details",
+      "/book-discussion/details",
       {
         state: {
           date: selectedDate.toISOString(),
@@ -321,7 +321,7 @@ export default function BookPilotPage() {
 
 
             <p>
-              PILOT DISCOVERY
+              ENERGY OPTIMISATION DISCUSSION
             </p>
 
 

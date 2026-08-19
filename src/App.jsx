@@ -205,12 +205,12 @@ function App() {
         />
         
         <Route
-          path="/book-pilot"
+          path="/book-discussion"
           element={<BookPilotPage />}
         />
 
         <Route
-          path="/book-pilot/details"
+          path="/book-discussion/details"
           element={<BookPilotDetailsPage />}
         />
       </Routes>

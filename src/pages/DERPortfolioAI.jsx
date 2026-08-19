@@ -306,7 +306,7 @@ export default function DERPortfolioAI() {
           >
 
             <Link
-              to="/book-pilot"
+              to="/book-discussion"
               className="derPortfolioPrimaryBtn"
             >
               Book a Discussion
@@ -1096,7 +1096,7 @@ export default function DERPortfolioAI() {
 
 
             <Link
-              to="/book-pilot"
+              to="/book-discussion"
               className="derPortfolioPrimaryBtn"
             >
               Discuss a DER Portfolio Pilot
@@ -1170,7 +1170,7 @@ export default function DERPortfolioAI() {
         <div className="derPortfolioCtaActions">
 
           <Link
-            to="/book-pilot"
+            to="/book-discussion"
             className="derPortfolioPrimaryBtn"
           >
             Book a Discussion

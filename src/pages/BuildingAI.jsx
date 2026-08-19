@@ -299,7 +299,7 @@ export default function BuildingAI({ openPilotModal }) {
             variants={fadeUp}
           >
          
-            <Link to="/book-pilot" className="buildingAIPrimaryBtn">
+            <Link to="/book-discussion" className="buildingAIPrimaryBtn">
               Book a Discussion
               <ChevronRight size={18} />
             </Link>
@@ -1037,7 +1037,7 @@ export default function BuildingAI({ openPilotModal }) {
         <div className="buildingAICtaActions">
 
          
-          <Link to="/book-pilot" className="buildingAIPrimaryBtn">
+          <Link to="/book-discussion" className="buildingAIPrimaryBtn">
             Book a Discussion
             <ChevronRight size={18} />
           </Link>

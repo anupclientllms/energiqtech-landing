@@ -324,7 +324,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
           >
 
            
-            <Link to="/book-pilot" className="localGovernmentPrimaryBtn">
+            <Link to="/book-discussion" className="localGovernmentPrimaryBtn">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1090,7 +1090,7 @@ export default function LocalGovernmentAI({ openPilotModal }) {
         <div className="localGovernmentCtaActions">
 
           
-          <Link to="/book-pilot" className="localGovernmentPrimaryBtn">
+          <Link to="/book-discussion" className="localGovernmentPrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

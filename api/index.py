@@ -411,7 +411,7 @@ async def create_zoom_meeting(
 # BOOK PILOT
 # ============================================================
 
-@app.post("/api/book-pilot")
+@app.post("/api/book-discussion")
 async def book_pilot(request_data: BookPilotRequest):
     """
     Create a real 30-minute Zoom meeting.

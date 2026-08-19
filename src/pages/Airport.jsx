@@ -317,7 +317,7 @@ export default function AirportAI({ openPilotModal }) {
             className="airportHeroButtons"
             variants={fadeUp}
           >
-            <Link to="/book-pilot" className="airportPrimaryBtn">
+            <Link to="/book-discussion" className="airportPrimaryBtn">
               Book a Discussion
               <ChevronRight size={18} />
             </Link>
@@ -900,7 +900,7 @@ export default function AirportAI({ openPilotModal }) {
 
         <div className="airportCtaActions">
         
-          <Link to="/book-pilot" className="airportPrimaryBtn">
+          <Link to="/book-discussion" className="airportPrimaryBtn">
             Book a Discussion
             <ChevronRight size={18} />
           </Link>

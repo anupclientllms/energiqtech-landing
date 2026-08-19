@@ -369,7 +369,7 @@ export default function HotelAI({ openPilotModal }) {
           >
 
            
-            <Link to="/book-pilot" className="hotelPrimaryBtn">
+            <Link to="/book-discussion" className="hotelPrimaryBtn">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1114,7 +1114,7 @@ export default function HotelAI({ openPilotModal }) {
         <div className="hotelCtaActions">
 
         
-          <Link to="/book-pilot" className="hotelPrimaryBtn">
+          <Link to="/book-discussion" className="hotelPrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

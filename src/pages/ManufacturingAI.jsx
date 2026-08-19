@@ -447,7 +447,7 @@ export default function ManufacturingAI({ openPilotModal }) {
             variants={fadeUp}
           >
 
-            <Link to="/book-pilot" className="manufacturingPrimaryButton">
+            <Link to="/book-discussion" className="manufacturingPrimaryButton">
               Book a Discussion
               <ChevronRight size={19} />
             </Link>
@@ -1337,7 +1337,7 @@ export default function ManufacturingAI({ openPilotModal }) {
 
           
 
-          <Link to="/book-pilot" className="manufacturingPrimaryButton">
+          <Link to="/book-discussion" className="manufacturingPrimaryButton">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>

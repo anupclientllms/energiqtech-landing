@@ -394,7 +394,7 @@ export default function HealthcareAI({ openPilotModal }) {
             >
 
               
-              <Link to="/book-pilot" className="healthcarePrimaryBtn">
+              <Link to="/book-discussion" className="healthcarePrimaryBtn">
                 Book a Discussion
                 <ChevronRight size={19} />
               </Link>
@@ -1204,7 +1204,7 @@ export default function HealthcareAI({ openPilotModal }) {
        
           
 
-          <Link to="/book-pilot" className="healthcarePrimaryBtn">
+          <Link to="/book-discussion" className="healthcarePrimaryBtn">
             Book a Discussion
             <ChevronRight size={19} />
           </Link>
