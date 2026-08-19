@@ -311,10 +311,10 @@ async def create_zoom_meeting(
         app_timezone,
     )
 
-    topic = "EnerG IQ Tech Pilot Discussion"
+    topic = "EnerG IQ Tech | Energy Optimisation Discussion",
 
     agenda_lines = [
-        "EnerG IQ Tech Energy Optimisation Pilot Discussion",
+        "EnerG IQ Tech Energy Optimisation Discussion",
         "",
         f"Organisation: {visitor.organisation}",
         f"Contact: {visitor.firstName} {visitor.lastName}",
@@ -421,7 +421,7 @@ async def book_pilot(request_data: BookPilotRequest):
     if request_data.booking.duration != 30:
         raise HTTPException(
             status_code=400,
-            detail="EnerG IQ Tech pilot discussions are currently 30 minutes.",
+            detail="EnerG IQ Tech discussions are currently 30 minutes.",
         )
 
     # Validate/normalise early so the API returns a clear 400 before
