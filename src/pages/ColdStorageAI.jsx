@@ -362,7 +362,7 @@ export default function ColdStorageAI({ openPilotModal }) {
 
            
             <Link to="/book-pilot" className="coldStoragePrimaryButton">
-              Request Coldstorage Pilot
+              Book a Discussion
               <ChevronRight size={19} />
             </Link>
 
@@ -1254,7 +1254,7 @@ export default function ColdStorageAI({ openPilotModal }) {
 
      
           <Link to="/book-pilot" className="coldStoragePrimaryButton">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={19} />
           </Link>
         </div>

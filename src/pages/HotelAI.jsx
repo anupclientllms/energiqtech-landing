@@ -370,7 +370,7 @@ export default function HotelAI({ openPilotModal }) {
 
            
             <Link to="/book-pilot" className="hotelPrimaryBtn">
-              Request Hotel Pilot
+              Book a Discussion
               <ChevronRight size={19} />
             </Link>
 
@@ -1115,7 +1115,7 @@ export default function HotelAI({ openPilotModal }) {
 
         
           <Link to="/book-pilot" className="hotelPrimaryBtn">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={19} />
           </Link>
 

@@ -281,7 +281,7 @@ export default function BookPilotPage() {
       <section className="bookPilotIntro">
 
         <p className="bookPilotEyebrow">
-          BOOK A PILOT DISCUSSION
+          BOOK A DISCUSSION
         </p>
 
 

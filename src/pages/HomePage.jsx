@@ -287,7 +287,7 @@ export default function HomePage({ openPilotModal }) {
 
           <motion.div className="heroButtons" variants={fadeUp}>
             <Link to="/book-pilot" className="primary">
-              Start a 30-Day Energy Optimisation Pilot
+              Book an Energy Optimisation Discussion
               <ChevronRight size={18} />
             </Link>
 
@@ -930,7 +930,7 @@ export default function HomePage({ openPilotModal }) {
         </p>
 
         <Link to="/book-pilot" className="primary">
-          Discuss Pilot <ChevronRight size={18} />
+          Book a Discussion <ChevronRight size={18} />
         </Link>
       </section>
 

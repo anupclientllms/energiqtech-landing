@@ -448,7 +448,7 @@ export default function ManufacturingAI({ openPilotModal }) {
           >
 
             <Link to="/book-pilot" className="manufacturingPrimaryButton">
-              Request Manufacturing Pilot
+              Book a Discussion
               <ChevronRight size={19} />
             </Link>
 
@@ -1338,7 +1338,7 @@ export default function ManufacturingAI({ openPilotModal }) {
           
 
           <Link to="/book-pilot" className="manufacturingPrimaryButton">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={19} />
           </Link>
 

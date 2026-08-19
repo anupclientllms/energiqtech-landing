@@ -373,7 +373,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
           
              
             <Link to="/book-pilot" className="warehouseLogisticsPrimaryBtn">
-              Request Warehouse Pilot
+              Book a Discussion
               <ChevronRight size={19} />
             </Link>
 
@@ -1199,7 +1199,7 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
 
         
           <Link to="/book-pilot" className="warehouseLogisticsPrimaryBtn">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={19} />
           </Link>
 

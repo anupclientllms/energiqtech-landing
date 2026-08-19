@@ -344,7 +344,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
 
           
             <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
-              Request Shopping Centre Pilot
+              Book a Discussion
               <ChevronRight size={19} />
             </Link>
 
@@ -1111,7 +1111,7 @@ export default function ShoppingCentreAI({ openPilotModal }) {
 
           
           <Link to="/book-pilot" className="shoppingCentrePrimaryBtn">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={19} />
           </Link>
 

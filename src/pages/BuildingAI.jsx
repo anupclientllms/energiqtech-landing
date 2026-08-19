@@ -300,7 +300,7 @@ export default function BuildingAI({ openPilotModal }) {
           >
          
             <Link to="/book-pilot" className="buildingAIPrimaryBtn">
-              Request Building Pilot
+              Book a Discussion
               <ChevronRight size={18} />
             </Link>
 
@@ -1038,7 +1038,7 @@ export default function BuildingAI({ openPilotModal }) {
 
          
           <Link to="/book-pilot" className="buildingAIPrimaryBtn">
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={18} />
           </Link>
 

@@ -309,7 +309,7 @@ export default function DERPortfolioAI() {
               to="/book-pilot"
               className="derPortfolioPrimaryBtn"
             >
-              Request DER Portfolio Pilot
+              Book a Discussion
               <ChevronRight size={18} />
             </Link>
 
@@ -1173,7 +1173,7 @@ export default function DERPortfolioAI() {
             to="/book-pilot"
             className="derPortfolioPrimaryBtn"
           >
-            Request Pilot
+            Book a Discussion
             <ChevronRight size={18} />
           </Link>
 
