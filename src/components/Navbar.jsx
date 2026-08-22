@@ -19,6 +19,7 @@ import {
   ShoppingCart,
   Snowflake,
   SunMedium,
+  UtensilsCrossed,
   Warehouse,
   X,
   Zap,
@@ -55,10 +56,11 @@ const solutions = {
       label: "Savings Intelligence",
       path: "/savings-intelligence",
     },
+
     //{
-      //icon: Brain,
-      //label: "AI Decision Agents",
-      //path: "/decision-agents",
+    //  icon: Brain,
+    //  label: "AI Decision Agents",
+    //  path: "/decision-agents",
     //},
   ],
 };
@@ -102,6 +104,11 @@ const industries = {
       icon: Snowflake,
       label: "Cold Storage AI",
       path: "/cold-storage-ai",
+    },
+    {
+      icon: UtensilsCrossed,
+      label: "Food & Beverage Manufacturing AI",
+      path: "/food-manufacturing-ai",
     },
     {
       icon: Factory,
@@ -184,7 +191,9 @@ export default function Navbar({ openPilotModal }) {
             : "Open navigation menu"
         }
         aria-expanded={mobileMenuOpen}
-        onClick={() => setMobileMenuOpen((current) => !current)}
+        onClick={() =>
+          setMobileMenuOpen((current) => !current)
+        }
       >
         {mobileMenuOpen ? <X size={34} /> : <Menu size={34} />}
       </button>
@@ -259,11 +268,14 @@ export default function Navbar({ openPilotModal }) {
 
             <div className="solutionMenuFooter">
               <div>
-                <strong>From Energy Waste to Measurable Savings</strong>
+                <strong>
+                  From Energy Waste to Measurable Savings
+                </strong>
 
                 <span>
-                  Connect assets, detect energy waste and optimise operations to reduce
-                  energy costs, peak demand and associated CO₂ emissions.
+                  Connect assets, detect energy waste and optimise
+                  operations to reduce energy costs, peak demand and
+                  associated CO₂ emissions.
                 </span>
               </div>
 
@@ -347,15 +359,16 @@ export default function Navbar({ openPilotModal }) {
 
             <div className="industryMenuFooter">
               <div>
-                <strong>AI-Powered Energy & Carbon Optimisation</strong>
+                <strong>
+                  AI-Powered Energy & Carbon Optimisation
+                </strong>
 
                 <span>
-                  Connect assets, detect energy waste and optimise operations to reduce
-                  energy costs and associated CO₂ emissions across 12 industries.
+                  Connect assets, detect energy waste and optimise
+                  operations to reduce energy costs and associated
+                  CO₂ emissions across industries.
                 </span>
               </div>
-
-              
             </div>
           </div>
         </div>
@@ -372,13 +385,13 @@ export default function Navbar({ openPilotModal }) {
           About
         </Link>
 
-      <Link
-        to="/book-discussion"
-        className="navBtn"
-        onClick={closeMenu}
-      >
-        Book a Discussion
-      </Link>
+        <Link
+          to="/book-discussion"
+          className="navBtn"
+          onClick={closeMenu}
+        >
+          Book a Discussion
+        </Link>
       </div>
     </nav>
   );

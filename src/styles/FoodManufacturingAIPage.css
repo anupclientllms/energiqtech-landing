@@ -1,0 +1,1333 @@
+/* =========================================================
+   FOOD & BEVERAGE MANUFACTURING AI
+========================================================= */
+
+.foodManufacturingPage {
+  min-height: 100vh;
+
+  background: #f7faff;
+
+  color: #102850;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.foodManufacturingHero {
+  position: relative;
+
+  min-height: 660px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(420px, 0.95fr);
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 92px 7% 88px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071d3c 0%,
+      #0c315d 54%,
+      #0b4c72 100%
+    );
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO BACKGROUND GLOW
+========================================================= */
+
+.foodManufacturingHeroGlow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(25px);
+
+  pointer-events: none;
+}
+
+.foodGlowOne {
+  width: 420px;
+  height: 420px;
+
+  right: -80px;
+  top: -120px;
+
+  background: rgba(45, 211, 174, 0.12);
+}
+
+.foodGlowTwo {
+  width: 320px;
+  height: 320px;
+
+  left: 32%;
+  bottom: -180px;
+
+  background: rgba(62, 127, 255, 0.16);
+}
+
+.foodManufacturingHeroContent,
+.foodManufacturingHeroPanel {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+========================================================= */
+
+.foodManufacturingEyebrow {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 20px;
+
+  padding: 8px 13px;
+
+  color: #70e4bb;
+
+  background: rgba(63, 214, 166, 0.09);
+
+  border: 1px solid rgba(101, 232, 189, 0.2);
+
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.foodManufacturingHero h1 {
+  max-width: 760px;
+
+  margin: 0;
+
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+
+  line-height: 1.02;
+
+  letter-spacing: -0.045em;
+}
+
+.foodManufacturingHero h1 span {
+  color: #60dfb2;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.foodManufacturingHeroText {
+  max-width: 720px;
+
+  margin: 25px 0 0;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 1.05rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.foodManufacturingHeroActions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 13px;
+
+  margin-top: 31px;
+}
+
+.foodPrimaryButton,
+.foodSecondaryButton,
+.foodPilotButton {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.foodPrimaryButton {
+  padding: 14px 20px;
+
+  color: #032d24;
+
+  background: #59dfb0;
+
+  border-radius: 9px;
+}
+
+.foodPrimaryButton:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 30px rgba(40, 201, 151, 0.2);
+}
+
+.foodSecondaryButton {
+  padding: 13px 19px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 9px;
+}
+
+.foodSecondaryButton:hover {
+  background: rgba(255, 255, 255, 0.07);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO BENEFIT POINTS
+========================================================= */
+
+.foodManufacturingHeroPoints {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  margin-top: 29px;
+}
+
+.foodManufacturingHeroPoints span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.81rem;
+
+  font-weight: 600;
+}
+
+.foodManufacturingHeroPoints svg {
+  color: #5be1b2;
+}
+
+
+/* =========================================================
+   HERO INTELLIGENCE PANEL
+========================================================= */
+
+.foodManufacturingHeroPanel {
+  padding: 24px;
+
+  background: rgba(5, 20, 40, 0.68);
+
+  border: 1px solid rgba(126, 193, 255, 0.18);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 32px 70px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(16px);
+}
+
+.foodHeroPanelHeader {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 19px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+}
+
+.foodLiveBadge {
+  padding: 5px 8px;
+
+  color: #65e5b8;
+
+  background: rgba(63, 220, 164, 0.1);
+
+  border-radius: 999px;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   HERO METRICS
+========================================================= */
+
+.foodHeroMetricGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 11px;
+}
+
+.foodHeroMetric {
+  padding: 15px;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 12px;
+}
+
+.foodHeroMetric > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 0.61rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.foodHeroMetric strong {
+  color: #ffffff;
+
+  font-size: 1.55rem;
+}
+
+.foodHeroMetric small {
+  margin-left: 5px;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================================
+   HERO AI INSIGHT
+========================================================= */
+
+.foodHeroInsight {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 14px;
+
+  padding: 15px;
+
+  background: rgba(49, 215, 164, 0.07);
+
+  border: 1px solid rgba(69, 222, 176, 0.12);
+
+  border-radius: 12px;
+}
+
+.foodHeroInsightIcon {
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #5ce1b3;
+
+  background: rgba(65, 220, 174, 0.1);
+
+  border-radius: 9px;
+}
+
+.foodHeroInsight span {
+  color: #60dfb2;
+
+  font-size: 0.63rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.foodHeroInsight p {
+  margin: 5px 0 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 0.76rem;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   HERO FLOW
+========================================================= */
+
+.foodHeroFlow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 17px;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font-size: 0.67rem;
+
+  font-weight: 700;
+}
+
+.foodHeroFlow svg {
+  color: #54dcae;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.foodSection {
+  padding: 92px 7%;
+}
+
+.foodSectionHeading {
+  max-width: 760px;
+
+  margin: 0 auto 47px;
+
+  text-align: center;
+}
+
+.foodSectionHeading > span,
+.foodInfrastructureContent > span,
+.foodPilotContent > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #2671e8;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.foodSectionHeading h2,
+.foodInfrastructureContent h2,
+.foodPilotContent h2 {
+  margin: 0;
+
+  color: #0c2852;
+
+  font-size: clamp(2rem, 3.8vw, 3.15rem);
+
+  line-height: 1.1;
+
+  letter-spacing: -0.035em;
+}
+
+.foodSectionHeading p,
+.foodInfrastructureContent p,
+.foodPilotContent p {
+  margin: 17px 0 0;
+
+  color: #627391;
+
+  font-size: 0.98rem;
+
+  line-height: 1.72;
+}
+
+
+/* =========================================================
+   ENERGY CHALLENGE
+========================================================= */
+
+.foodChallengeSection {
+  background: #f5f9ff;
+}
+
+.foodEnergyGrid,
+.foodCapabilityGrid {
+  max-width: 1190px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.foodEnergyCard,
+.foodCapabilityCard {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1eaf7;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 35px rgba(30, 72, 122, 0.045);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.foodEnergyCard:hover,
+.foodCapabilityCard:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 45px rgba(30, 72, 122, 0.08);
+}
+
+
+/* =========================================================
+   CARD ICONS
+========================================================= */
+
+.foodCardIcon {
+  width: 46px;
+
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 17px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #367df6,
+      #1558dd
+    );
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 18px rgba(37, 102, 227, 0.18);
+}
+
+.foodEnergyCard h3,
+.foodCapabilityCard h3 {
+  margin: 0 0 10px;
+
+  color: #122d57;
+
+  font-size: 1.05rem;
+}
+
+.foodEnergyCard p,
+.foodCapabilityCard p {
+  margin: 0;
+
+  color: #697995;
+
+  font-size: 0.84rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   WORKFLOW
+========================================================= */
+
+.foodWorkflowSection {
+  background: #ffffff;
+}
+
+.foodWorkflowGrid {
+  max-width: 1190px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 12px;
+}
+
+.foodWorkflowCard {
+  min-height: 185px;
+
+  padding: 20px;
+
+  background: #f8fbff;
+
+  border: 1px solid #dfe9f7;
+
+  border-radius: 14px;
+}
+
+.foodWorkflowNumber {
+  color: #2d72e6;
+
+  font-size: 0.68rem;
+
+  font-weight: 900;
+}
+
+.foodWorkflowCard h3 {
+  margin: 22px 0 8px;
+
+  color: #102c57;
+
+  font-size: 1rem;
+}
+
+.foodWorkflowCard p {
+  margin: 0;
+
+  color: #697a98;
+
+  font-size: 0.75rem;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   WORKFLOW LINE
+========================================================= */
+
+.foodWorkflowLine {
+  max-width: 1000px;
+
+  margin: 30px auto 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  color: #567091;
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+}
+
+.foodWorkflowLine svg {
+  width: 15px;
+
+  color: #3174e8;
+}
+
+
+/* =========================================================
+   OUTCOMES
+========================================================= */
+
+.foodOutcomeSection {
+  display: grid;
+
+  grid-template-columns: 1fr 1.1fr;
+
+  gap: 55px;
+
+  align-items: center;
+
+  padding: 73px 7%;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #08264d,
+      #0c4470
+    );
+}
+
+.foodOutcomeEyebrow {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #65e2b6;
+
+  font-size: 0.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+}
+
+.foodOutcomeContent h2 {
+  margin: 0;
+
+  font-size: clamp(2rem, 3vw, 3rem);
+
+  line-height: 1.1;
+}
+
+.foodOutcomeContent p {
+  max-width: 570px;
+
+  margin: 17px 0 0;
+
+  color: rgba(255, 255, 255, 0.67);
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   OUTCOME METRICS
+========================================================= */
+
+.foodOutcomeMetrics {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 13px;
+}
+
+.foodOutcomeMetrics > div {
+  position: relative;
+
+  min-height: 95px;
+
+  padding: 18px;
+
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.065);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 13px;
+}
+
+.foodOutcomeMetrics svg {
+  color: #5ce0b2;
+}
+
+.foodOutcomeMetrics span {
+  color: rgba(255, 255, 255, 0.77);
+
+  font-size: 0.82rem;
+
+  font-weight: 700;
+}
+
+.foodOutcomeMetrics strong {
+  color: #65e2b5;
+
+  font-size: 1.8rem;
+}
+
+
+/* =========================================================
+   FOOD SECTORS
+========================================================= */
+
+.foodSectorSection {
+  background: #f6f9ff;
+}
+
+.foodSectorGrid {
+  max-width: 980px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 13px;
+}
+
+.foodSectorItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 17px;
+
+  color: #18345f;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e9f6;
+
+  border-radius: 12px;
+
+  font-size: 0.82rem;
+
+  font-weight: 800;
+}
+
+.foodSectorItem svg {
+  flex-shrink: 0;
+
+  color: #2b78e8;
+}
+
+
+/* =========================================================
+   EXISTING INFRASTRUCTURE
+========================================================= */
+
+.foodInfrastructureSection {
+  padding: 88px 7%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 65px;
+
+  background: #ffffff;
+}
+
+.foodInfrastructureContent {
+  max-width: 650px;
+}
+
+.foodInfrastructureTags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.foodInfrastructureTags span {
+  padding: 8px 11px;
+
+  color: #38577f;
+
+  background: #f2f7fd;
+
+  border: 1px solid #dfe9f6;
+
+  border-radius: 7px;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   ARCHITECTURE PANEL
+========================================================= */
+
+.foodArchitecturePanel {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 27px;
+
+  background: #f4f8fe;
+
+  border: 1px solid #dbe7f5;
+
+  border-radius: 18px;
+}
+
+.foodArchitectureNode {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  color: #17345d;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e9f6;
+
+  border-radius: 11px;
+
+  box-sizing: border-box;
+
+  font-size: 0.84rem;
+
+  font-weight: 800;
+}
+
+.foodArchitectureNode svg {
+  color: #2b72e9;
+}
+
+.foodArchitectureActive {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1862db,
+      #148a9e
+    );
+
+  border-color: transparent;
+}
+
+.foodArchitectureActive svg {
+  color: #ffffff;
+}
+
+.foodArchitecturePanel > svg {
+  color: #7390b5;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   CORE AI CAPABILITIES
+========================================================= */
+
+.foodCapabilitiesSection {
+  background: #f5f9ff;
+}
+
+
+/* =========================================================
+   30-DAY PILOT
+========================================================= */
+
+.foodPilotSection {
+  padding: 90px 7%;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 65px;
+
+  align-items: center;
+
+  background: #ffffff;
+}
+
+.foodPilotContent {
+  max-width: 700px;
+}
+
+.foodPilotChecks {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.foodPilotChecks span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #405d82;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+}
+
+.foodPilotChecks svg {
+  flex-shrink: 0;
+
+  color: #2177e7;
+}
+
+
+/* =========================================================
+   PILOT CTA PANEL
+========================================================= */
+
+.foodPilotAction {
+  padding: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background:
+    linear-gradient(
+      145deg,
+      #092a54,
+      #0c4b70
+    );
+
+  border-radius: 20px;
+
+  color: #ffffff;
+}
+
+.foodPilotAction > span {
+  color: #63e1b4;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.foodPilotAction > strong {
+  margin-top: 11px;
+
+  font-size: 1.35rem;
+
+  line-height: 1.35;
+}
+
+.foodPilotButton {
+  margin-top: 24px;
+
+  padding: 13px 16px;
+
+  color: #062d26;
+
+  background: #5ee1b5;
+
+  border-radius: 9px;
+}
+
+.foodPilotButton:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(55, 218, 167, 0.2);
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.foodFinalCta {
+  padding: 90px 7%;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071d3d,
+      #0a3e69
+    );
+}
+
+.foodFinalCta > span {
+  color: #62e1b4;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.foodFinalCta h2 {
+  max-width: 900px;
+
+  margin: 13px auto 0;
+
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+
+  line-height: 1.1;
+}
+
+.foodFinalCta p {
+  max-width: 650px;
+
+  margin: 17px auto 0;
+
+  color: rgba(255, 255, 255, 0.67);
+
+  line-height: 1.65;
+}
+
+.foodFinalCta > div {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .foodManufacturingHero {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding-top: 75px;
+  }
+
+  .foodManufacturingHeroPanel {
+    max-width: 720px;
+  }
+
+  .foodEnergyGrid,
+  .foodCapabilityGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foodWorkflowGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .foodWorkflowLine {
+    display: none;
+  }
+
+  .foodSectorGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foodInfrastructureSection,
+  .foodPilotSection,
+  .foodOutcomeSection {
+    grid-template-columns: 1fr;
+  }
+
+  .foodArchitecturePanel {
+    max-width: 720px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .foodManufacturingHero,
+  .foodSection,
+  .foodInfrastructureSection,
+  .foodPilotSection,
+  .foodFinalCta,
+  .foodOutcomeSection {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .foodManufacturingHero {
+    min-height: auto;
+
+    padding-top: 65px;
+
+    padding-bottom: 65px;
+  }
+
+  .foodManufacturingHero h1 {
+    font-size: 2.55rem;
+  }
+
+  .foodManufacturingHeroText {
+    font-size: 0.96rem;
+  }
+
+  .foodManufacturingHeroActions {
+    flex-direction: column;
+  }
+
+  .foodPrimaryButton,
+  .foodSecondaryButton {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .foodManufacturingHeroPoints {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .foodHeroMetricGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .foodHeroFlow {
+    display: none;
+  }
+
+  .foodEnergyGrid,
+  .foodCapabilityGrid,
+  .foodWorkflowGrid,
+  .foodSectorGrid,
+  .foodOutcomeMetrics,
+  .foodPilotChecks {
+    grid-template-columns: 1fr;
+  }
+
+  .foodSection {
+    padding-top: 70px;
+
+    padding-bottom: 70px;
+  }
+
+  .foodSectionHeading {
+    margin-bottom: 35px;
+  }
+
+  .foodSectionHeading h2,
+  .foodInfrastructureContent h2,
+  .foodPilotContent h2 {
+    font-size: 2rem;
+  }
+
+  .foodOutcomeSection {
+    padding-top: 60px;
+
+    padding-bottom: 60px;
+  }
+
+  .foodInfrastructureSection,
+  .foodPilotSection {
+    padding-top: 70px;
+
+    padding-bottom: 70px;
+
+    gap: 42px;
+  }
+
+  .foodFinalCta {
+    padding-top: 70px;
+
+    padding-bottom: 70px;
+  }
+
+  .foodFinalCta > div {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+}

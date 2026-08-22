@@ -35,6 +35,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import BookPilotPage from "./pages/BookPilotPage";
 import BookPilotDetailsPage from "./pages/BookPilotDetailsPage";
 import DERPortfolioAI from "./pages/DERPortfolioAI";
+import FoodManufacturingAIPage from "./pages/FoodManufacturingAIPage";
 
 function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -199,6 +200,14 @@ function App() {
           path="/local-government-ai"
           element={
             <LocalGovernmentAI
+              openPilotModal={openPilotModal}
+            />
+          }
+        />
+        <Route
+          path="/food-manufacturing-ai"
+          element={
+            <FoodManufacturingAIPage
               openPilotModal={openPilotModal}
             />
           }
