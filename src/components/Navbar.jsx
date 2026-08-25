@@ -177,8 +177,14 @@ export default function Navbar({ openPilotModal }) {
         />
 
         <div className="brandText">
-          <strong>EnerG IQ Tech</strong>
-          <span>Edge AI for Lower Energy Costs & CO₂ Emissions</span>
+          <strong className="brandName">
+            <span className="brandEner">Ener</span><span className="brandG">G</span>
+            <span className="brandIQTech"> IQ Tech</span>
+          </strong>
+
+          <span className="brandTagline">
+            Edge AI for Lower Energy Costs & CO₂ Emissions
+          </span>
         </div>
       </Link>
 
