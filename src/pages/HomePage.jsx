@@ -37,6 +37,7 @@ import {
   Database,
   Landmark,
   SunMedium,
+  UtensilsCrossed,
 } from "lucide-react";
 
 const fadeUp = {
@@ -191,6 +192,15 @@ const industrySolutions = [
     path: "/manufacturing-ai",
     text: "Reduce energy costs and associated CO₂ emissions across production systems, process loads, utilities, motors and refrigeration-intensive operations.",
     assets: "Boilers • Compressors • Motors • Production Lines",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Food & Beverage AI",
+    path: "/food-manufacturing-ai",
+    text:
+      "Reduce energy costs, peak demand and associated CO₂ emissions across refrigeration, freezing, thermal processing and production operations while maintaining food safety, product quality and operational requirements.",
+    assets:
+      "Refrigeration • Freezers • Thermal Processing • Production Lines",
   },
   {
     icon: Warehouse,
