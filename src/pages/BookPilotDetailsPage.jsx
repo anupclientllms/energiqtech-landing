@@ -527,6 +527,30 @@ export default function BookPilotDetailsPage() {
 
         if (!response.ok) {
 
+          if (response.status === 409) {
+            setSubmitError(
+              result?.detail ||
+              "This time has just been booked. Please choose another available time."
+            );
+
+            window.setTimeout(() => {
+              navigate(
+                "/book-discussion",
+                {
+                  replace: true,
+                  state: {
+                    bookingConflict: true,
+                    message:
+                      result?.detail ||
+                      "This time has just been booked. Please choose another available time.",
+                  },
+                }
+              );
+            }, 1200);
+
+            return;
+          }
+
           throw new Error(
             result?.detail ||
             "Unable to create the Zoom meeting."

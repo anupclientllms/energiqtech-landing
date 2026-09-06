@@ -37,6 +37,9 @@ import BookPilotDetailsPage from "./pages/BookPilotDetailsPage";
 import DERPortfolioAI from "./pages/DERPortfolioAI";
 import FoodManufacturingAIPage from "./pages/FoodManufacturingAIPage";
 
+import EventsPage from "./pages/EventsPage";
+import FineFoodAustralia2026Page from "./pages/FineFoodAustralia2026Page";
+
 function App() {
   const [contactOpen, setContactOpen] = useState(false);
 
@@ -222,6 +225,17 @@ function App() {
           path="/book-discussion/details"
           element={<BookPilotDetailsPage />}
         />
+
+        <Route
+          path="/events"
+          element={<EventsPage />}
+        />
+
+        <Route
+          path="/events/fine-food-australia-2026"
+          element={<FineFoodAustralia2026Page />}
+        />
+
       </Routes>
 
       <Footer />

@@ -1,7 +1,8 @@
 # api/index.py
 
 import os
-from datetime import datetime
+import asyncio
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -33,8 +34,12 @@ APP_TIMEZONE = "Australia/Melbourne"
 
 app = FastAPI(
     title="EnerG IQ Tech Booking API",
-    version="1.3.0",
+    version="1.4.0",
 )
+
+# Serialises booking checks/creation inside the current API process.
+# The Zoom schedule is still checked immediately before creation.
+BOOKING_LOCK = asyncio.Lock()
 
 
 # ============================================================
@@ -94,7 +99,7 @@ async def health():
     return {
         "status": "ok",
         "service": "EnerG IQ Tech Booking API",
-        "version": "1.3.0",
+        "version": "1.4.0",
     }
 
 
@@ -291,6 +296,197 @@ async def get_zoom_access_token() -> str:
 
 
 # ============================================================
+# ZOOM AVAILABILITY / CONFLICT CHECK
+# ============================================================
+
+def parse_zoom_datetime(value: str, fallback_timezone: str = APP_TIMEZONE) -> datetime:
+    """
+    Convert Zoom start_time values into timezone-aware datetimes.
+    Zoom commonly returns UTC timestamps ending in Z.
+    """
+    if not value:
+        raise ValueError("Missing Zoom start_time")
+
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=ZoneInfo(fallback_timezone))
+
+    return parsed
+
+
+async def list_scheduled_zoom_meetings(access_token: str) -> list[dict]:
+    """
+    Fetch scheduled meetings for the configured Zoom host.
+    """
+    url = (
+        "https://api.zoom.us/v2/"
+        f"users/{ZOOM_HOST_USER_ID}/meetings"
+    )
+
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+    }
+
+    params = {
+        "type": "scheduled",
+        "page_size": 100,
+    }
+
+    meetings = []
+    next_page_token = ""
+
+    try:
+        async with httpx.AsyncClient(timeout=20.0) as client:
+            while True:
+                if next_page_token:
+                    params["next_page_token"] = next_page_token
+                else:
+                    params.pop("next_page_token", None)
+
+                response = await client.get(
+                    url,
+                    headers=headers,
+                    params=params,
+                )
+
+                if response.status_code != 200:
+                    print(
+                        "Zoom list meetings error:",
+                        response.status_code,
+                        response.text,
+                    )
+                    raise HTTPException(
+                        status_code=502,
+                        detail="Unable to check Zoom availability.",
+                    )
+
+                payload = response.json()
+                meetings.extend(payload.get("meetings", []))
+
+                next_page_token = payload.get("next_page_token") or ""
+                if not next_page_token:
+                    break
+
+    except httpx.RequestError as exc:
+        print("Zoom availability connection error:", repr(exc))
+        raise HTTPException(
+            status_code=502,
+            detail="Unable to connect to Zoom availability service.",
+        )
+
+    return meetings
+
+
+def meeting_overlaps_slot(
+    meeting: dict,
+    requested_start: datetime,
+    requested_duration: int,
+) -> bool:
+    """
+    Return True when a scheduled Zoom meeting overlaps the requested slot.
+    """
+    start_value = meeting.get("start_time")
+    if not start_value:
+        return False
+
+    try:
+        meeting_start = parse_zoom_datetime(
+            start_value,
+            APP_TIMEZONE,
+        ).astimezone(
+            ZoneInfo(APP_TIMEZONE)
+        )
+    except Exception:
+        return False
+
+    meeting_duration = int(meeting.get("duration") or 30)
+    meeting_end = meeting_start + timedelta(minutes=meeting_duration)
+
+    requested_end = requested_start + timedelta(
+        minutes=requested_duration
+    )
+
+    return (
+        meeting_start < requested_end
+        and meeting_end > requested_start
+    )
+
+
+async def ensure_slot_available(
+    access_token: str,
+    date_string: str,
+    time_string: str,
+    duration: int = 30,
+) -> None:
+    requested_start = validate_booking_datetime(
+        date_string,
+        time_string,
+        APP_TIMEZONE,
+    )
+
+    meetings = await list_scheduled_zoom_meetings(
+        access_token
+    )
+
+    for meeting in meetings:
+        if meeting_overlaps_slot(
+            meeting,
+            requested_start,
+            duration,
+        ):
+            raise HTTPException(
+                status_code=409,
+                detail=(
+                    "This time has just been booked. "
+                    "Please choose another available time."
+                ),
+            )
+
+
+@app.get("/api/booking-availability")
+async def booking_availability(date: str):
+    """
+    Return unavailable 30-minute start times for the requested Melbourne date.
+    """
+    normalised_date = normalise_date(date)
+    access_token = await get_zoom_access_token()
+
+    meetings = await list_scheduled_zoom_meetings(
+        access_token
+    )
+
+    timezone = ZoneInfo(APP_TIMEZONE)
+    booked_times: set[str] = set()
+
+    for meeting in meetings:
+        start_value = meeting.get("start_time")
+        if not start_value:
+            continue
+
+        try:
+            local_start = parse_zoom_datetime(
+                start_value,
+                APP_TIMEZONE,
+            ).astimezone(timezone)
+        except Exception:
+            continue
+
+        if local_start.strftime("%Y-%m-%d") != normalised_date:
+            continue
+
+        booked_times.add(
+            local_start.strftime("%H:%M")
+        )
+
+    return {
+        "date": normalised_date,
+        "timezone": APP_TIMEZONE,
+        "bookedTimes": sorted(booked_times),
+    }
+
+
+# ============================================================
 # CREATE ZOOM MEETING
 # ============================================================
 
@@ -414,7 +610,8 @@ async def create_zoom_meeting(
 @app.post("/api/book-discussion")
 async def book_pilot(request_data: BookPilotRequest):
     """
-    Create a real 30-minute Zoom meeting.
+    Check the Zoom host calendar again immediately before creation,
+    reject conflicts, then create the real 30-minute Zoom meeting.
     Email confirmation is handled by EmailJS in the React frontend.
     """
 
@@ -424,10 +621,12 @@ async def book_pilot(request_data: BookPilotRequest):
             detail="EnerG IQ Tech discussions are currently 30 minutes.",
         )
 
-    # Validate/normalise early so the API returns a clear 400 before
-    # requesting a Zoom token if the frontend sent malformed values.
-    normalised_date = normalise_date(request_data.booking.date)
-    normalised_time = normalise_time(request_data.booking.time)
+    normalised_date = normalise_date(
+        request_data.booking.date
+    )
+    normalised_time = normalise_time(
+        request_data.booking.time
+    )
 
     request_data.booking.date = normalised_date
     request_data.booking.time = normalised_time
@@ -435,10 +634,20 @@ async def book_pilot(request_data: BookPilotRequest):
 
     access_token = await get_zoom_access_token()
 
-    meeting, zoom_timezone = await create_zoom_meeting(
-        access_token,
-        request_data,
-    )
+    async with BOOKING_LOCK:
+        # Critical server-side protection:
+        # never trust the slot list previously shown in the browser.
+        await ensure_slot_available(
+            access_token,
+            normalised_date,
+            normalised_time,
+            request_data.booking.duration,
+        )
+
+        meeting, zoom_timezone = await create_zoom_meeting(
+            access_token,
+            request_data,
+        )
 
     join_url = meeting.get("join_url")
 

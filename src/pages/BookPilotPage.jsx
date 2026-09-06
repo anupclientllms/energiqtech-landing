@@ -1,7 +1,7 @@
 // src/pages/BookPilotPage.jsx
 
-import { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import {
   ArrowLeft,
@@ -104,6 +104,7 @@ function sameDate(a, b) {
 
 export default function BookPilotPage() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const today = useMemo(() => {
     const date = new Date();
@@ -129,6 +130,15 @@ export default function BookPilotPage() {
 
 
   const [selectedTime, setSelectedTime] =
+    useState("");
+
+  const [bookedTimes, setBookedTimes] =
+    useState([]);
+
+  const [availabilityLoading, setAvailabilityLoading] =
+    useState(false);
+
+  const [availabilityError, setAvailabilityError] =
     useState("");
 
 
@@ -232,8 +242,96 @@ export default function BookPilotPage() {
   };
 
 
+  useEffect(() => {
+    if (!selectedDate) {
+      setBookedTimes([]);
+      setAvailabilityError("");
+      return;
+    }
+
+    let cancelled = false;
+
+    const loadAvailability = async () => {
+      setAvailabilityLoading(true);
+      setAvailabilityError("");
+      setSelectedTime("");
+
+      const dateValue = [
+        selectedDate.getFullYear(),
+        String(
+          selectedDate.getMonth() + 1
+        ).padStart(2, "0"),
+        String(
+          selectedDate.getDate()
+        ).padStart(2, "0"),
+      ].join("-");
+
+      const bookingApiUrl =
+        import.meta.env.VITE_BOOKING_API_URL ||
+        "/api/book-discussion";
+
+      const availabilityApiUrl =
+        bookingApiUrl.replace(
+          /\/api\/book-discussion\/?$/,
+          "/api/booking-availability"
+        );
+
+      try {
+        const response = await fetch(
+          `${availabilityApiUrl}?date=${encodeURIComponent(
+            dateValue
+          )}`
+        );
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            result?.detail ||
+            "Unable to load current availability."
+          );
+        }
+
+        if (!cancelled) {
+          setBookedTimes(
+            Array.isArray(result?.bookedTimes)
+              ? result.bookedTimes
+              : []
+          );
+        }
+      } catch (error) {
+        console.error(
+          "EnerG IQ availability check failed:",
+          error
+        );
+
+        if (!cancelled) {
+          setBookedTimes([]);
+          setAvailabilityError(
+            "We could not refresh availability. Please try again."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setAvailabilityLoading(false);
+        }
+      }
+    };
+
+    loadAvailability();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedDate]);
+
+
   const continueBooking = () => {
-    if (!selectedDate || !selectedTime) {
+    if (
+      !selectedDate ||
+      !selectedTime ||
+      bookedTimes.includes(selectedTime)
+    ) {
       return;
     }
 
@@ -479,6 +577,16 @@ export default function BookPilotPage() {
           </div>
 
 
+          {location.state?.bookingConflict && (
+            <div
+              className="bookPilotAvailabilityError"
+              role="alert"
+            >
+              {location.state.message ||
+                "That time was just booked. Please choose another available time."}
+            </div>
+          )}
+
           <div className="bookPilotTimezone">
 
             <Clock3 size={17} />
@@ -516,28 +624,64 @@ export default function BookPilotPage() {
 
           {selectedDate && (
 
-            <div className="bookPilotSlots">
+            <>
+              {availabilityLoading && (
+                <div className="bookPilotEmptyState">
+                  <Clock3 size={30} />
+                  <strong>
+                    Checking live availability...
+                  </strong>
+                </div>
+              )}
 
-              {TIME_SLOTS.map((time) => (
+              {!availabilityLoading && (
+                <div className="bookPilotSlots">
 
-                <button
-                  type="button"
-                  key={time}
-                  className={
-                    selectedTime === time
-                      ? "bookPilotSlot selected"
-                      : "bookPilotSlot"
-                  }
-                  onClick={() =>
-                    setSelectedTime(time)
-                  }
+                  {TIME_SLOTS.map((time) => {
+                    const unavailable =
+                      bookedTimes.includes(time);
+
+                    return (
+                      <button
+                        type="button"
+                        key={time}
+                        disabled={unavailable}
+                        className={
+                          unavailable
+                            ? "bookPilotSlot unavailable"
+                            : selectedTime === time
+                              ? "bookPilotSlot selected"
+                              : "bookPilotSlot"
+                        }
+                        onClick={() =>
+                          setSelectedTime(time)
+                        }
+                        title={
+                          unavailable
+                            ? "Already booked"
+                            : "Available"
+                        }
+                      >
+                        {formatTime(time)}
+                        {unavailable
+                          ? " — Booked"
+                          : ""}
+                      </button>
+                    );
+                  })}
+
+                </div>
+              )}
+
+              {availabilityError && (
+                <div
+                  className="bookPilotAvailabilityError"
+                  role="alert"
                 >
-                  {formatTime(time)}
-                </button>
-
-              ))}
-
-            </div>
+                  {availabilityError}
+                </div>
+              )}
+            </>
 
           )}
 
