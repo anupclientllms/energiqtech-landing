@@ -34,6 +34,15 @@ export default function Footer() {
           <Link to="/intellectual-property">
             Intellectual Property
           </Link>
+
+          <a
+            href="https://www.linkedin.com/products/automation-spectrum-pty-ltd-energ-iq-tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="EnerG IQ Tech on LinkedIn"
+          >
+            LinkedIn
+          </a>
         </div>
 
       </div>
