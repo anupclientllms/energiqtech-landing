@@ -620,7 +620,262 @@
   margin-left: 0;
   color: #c4d7eb;
 }
+/* =========================================================
+   FEATURED INDUSTRY ENGAGEMENT
+   Uses core EnerG IQ Events blue visual language
+========================================================= */
 
+.eventsEngagementHighlight {
+  padding-top: 10px;
+}
+
+.eventsEngagementHighlightCard {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 26px;
+
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 38px 42px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe5f2;
+  border-left: 4px solid #2468df;
+  border-radius: 22px;
+
+  box-shadow: 0 12px 30px rgba(28, 58, 102, 0.06);
+
+  overflow: hidden;
+}
+
+
+/* subtle brand-blue accent */
+
+.eventsEngagementHighlightCard::after {
+  content: "";
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  right: -105px;
+  top: -125px;
+
+  border-radius: 50%;
+
+  background: rgba(36, 104, 223, 0.045);
+
+  pointer-events: none;
+}
+
+
+/* ICON */
+
+.eventsEngagementHighlightIcon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #3479ef,
+    #194fbd
+  );
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 22px rgba(36, 104, 223, 0.16);
+}
+
+
+/* CONTENT */
+
+.eventsEngagementHighlightContent {
+  position: relative;
+  z-index: 1;
+}
+
+
+.eventsEngagementHighlightTop {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+
+/* same eyebrow language used across Events page */
+
+.eventsEngagementEyebrow {
+  color: #2260d8;
+
+  font-size: 0.76rem;
+  font-weight: 850;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+/* category pill */
+
+.eventsEngagementType {
+  padding: 5px 10px;
+
+  color: #205acb;
+
+  background: #eff6ff;
+
+  border: 1px solid #cbdcf3;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+
+/* TITLE */
+
+.eventsEngagementHighlightContent h2 {
+  max-width: 900px;
+
+  margin: 0 0 17px;
+
+  color: #102344;
+
+  font-size: clamp(1.65rem, 2.4vw, 2.3rem);
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+}
+
+
+/* BODY */
+
+.eventsEngagementHighlightContent > p {
+  max-width: 1000px;
+
+  margin: 0 0 11px;
+
+  color: #667894;
+
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.eventsEngagementHighlightContent > p strong {
+  color: #27466f;
+}
+
+
+/* BOTTOM ROW */
+
+.eventsEngagementHighlightBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  margin-top: 23px;
+  padding-top: 20px;
+
+  border-top: 1px solid #dbe5f2;
+}
+
+
+/* DATE / LOCATION */
+
+.eventsEngagementMeta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.eventsEngagementMeta span {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #72819b;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.eventsEngagementMeta svg {
+  color: #2468df;
+}
+
+
+/* EXTERNAL LINK */
+
+.eventsEngagementLink {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #2468df;
+
+  font-size: 0.85rem;
+  font-weight: 850;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.eventsEngagementLink:hover {
+  color: #194fbd;
+  transform: translateX(2px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .eventsEngagementHighlightCard {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 28px 24px;
+  }
+
+  .eventsEngagementHighlightIcon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .eventsEngagementHighlightBottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .eventsEngagementMeta {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 9px;
+  }
+}
 /* =========================================================
    RESPONSIVE
 ========================================================= */

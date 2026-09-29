@@ -369,7 +369,77 @@ export default function EventsPage() {
           })}
         </motion.div>
       </section>
+      {/* =====================================================
+          LATEST INDUSTRY ENGAGEMENT
+      ===================================================== */}
 
+      <section className="eventsSection eventsEngagementHighlight">
+        <motion.div
+          className="eventsEngagementHighlightCard"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.55, ease: "easeOut" }}
+        >
+          <div className="eventsEngagementHighlightIcon">
+            <UtensilsCrossed size={28} />
+          </div>
+
+          <div className="eventsEngagementHighlightContent">
+            <div className="eventsEngagementHighlightTop">
+              <span className="eventsEngagementEyebrow">
+                Latest Industry Engagement
+              </span>
+
+              <span className="eventsEngagementType">
+                Food Manufacturing
+              </span>
+            </div>
+
+            <h2>
+              Engaging with Melbourne&apos;s Food Manufacturing Community
+            </h2>
+
+            <p>
+              EnerG IQ Tech participated in Melbourne&apos;s North Food Group&apos;s{" "}
+              <strong>Growth Playbook: Taking Food Further</strong>, connecting with
+              food-industry leaders and manufacturers around the operational
+              challenges of scaling production.
+            </p>
+
+            <p>
+              The engagement supports EnerG IQ Tech&apos;s ongoing work with
+              energy-intensive food manufacturing and cold-chain operations,
+              including refrigeration, production loads and peak-demand
+              optimisation.
+            </p>
+
+            <div className="eventsEngagementHighlightBottom">
+              <div className="eventsEngagementMeta">
+                <span>
+                  <CalendarDays size={15} />
+                  17 September 2026
+                </span>
+
+                <span>
+                  <MapPin size={15} />
+                  Melbourne, Australia
+                </span>
+              </div>
+
+              <a
+                href="https://northlink.org.au/growth-playbook-what-does-it-take-to-scale-a-food-business/"
+                target="_blank"
+                rel="noreferrer"
+                className="eventsEngagementLink"
+              >
+                View NORTH Link Event Recap
+                <ExternalLink size={15} />
+              </a>
+            </div>
+          </div>
+        </motion.div>
+      </section>
       {/* =====================================================
           EVENT DIRECTORY
           Fine Food card uses Finefoodevent_floor_pic.jpg
