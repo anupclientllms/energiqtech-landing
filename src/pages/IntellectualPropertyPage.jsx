@@ -1,3 +1,4 @@
+
 // src/pages/IntellectualProperty.jsx
 
 import "../styles/LegalPage.css";
@@ -40,7 +41,7 @@ export default function IntellectualProperty() {
       <section className="legalContent">
 
         <p>
-          <strong>Effective date:</strong> August 2026
+          <strong>Effective date:</strong> 21 October 2026
         </p>
 
 
@@ -53,19 +54,28 @@ export default function IntellectualProperty() {
         </h2>
 
         <p>
-          EnerG IQ Tech is an AI-driven energy optimisation platform
-          developed by Automation Spectrum Pty Ltd to support the reduction
-          of energy waste, operating costs, peak demand and associated CO₂
-          emissions across energy-intensive operations and connected energy
+          EnerG IQ Tech is an AI-driven industrial energy optimisation
+          platform operated and commercialised by EnerG IQ Tech Pty Ltd
+          (ABN 67 703 353 468), an Australian company.
+        </p>
+
+        <p>
+          The platform was originally conceptualised and developed
+          through founder-led research and technology development to
+          support the reduction of energy waste, operating costs,
+          peak demand and associated CO₂ emissions across
+          energy-intensive operations and connected energy
           infrastructure.
         </p>
 
         <p>
-          Unless otherwise stated, intellectual property associated with
-          EnerG IQ Tech, including its software, architectures, workflows,
-          optimisation methodologies, documentation, product concepts and
-          related materials, is owned by Automation Spectrum Pty Ltd and/or
-          its applicable licensors.
+          Intellectual property associated with EnerG IQ Tech,
+          including its software, architectures, workflows,
+          optimisation methodologies, documentation, product concepts
+          and related materials, remains subject to applicable
+          ownership, licensing and other legal arrangements.
+          Unless otherwise stated, rights remain with their
+          respective lawful owners or rights holders.
         </p>
 
 
@@ -294,15 +304,15 @@ export default function IntellectualProperty() {
           EnerG IQ Tech, AI Energy Gateway, Digital Twin Intelligence,
           Decision Agents, Savings Intelligence and related names, logos,
           icons, slogans and brand assets may function as trademarks,
-          service marks or trade indicia of Automation Spectrum Pty Ltd
-          and/or their respective rights holders.
+          service marks or trade indicia of their respective lawful
+          rights holders.
         </p>
 
         <p>
           These names and brand assets must not be used in a manner that
           may cause confusion, imply endorsement, suggest partnership or
-          misrepresent a relationship with EnerG IQ Tech or Automation
-          Spectrum Pty Ltd without appropriate permission.
+          misrepresent a relationship with EnerG IQ Tech Pty Ltd without
+          appropriate permission.
         </p>
 
 
@@ -339,9 +349,9 @@ export default function IntellectualProperty() {
           Pilot proposals, technical documentation, demonstrations,
           commercial materials, optimisation assessments and
           customer-specific or partner-specific materials shared by
-          EnerG IQ Tech remain subject to the applicable intellectual
-          property and confidentiality arrangements unless a separate
-          written agreement states otherwise.
+          EnerG IQ Tech Pty Ltd remain subject to the applicable
+          intellectual property and confidentiality arrangements unless
+          a separate written agreement states otherwise.
         </p>
 
         <p>
@@ -385,8 +395,8 @@ export default function IntellectualProperty() {
         </h2>
 
         <p>
-          Automation Spectrum Pty Ltd and/or the applicable rights holder
-          may seek patent, trademark, design, copyright or other available
+          EnerG IQ Tech Pty Ltd and/or the applicable rights holders may
+          seek patent, trademark, design, copyright or other available
           intellectual property protection for current or future EnerG IQ
           Tech technologies, products, services, methods, workflows,
           software and brands.
@@ -471,9 +481,9 @@ export default function IntellectualProperty() {
 
         <p>
           Nothing on this website should be interpreted as limiting the
-          ability of Automation Spectrum Pty Ltd or another applicable
-          rights holder to seek, register, commercialise or enforce
-          intellectual property rights in the future.
+          ability of EnerG IQ Tech Pty Ltd or another applicable rights
+          holder to seek, register, commercialise or enforce intellectual
+          property rights in the future.
         </p>
 
 
@@ -502,19 +512,19 @@ export default function IntellectualProperty() {
 
         <p>
           <strong>
-            Automation Spectrum Pty Ltd
+            EnerG IQ Tech Pty Ltd
           </strong>
 
           <br />
 
-          EnerG IQ Tech
+          ABN: 67 703 353 468
 
           <br />
 
           Email:{" "}
 
-          <a href="mailto:contact@automationspectrum.com.au">
-            contact@automationspectrum.com.au
+          <a href="mailto:anup@energiqtech.com">
+            anup@energiqtech.com
           </a>
         </p>
 
@@ -525,7 +535,7 @@ export default function IntellectualProperty() {
 
         <div className="legalDisclaimer">
 
-          © 2026 EnerG IQ Tech.
+          © 2026 EnerG IQ Tech Pty Ltd.
 
           <br />
           <br />
@@ -535,9 +545,9 @@ export default function IntellectualProperty() {
           energy optimisation methodologies, energy and carbon
           intelligence methods, connected-energy-asset integration
           approaches, software, documentation, designs and associated
-          intellectual property are developed and/or owned by
-          Automation Spectrum Pty Ltd or the applicable rights holder,
-          unless otherwise stated.
+          intellectual property are subject to the rights of their
+          respective lawful owners or rights holders, unless
+          otherwise stated.
 
         </div>
 

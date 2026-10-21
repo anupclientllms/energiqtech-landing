@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,7 +29,7 @@
 
     <meta
       name="author"
-      content="EnerG IQ Tech"
+      content="EnerG IQ Tech Pty Ltd"
     />
 
     <meta
@@ -54,6 +55,7 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="shortcut icon" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
+
 
     <!-- =====================================================
          OPEN GRAPH
@@ -126,23 +128,55 @@
 
 
     <!-- =====================================================
-         STRUCTURED DATA
+         STRUCTURED DATA - ORGANISATION
          ===================================================== -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "EnerG IQ Tech",
+        "@id": "https://energiqtech.com/#organization",
+        "name": "EnerG IQ Tech Pty Ltd",
+        "legalName": "EnerG IQ Tech Pty Ltd",
+        "alternateName": "EnerG IQ Tech",
         "url": "https://energiqtech.com/",
         "logo": "https://energiqtech.com/favicon.png",
-        "description": "EnerG IQ Tech is an AI-driven energy optimisation platform helping energy-intensive organisations reduce energy waste, operating costs, peak demand and associated CO₂ emissions using Edge AI, Digital Twins and governed AI optimisation.",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Automation Spectrum Pty Ltd"
+        "description": "EnerG IQ Tech is an Australian industrial energy optimisation technology platform combining Edge AI, Digital Twins, AI Decision Agents and governed operational workflows to help energy-intensive organisations reduce energy waste, operating costs, peak demand and associated CO₂ emissions.",
+        "foundingDate": "2026-10-19",
+        "taxID": "ABN 67 703 353 468",
+        "email": "anup@energiqtech.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Melbourne",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "EnerG IQ Tech"
         }
       }
     </script>
+
+
+    <!-- =====================================================
+         STRUCTURED DATA - WEBSITE
+         ===================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://energiqtech.com/#website",
+        "url": "https://energiqtech.com/",
+        "name": "EnerG IQ Tech",
+        "publisher": {
+          "@id": "https://energiqtech.com/#organization"
+        },
+        "inLanguage": "en-AU"
+      }
+    </script>
+
   </head>
 
   <body>

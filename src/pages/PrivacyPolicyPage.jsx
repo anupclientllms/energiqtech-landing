@@ -1,7 +1,7 @@
+
 // src/pages/PrivacyPolicy.jsx
 
 import "../styles/LegalPage.css";
-
 
 export default function PrivacyPolicy() {
   return (
@@ -22,9 +22,9 @@ export default function PrivacyPolicy() {
         </h1>
 
         <p>
-          EnerG IQ Tech is committed to protecting the privacy of website
-          visitors, customers, pilot partners and other stakeholders who
-          engage with our AI-driven energy optimisation technology.
+          EnerG IQ Tech Pty Ltd is committed to protecting the privacy of
+          website visitors, customers, pilot partners and other stakeholders
+          who engage with our AI-driven energy optimisation technology.
         </p>
 
       </section>
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
       <section className="legalContent">
 
         <p>
-          <strong>Effective date:</strong> August 2026
+          <strong>Effective date:</strong> 21 October 2026
         </p>
 
 
@@ -50,8 +50,9 @@ export default function PrivacyPolicy() {
         </h2>
 
         <p>
-          EnerG IQ Tech is an AI-driven energy optimisation platform
-          developed by Automation Spectrum Pty Ltd.
+          EnerG IQ Tech Pty Ltd (ABN 67 703 353 468) is an Australian
+          company responsible for the EnerG IQ Tech industrial energy
+          optimisation platform.
         </p>
 
         <p>
@@ -77,7 +78,6 @@ export default function PrivacyPolicy() {
           demonstrations, customer or partner communications and other
           direct business correspondence.
         </p>
-
 
         <ul>
 
@@ -134,7 +134,6 @@ export default function PrivacyPolicy() {
         <p>
           Information may be used to:
         </p>
-
 
         <ul>
 
@@ -200,7 +199,6 @@ export default function PrivacyPolicy() {
           relating to:
         </p>
 
-
         <ul>
 
           <li>
@@ -254,11 +252,10 @@ export default function PrivacyPolicy() {
 
         </ul>
 
-
         <p>
           Technical, operational and pilot information provided to
-          EnerG IQ Tech will be handled in accordance with applicable
-          agreements and confidentiality obligations.
+          EnerG IQ Tech Pty Ltd will be handled in accordance with
+          applicable agreements and confidentiality obligations.
         </p>
 
 
@@ -335,7 +332,6 @@ export default function PrivacyPolicy() {
           Information may be disclosed where reasonably necessary to:
         </p>
 
-
         <ul>
 
           <li>
@@ -353,7 +349,7 @@ export default function PrivacyPolicy() {
 
           <li>
             Protect the security, rights or legitimate interests of
-            Automation Spectrum Pty Ltd, EnerG IQ Tech or other parties
+            EnerG IQ Tech Pty Ltd or other parties
           </li>
 
           <li>
@@ -436,9 +432,9 @@ export default function PrivacyPolicy() {
 
         <p>
           Third-party services may operate under their own privacy policies
-          and terms. EnerG IQ Tech is not responsible for the privacy
-          practices or content of external websites that it does not
-          control.
+          and terms. EnerG IQ Tech Pty Ltd is not responsible for the
+          privacy practices or content of external websites that it does
+          not control.
         </p>
 
 
@@ -489,23 +485,22 @@ export default function PrivacyPolicy() {
           For privacy-related enquiries, please contact:
         </p>
 
-
         <p>
 
           <strong>
-            Automation Spectrum Pty Ltd
+            EnerG IQ Tech Pty Ltd
           </strong>
 
           <br />
 
-          EnerG IQ Tech
+          ABN: 67 703 353 468
 
           <br />
 
           Email:{" "}
 
-          <a href="mailto:contact@automationspectrum.com.au">
-            contact@automationspectrum.com.au
+          <a href="mailto:anup@energiqtech.com">
+            anup@energiqtech.com
           </a>
 
         </p>
@@ -516,7 +511,7 @@ export default function PrivacyPolicy() {
         ===================================================== */}
 
         <p className="legalDisclaimer">
-          This Privacy Policy describes how EnerG IQ Tech handles
+          This Privacy Policy describes how EnerG IQ Tech Pty Ltd handles
           information provided by website visitors, prospective customers,
           customers, pilot partners and other stakeholders. Customer and
           pilot deployments may be subject to additional contractual,
@@ -528,3 +523,4 @@ export default function PrivacyPolicy() {
     </main>
   );
 }
+

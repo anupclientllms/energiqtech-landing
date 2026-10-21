@@ -1,3 +1,4 @@
+
 .footer {
   width: 100%;
   padding: 28px 7%;
@@ -30,6 +31,13 @@
 .footerRight span {
   font-size: 14px;
   color: #60708c;
+}
+
+/* Company ABN - smaller secondary text */
+.footerRight .footerABN {
+  font-size: 12px;
+  color: #60708c;
+  letter-spacing: 0.2px;
 }
 
 .footerLinks {

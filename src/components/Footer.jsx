@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
@@ -19,7 +20,11 @@ export default function Footer() {
         </span>
 
         <span>
-          Developed by Automation Spectrum Pty Ltd
+          Developed by EnerG IQ Tech Pty Ltd
+        </span>
+
+        <span className="footerABN">
+          ABN 67 703 353 468
         </span>
 
         <div className="footerLinks">
@@ -50,3 +55,4 @@ export default function Footer() {
     </footer>
   );
 }
+

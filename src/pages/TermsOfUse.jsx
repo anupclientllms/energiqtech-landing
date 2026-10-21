@@ -1,3 +1,4 @@
+
 // src/pages/TermsOfUse.jsx
 
 import "../styles/LegalPage.css";
@@ -37,7 +38,7 @@ export default function TermsOfUse() {
       <section className="legalContent">
 
         <p>
-          <strong>Effective date:</strong> August 2026
+          <strong>Effective date:</strong> 21 October 2026
         </p>
 
 
@@ -66,8 +67,8 @@ export default function TermsOfUse() {
 
         <p>
           This website provides general information regarding EnerG IQ Tech,
-          an AI-driven energy optimisation platform developed by Automation
-          Spectrum Pty Ltd.
+          an AI-driven industrial energy optimisation platform operated by
+          EnerG IQ Tech Pty Ltd (ABN 67 703 353 468), an Australian company.
         </p>
 
         <p>
@@ -112,9 +113,11 @@ export default function TermsOfUse() {
         </p>
 
         <p>
-          Unless otherwise stated, applicable rights in EnerG IQ Tech
-          materials are owned by Automation Spectrum Pty Ltd and/or the
-          applicable rights holder.
+          Unless otherwise stated, applicable intellectual property rights
+          in EnerG IQ Tech materials remain with their respective lawful
+          owners or rights holders. EnerG IQ Tech Pty Ltd operates and
+          commercialises the EnerG IQ Tech platform subject to applicable
+          ownership, licensing and other legal arrangements.
         </p>
 
         <p>
@@ -176,9 +179,9 @@ export default function TermsOfUse() {
 
         <p>
           Reasonable efforts may be made to provide accurate and current
-          information. However, EnerG IQ Tech and Automation Spectrum Pty Ltd
-          do not guarantee that all website information will always be
-          complete, current, accurate or suitable for a particular purpose.
+          information. However, EnerG IQ Tech Pty Ltd does not guarantee
+          that all website information will always be complete, current,
+          accurate or suitable for a particular purpose.
         </p>
 
         <p>
@@ -297,9 +300,9 @@ export default function TermsOfUse() {
         </p>
 
         <p>
-          EnerG IQ Tech and Automation Spectrum Pty Ltd are not responsible
-          for the content, availability, security, privacy practices or terms
-          of third-party websites or services that they do not control.
+          EnerG IQ Tech Pty Ltd is not responsible for the content,
+          availability, security, privacy practices or terms of third-party
+          websites or services that it does not control.
         </p>
 
 
@@ -312,11 +315,11 @@ export default function TermsOfUse() {
         </h2>
 
         <p>
-          To the maximum extent permitted by applicable law, Automation
-          Spectrum Pty Ltd and EnerG IQ Tech exclude liability for loss or
-          damage arising solely from reliance on general information
-          published on this website or from access to or use of this website,
-          except where liability cannot lawfully be excluded or limited.
+          To the maximum extent permitted by applicable law, EnerG IQ Tech
+          Pty Ltd excludes liability for loss or damage arising solely from
+          reliance on general information published on this website or from
+          access to or use of this website, except where liability cannot
+          lawfully be excluded or limited.
         </p>
 
 
@@ -350,19 +353,19 @@ export default function TermsOfUse() {
 
         <p>
           <strong>
-            Automation Spectrum Pty Ltd
+            EnerG IQ Tech Pty Ltd
           </strong>
 
           <br />
 
-          EnerG IQ Tech
+          ABN: 67 703 353 468
 
           <br />
 
           Email:{" "}
 
-          <a href="mailto:contact@automationspectrum.com.au">
-            contact@automationspectrum.com.au
+          <a href="mailto:anup@energiqtech.com">
+            anup@energiqtech.com
           </a>
         </p>
 
