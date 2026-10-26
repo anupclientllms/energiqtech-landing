@@ -383,6 +383,10 @@ export default function Navbar({ openPilotModal }) {
           Pilot Program
         </Link>
 
+        <Link to="/partners" onClick={closeMenu}>
+          Partners
+        </Link>
+
         <Link to="/events" onClick={closeMenu}>
           Events
         </Link>

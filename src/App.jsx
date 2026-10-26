@@ -39,6 +39,7 @@ import FoodManufacturingAIPage from "./pages/FoodManufacturingAIPage";
 
 import EventsPage from "./pages/EventsPage";
 import FineFoodAustralia2026Page from "./pages/FineFoodAustralia2026Page";
+import PartnersPage from "./pages/PartnersPage";
 
 function App() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -90,6 +91,8 @@ function App() {
           path="/about"
           element={<AboutPage openPilotModal={openPilotModal} />}
         />
+        
+        <Route path="/partners" element={<PartnersPage />} />
 
         <Route
           path="/trust-security"

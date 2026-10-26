@@ -1,0 +1,90 @@
+/* EnerG IQ Tech Partner Programme — Events-page visual language */
+.partnersPage{background:#f4f7fb;color:#0b1d3f;overflow:hidden}
+.partnersPage *{box-sizing:border-box}
+.partnersHero{min-height:760px;padding:90px 7%;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px;color:#fff;background:linear-gradient(120deg,#0a2c69,#0b3d79 55%,#0d5a73)}
+.partnersHeroContent{max-width:780px}
+.partnersBadge{width:fit-content;margin-bottom:20px;padding:9px 14px;display:flex;align-items:center;gap:8px;border:1px solid #ffffff33;border-radius:999px;background:#ffffff14;color:#d9ebff;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.partnersHero h1{margin:0;color:#fff;font-size:clamp(3rem,5vw,5.3rem);line-height:1.04;letter-spacing:-.05em}
+.partnersHero h1 span{color:#62e2d2}
+.partnersLead{margin:28px 0 0;color:#e7f1ff;font-size:1.15rem;line-height:1.7}
+.partnersDescription{margin:14px 0 0;color:#bfd2e8;line-height:1.7}
+.partnersHeroButtons,.partnersCtaActions{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.partnersPrimaryBtn,.partnersSecondaryBtn{min-height:50px;padding:0 20px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;font-size:14px;font-weight:800;text-decoration:none;transition:transform .2s,background .2s}
+.partnersPrimaryBtn{color:#fff;background:#2468df;box-shadow:0 14px 30px #0003}
+.partnersPrimaryBtn:hover{background:#1957c7;transform:translateY(-2px)}
+.partnersSecondaryBtn{border:1px solid #ffffff40;color:#fff;background:#ffffff14}
+.partnersSecondaryBtn:hover{background:#ffffff26}
+.partnersHeroTags{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
+.partnersHeroTags span{padding:8px 10px;display:flex;align-items:center;gap:6px;border:1px solid #ffffff24;border-radius:9px;background:#ffffff0f;color:#d9e7f7;font-size:12px;font-weight:700}
+.partnersHeroVisual{width:100%;max-width:620px;justify-self:end}
+.partnersHeroPanel{padding:30px;border:1px solid #ffffff30;border-radius:22px;background:#ffffff13;backdrop-filter:blur(18px);box-shadow:0 30px 70px #0004}
+.partnersHeroPanelTop{display:flex;align-items:center;gap:12px;color:#a8d6ff;font-size:11px;font-weight:850;letter-spacing:.1em}
+.partnersHeroPanelIcon,.partnersIcon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border-radius:13px;color:#fff;background:linear-gradient(135deg,#3479ef,#194fbd)}
+.partnersHeroPanel h2{margin:22px 0 10px;color:#fff;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.2}
+.partnersHeroPanel>p{color:#c8dcf0;line-height:1.65;font-size:14px}
+.partnersNetwork{margin-top:26px}
+.partnersNetworkCenter{padding:20px;display:flex;align-items:center;flex-direction:column;gap:7px;border:1px solid #4dcbdd70;border-radius:15px;background:#082b5a;text-align:center;color:#fff}
+.partnersNetworkCenter svg{color:#58e2d6}
+.partnersNetworkCenter strong{font-size:18px}
+.partnersNetworkCenter small{color:#b7d3e9}
+.partnersNetworkGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.partnersNetworkGrid>div{min-height:82px;padding:12px;display:flex;align-items:center;gap:10px;border:1px solid #ffffff29;border-radius:12px;background:#ffffff10;color:#e4f1ff;font-size:12px;font-weight:700}
+.partnersNetworkGrid svg{flex-shrink:0;color:#75dce8}
+.partnersHeroPanelBottom{margin-top:20px;padding-top:16px;display:flex;align-items:center;gap:9px;border-top:1px solid #ffffff29;color:#cbe3f4;font-size:12px;line-height:1.5}
+.partnersHeroPanelBottom svg{flex-shrink:0;color:#68e7c2}
+.partnersStrip{padding:20px 7%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;background:#071a3c;color:#dceaff;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.partnersStrip svg{color:#4d86e8}
+.partnersSection{padding:95px 7%}
+.partnersSectionHeader{max-width:900px;margin:0 auto 48px;text-align:center}
+.partnersSectionHeader>p,.partnersProcessIntro>p,.partnersImpactPanel>div>p,.partnersCta>div>p{margin:0 0 14px;color:#2260d8;font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.12em}
+.partnersSectionHeader h2,.partnersProcessIntro h2,.partnersImpactPanel h2,.partnersCta h2{margin:0;color:#081a39;font-size:clamp(2.2rem,4vw,4.1rem);line-height:1.07;letter-spacing:-.04em}
+.partnersSectionHeader>span,.partnersProcessIntro>span,.partnersImpactPanel>div>span,.partnersCta>div>span{max-width:780px;margin:20px auto 0;display:block;color:#62738f;line-height:1.75}
+.partnersObjectivesSection,.partnersProcessSection{background:#f5f8fc}
+.partnersObjectivesGrid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.partnersObjectiveCard,.partnersTypeCard,.partnersModelCard{padding:26px;border:1px solid #dbe5f2;border-radius:18px;background:#fff;box-shadow:0 12px 30px #1c3a660f}
+.partnersCardTop,.partnersTypeCardHeader{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.partnersCardTop>span{font-size:30px;font-weight:900;color:#d8e7fb}
+.partnersObjectiveCard h3,.partnersTypeCard h3,.partnersModelCard h3{margin:20px 0 9px;color:#102344;font-size:1.3rem;line-height:1.25}
+.partnersObjectiveCard>p,.partnersTypeCard>p,.partnersModelCard>p{margin:0;color:#667894;font-size:14px;line-height:1.7}
+.partnersObjectiveCard ul,.partnersTypeCard ul{padding:17px 0 0;margin:18px 0 0;border-top:1px solid #e3ebf5;list-style:none}
+.partnersObjectiveCard li,.partnersTypeCard li{display:flex;align-items:flex-start;gap:9px;margin-bottom:12px;color:#526987;font-size:13px;line-height:1.5}
+.partnersObjectiveCard li svg,.partnersTypeCard li svg{flex-shrink:0;margin-top:2px;color:#1caa80}
+.partnersTypesSection{background:#eef3fa}
+.partnersTypesGrid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.partnersTypeCard{display:flex;flex-direction:column}
+.partnersTypeCardHeader>span{color:#2260d8;font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.06em;text-align:right}
+.partnersTextLink{margin-top:auto;padding-top:18px;display:inline-flex;align-items:center;gap:7px;color:#2468df;font-size:13px;font-weight:850;text-decoration:none}
+.partnersTextLink:hover{text-decoration:underline}
+.partnersModelsSection{background:#fff}
+.partnersModelsGrid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.partnersModelCard{padding:23px}
+.partnersModelCard h3{font-size:1.1rem}
+.partnersCommercialNote{max-width:1320px;margin:24px auto 0;padding:18px 20px;display:flex;align-items:flex-start;gap:13px;border:1px solid #cbdcf3;border-radius:13px;background:#f8fbff}
+.partnersCommercialNote svg{flex-shrink:0;color:#2468df}
+.partnersCommercialNote p{margin:0;color:#526987;font-size:13px;line-height:1.65}
+.partnersProcessPanel{max-width:1380px;margin:0 auto;padding:54px 56px;border:1px solid #d6e2f2;border-radius:24px;background:#f7fafe}
+.partnersProcessIntro{max-width:900px}
+.partnersProcessIntro>span{margin-left:0}
+.partnersProcessFlow{margin-top:45px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.partnersProcessStepWrap{position:relative;min-width:0}
+.partnersProcessStep{min-height:155px;padding:18px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;border:1px solid #cbdcf3;border-radius:15px;background:#fff;text-align:center}
+.partnersProcessStep>span{color:#2468df;font-size:12px;font-weight:900}
+.partnersProcessStep strong{color:#0d2c62;font-size:16px}
+.partnersProcessStep small{color:#72819b;font-size:12px;line-height:1.45}
+.partnersProcessArrow{position:absolute;right:-18px;top:50%;transform:translateY(-50%);z-index:2;color:#6f94d4;background:#f7fafe;border-radius:50%}
+.partnersImpactSection{background:#eef3fa}
+.partnersImpactPanel{max-width:1320px;margin:0 auto;padding:42px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;border:1px solid #dbe5f2;border-left:4px solid #2468df;border-radius:22px;background:#fff;box-shadow:0 12px 30px #1c3a660f}
+.partnersImpactIcon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;border-radius:16px;color:#fff;background:linear-gradient(135deg,#3479ef,#194fbd)}
+.partnersImpactPanel h2{font-size:clamp(1.7rem,2.5vw,2.5rem)}
+.partnersImpactPanel>div>span{margin-left:0}
+.partnersImpactTags{margin-top:22px;display:flex;flex-wrap:wrap;gap:9px}
+.partnersImpactTags span{padding:9px 11px;display:flex;align-items:center;gap:7px;border:1px solid #dbe5f2;border-radius:9px;background:#f8fbff;color:#27466f;font-size:12px;font-weight:700}
+.partnersCta{padding:70px 7%;display:flex;align-items:center;justify-content:space-between;gap:40px;color:#fff;background:linear-gradient(110deg,#113d91,#0a5c78)}
+.partnersCta>div:first-child{max-width:820px}
+.partnersCta>div>p{color:#a8c9ff}
+.partnersCta h2{color:#fff}
+.partnersCta>div>span{margin-left:0;color:#c4d7eb}
+@media(max-width:1150px){.partnersHero{grid-template-columns:1fr}.partnersHeroVisual{justify-self:center;max-width:760px}.partnersObjectivesGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.partnersModelsGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.partnersCta{align-items:flex-start;flex-direction:column}}
+@media(max-width:650px){.partnersHero{min-height:auto;padding:65px 20px;gap:35px}.partnersHero h1{font-size:2.7rem}.partnersHeroPanel{padding:22px}.partnersHeroButtons,.partnersCtaActions{flex-direction:column;align-items:stretch}.partnersPrimaryBtn,.partnersSecondaryBtn{width:100%}.partnersSection{padding:75px 20px}.partnersSectionHeader{text-align:left}.partnersSectionHeader>span{margin-left:0}.partnersObjectivesGrid,.partnersTypesGrid,.partnersModelsGrid{grid-template-columns:1fr}.partnersProcessPanel{padding:28px 20px}.partnersProcessFlow{grid-template-columns:1fr}.partnersProcessArrow{display:none}.partnersImpactPanel{padding:27px 23px;grid-template-columns:1fr}.partnersCta{padding:60px 20px}.partnersStrip{gap:10px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.partnersPrimaryBtn,.partnersSecondaryBtn{transition:none}}
