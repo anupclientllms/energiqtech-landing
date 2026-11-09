@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 import "../styles/BuildingAI.css";
+import SEO from "./SEO";
 
 
 const fadeUp = {
@@ -239,813 +240,827 @@ export default function BuildingAI({ openPilotModal }) {
 
 
   return (
-    <main className="buildingAIPage">
 
-      {/* =========================================================
-          HERO
-      ========================================================= */}
+    <>
+      
+      <SEO
+        title="AI Building Energy Optimisation & Cost Reduction | EnerG IQ Tech"
+        description="Reduce commercial building energy costs, peak demand and CO₂ emissions with EnerG IQ Tech. Optimise HVAC, lighting, BMS and connected energy assets using Edge AI, digital twins and intelligent recommendations."
+        path="/building-ai"
+      />
 
-      <section className="buildingAIHero">
+      <main className="buildingAIPage">
 
-        <motion.div
-          className="buildingAIHeroContent"
-          variants={stagger}
-          initial="hidden"
-          animate="show"
-        >
+        {/* =========================================================
+            HERO
+        ========================================================= */}
+
+        <section className="buildingAIHero">
 
           <motion.div
-            className="buildingAIBadge"
-            variants={fadeUp}
+            className="buildingAIHeroContent"
+            variants={stagger}
+            initial="hidden"
+            animate="show"
           >
-            <Building2 size={17} />
-            EnerG IQ Tech Commercial Building AI
+
+            <motion.div
+              className="buildingAIBadge"
+              variants={fadeUp}
+            >
+              <Building2 size={17} />
+              EnerG IQ Tech Commercial Building AI
+            </motion.div>
+
+
+            <motion.h1 variants={fadeUp}>
+              Reduce Commercial Building Energy Costs & CO₂ Emissions.
+            </motion.h1>
+
+
+            <motion.p
+              className="buildingAILead"
+              variants={fadeUp}
+            >
+              EnerG IQ Tech Building AI helps building owners and facilities
+              teams identify and reduce energy waste, peak demand and associated
+              CO₂ emissions across HVAC, lighting and other energy-intensive
+              building systems - while maintaining occupant comfort,
+              operational reliability and asset performance.
+            </motion.p>
+
+
+            <motion.p
+              className="buildingAIDescription"
+              variants={fadeUp}
+            >
+              Edge AI analyses building operations in real time to identify
+              inefficient equipment behaviour, unnecessary after-hours loads
+              and costly demand peaks. The AI Energy Gateway connects BMS,
+              meters, HVAC, lighting, refrigeration, workstations, lifts, pumps
+              and motors so EnerG IQ Tech can recommend governed optimisation
+              actions and measure the resulting energy, financial and carbon
+              outcomes.
+            </motion.p>
+
+
+            <motion.div
+              className="buildingAIHeroButtons"
+              variants={fadeUp}
+            >
+          
+              <Link to="/book-discussion" className="buildingAIPrimaryBtn">
+                Book a Discussion
+                <ChevronRight size={18} />
+              </Link>
+
+              <a
+                href="#building-workflow"
+                className="buildingAISecondaryBtn"
+              >
+                View AI Workflow
+              </a>
+            </motion.div>
+
+
+            <motion.div
+              className="buildingAIHeroTags"
+              variants={fadeUp}
+            >
+              <span>
+                <Zap size={15} />
+                Energy Cost Reduction
+              </span>
+
+              <span>
+                <Leaf size={15} />
+                CO₂ Reduction
+              </span>
+
+              <span>
+                <Activity size={15} />
+                Peak Demand
+              </span>
+
+              <span>
+                <ShieldCheck size={15} />
+                Comfort & Reliability
+              </span>
+            </motion.div>
+
           </motion.div>
 
 
-          <motion.h1 variants={fadeUp}>
-            Reduce Commercial Building Energy Costs & CO₂ Emissions.
-          </motion.h1>
+          {/* =====================================================
+              HERO DASHBOARD
+          ===================================================== */}
 
-
-          <motion.p
-            className="buildingAILead"
-            variants={fadeUp}
+          <motion.div
+            className="buildingAIHeroVisual"
+            initial={{
+              opacity: 0,
+              y: 28,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
           >
-            EnerG IQ Tech Building AI helps building owners and facilities
-            teams identify and reduce energy waste, peak demand and associated
-            CO₂ emissions across HVAC, lighting and other energy-intensive
-            building systems - while maintaining occupant comfort,
-            operational reliability and asset performance.
-          </motion.p>
+
+            <div className="buildingAIDashboard">
+
+              <div className="buildingAIDashboardTop">
+                <div>
+                  <strong>
+                    Building Energy Optimisation
+                  </strong>
+
+                  <span>
+                    Energy, demand and operational overview
+                  </span>
+                </div>
+
+                <b>
+                  <Activity size={14} />
+                  Live
+                </b>
+              </div>
 
 
-          <motion.p
-            className="buildingAIDescription"
-            variants={fadeUp}
-          >
-            Edge AI analyses building operations in real time to identify
-            inefficient equipment behaviour, unnecessary after-hours loads
-            and costly demand peaks. The AI Energy Gateway connects BMS,
-            meters, HVAC, lighting, refrigeration, workstations, lifts, pumps
-            and motors so EnerG IQ Tech can recommend governed optimisation
-            actions and measure the resulting energy, financial and carbon
-            outcomes.
-          </motion.p>
+              <div className="buildingAIKpis">
+
+                <div>
+                  <small>
+                    Buildings
+                  </small>
+
+                  <strong>
+                    4
+                  </strong>
+
+                  <span>
+                    Connected facilities
+                  </span>
+                </div>
+
+
+                <div>
+                  <small>
+                    Asset Classes
+                  </small>
+
+                  <strong>
+                    9
+                  </strong>
+
+                  <span>
+                    Energy-intensive systems
+                  </span>
+                </div>
+
+
+                <div>
+                  <small>
+                    Opportunities
+                  </small>
+
+                  <strong>
+                    38
+                  </strong>
+
+                  <span>
+                    Energy optimisation items
+                  </span>
+                </div>
+
+
+                <div>
+                  <small>
+                    Monthly Potential
+                  </small>
+
+                  <strong>
+                    $2,840
+                  </strong>
+
+                  <span>
+                    Indicative energy savings
+                  </span>
+                </div>
+
+              </div>
+
+
+              <div className="buildingAIInsightCard">
+
+                <div className="buildingAIInsightIcon">
+                  <Brain size={22} />
+                </div>
+
+                <div>
+                  <strong>
+                    AI Energy Recommendation
+                  </strong>
+
+                  <p>
+                    Level 2 HVAC and workstations remain active after occupancy
+                    has fallen below 8%. Review an HVAC setback and workstation
+                    shutdown sequence to reduce unnecessary energy consumption
+                    while maintaining comfort and operational requirements.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="buildingAIApproval">
+
+                <span>
+                  <ShieldCheck size={18} />
+                  Facilities approval required before execution
+                </span>
+
+                <button type="button">
+                  Review Action
+                </button>
+
+              </div>
+
+            </div>
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            PROCESS STRIP
+        ========================================================= */}
+
+        <section className="buildingAIStrip">
+
+          <span>Connect</span>
+          <ArrowRight size={15} />
+
+          <span>Detect Waste</span>
+          <ArrowRight size={15} />
+
+          <span>Analyse</span>
+          <ArrowRight size={15} />
+
+          <span>Optimise</span>
+          <ArrowRight size={15} />
+
+          <span>Approve</span>
+          <ArrowRight size={15} />
+
+          <span>Measure Savings</span>
+
+        </section>
+
+
+        {/* =========================================================
+            BUILDING ENERGY CHALLENGE
+        ========================================================= */}
+
+        <section className="buildingAISection buildingAIChallengeSection">
+
+          <div className="buildingAISectionHeader">
+
+            <p>
+              Commercial Building Energy Challenge
+            </p>
+
+            <h2>
+              Buildings Face Rising Energy Costs, Peak Demand and CO₂
+              Reduction Requirements.
+            </h2>
+
+            <span>
+              HVAC, lighting, plug loads, refrigeration and central equipment
+              can consume significant energy across fixed schedules and
+              fragmented control systems. The challenge is reducing this
+              consumption and associated emissions without compromising
+              occupant comfort or building operations.
+            </span>
+
+          </div>
+
+
+          <div className="buildingAIChallengeGrid">
+
+            {[
+              [
+                Zap,
+                "High Energy Costs",
+                "HVAC, lighting, refrigeration and other building systems can create significant ongoing electricity expenditure.",
+              ],
+
+              [
+                Monitor,
+                "After-Hours Energy Waste",
+                "HVAC, lighting, workstations and office equipment can continue consuming energy after occupancy falls.",
+              ],
+
+              [
+                Activity,
+                "Peak Demand Exposure",
+                "Simultaneous HVAC and equipment loads can create costly demand peaks even when total energy consumption is controlled.",
+              ],
+
+              [
+                Leaf,
+                "CO₂ Reduction Pressure",
+                "Reducing unnecessary electricity consumption can lower associated CO₂ emissions and support organisational sustainability targets.",
+              ],
+            ].map(([Icon, title, text]) => (
+
+              <article key={title}>
+
+                <div className="buildingAIIcon">
+                  <Icon size={24} />
+                </div>
+
+                <h3>
+                  {title}
+                </h3>
+
+                <p>
+                  {text}
+                </p>
+
+              </article>
+
+            ))}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            CONNECTED BUILDING ASSETS
+        ========================================================= */}
+
+        <section className="buildingAISection buildingAIAssetsSection">
+
+          <div className="buildingAISectionHeader">
+
+            <p>
+              Connected Building Assets
+            </p>
+
+            <h2>
+              Optimise the Systems Driving Building Energy Costs.
+            </h2>
+
+            <span>
+              The AI Energy Gateway connects existing BMS, meters and
+              operational telemetry so EnerG IQ Tech can understand how
+              building systems consume energy, identify avoidable waste and
+              coordinate optimisation without requiring wholesale
+              infrastructure replacement.
+            </span>
+
+          </div>
 
 
           <motion.div
-            className="buildingAIHeroButtons"
-            variants={fadeUp}
+            className="buildingAIAssetsGrid"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+              once: true,
+              amount: 0.08,
+            }}
           >
-         
+
+            {assets.map(([Icon, title, text]) => (
+
+              <motion.article
+                className="buildingAIAssetCard"
+                variants={fadeUp}
+                key={title}
+              >
+
+                <div className="buildingAIIcon">
+                  <Icon size={23} />
+                </div>
+
+                <h3>
+                  {title}
+                </h3>
+
+                <p>
+                  {text}
+                </p>
+
+              </motion.article>
+
+            ))}
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            AI OPTIMISATION SCENARIOS
+        ========================================================= */}
+
+        <section className="buildingAISection buildingAIScenarioSection">
+
+          <div className="buildingAISectionHeader">
+
+            <p>
+              AI Optimisation Scenarios
+            </p>
+
+            <h2>
+              Turn Building Energy Waste Into Measurable Cost & Carbon
+              Reduction Opportunities.
+            </h2>
+
+            <span>
+              EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
+              Decision Agents and human-in-the-loop governance to identify
+              practical optimisation opportunities while protecting occupant
+              comfort and operational requirements.
+            </span>
+
+          </div>
+
+
+          <div className="buildingAIScenarioGrid">
+
+            {scenarios.map(
+              ([Icon, title, text, outcome]) => (
+
+                <article
+                  className="buildingAIScenarioCard"
+                  key={title}
+                >
+
+                  <div className="buildingAIScenarioTop">
+
+                    <div className="buildingAIIcon">
+                      <Icon size={23} />
+                    </div>
+
+                    <span>
+                      AI Scenario
+                    </span>
+
+                  </div>
+
+
+                  <h3>
+                    {title}
+                  </h3>
+
+                  <p>
+                    {text}
+                  </p>
+
+
+                  <div className="buildingAIOutcome">
+
+                    <CheckCircle2 size={17} />
+
+                    {outcome}
+
+                  </div>
+
+                </article>
+
+              )
+            )}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            END-TO-END WORKFLOW
+        ========================================================= */}
+
+        <section
+          className="buildingAISection buildingAIWorkflowSection"
+          id="building-workflow"
+        >
+
+          <div className="buildingAISectionHeader buildingAISectionHeaderLight">
+
+            <p>
+              End-to-End AI Workflow
+            </p>
+
+            <h2>
+              From Building Energy Data to Measurable Savings.
+            </h2>
+
+            <span>
+              EnerG IQ Tech turns operational telemetry into explainable,
+              governed optimisation recommendations and measures the resulting
+              energy, financial and associated CO₂ outcomes while keeping
+              facilities teams in control.
+            </span>
+
+          </div>
+
+
+          <div className="buildingAIWorkflow">
+
+            {workflow.map(([number, title, text]) => (
+
+              <div
+                className="buildingAIWorkflowStep"
+                key={number}
+              >
+
+                <b>
+                  {number}
+                </b>
+
+                <div>
+
+                  <h3>
+                    {title}
+                  </h3>
+
+                  <p>
+                    {text}
+                  </p>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            SHARED ENERG IQ PLATFORM
+        ========================================================= */}
+
+        <section className="buildingAISection buildingAIPlatformSection">
+
+          <div className="buildingAIPlatformPanel">
+
+            <div className="buildingAIPlatformCopy">
+
+              <p>
+                Shared EnerG IQ Tech Platform
+              </p>
+
+              <h2>
+                Building-Specific Optimisation Built on One Energy
+                Intelligence Architecture.
+              </h2>
+
+              <span>
+                Building AI uses the shared EnerG IQ Tech architecture to
+                connect building systems, identify energy waste, recommend
+                governed optimisation actions and measure resulting energy,
+                financial and carbon outcomes.
+              </span>
+
+
+              <ul>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  AI Energy Gateway connectivity
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Digital Twin operational context
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Configurable AI Decision Agents
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Human-in-the-loop governance
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Energy, cost, CO₂ and ROI intelligence
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div className="buildingAIPlatformFlow">
+
+              <div className="buildingAIPlatformNode">
+
+                <Building2 size={25} />
+
+                <span>
+                  Building Assets
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="buildingAIPlatformNode featured">
+
+                <Cpu size={25} />
+
+                <span>
+                  AI Energy Gateway
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="buildingAIPlatformNode">
+
+                <Layers3 size={25} />
+
+                <span>
+                  Digital Twin
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="buildingAIPlatformNode">
+
+                <Brain size={25} />
+
+                <span>
+                  AI Optimisation
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="buildingAIPlatformNode">
+
+                <ShieldCheck size={25} />
+
+                <span>
+                  Measured Outcomes
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            BUILDING PILOT
+        ========================================================= */}
+
+        <section
+          className="buildingAISection buildingAIPilotSection"
+          id="building-pilot"
+        >
+
+          <div className="buildingAIPilotBox">
+
+            <div className="buildingAIPilotCopy">
+
+              <p>
+                Building Pilot Program
+              </p>
+
+              <h2>
+                Start With One Building Energy Problem. Prove the Savings
+                Before Scaling.
+              </h2>
+
+              <span>
+                Establish an energy baseline for one building or high-value
+                system, identify optimisation opportunities and quantify
+                potential energy-cost, peak-demand and associated CO₂ outcomes
+                before portfolio-wide deployment.
+              </span>
+
+
+              <button
+                type="button"
+                className="buildingAIPrimaryBtn"
+                onClick={handlePilotClick}
+              >
+                Discuss a Building Pilot
+                <ChevronRight size={18} />
+              </button>
+
+            </div>
+
+
+            <div className="buildingAIPilotList">
+
+              <h3>
+                Indicative Pilot Scope
+              </h3>
+
+
+              <ul>
+
+                {pilotItems.map((item) => (
+
+                  <li key={item}>
+
+                    <CheckCircle2 size={18} />
+
+                    <span>
+                      {item}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            FINAL CTA
+        ========================================================= */}
+
+        <section className="buildingAICta">
+
+          <div>
+
+            <p>
+              Now Onboarding Building Pilot Partners
+            </p>
+
+            <h2>
+              Reduce Building Energy Costs & CO₂ Emissions Without
+              Compromising Comfort.
+            </h2>
+
+            <span>
+              Start with one measurable building energy challenge. Establish
+              the baseline, identify energy waste and determine whether the
+              potential financial and carbon outcomes justify broader
+              deployment.
+            </span>
+
+          </div>
+
+
+          <div className="buildingAICtaActions">
+
+          
             <Link to="/book-discussion" className="buildingAIPrimaryBtn">
               Book a Discussion
               <ChevronRight size={18} />
             </Link>
 
-            <a
-              href="#building-workflow"
-              className="buildingAISecondaryBtn"
-            >
-              View AI Workflow
-            </a>
-          </motion.div>
-
-
-          <motion.div
-            className="buildingAIHeroTags"
-            variants={fadeUp}
-          >
-            <span>
-              <Zap size={15} />
-              Energy Cost Reduction
-            </span>
-
-            <span>
-              <Leaf size={15} />
-              CO₂ Reduction
-            </span>
-
-            <span>
-              <Activity size={15} />
-              Peak Demand
-            </span>
-
-            <span>
-              <ShieldCheck size={15} />
-              Comfort & Reliability
-            </span>
-          </motion.div>
-
-        </motion.div>
-
-
-        {/* =====================================================
-            HERO DASHBOARD
-        ===================================================== */}
-
-        <motion.div
-          className="buildingAIHeroVisual"
-          initial={{
-            opacity: 0,
-            y: 28,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.15,
-          }}
-        >
-
-          <div className="buildingAIDashboard">
-
-            <div className="buildingAIDashboardTop">
-              <div>
-                <strong>
-                  Building Energy Optimisation
-                </strong>
-
-                <span>
-                  Energy, demand and operational overview
-                </span>
-              </div>
-
-              <b>
-                <Activity size={14} />
-                Live
-              </b>
-            </div>
-
-
-            <div className="buildingAIKpis">
-
-              <div>
-                <small>
-                  Buildings
-                </small>
-
-                <strong>
-                  4
-                </strong>
-
-                <span>
-                  Connected facilities
-                </span>
-              </div>
-
-
-              <div>
-                <small>
-                  Asset Classes
-                </small>
-
-                <strong>
-                  9
-                </strong>
-
-                <span>
-                  Energy-intensive systems
-                </span>
-              </div>
-
-
-              <div>
-                <small>
-                  Opportunities
-                </small>
-
-                <strong>
-                  38
-                </strong>
-
-                <span>
-                  Energy optimisation items
-                </span>
-              </div>
-
-
-              <div>
-                <small>
-                  Monthly Potential
-                </small>
-
-                <strong>
-                  $2,840
-                </strong>
-
-                <span>
-                  Indicative energy savings
-                </span>
-              </div>
-
-            </div>
-
-
-            <div className="buildingAIInsightCard">
-
-              <div className="buildingAIInsightIcon">
-                <Brain size={22} />
-              </div>
-
-              <div>
-                <strong>
-                  AI Energy Recommendation
-                </strong>
-
-                <p>
-                  Level 2 HVAC and workstations remain active after occupancy
-                  has fallen below 8%. Review an HVAC setback and workstation
-                  shutdown sequence to reduce unnecessary energy consumption
-                  while maintaining comfort and operational requirements.
-                </p>
-              </div>
-
-            </div>
-
-
-            <div className="buildingAIApproval">
-
-              <span>
-                <ShieldCheck size={18} />
-                Facilities approval required before execution
-              </span>
-
-              <button type="button">
-                Review Action
-              </button>
-
-            </div>
-
           </div>
 
-        </motion.div>
-
-      </section>
-
-
-      {/* =========================================================
-          PROCESS STRIP
-      ========================================================= */}
-
-      <section className="buildingAIStrip">
-
-        <span>Connect</span>
-        <ArrowRight size={15} />
-
-        <span>Detect Waste</span>
-        <ArrowRight size={15} />
-
-        <span>Analyse</span>
-        <ArrowRight size={15} />
-
-        <span>Optimise</span>
-        <ArrowRight size={15} />
-
-        <span>Approve</span>
-        <ArrowRight size={15} />
-
-        <span>Measure Savings</span>
-
-      </section>
-
-
-      {/* =========================================================
-          BUILDING ENERGY CHALLENGE
-      ========================================================= */}
-
-      <section className="buildingAISection buildingAIChallengeSection">
-
-        <div className="buildingAISectionHeader">
-
-          <p>
-            Commercial Building Energy Challenge
-          </p>
-
-          <h2>
-            Buildings Face Rising Energy Costs, Peak Demand and CO₂
-            Reduction Requirements.
-          </h2>
-
-          <span>
-            HVAC, lighting, plug loads, refrigeration and central equipment
-            can consume significant energy across fixed schedules and
-            fragmented control systems. The challenge is reducing this
-            consumption and associated emissions without compromising
-            occupant comfort or building operations.
-          </span>
-
-        </div>
-
-
-        <div className="buildingAIChallengeGrid">
-
-          {[
-            [
-              Zap,
-              "High Energy Costs",
-              "HVAC, lighting, refrigeration and other building systems can create significant ongoing electricity expenditure.",
-            ],
-
-            [
-              Monitor,
-              "After-Hours Energy Waste",
-              "HVAC, lighting, workstations and office equipment can continue consuming energy after occupancy falls.",
-            ],
-
-            [
-              Activity,
-              "Peak Demand Exposure",
-              "Simultaneous HVAC and equipment loads can create costly demand peaks even when total energy consumption is controlled.",
-            ],
-
-            [
-              Leaf,
-              "CO₂ Reduction Pressure",
-              "Reducing unnecessary electricity consumption can lower associated CO₂ emissions and support organisational sustainability targets.",
-            ],
-          ].map(([Icon, title, text]) => (
-
-            <article key={title}>
-
-              <div className="buildingAIIcon">
-                <Icon size={24} />
-              </div>
-
-              <h3>
-                {title}
-              </h3>
-
-              <p>
-                {text}
-              </p>
-
-            </article>
-
-          ))}
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          CONNECTED BUILDING ASSETS
-      ========================================================= */}
-
-      <section className="buildingAISection buildingAIAssetsSection">
-
-        <div className="buildingAISectionHeader">
-
-          <p>
-            Connected Building Assets
-          </p>
-
-          <h2>
-            Optimise the Systems Driving Building Energy Costs.
-          </h2>
-
-          <span>
-            The AI Energy Gateway connects existing BMS, meters and
-            operational telemetry so EnerG IQ Tech can understand how
-            building systems consume energy, identify avoidable waste and
-            coordinate optimisation without requiring wholesale
-            infrastructure replacement.
-          </span>
-
-        </div>
-
-
-        <motion.div
-          className="buildingAIAssetsGrid"
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true,
-            amount: 0.08,
-          }}
-        >
-
-          {assets.map(([Icon, title, text]) => (
-
-            <motion.article
-              className="buildingAIAssetCard"
-              variants={fadeUp}
-              key={title}
-            >
-
-              <div className="buildingAIIcon">
-                <Icon size={23} />
-              </div>
-
-              <h3>
-                {title}
-              </h3>
-
-              <p>
-                {text}
-              </p>
-
-            </motion.article>
-
-          ))}
-
-        </motion.div>
-
-      </section>
-
-
-      {/* =========================================================
-          AI OPTIMISATION SCENARIOS
-      ========================================================= */}
-
-      <section className="buildingAISection buildingAIScenarioSection">
-
-        <div className="buildingAISectionHeader">
-
-          <p>
-            AI Optimisation Scenarios
-          </p>
-
-          <h2>
-            Turn Building Energy Waste Into Measurable Cost & Carbon
-            Reduction Opportunities.
-          </h2>
-
-          <span>
-            EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
-            Decision Agents and human-in-the-loop governance to identify
-            practical optimisation opportunities while protecting occupant
-            comfort and operational requirements.
-          </span>
-
-        </div>
-
-
-        <div className="buildingAIScenarioGrid">
-
-          {scenarios.map(
-            ([Icon, title, text, outcome]) => (
-
-              <article
-                className="buildingAIScenarioCard"
-                key={title}
-              >
-
-                <div className="buildingAIScenarioTop">
-
-                  <div className="buildingAIIcon">
-                    <Icon size={23} />
-                  </div>
-
-                  <span>
-                    AI Scenario
-                  </span>
-
-                </div>
-
-
-                <h3>
-                  {title}
-                </h3>
-
-                <p>
-                  {text}
-                </p>
-
-
-                <div className="buildingAIOutcome">
-
-                  <CheckCircle2 size={17} />
-
-                  {outcome}
-
-                </div>
-
-              </article>
-
-            )
-          )}
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          END-TO-END WORKFLOW
-      ========================================================= */}
-
-      <section
-        className="buildingAISection buildingAIWorkflowSection"
-        id="building-workflow"
-      >
-
-        <div className="buildingAISectionHeader buildingAISectionHeaderLight">
-
-          <p>
-            End-to-End AI Workflow
-          </p>
-
-          <h2>
-            From Building Energy Data to Measurable Savings.
-          </h2>
-
-          <span>
-            EnerG IQ Tech turns operational telemetry into explainable,
-            governed optimisation recommendations and measures the resulting
-            energy, financial and associated CO₂ outcomes while keeping
-            facilities teams in control.
-          </span>
-
-        </div>
-
-
-        <div className="buildingAIWorkflow">
-
-          {workflow.map(([number, title, text]) => (
-
-            <div
-              className="buildingAIWorkflowStep"
-              key={number}
-            >
-
-              <b>
-                {number}
-              </b>
-
-              <div>
-
-                <h3>
-                  {title}
-                </h3>
-
-                <p>
-                  {text}
-                </p>
-
-              </div>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          SHARED ENERG IQ PLATFORM
-      ========================================================= */}
-
-      <section className="buildingAISection buildingAIPlatformSection">
-
-        <div className="buildingAIPlatformPanel">
-
-          <div className="buildingAIPlatformCopy">
-
-            <p>
-              Shared EnerG IQ Tech Platform
-            </p>
-
-            <h2>
-              Building-Specific Optimisation Built on One Energy
-              Intelligence Architecture.
-            </h2>
-
-            <span>
-              Building AI uses the shared EnerG IQ Tech architecture to
-              connect building systems, identify energy waste, recommend
-              governed optimisation actions and measure resulting energy,
-              financial and carbon outcomes.
-            </span>
-
-
-            <ul>
-
-              <li>
-                <CheckCircle2 size={18} />
-                AI Energy Gateway connectivity
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Digital Twin operational context
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Configurable AI Decision Agents
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Human-in-the-loop governance
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Energy, cost, CO₂ and ROI intelligence
-              </li>
-
-            </ul>
-
-          </div>
-
-
-          <div className="buildingAIPlatformFlow">
-
-            <div className="buildingAIPlatformNode">
-
-              <Building2 size={25} />
-
-              <span>
-                Building Assets
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="buildingAIPlatformNode featured">
-
-              <Cpu size={25} />
-
-              <span>
-                AI Energy Gateway
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="buildingAIPlatformNode">
-
-              <Layers3 size={25} />
-
-              <span>
-                Digital Twin
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="buildingAIPlatformNode">
-
-              <Brain size={25} />
-
-              <span>
-                AI Optimisation
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="buildingAIPlatformNode">
-
-              <ShieldCheck size={25} />
-
-              <span>
-                Measured Outcomes
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          BUILDING PILOT
-      ========================================================= */}
-
-      <section
-        className="buildingAISection buildingAIPilotSection"
-        id="building-pilot"
-      >
-
-        <div className="buildingAIPilotBox">
-
-          <div className="buildingAIPilotCopy">
-
-            <p>
-              Building Pilot Program
-            </p>
-
-            <h2>
-              Start With One Building Energy Problem. Prove the Savings
-              Before Scaling.
-            </h2>
-
-            <span>
-              Establish an energy baseline for one building or high-value
-              system, identify optimisation opportunities and quantify
-              potential energy-cost, peak-demand and associated CO₂ outcomes
-              before portfolio-wide deployment.
-            </span>
-
-
-            <button
-              type="button"
-              className="buildingAIPrimaryBtn"
-              onClick={handlePilotClick}
-            >
-              Discuss a Building Pilot
-              <ChevronRight size={18} />
-            </button>
-
-          </div>
-
-
-          <div className="buildingAIPilotList">
-
-            <h3>
-              Indicative Pilot Scope
-            </h3>
-
-
-            <ul>
-
-              {pilotItems.map((item) => (
-
-                <li key={item}>
-
-                  <CheckCircle2 size={18} />
-
-                  <span>
-                    {item}
-                  </span>
-
-                </li>
-
-              ))}
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          FINAL CTA
-      ========================================================= */}
-
-      <section className="buildingAICta">
-
-        <div>
-
-          <p>
-            Now Onboarding Building Pilot Partners
-          </p>
-
-          <h2>
-            Reduce Building Energy Costs & CO₂ Emissions Without
-            Compromising Comfort.
-          </h2>
-
-          <span>
-            Start with one measurable building energy challenge. Establish
-            the baseline, identify energy waste and determine whether the
-            potential financial and carbon outcomes justify broader
-            deployment.
-          </span>
-
-        </div>
-
-
-        <div className="buildingAICtaActions">
-
-         
-          <Link to="/book-discussion" className="buildingAIPrimaryBtn">
-            Book a Discussion
-            <ChevronRight size={18} />
-          </Link>
-
-        </div>
-
-      </section>
-
-    </main>
+        </section>
+
+      </main>
+    
+    
+    
+    </>
+    
   );
 }

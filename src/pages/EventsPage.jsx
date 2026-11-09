@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import "../styles/EventsPage.css";
+import SEO from "./SEO";
 
 /* =========================================================
    MOTION
@@ -184,458 +185,472 @@ export default function EventsPage() {
     events.find((event) => event.featured) || events[0];
 
   return (
-    <main className="eventsPage">
-      {/* =====================================================
-          HERO
-          IMAGE: Finefoodevent_standing_pic1.jpg
-      ===================================================== */}
+    <>
+    
+      <SEO
+        title="Events, Industry Exhibitions & Updates | EnerG IQ Tech"
+        description="Explore EnerG IQ Tech's participation in industry exhibitions, energy conferences and technology events. Discover our latest activities in Edge AI, industrial energy optimisation, digital twins and clean energy innovation."
+        path="/events"
+      />
 
-      <section className="eventsHero">
-        <motion.div
-          className="eventsHeroContent"
-          variants={stagger}
-          initial="hidden"
-          animate="show"
-        >
-          <motion.div className="eventsBadge" variants={fadeUp}>
-            <Sparkles size={17} />
-            Industry Engagement
-          </motion.div>
+      <main className="eventsPage">
+        {/* =====================================================
+            HERO
+            IMAGE: Finefoodevent_standing_pic1.jpg
+        ===================================================== */}
 
-          <motion.h1 variants={fadeUp}>
-            Building Energy Intelligence With Industry.
-          </motion.h1>
+        <section className="eventsHero">
+          <motion.div
+            className="eventsHeroContent"
+            variants={stagger}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.div className="eventsBadge" variants={fadeUp}>
+              <Sparkles size={17} />
+              Industry Engagement
+            </motion.div>
 
-          <motion.p className="eventsLead" variants={fadeUp}>
-            EnerG IQ Tech engages directly with energy-intensive industries,
-            technology providers and operators to understand real operational
-            challenges and shape practical AI-driven energy optimisation
-            solutions.
-          </motion.p>
+            <motion.h1 variants={fadeUp}>
+              Building Energy Intelligence With Industry.
+            </motion.h1>
 
-          <motion.p className="eventsDescription" variants={fadeUp}>
-            Our 2026 industry engagement spans food and beverage, clean energy
-            and the built environment - three areas closely aligned with the
-            operational energy challenges EnerG IQ Tech is designed to address.
-          </motion.p>
+            <motion.p className="eventsLead" variants={fadeUp}>
+              EnerG IQ Tech engages directly with energy-intensive industries,
+              technology providers and operators to understand real operational
+              challenges and shape practical AI-driven energy optimisation
+              solutions.
+            </motion.p>
 
-          <motion.div className="eventsHeroButtons" variants={fadeUp}>
-            <a href="#latest-engagement" className="eventsPrimaryBtn">
-              Explore Industry Engagement
-              <ChevronRight size={18} />
-            </a>
+            <motion.p className="eventsDescription" variants={fadeUp}>
+              Our 2026 industry engagement spans food and beverage, clean energy
+              and the built environment - three areas closely aligned with the
+              operational energy challenges EnerG IQ Tech is designed to address.
+            </motion.p>
 
-            <Link to="/book-discussion" className="eventsSecondaryBtn">
-              Book a Discussion
-            </Link>
-          </motion.div>
-
-          <motion.div className="eventsHeroTags" variants={fadeUp}>
-            <span>
-              <UtensilsCrossed size={15} />
-              Food & Beverage
-            </span>
-
-            <span>
-              <Zap size={15} />
-              Clean Energy
-            </span>
-
-            <span>
-              <Building2 size={15} />
-              Built Environment
-            </span>
-
-            <span>
-              <Leaf size={15} />
-              Energy & CO₂ Reduction
-            </span>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          className="eventsHeroVisual"
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.7,
-            delay: 0.15,
-          }}
-        >
-          <div className="eventsFeaturedHeroCard">
-            <div className="eventsFeaturedImageWrap">
-              <img
-                src={FINE_FOOD_IMAGES.standing}
-                alt="EnerG IQ Tech at Fine Food Australia 2026"
-              />
-
-              <span className="eventsFeaturedStatus">
-                {featuredEvent.status}
-              </span>
-            </div>
-
-            <div className="eventsFeaturedHeroContent">
-              <span>{featuredEvent.category}</span>
-
-              <strong>{featuredEvent.title}</strong>
-
-              <div className="eventsFeaturedMeta">
-                <span>
-                  <CalendarDays size={14} />
-                  {featuredEvent.date}
-                </span>
-
-                <span>
-                  <MapPin size={14} />
-                  {featuredEvent.location}
-                </span>
-              </div>
-
-              <p>{featuredEvent.energIQFocus}</p>
-
-              <Link to={featuredEvent.path}>
-                Read the event story
-                <ArrowRight size={16} />
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* =====================================================
-          INDUSTRY STRIP
-      ===================================================== */}
-
-      <section className="eventsStrip">
-        <span>Food & Beverage</span>
-        <ArrowRight size={15} />
-
-        <span>Energy</span>
-        <ArrowRight size={15} />
-
-        <span>Built Environment</span>
-        <ArrowRight size={15} />
-
-        <span>Operational Energy Intelligence</span>
-      </section>
-
-      {/* =====================================================
-          WHY INDUSTRY ENGAGEMENT
-      ===================================================== */}
-
-      <section className="eventsSection eventsWhySection">
-        <div className="eventsSectionHeader">
-          <p>Why Industry Engagement Matters</p>
-
-          <h2>
-            Energy Optimisation Works Best When It Starts With Real Operational
-            Context.
-          </h2>
-
-          <span>
-            Industry events give EnerG IQ Tech direct exposure to the
-            technologies, operating environments, commercial priorities and
-            infrastructure challenges shaping the sectors we serve.
-          </span>
-        </div>
-
-        <motion.div
-          className="eventsAreaGrid"
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true,
-            amount: 0.08,
-          }}
-        >
-          {engagementAreas.map((area) => {
-            const Icon = area.icon;
-
-            return (
-              <motion.article
-                className="eventsAreaCard"
-                variants={fadeUp}
-                key={area.title}
-              >
-                <div className="eventsIcon">
-                  <Icon size={24} />
-                </div>
-
-                <h3>{area.title}</h3>
-                <p>{area.text}</p>
-              </motion.article>
-            );
-          })}
-        </motion.div>
-      </section>
-      {/* =====================================================
-          LATEST INDUSTRY ENGAGEMENT
-      ===================================================== */}
-
-      <section className="eventsSection eventsEngagementHighlight">
-        <motion.div
-          className="eventsEngagementHighlightCard"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.15 }}
-          transition={{ duration: 0.55, ease: "easeOut" }}
-        >
-          <div className="eventsEngagementHighlightIcon">
-            <UtensilsCrossed size={28} />
-          </div>
-
-          <div className="eventsEngagementHighlightContent">
-            <div className="eventsEngagementHighlightTop">
-              <span className="eventsEngagementEyebrow">
-                Latest Industry Engagement
-              </span>
-
-              <span className="eventsEngagementType">
-                Food Manufacturing
-              </span>
-            </div>
-
-            <h2>
-              Engaging with Melbourne&apos;s Food Manufacturing Community
-            </h2>
-
-            <p>
-              EnerG IQ Tech participated in Melbourne&apos;s North Food Group&apos;s{" "}
-              <strong>Growth Playbook: Taking Food Further</strong>, connecting with
-              food-industry leaders and manufacturers around the operational
-              challenges of scaling production.
-            </p>
-
-            <p>
-              The engagement supports EnerG IQ Tech&apos;s ongoing work with
-              energy-intensive food manufacturing and cold-chain operations,
-              including refrigeration, production loads and peak-demand
-              optimisation.
-            </p>
-
-            <div className="eventsEngagementHighlightBottom">
-              <div className="eventsEngagementMeta">
-                <span>
-                  <CalendarDays size={15} />
-                  17 September 2026
-                </span>
-
-                <span>
-                  <MapPin size={15} />
-                  Melbourne, Australia
-                </span>
-              </div>
-
-              <a
-                href="https://northlink.org.au/growth-playbook-what-does-it-take-to-scale-a-food-business/"
-                target="_blank"
-                rel="noreferrer"
-                className="eventsEngagementLink"
-              >
-                View NORTH Link Event Recap
-                <ExternalLink size={15} />
+            <motion.div className="eventsHeroButtons" variants={fadeUp}>
+              <a href="#latest-engagement" className="eventsPrimaryBtn">
+                Explore Industry Engagement
+                <ChevronRight size={18} />
               </a>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-      {/* =====================================================
-          EVENT DIRECTORY
-          Fine Food card uses Finefoodevent_floor_pic.jpg
-      ===================================================== */}
 
-      <section
-        className="eventsSection eventsLatestSection"
-        id="latest-engagement"
-      >
-        <div className="eventsSectionHeader">
-          <p>2026 Industry Engagement</p>
+              <Link to="/book-discussion" className="eventsSecondaryBtn">
+                Book a Discussion
+              </Link>
+            </motion.div>
 
-          <h2>
-            Food & Beverage, Clean Energy and the Built Environment.
-          </h2>
+            <motion.div className="eventsHeroTags" variants={fadeUp}>
+              <span>
+                <UtensilsCrossed size={15} />
+                Food & Beverage
+              </span>
 
-          <span>
-            Each event aligns to an EnerG IQ Tech market: energy-intensive food
-            operations, energy management and distributed energy, or commercial
-            building and facilities optimisation.
-          </span>
-        </div>
+              <span>
+                <Zap size={15} />
+                Clean Energy
+              </span>
 
-        <div className="eventsGrid">
-          {events.map((event) => (
-            <article className="eventsCard" key={event.slug}>
-              <div className="eventsCardImage">
+              <span>
+                <Building2 size={15} />
+                Built Environment
+              </span>
+
+              <span>
+                <Leaf size={15} />
+                Energy & CO₂ Reduction
+              </span>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            className="eventsHeroVisual"
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
+          >
+            <div className="eventsFeaturedHeroCard">
+              <div className="eventsFeaturedImageWrap">
                 <img
-                  src={event.image}
-                  alt={event.title}
-                  onError={(eventObject) => {
-                    eventObject.currentTarget.style.display = "none";
-                  }}
+                  src={FINE_FOOD_IMAGES.standing}
+                  alt="EnerG IQ Tech at Fine Food Australia 2026"
                 />
 
-                <div className="eventsCardImageFallback">
-                  {event.category === "Food & Beverage" && (
-                    <UtensilsCrossed size={42} />
-                  )}
-
-                  {event.category === "Energy" && <Zap size={42} />}
-
-                  {event.category === "Built Environment" && (
-                    <Building2 size={42} />
-                  )}
-                </div>
-
-                <span
-                  className={`eventsCardStatus ${
-                    event.status === "Upcoming"
-                      ? "upcoming"
-                      : "attended"
-                  }`}
-                >
-                  {event.status}
+                <span className="eventsFeaturedStatus">
+                  {featuredEvent.status}
                 </span>
               </div>
 
-              <div className="eventsCardBody">
-                <span className="eventsCardCategory">
-                  {event.category}
-                </span>
+              <div className="eventsFeaturedHeroContent">
+                <span>{featuredEvent.category}</span>
 
-                <h3>{event.title}</h3>
+                <strong>{featuredEvent.title}</strong>
 
-                <div className="eventsCardMeta">
+                <div className="eventsFeaturedMeta">
                   <span>
                     <CalendarDays size={14} />
-                    {event.date}
+                    {featuredEvent.date}
                   </span>
 
                   <span>
                     <MapPin size={14} />
-                    {event.location}
+                    {featuredEvent.location}
                   </span>
                 </div>
 
-                <strong className="eventsVenue">
-                  {event.venue}
-                </strong>
+                <p>{featuredEvent.energIQFocus}</p>
 
-                <p>{event.summary}</p>
-
-                <div className="eventsCardFocus">
-                  <span>EnerG IQ Tech focus</span>
-                  <p>{event.energIQFocus}</p>
-                </div>
-
-                <div className="eventsCardActions">
-                  {event.status === "Attended" ? (
-                    <Link to={event.path}>
-                      Read insight
-                      <ArrowRight size={16} />
-                    </Link>
-                  ) : (
-                    <span className="eventsComingSoon">
-                      Event coverage coming after attendance
-                    </span>
-                  )}
-
-                  <a
-                    href={event.officialUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Official site
-                    <ExternalLink size={14} />
-                  </a>
-                </div>
+                <Link to={featuredEvent.path}>
+                  Read the event story
+                  <ArrowRight size={16} />
+                </Link>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
+            </div>
+          </motion.div>
+        </section>
 
-      {/* =====================================================
-          ENGAGE → PILOT → MEASURE
-      ===================================================== */}
+        {/* =====================================================
+            INDUSTRY STRIP
+        ===================================================== */}
 
-      <section className="eventsSection eventsApplicationSection">
-        <div className="eventsApplicationPanel">
-          <div>
-            <p>From Industry Engagement to Practical Application</p>
+        <section className="eventsStrip">
+          <span>Food & Beverage</span>
+          <ArrowRight size={15} />
+
+          <span>Energy</span>
+          <ArrowRight size={15} />
+
+          <span>Built Environment</span>
+          <ArrowRight size={15} />
+
+          <span>Operational Energy Intelligence</span>
+        </section>
+
+        {/* =====================================================
+            WHY INDUSTRY ENGAGEMENT
+        ===================================================== */}
+
+        <section className="eventsSection eventsWhySection">
+          <div className="eventsSectionHeader">
+            <p>Why Industry Engagement Matters</p>
 
             <h2>
-              Industry Insight Helps Shape How EnerG IQ Tech Is Applied.
+              Energy Optimisation Works Best When It Starts With Real Operational
+              Context.
             </h2>
 
             <span>
-              The objective is not simply to attend events. It is to understand
-              where energy is being consumed, where operational constraints
-              matter and where AI-assisted optimisation can create measurable
-              value.
+              Industry events give EnerG IQ Tech direct exposure to the
+              technologies, operating environments, commercial priorities and
+              infrastructure challenges shaping the sectors we serve.
             </span>
           </div>
 
-          <div className="eventsApplicationFlow">
-            <div>
-              <span>01</span>
-              <strong>Engage</strong>
-              <small>Understand sector challenges</small>
+          <motion.div
+            className="eventsAreaGrid"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+              once: true,
+              amount: 0.08,
+            }}
+          >
+            {engagementAreas.map((area) => {
+              const Icon = area.icon;
+
+              return (
+                <motion.article
+                  className="eventsAreaCard"
+                  variants={fadeUp}
+                  key={area.title}
+                >
+                  <div className="eventsIcon">
+                    <Icon size={24} />
+                  </div>
+
+                  <h3>{area.title}</h3>
+                  <p>{area.text}</p>
+                </motion.article>
+              );
+            })}
+          </motion.div>
+        </section>
+        {/* =====================================================
+            LATEST INDUSTRY ENGAGEMENT
+        ===================================================== */}
+
+        <section className="eventsSection eventsEngagementHighlight">
+          <motion.div
+            className="eventsEngagementHighlightCard"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
+          >
+            <div className="eventsEngagementHighlightIcon">
+              <UtensilsCrossed size={28} />
             </div>
 
-            <ChevronRight size={20} />
+            <div className="eventsEngagementHighlightContent">
+              <div className="eventsEngagementHighlightTop">
+                <span className="eventsEngagementEyebrow">
+                  Latest Industry Engagement
+                </span>
 
+                <span className="eventsEngagementType">
+                  Food Manufacturing
+                </span>
+              </div>
+
+              <h2>
+                Engaging with Melbourne&apos;s Food Manufacturing Community
+              </h2>
+
+              <p>
+                EnerG IQ Tech participated in Melbourne&apos;s North Food Group&apos;s{" "}
+                <strong>Growth Playbook: Taking Food Further</strong>, connecting with
+                food-industry leaders and manufacturers around the operational
+                challenges of scaling production.
+              </p>
+
+              <p>
+                The engagement supports EnerG IQ Tech&apos;s ongoing work with
+                energy-intensive food manufacturing and cold-chain operations,
+                including refrigeration, production loads and peak-demand
+                optimisation.
+              </p>
+
+              <div className="eventsEngagementHighlightBottom">
+                <div className="eventsEngagementMeta">
+                  <span>
+                    <CalendarDays size={15} />
+                    17 September 2026
+                  </span>
+
+                  <span>
+                    <MapPin size={15} />
+                    Melbourne, Australia
+                  </span>
+                </div>
+
+                <a
+                  href="https://northlink.org.au/growth-playbook-what-does-it-take-to-scale-a-food-business/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="eventsEngagementLink"
+                >
+                  View NORTH Link Event Recap
+                  <ExternalLink size={15} />
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+        {/* =====================================================
+            EVENT DIRECTORY
+            Fine Food card uses Finefoodevent_floor_pic.jpg
+        ===================================================== */}
+
+        <section
+          className="eventsSection eventsLatestSection"
+          id="latest-engagement"
+        >
+          <div className="eventsSectionHeader">
+            <p>2026 Industry Engagement</p>
+
+            <h2>
+              Food & Beverage, Clean Energy and the Built Environment.
+            </h2>
+
+            <span>
+              Each event aligns to an EnerG IQ Tech market: energy-intensive food
+              operations, energy management and distributed energy, or commercial
+              building and facilities optimisation.
+            </span>
+          </div>
+
+          <div className="eventsGrid">
+            {events.map((event) => (
+              <article className="eventsCard" key={event.slug}>
+                <div className="eventsCardImage">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    onError={(eventObject) => {
+                      eventObject.currentTarget.style.display = "none";
+                    }}
+                  />
+
+                  <div className="eventsCardImageFallback">
+                    {event.category === "Food & Beverage" && (
+                      <UtensilsCrossed size={42} />
+                    )}
+
+                    {event.category === "Energy" && <Zap size={42} />}
+
+                    {event.category === "Built Environment" && (
+                      <Building2 size={42} />
+                    )}
+                  </div>
+
+                  <span
+                    className={`eventsCardStatus ${
+                      event.status === "Upcoming"
+                        ? "upcoming"
+                        : "attended"
+                    }`}
+                  >
+                    {event.status}
+                  </span>
+                </div>
+
+                <div className="eventsCardBody">
+                  <span className="eventsCardCategory">
+                    {event.category}
+                  </span>
+
+                  <h3>{event.title}</h3>
+
+                  <div className="eventsCardMeta">
+                    <span>
+                      <CalendarDays size={14} />
+                      {event.date}
+                    </span>
+
+                    <span>
+                      <MapPin size={14} />
+                      {event.location}
+                    </span>
+                  </div>
+
+                  <strong className="eventsVenue">
+                    {event.venue}
+                  </strong>
+
+                  <p>{event.summary}</p>
+
+                  <div className="eventsCardFocus">
+                    <span>EnerG IQ Tech focus</span>
+                    <p>{event.energIQFocus}</p>
+                  </div>
+
+                  <div className="eventsCardActions">
+                    {event.status === "Attended" ? (
+                      <Link to={event.path}>
+                        Read insight
+                        <ArrowRight size={16} />
+                      </Link>
+                    ) : (
+                      <span className="eventsComingSoon">
+                        Event coverage coming after attendance
+                      </span>
+                    )}
+
+                    <a
+                      href={event.officialUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Official site
+                      <ExternalLink size={14} />
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* =====================================================
+            ENGAGE → PILOT → MEASURE
+        ===================================================== */}
+
+        <section className="eventsSection eventsApplicationSection">
+          <div className="eventsApplicationPanel">
             <div>
-              <span>02</span>
-              <strong>Translate</strong>
-              <small>Map challenges to energy intelligence</small>
+              <p>From Industry Engagement to Practical Application</p>
+
+              <h2>
+                Industry Insight Helps Shape How EnerG IQ Tech Is Applied.
+              </h2>
+
+              <span>
+                The objective is not simply to attend events. It is to understand
+                where energy is being consumed, where operational constraints
+                matter and where AI-assisted optimisation can create measurable
+                value.
+              </span>
             </div>
 
-            <ChevronRight size={20} />
+            <div className="eventsApplicationFlow">
+              <div>
+                <span>01</span>
+                <strong>Engage</strong>
+                <small>Understand sector challenges</small>
+              </div>
 
-            <div>
-              <span>03</span>
-              <strong>Pilot</strong>
-              <small>Test a measurable energy problem</small>
-            </div>
+              <ChevronRight size={20} />
 
-            <ChevronRight size={20} />
+              <div>
+                <span>02</span>
+                <strong>Translate</strong>
+                <small>Map challenges to energy intelligence</small>
+              </div>
 
-            <div>
-              <span>04</span>
-              <strong>Measure</strong>
-              <small>Quantify savings and operational outcomes</small>
+              <ChevronRight size={20} />
+
+              <div>
+                <span>03</span>
+                <strong>Pilot</strong>
+                <small>Test a measurable energy problem</small>
+              </div>
+
+              <ChevronRight size={20} />
+
+              <div>
+                <span>04</span>
+                <strong>Measure</strong>
+                <small>Quantify savings and operational outcomes</small>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* =====================================================
-          CTA
-      ===================================================== */}
+        {/* =====================================================
+            CTA
+        ===================================================== */}
 
-      <section className="eventsCta">
-        <div>
-          <p>Industry Engagement</p>
+        <section className="eventsCta">
+          <div>
+            <p>Industry Engagement</p>
 
-          <h2>
-            Have an Energy-Intensive Operational Challenge Worth Exploring?
-          </h2>
+            <h2>
+              Have an Energy-Intensive Operational Challenge Worth Exploring?
+            </h2>
 
-          <span>
-            Talk to EnerG IQ Tech about a measurable energy problem across food
-            manufacturing, commercial buildings, industrial facilities or
-            connected energy infrastructure.
-          </span>
-        </div>
+            <span>
+              Talk to EnerG IQ Tech about a measurable energy problem across food
+              manufacturing, commercial buildings, industrial facilities or
+              connected energy infrastructure.
+            </span>
+          </div>
 
-        <div className="eventsCtaActions">
-          <Link to="/book-discussion" className="eventsPrimaryBtn">
-            Book a Discussion
-            <ChevronRight size={18} />
-          </Link>
-        </div>
-      </section>
-    </main>
+          <div className="eventsCtaActions">
+            <Link to="/book-discussion" className="eventsPrimaryBtn">
+              Book a Discussion
+              <ChevronRight size={18} />
+            </Link>
+          </div>
+        </section>
+      </main>
+    
+    
+    
+    
+    </>
+    
   );
 }

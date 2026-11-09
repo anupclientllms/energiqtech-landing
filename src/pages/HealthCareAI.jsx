@@ -31,6 +31,7 @@ import {
 
 import "../styles/HealthCareAI.css";
 
+import SEO from "./SEO";
 
 const fadeUp = {
   hidden: {
@@ -331,888 +332,905 @@ export default function HealthcareAI({ openPilotModal }) {
 
 
   return (
-    <main className="healthcarePage">
 
-      {/* =========================================================
-          HERO
-      ========================================================= */}
+    <>
 
-      <section className="healthcareHero">
+    
+      <SEO
+        title="Healthcare AI Energy Optimisation | EnerG IQ Tech"
+        description="Reduce hospital and healthcare facility energy costs, peak demand and CO₂ emissions with EnerG IQ Tech. Optimise HVAC, chillers, ventilation and connected assets using Edge AI, digital twins and predictive analytics."
+        path="/healthcare-ai"
+      />
 
-        <div className="healthcareHeroContent">
+      <main className="healthcarePage">
 
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            animate="show"
-          >
+        {/* =========================================================
+            HERO
+        ========================================================= */}
 
-            <motion.div
-              className="healthcareBadge"
-              variants={fadeUp}
-            >
-              <Hospital size={17} />
-              EnerG IQ Tech Healthcare AI
-            </motion.div>
+        <section className="healthcareHero">
 
-
-            <motion.h1 variants={fadeUp}>
-              Reduce Hospital Energy Costs & CO₂ Emissions Without
-              Compromising Patient Care.
-            </motion.h1>
-
-
-            <motion.p
-              className="healthcareLead"
-              variants={fadeUp}
-            >
-              EnerG IQ Tech Healthcare AI helps hospitals identify and reduce
-              energy waste, peak demand and associated CO₂ emissions across
-              clinical, building and central energy infrastructure - while
-              protecting patient care, clinical safety, compliance and 24/7
-              operational resilience.
-            </motion.p>
-
-
-            <motion.p
-              className="healthcareDescription"
-              variants={fadeUp}
-            >
-              Edge AI analyses HVAC, chillers, steam, hot water, medical
-              refrigeration, laboratories, imaging, critical power and other
-              hospital systems in real time. The AI Energy Gateway connects
-              BMS, meters and operational telemetry so EnerG IQ Tech can
-              identify inefficiencies, recommend governed optimisation
-              actions and measure resulting energy, financial and carbon
-              outcomes.
-            </motion.p>
-
+          <div className="healthcareHeroContent">
 
             <motion.div
-              className="healthcareHeroButtons"
-              variants={fadeUp}
+              variants={stagger}
+              initial="hidden"
+              animate="show"
             >
 
-              
-              <Link to="/book-discussion" className="healthcarePrimaryBtn">
-                Book a Discussion
-                <ChevronRight size={19} />
-              </Link>
-
-
-              <a
-                href="#healthcare-workflow"
-                className="healthcareSecondaryBtn"
+              <motion.div
+                className="healthcareBadge"
+                variants={fadeUp}
               >
-                View AI Workflow
-              </a>
+                <Hospital size={17} />
+                EnerG IQ Tech Healthcare AI
+              </motion.div>
+
+
+              <motion.h1 variants={fadeUp}>
+                Reduce Hospital Energy Costs & CO₂ Emissions Without
+                Compromising Patient Care.
+              </motion.h1>
+
+
+              <motion.p
+                className="healthcareLead"
+                variants={fadeUp}
+              >
+                EnerG IQ Tech Healthcare AI helps hospitals identify and reduce
+                energy waste, peak demand and associated CO₂ emissions across
+                clinical, building and central energy infrastructure - while
+                protecting patient care, clinical safety, compliance and 24/7
+                operational resilience.
+              </motion.p>
+
+
+              <motion.p
+                className="healthcareDescription"
+                variants={fadeUp}
+              >
+                Edge AI analyses HVAC, chillers, steam, hot water, medical
+                refrigeration, laboratories, imaging, critical power and other
+                hospital systems in real time. The AI Energy Gateway connects
+                BMS, meters and operational telemetry so EnerG IQ Tech can
+                identify inefficiencies, recommend governed optimisation
+                actions and measure resulting energy, financial and carbon
+                outcomes.
+              </motion.p>
+
+
+              <motion.div
+                className="healthcareHeroButtons"
+                variants={fadeUp}
+              >
+
+                
+                <Link to="/book-discussion" className="healthcarePrimaryBtn">
+                  Book a Discussion
+                  <ChevronRight size={19} />
+                </Link>
+
+
+                <a
+                  href="#healthcare-workflow"
+                  className="healthcareSecondaryBtn"
+                >
+                  View AI Workflow
+                </a>
+
+              </motion.div>
+
+
+              <motion.div
+                className="healthcareHeroTags"
+                variants={fadeUp}
+              >
+
+                <span>
+                  <Zap size={15} />
+                  Energy Cost Reduction
+                </span>
+
+                <span>
+                  <Leaf size={15} />
+                  CO₂ Reduction
+                </span>
+
+                <span>
+                  <Gauge size={15} />
+                  Peak Demand
+                </span>
+
+                <span>
+                  <ShieldCheck size={15} />
+                  Clinical Safeguards
+                </span>
+
+              </motion.div>
 
             </motion.div>
-
-
-            <motion.div
-              className="healthcareHeroTags"
-              variants={fadeUp}
-            >
-
-              <span>
-                <Zap size={15} />
-                Energy Cost Reduction
-              </span>
-
-              <span>
-                <Leaf size={15} />
-                CO₂ Reduction
-              </span>
-
-              <span>
-                <Gauge size={15} />
-                Peak Demand
-              </span>
-
-              <span>
-                <ShieldCheck size={15} />
-                Clinical Safeguards
-              </span>
-
-            </motion.div>
-
-          </motion.div>
-
-        </div>
-
-
-        {/* =====================================================
-            HERO DASHBOARD
-        ===================================================== */}
-
-        <motion.div
-          className="healthcareHeroVisual"
-          initial={{
-            opacity: 0,
-            y: 28,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.15,
-          }}
-        >
-
-          <div className="healthcareDashboard">
-
-            <div className="healthcareDashboardTop">
-
-              <div>
-                <strong>
-                  Hospital Energy Optimisation
-                </strong>
-
-                <span>
-                  Energy, operations and clinical safeguards
-                </span>
-              </div>
-
-
-              <b>
-                <Activity size={14} />
-                Live
-              </b>
-
-            </div>
-
-
-            <div className="healthcareKpis">
-
-              <div>
-
-                <small>
-                  Healthcare Sites
-                </small>
-
-                <strong>
-                  4
-                </strong>
-
-                <span>
-                  Connected hospitals
-                </span>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Asset Classes
-                </small>
-
-                <strong>
-                  18
-                </strong>
-
-                <span>
-                  Energy-intensive systems
-                </span>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Opportunities
-                </small>
-
-                <strong>
-                  54
-                </strong>
-
-                <span>
-                  Energy optimisation items
-                </span>
-
-              </div>
-
-
-              <div>
-
-                <small>
-                  Critical Systems
-                </small>
-
-                <strong>
-                  Protected
-                </strong>
-
-                <span>
-                  Human approval enabled
-                </span>
-
-              </div>
-
-            </div>
-
-
-            <div className="healthcareInsightCard">
-
-              <div className="healthcareInsightIcon">
-                <Brain size={22} />
-              </div>
-
-
-              <div>
-
-                <strong>
-                  AI Energy Recommendation
-                </strong>
-
-                <p>
-                  Hospital HVAC is maintaining full ventilation in an
-                  unoccupied outpatient zone after 9:00 PM. Review an approved
-                  setback schedule to reduce unnecessary energy consumption
-                  while preserving pressure, air-quality and clinical
-                  requirements.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="healthcareApproval">
-
-              <span>
-                <ShieldCheck size={18} />
-                Clinical and facilities approval required
-              </span>
-
-              <button type="button">
-                Review Action
-              </button>
-
-            </div>
 
           </div>
 
-        </motion.div>
 
-      </section>
-
-
-      {/* =========================================================
-          VALUE FLOW
-      ========================================================= */}
-
-      <section className="healthcareStrip">
-
-        <span>
-          Connect
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Detect Waste
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Analyse
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Optimise
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Approve
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Measure Savings
-        </span>
-
-      </section>
-
-
-      {/* =========================================================
-          HEALTHCARE ENERGY CHALLENGE
-      ========================================================= */}
-
-      <section className="healthcareSection healthcareChallengeSection">
-
-        <div className="healthcareSectionHeader">
-
-          <p>
-            Healthcare Energy Challenge
-          </p>
-
-          <h2>
-            High Hospital Energy Costs & CO₂ Emissions - With Patient
-            Care Always First.
-          </h2>
-
-          <span>
-            Hospitals operate continuously across energy-intensive HVAC,
-            chillers, steam, hot water, medical equipment, refrigeration and
-            critical-power infrastructure. The challenge is reducing energy
-            consumption, peak demand and associated emissions without
-            compromising patient care, clinical safety, compliance or
-            resilience.
-          </span>
-
-        </div>
-
-
-        <div className="healthcareChallengeGrid">
-
-          <article>
-
-            <div className="healthcareIcon">
-              <Zap size={24} />
-            </div>
-
-            <h3>
-              High Energy Costs
-            </h3>
-
-            <p>
-              HVAC, chillers, steam, hot water, imaging and continuous
-              clinical operations create significant ongoing energy demand.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <div className="healthcareIcon">
-              <Leaf size={24} />
-            </div>
-
-            <h3>
-              CO₂ Reduction Requirements
-            </h3>
-
-            <p>
-              Reducing unnecessary hospital energy consumption can lower
-              associated CO₂ emissions and support healthcare sustainability
-              and decarbonisation objectives.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <div className="healthcareIcon">
-              <ShieldCheck size={24} />
-            </div>
-
-            <h3>
-              Clinical Safety Constraints
-            </h3>
-
-            <p>
-              Optimisation must preserve air quality, pressure relationships,
-              temperature, infection-control requirements and patient care.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <div className="healthcareIcon">
-              <Power size={24} />
-            </div>
-
-            <h3>
-              24/7 Critical Infrastructure
-            </h3>
-
-            <p>
-              UPS systems, generators, essential circuits and critical
-              clinical infrastructure require resilience and governed
-              operational decisions.
-            </p>
-
-          </article>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          CONNECTED HEALTHCARE ASSETS
-      ========================================================= */}
-
-      <section className="healthcareSection healthcareAssetsSection">
-
-        <div className="healthcareSectionHeader">
-
-          <p>
-            Connected Healthcare Assets
-          </p>
-
-          <h2>
-            Optimise the Systems Driving Hospital Energy Costs.
-          </h2>
-
-          <span>
-            The AI Energy Gateway connects existing healthcare infrastructure,
-            BMS, meters and available telemetry so EnerG IQ Tech can identify
-            energy waste and optimisation opportunities without requiring
-            wholesale replacement of hospital systems.
-          </span>
-
-        </div>
-
-
-        <motion.div
-          className="healthcareAssetsGrid"
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true,
-            amount: 0.08,
-          }}
-        >
-
-          {healthcareAssets.map((asset) => {
-            const Icon = asset.icon;
-
-            return (
-              <motion.article
-                className="healthcareAssetCard"
-                variants={fadeUp}
-                key={asset.title}
-              >
-
-                <div className="healthcareIcon">
-                  <Icon size={23} />
+          {/* =====================================================
+              HERO DASHBOARD
+          ===================================================== */}
+
+          <motion.div
+            className="healthcareHeroVisual"
+            initial={{
+              opacity: 0,
+              y: 28,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
+          >
+
+            <div className="healthcareDashboard">
+
+              <div className="healthcareDashboardTop">
+
+                <div>
+                  <strong>
+                    Hospital Energy Optimisation
+                  </strong>
+
+                  <span>
+                    Energy, operations and clinical safeguards
+                  </span>
                 </div>
 
 
-                <h3>
-                  {asset.title}
-                </h3>
+                <b>
+                  <Activity size={14} />
+                  Live
+                </b>
 
-                <p>
-                  {asset.text}
-                </p>
-
-              </motion.article>
-            );
-          })}
-
-        </motion.div>
-
-      </section>
+              </div>
 
 
-      {/* =========================================================
-          AI OPTIMISATION SCENARIOS
-      ========================================================= */}
+              <div className="healthcareKpis">
 
-      <section className="healthcareSection healthcareScenarioSection">
+                <div>
 
-        <div className="healthcareSectionHeader">
+                  <small>
+                    Healthcare Sites
+                  </small>
 
-          <p>
-            AI Optimisation Scenarios
-          </p>
+                  <strong>
+                    4
+                  </strong>
 
-          <h2>
-            Turn Hospital Energy Waste Into Measurable Cost & Carbon
-            Reduction Opportunities.
-          </h2>
+                  <span>
+                    Connected hospitals
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    Asset Classes
+                  </small>
+
+                  <strong>
+                    18
+                  </strong>
+
+                  <span>
+                    Energy-intensive systems
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    Opportunities
+                  </small>
+
+                  <strong>
+                    54
+                  </strong>
+
+                  <span>
+                    Energy optimisation items
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    Critical Systems
+                  </small>
+
+                  <strong>
+                    Protected
+                  </strong>
+
+                  <span>
+                    Human approval enabled
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div className="healthcareInsightCard">
+
+                <div className="healthcareInsightIcon">
+                  <Brain size={22} />
+                </div>
+
+
+                <div>
+
+                  <strong>
+                    AI Energy Recommendation
+                  </strong>
+
+                  <p>
+                    Hospital HVAC is maintaining full ventilation in an
+                    unoccupied outpatient zone after 9:00 PM. Review an approved
+                    setback schedule to reduce unnecessary energy consumption
+                    while preserving pressure, air-quality and clinical
+                    requirements.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div className="healthcareApproval">
+
+                <span>
+                  <ShieldCheck size={18} />
+                  Clinical and facilities approval required
+                </span>
+
+                <button type="button">
+                  Review Action
+                </button>
+
+              </div>
+
+            </div>
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            VALUE FLOW
+        ========================================================= */}
+
+        <section className="healthcareStrip">
 
           <span>
-            EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
-            Decision Agents and human-in-the-loop governance to identify
-            practical energy optimisation opportunities while maintaining
-            clinical and operational safeguards.
+            Connect
           </span>
 
-        </div>
+          <ArrowRight size={15} />
+
+          <span>
+            Detect Waste
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Analyse
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Optimise
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Approve
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Measure Savings
+          </span>
+
+        </section>
 
 
-        <div className="healthcareScenarioGrid">
+        {/* =========================================================
+            HEALTHCARE ENERGY CHALLENGE
+        ========================================================= */}
 
-          {scenarios.map((scenario) => {
-            const Icon = scenario.icon;
+        <section className="healthcareSection healthcareChallengeSection">
 
-            return (
-              <article
-                className="healthcareScenarioCard"
-                key={scenario.title}
-              >
+          <div className="healthcareSectionHeader">
 
-                <div className="healthcareScenarioTop">
+            <p>
+              Healthcare Energy Challenge
+            </p>
+
+            <h2>
+              High Hospital Energy Costs & CO₂ Emissions - With Patient
+              Care Always First.
+            </h2>
+
+            <span>
+              Hospitals operate continuously across energy-intensive HVAC,
+              chillers, steam, hot water, medical equipment, refrigeration and
+              critical-power infrastructure. The challenge is reducing energy
+              consumption, peak demand and associated emissions without
+              compromising patient care, clinical safety, compliance or
+              resilience.
+            </span>
+
+          </div>
+
+
+          <div className="healthcareChallengeGrid">
+
+            <article>
+
+              <div className="healthcareIcon">
+                <Zap size={24} />
+              </div>
+
+              <h3>
+                High Energy Costs
+              </h3>
+
+              <p>
+                HVAC, chillers, steam, hot water, imaging and continuous
+                clinical operations create significant ongoing energy demand.
+              </p>
+
+            </article>
+
+
+            <article>
+
+              <div className="healthcareIcon">
+                <Leaf size={24} />
+              </div>
+
+              <h3>
+                CO₂ Reduction Requirements
+              </h3>
+
+              <p>
+                Reducing unnecessary hospital energy consumption can lower
+                associated CO₂ emissions and support healthcare sustainability
+                and decarbonisation objectives.
+              </p>
+
+            </article>
+
+
+            <article>
+
+              <div className="healthcareIcon">
+                <ShieldCheck size={24} />
+              </div>
+
+              <h3>
+                Clinical Safety Constraints
+              </h3>
+
+              <p>
+                Optimisation must preserve air quality, pressure relationships,
+                temperature, infection-control requirements and patient care.
+              </p>
+
+            </article>
+
+
+            <article>
+
+              <div className="healthcareIcon">
+                <Power size={24} />
+              </div>
+
+              <h3>
+                24/7 Critical Infrastructure
+              </h3>
+
+              <p>
+                UPS systems, generators, essential circuits and critical
+                clinical infrastructure require resilience and governed
+                operational decisions.
+              </p>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            CONNECTED HEALTHCARE ASSETS
+        ========================================================= */}
+
+        <section className="healthcareSection healthcareAssetsSection">
+
+          <div className="healthcareSectionHeader">
+
+            <p>
+              Connected Healthcare Assets
+            </p>
+
+            <h2>
+              Optimise the Systems Driving Hospital Energy Costs.
+            </h2>
+
+            <span>
+              The AI Energy Gateway connects existing healthcare infrastructure,
+              BMS, meters and available telemetry so EnerG IQ Tech can identify
+              energy waste and optimisation opportunities without requiring
+              wholesale replacement of hospital systems.
+            </span>
+
+          </div>
+
+
+          <motion.div
+            className="healthcareAssetsGrid"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+              once: true,
+              amount: 0.08,
+            }}
+          >
+
+            {healthcareAssets.map((asset) => {
+              const Icon = asset.icon;
+
+              return (
+                <motion.article
+                  className="healthcareAssetCard"
+                  variants={fadeUp}
+                  key={asset.title}
+                >
 
                   <div className="healthcareIcon">
                     <Icon size={23} />
                   </div>
 
-                  <span>
-                    AI Scenario
-                  </span>
+
+                  <h3>
+                    {asset.title}
+                  </h3>
+
+                  <p>
+                    {asset.text}
+                  </p>
+
+                </motion.article>
+              );
+            })}
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            AI OPTIMISATION SCENARIOS
+        ========================================================= */}
+
+        <section className="healthcareSection healthcareScenarioSection">
+
+          <div className="healthcareSectionHeader">
+
+            <p>
+              AI Optimisation Scenarios
+            </p>
+
+            <h2>
+              Turn Hospital Energy Waste Into Measurable Cost & Carbon
+              Reduction Opportunities.
+            </h2>
+
+            <span>
+              EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
+              Decision Agents and human-in-the-loop governance to identify
+              practical energy optimisation opportunities while maintaining
+              clinical and operational safeguards.
+            </span>
+
+          </div>
+
+
+          <div className="healthcareScenarioGrid">
+
+            {scenarios.map((scenario) => {
+              const Icon = scenario.icon;
+
+              return (
+                <article
+                  className="healthcareScenarioCard"
+                  key={scenario.title}
+                >
+
+                  <div className="healthcareScenarioTop">
+
+                    <div className="healthcareIcon">
+                      <Icon size={23} />
+                    </div>
+
+                    <span>
+                      AI Scenario
+                    </span>
+
+                  </div>
+
+
+                  <h3>
+                    {scenario.title}
+                  </h3>
+
+                  <p>
+                    {scenario.text}
+                  </p>
+
+
+                  <div className="healthcareOutcome">
+                    <CheckCircle2 size={17} />
+                    {scenario.outcome}
+                  </div>
+
+                </article>
+              );
+            })}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            AI WORKFLOW
+        ========================================================= */}
+
+        <section
+          className="healthcareSection healthcareWorkflowSection"
+          id="healthcare-workflow"
+        >
+
+          <div className="healthcareSectionHeader healthcareSectionHeaderLight">
+
+            <p>
+              End-to-End AI Workflow
+            </p>
+
+            <h2>
+              From Hospital Energy Data to Measurable Savings.
+            </h2>
+
+            <span>
+              EnerG IQ Tech transforms operational telemetry into explainable,
+              governed optimisation recommendations and measures resulting
+              energy, financial and associated CO₂ outcomes while preserving
+              clinical controls and human oversight.
+            </span>
+
+          </div>
+
+
+          <div className="healthcareWorkflow">
+
+            {workflowSteps.map((step) => (
+
+              <div
+                className="healthcareWorkflowStep"
+                key={step.number}
+              >
+
+                <b>
+                  {step.number}
+                </b>
+
+
+                <div>
+
+                  <h3>
+                    {step.title}
+                  </h3>
+
+                  <p>
+                    {step.text}
+                  </p>
 
                 </div>
 
+              </div>
 
-                <h3>
-                  {scenario.title}
-                </h3>
+            ))}
 
-                <p>
-                  {scenario.text}
-                </p>
+          </div>
 
-
-                <div className="healthcareOutcome">
-                  <CheckCircle2 size={17} />
-                  {scenario.outcome}
-                </div>
-
-              </article>
-            );
-          })}
-
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          AI WORKFLOW
-      ========================================================= */}
+        {/* =========================================================
+            SHARED PLATFORM
+        ========================================================= */}
 
-      <section
-        className="healthcareSection healthcareWorkflowSection"
-        id="healthcare-workflow"
-      >
+        <section className="healthcareSection healthcarePlatformSection">
 
-        <div className="healthcareSectionHeader healthcareSectionHeaderLight">
+          <div className="healthcarePlatformPanel">
 
-          <p>
-            End-to-End AI Workflow
-          </p>
+            <div className="healthcarePlatformCopy">
 
-          <h2>
-            From Hospital Energy Data to Measurable Savings.
-          </h2>
+              <p>
+                Shared EnerG IQ Tech Platform
+              </p>
 
-          <span>
-            EnerG IQ Tech transforms operational telemetry into explainable,
-            governed optimisation recommendations and measures resulting
-            energy, financial and associated CO₂ outcomes while preserving
-            clinical controls and human oversight.
-          </span>
+              <h2>
+                Healthcare-Specific Optimisation Built on One Energy
+                Intelligence Architecture.
+              </h2>
 
-        </div>
+              <span>
+                Healthcare AI uses the shared EnerG IQ Tech architecture to
+                connect hospital systems, identify energy waste, recommend
+                governed optimisation actions and quantify energy, financial
+                and associated carbon outcomes.
+              </span>
 
 
-        <div className="healthcareWorkflow">
+              <ul>
 
-          {workflowSteps.map((step) => (
+                <li>
+                  <CheckCircle2 size={18} />
+                  AI Energy Gateway connectivity
+                </li>
 
-            <div
-              className="healthcareWorkflowStep"
-              key={step.number}
-            >
+                <li>
+                  <CheckCircle2 size={18} />
+                  Digital Twin operational context
+                </li>
 
-              <b>
-                {step.number}
-              </b>
+                <li>
+                  <CheckCircle2 size={18} />
+                  Configurable AI Decision Agents
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Human-in-the-loop clinical governance
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Energy, cost, CO₂ and ROI intelligence
+                </li>
+
+              </ul>
+
+            </div>
 
 
-              <div>
+            <div className="healthcarePlatformFlow">
 
-                <h3>
-                  {step.title}
-                </h3>
+              <div className="healthcarePlatformNode">
 
-                <p>
-                  {step.text}
-                </p>
+                <Hospital size={27} />
+
+                <span>
+                  Healthcare Assets
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={22} />
+
+
+              <div className="healthcarePlatformNode featured">
+
+                <Cpu size={27} />
+
+                <span>
+                  AI Energy Gateway
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={22} />
+
+
+              <div className="healthcarePlatformNode">
+
+                <Layers3 size={27} />
+
+                <span>
+                  Digital Twin
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={22} />
+
+
+              <div className="healthcarePlatformNode">
+
+                <Brain size={27} />
+
+                <span>
+                  AI Optimisation
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={22} />
+
+
+              <div className="healthcarePlatformNode">
+
+                <ShieldCheck size={27} />
+
+                <span>
+                  Measured Outcomes
+                </span>
 
               </div>
 
             </div>
 
-          ))}
+          </div>
 
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          SHARED PLATFORM
-      ========================================================= */}
+        {/* =========================================================
+            PILOT
+        ========================================================= */}
 
-      <section className="healthcareSection healthcarePlatformSection">
+        <section
+          className="healthcareSection healthcarePilotSection"
+          id="healthcare-pilot"
+        >
 
-        <div className="healthcarePlatformPanel">
+          <div className="healthcarePilotBox">
 
-          <div className="healthcarePlatformCopy">
+            <div className="healthcarePilotCopy">
+
+              <p>
+                Healthcare Pilot Program
+              </p>
+
+              <h2>
+                Start With One Hospital Energy Problem. Prove the Savings
+                Before Scaling.
+              </h2>
+
+              <span>
+                Establish an energy baseline for one hospital or high-value
+                system, identify optimisation opportunities and quantify
+                potential energy-cost, peak-demand and associated CO₂ outcomes
+                while validating clinical, safety and resilience safeguards
+                before broader deployment.
+              </span>
+
+
+              <button
+                type="button"
+                className="healthcarePrimaryBtn"
+                onClick={handlePilotClick}
+              >
+                Discuss a Healthcare Pilot
+                <ChevronRight size={18} />
+              </button>
+
+            </div>
+
+
+            <div className="healthcarePilotList">
+
+              <h3>
+                Indicative Pilot Scope
+              </h3>
+
+
+              <ul>
+
+                {pilotItems.map((item) => (
+
+                  <li key={item}>
+
+                    <CheckCircle2 size={18} />
+
+                    <span>
+                      {item}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            FINAL CTA
+        ========================================================= */}
+
+        <section className="healthcareCta">
+
+          <div>
 
             <p>
-              Shared EnerG IQ Tech Platform
+              Now Onboarding Healthcare Pilot Partners
             </p>
 
             <h2>
-              Healthcare-Specific Optimisation Built on One Energy
-              Intelligence Architecture.
+              Reduce Hospital Energy Costs & CO₂ Emissions Without
+              Compromising Patient Care.
             </h2>
 
             <span>
-              Healthcare AI uses the shared EnerG IQ Tech architecture to
-              connect hospital systems, identify energy waste, recommend
-              governed optimisation actions and quantify energy, financial
-              and associated carbon outcomes.
+              Start with one measurable hospital energy challenge. Establish
+              the baseline, identify energy waste and determine whether the
+              potential financial and carbon outcomes justify broader
+              deployment - while keeping clinical safety, compliance and
+              operational resilience protected.
             </span>
 
-
-            <ul>
-
-              <li>
-                <CheckCircle2 size={18} />
-                AI Energy Gateway connectivity
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Digital Twin operational context
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Configurable AI Decision Agents
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Human-in-the-loop clinical governance
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Energy, cost, CO₂ and ROI intelligence
-              </li>
-
-            </ul>
-
           </div>
 
 
-          <div className="healthcarePlatformFlow">
+          <div className="healthcareCtaActions">
 
-            <div className="healthcarePlatformNode">
+        
+            
 
-              <Hospital size={27} />
-
-              <span>
-                Healthcare Assets
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={22} />
-
-
-            <div className="healthcarePlatformNode featured">
-
-              <Cpu size={27} />
-
-              <span>
-                AI Energy Gateway
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={22} />
-
-
-            <div className="healthcarePlatformNode">
-
-              <Layers3 size={27} />
-
-              <span>
-                Digital Twin
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={22} />
-
-
-            <div className="healthcarePlatformNode">
-
-              <Brain size={27} />
-
-              <span>
-                AI Optimisation
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={22} />
-
-
-            <div className="healthcarePlatformNode">
-
-              <ShieldCheck size={27} />
-
-              <span>
-                Measured Outcomes
-              </span>
-
-            </div>
+            <Link to="/book-discussion" className="healthcarePrimaryBtn">
+              Book a Discussion
+              <ChevronRight size={19} />
+            </Link>
 
           </div>
 
-        </div>
+        </section>
 
-      </section>
-
-
-      {/* =========================================================
-          PILOT
-      ========================================================= */}
-
-      <section
-        className="healthcareSection healthcarePilotSection"
-        id="healthcare-pilot"
-      >
-
-        <div className="healthcarePilotBox">
-
-          <div className="healthcarePilotCopy">
-
-            <p>
-              Healthcare Pilot Program
-            </p>
-
-            <h2>
-              Start With One Hospital Energy Problem. Prove the Savings
-              Before Scaling.
-            </h2>
-
-            <span>
-              Establish an energy baseline for one hospital or high-value
-              system, identify optimisation opportunities and quantify
-              potential energy-cost, peak-demand and associated CO₂ outcomes
-              while validating clinical, safety and resilience safeguards
-              before broader deployment.
-            </span>
-
-
-            <button
-              type="button"
-              className="healthcarePrimaryBtn"
-              onClick={handlePilotClick}
-            >
-              Discuss a Healthcare Pilot
-              <ChevronRight size={18} />
-            </button>
-
-          </div>
-
-
-          <div className="healthcarePilotList">
-
-            <h3>
-              Indicative Pilot Scope
-            </h3>
-
-
-            <ul>
-
-              {pilotItems.map((item) => (
-
-                <li key={item}>
-
-                  <CheckCircle2 size={18} />
-
-                  <span>
-                    {item}
-                  </span>
-
-                </li>
-
-              ))}
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          FINAL CTA
-      ========================================================= */}
-
-      <section className="healthcareCta">
-
-        <div>
-
-          <p>
-            Now Onboarding Healthcare Pilot Partners
-          </p>
-
-          <h2>
-            Reduce Hospital Energy Costs & CO₂ Emissions Without
-            Compromising Patient Care.
-          </h2>
-
-          <span>
-            Start with one measurable hospital energy challenge. Establish
-            the baseline, identify energy waste and determine whether the
-            potential financial and carbon outcomes justify broader
-            deployment - while keeping clinical safety, compliance and
-            operational resilience protected.
-          </span>
-
-        </div>
-
-
-        <div className="healthcareCtaActions">
-
-       
-          
-
-          <Link to="/book-discussion" className="healthcarePrimaryBtn">
-            Book a Discussion
-            <ChevronRight size={19} />
-          </Link>
-
-        </div>
-
-      </section>
-
-    </main>
+      </main>
+    
+    
+    
+    
+    
+    </>
+    
   );
 }

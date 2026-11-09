@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 
 import "../styles/FoodManufacturingAIPage.css";
+import SEO from "./SEO";
 
 export default function FoodManufacturingAIPage() {
   /* =====================================================
@@ -165,46 +166,573 @@ export default function FoodManufacturingAIPage() {
   ];
 
   return (
-    <main className="foodManufacturingPage">
-      {/* =====================================================
-          HERO
-      ===================================================== */}
 
-      <section className="foodManufacturingHero">
-        <div className="foodManufacturingHeroGlow foodGlowOne" />
-        <div className="foodManufacturingHeroGlow foodGlowTwo" />
+    <>
 
-        {/* LEFT */}
+    
+      <SEO
+        title="Food Manufacturing AI Energy Optimisation | EnerG IQ Tech"
+        description="Reduce food manufacturing energy costs, peak demand and CO₂ emissions with EnerG IQ Tech. Optimise refrigeration, HVAC, process equipment and production energy use through Edge AI, digital twins and predictive analytics."
+        path="/food-manufacturing-ai"
+      />
 
-        <div className="foodManufacturingHeroContent">
-          <div className="foodManufacturingEyebrow">
-            <UtensilsCrossed size={17} />
+      <main className="foodManufacturingPage">
+        {/* =====================================================
+            HERO
+        ===================================================== */}
 
-            <span>EnerG IQ Tech Food & Beverage Manufacturing AI</span>
+        <section className="foodManufacturingHero">
+          <div className="foodManufacturingHeroGlow foodGlowOne" />
+          <div className="foodManufacturingHeroGlow foodGlowTwo" />
+
+          {/* LEFT */}
+
+          <div className="foodManufacturingHeroContent">
+            <div className="foodManufacturingEyebrow">
+              <UtensilsCrossed size={17} />
+
+              <span>EnerG IQ Tech Food & Beverage Manufacturing AI</span>
+            </div>
+
+            <h1>
+              Reduce Food & Beverage
+              <br />
+              Energy Costs &amp;
+              <br />
+              CO₂ Emissions
+              <br />
+              Without Compromising
+              <br />
+              Production.
+            </h1>
+
+            <p className="foodManufacturingHeroText">
+              EnerG IQ Tech Food & Beverage Manufacturing AI helps
+              manufacturers identify and reduce energy waste, peak demand
+              and associated CO₂ emissions across refrigeration, freezing,
+              process cooling, boilers, compressed air, pumps, motors,
+              HVAC and production equipment - while protecting product
+              quality, food safety and operational performance.
+            </p>
+
+            <div className="foodManufacturingHeroActions">
+              <Link
+                to="/book-discussion"
+                className="foodPrimaryButton"
+              >
+                Book a Discussion
+                <ChevronRight size={18} />
+              </Link>
+
+              <a
+                href="#food-pilot"
+                className="foodSecondaryButton"
+              >
+                Explore 30-Day Pilot
+              </a>
+            </div>
+
+            <div className="foodManufacturingHeroPoints">
+              <span>
+                <CheckCircle2 size={17} />
+                Lower Energy Consumption
+              </span>
+
+              <span>
+                <CheckCircle2 size={17} />
+                Reduce Peak Demand
+              </span>
+
+              <span>
+                <CheckCircle2 size={17} />
+                Lower Energy-Related CO₂
+              </span>
+            </div>
           </div>
 
-          <h1>
-            Reduce Food & Beverage
-            <br />
-            Energy Costs &amp;
-            <br />
-            CO₂ Emissions
-            <br />
-            Without Compromising
-            <br />
-            Production.
-          </h1>
+          {/* =================================================
+              RIGHT - ENERGY INTELLIGENCE PANEL
+          ================================================= */}
 
-          <p className="foodManufacturingHeroText">
-            EnerG IQ Tech Food & Beverage Manufacturing AI helps
-            manufacturers identify and reduce energy waste, peak demand
-            and associated CO₂ emissions across refrigeration, freezing,
-            process cooling, boilers, compressed air, pumps, motors,
-            HVAC and production equipment - while protecting product
-            quality, food safety and operational performance.
+          <div className="foodManufacturingHeroPanel">
+            <div className="foodHeroPanelHeader">
+              <div>
+                <strong>Food Production Energy Optimisation</strong>
+                <span>Production & utilities overview</span>
+              </div>
+
+              <span className="foodLiveBadge">
+                <Activity size={14} />
+                LIVE
+              </span>
+            </div>
+
+            {/* METRICS */}
+
+            <div className="foodHeroMetricGrid">
+              <div className="foodHeroMetric">
+                <span>FOOD PRODUCTION SITES</span>
+
+                <strong>4</strong>
+
+                <small>Connected operations</small>
+              </div>
+
+              <div className="foodHeroMetric">
+                <span>ASSET CLASSES</span>
+
+                <strong>15</strong>
+
+                <small>Energy-intensive systems</small>
+              </div>
+
+              <div className="foodHeroMetric">
+                <span>OPPORTUNITIES</span>
+
+                <strong>60</strong>
+
+                <small>Energy optimisation items</small>
+              </div>
+
+              <div className="foodHeroMetric">
+                <span>PEAK REDUCTION</span>
+
+                <strong>
+                  428 <em>kW</em>
+                </strong>
+
+                <small>Indicative current opportunity</small>
+              </div>
+            </div>
+
+            {/* ENERGY DEMAND CHART */}
+
+            <div className="foodEnergyChart">
+              <div className="foodEnergyChartHeader">
+                <div>
+                  <strong>Site Energy Demand</strong>
+
+                  <span>
+                    AI baseline versus actual food-production load
+                  </span>
+                </div>
+
+                <span className="foodPriorityBadge">
+                  HIGH PRIORITY
+                </span>
+              </div>
+
+              <div className="foodChartArea">
+                <div className="foodChartBaseline" />
+
+                <div className="foodChartBars">
+                  {chartBars.map((bar) => (
+                    <div
+                      className="foodChartColumn"
+                      key={bar.label}
+                    >
+                      <div
+                        className={`foodChartBar ${
+                          bar.priority ? "priority" : ""
+                        }`}
+                        style={{
+                          height: `${bar.height}%`,
+                        }}
+                      />
+
+                      <span>{bar.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* AI RECOMMENDATION */}
+
+            <div className="foodHeroInsight">
+              <div className="foodHeroInsightIcon">
+                <BrainCircuit size={22} />
+              </div>
+
+              <div className="foodHeroInsightCopy">
+                <span>AI ENERGY RECOMMENDATION</span>
+
+                <p>
+                  Refrigeration compressor demand remains elevated during
+                  reduced-production periods. Review compressor staging,
+                  suction pressure and defrost timing to reduce peak demand
+                  while maintaining required product temperatures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            ENERGY CHALLENGE
+        ===================================================== */}
+
+        <section className="foodSection foodChallengeSection">
+          <div className="foodSectionHeading">
+            <span>Food Manufacturing Energy Challenge</span>
+
+            <h2>
+              Find Energy Waste Across Production &amp; Utilities.
+            </h2>
+
+            <p>
+              Analyse energy-intensive systems together rather than viewing
+              individual assets in isolation.
+            </p>
+          </div>
+
+          <div className="foodEnergyGrid">
+            {energyLoads.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <article
+                  key={item.title}
+                  className="foodEnergyCard"
+                >
+                  <div className="foodCardIcon">
+                    <Icon size={23} />
+                  </div>
+
+                  <h3>{item.title}</h3>
+
+                  <p>{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* =====================================================
+            WORKFLOW
+        ===================================================== */}
+
+        <section className="foodSection foodWorkflowSection">
+          <div className="foodSectionHeading">
+            <span>AI-Driven Optimisation Workflow</span>
+
+            <h2>
+              From Energy Waste to Governed Optimisation.
+            </h2>
+
+            <p>
+              EnerG IQ Tech combines operational data, AI intelligence,
+              Digital Twin investigation and human approval into a measurable
+              optimisation workflow.
+            </p>
+          </div>
+
+          <div className="foodWorkflowGrid">
+            {workflow.map((item) => (
+              <div
+                className="foodWorkflowCard"
+                key={item.step}
+              >
+                <span className="foodWorkflowNumber">
+                  {item.step}
+                </span>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="foodWorkflowLine">
+            <span>Detect</span>
+            <ChevronRight />
+
+            <span>Analyse</span>
+            <ChevronRight />
+
+            <span>Simulate</span>
+            <ChevronRight />
+
+            <span>Recommend</span>
+            <ChevronRight />
+
+            <span>Human Approves</span>
+            <ChevronRight />
+
+            <span>Measure</span>
+          </div>
+        </section>
+
+        {/* =====================================================
+            OUTCOMES
+        ===================================================== */}
+
+        <section className="foodOutcomeSection">
+          <div className="foodOutcomeContent">
+            <span className="foodOutcomeEyebrow">
+              Energy + Financial + Environmental Outcomes
+            </span>
+
+            <h2>
+              Reduce Cost. Reduce Energy. Reduce Associated CO₂.
+            </h2>
+
+            <p>
+              Turn food-production energy data into measurable operational,
+              financial and sustainability outcomes.
+            </p>
+          </div>
+
+          <div className="foodOutcomeMetrics">
+            <div>
+              <Zap size={25} />
+
+              <span>Energy Consumption</span>
+
+              <strong>↓</strong>
+            </div>
+
+            <div>
+              <Gauge size={25} />
+
+              <span>Peak Demand</span>
+
+              <strong>↓</strong>
+            </div>
+
+            <div>
+              <BarChart3 size={25} />
+
+              <span>Operating Cost</span>
+
+              <strong>↓</strong>
+            </div>
+
+            <div>
+              <Leaf size={25} />
+
+              <span>Energy-Related CO₂</span>
+
+              <strong>↓</strong>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            FOOD SECTORS
+        ===================================================== */}
+
+        <section className="foodSection foodSectorSection">
+          <div className="foodSectionHeading">
+            <span>Food-Sector Applications</span>
+
+            <h2>
+              One AI Energy Architecture Across Food &amp; Beverage Operations.
+            </h2>
+
+            <p>
+              Apply the same EnerG IQ platform across different food-processing
+              environments while adapting optimisation intelligence to each
+              facility's operating requirements.
+            </p>
+          </div>
+
+          <div className="foodSectorGrid">
+            {sectors.map((sector) => (
+              <div
+                className="foodSectorItem"
+                key={sector}
+              >
+                <CheckCircle2 size={19} />
+
+                <span>{sector}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* =====================================================
+            EXISTING INFRASTRUCTURE
+        ===================================================== */}
+
+        <section className="foodInfrastructureSection">
+          <div className="foodInfrastructureContent">
+            <span>Existing Infrastructure</span>
+
+            <h2>
+              Work With the Systems You Already Have.
+            </h2>
+
+            <p>
+              EnerG IQ Tech can complement existing smart meters, BMS,
+              IoT devices, PLC/SCADA systems and operational data sources
+              rather than requiring organisations to replace their existing
+              control and automation infrastructure.
+            </p>
+
+            <div className="foodInfrastructureTags">
+              <span>Smart Meters</span>
+              <span>BMS</span>
+              <span>PLC / SCADA</span>
+              <span>IoT Sensors</span>
+              <span>Refrigeration Controls</span>
+              <span>Production Data</span>
+              <span>Solar PV</span>
+              <span>BESS</span>
+            </div>
+          </div>
+
+          <div className="foodArchitecturePanel">
+            <div className="foodArchitectureNode">
+              <Network size={23} />
+              <span>Operational &amp; Energy Assets</span>
+            </div>
+
+            <ChevronRight />
+
+            <div className="foodArchitectureNode foodArchitectureActive">
+              <Cpu size={23} />
+              <span>AI Energy Gateway</span>
+            </div>
+
+            <ChevronRight />
+
+            <div className="foodArchitectureNode">
+              <BrainCircuit size={23} />
+              <span>EnerG IQ Intelligence</span>
+            </div>
+
+            <ChevronRight />
+
+            <div className="foodArchitectureNode">
+              <ShieldCheck size={23} />
+              <span>Human-Approved Actions</span>
+            </div>
+          </div>
+        </section>
+
+        {/* =====================================================
+            CAPABILITIES
+        ===================================================== */}
+
+        <section className="foodSection foodCapabilitiesSection">
+          <div className="foodSectionHeading">
+            <span>Core AI Capabilities</span>
+
+            <h2>
+              Intelligence Built Around Energy-Intensive Food Operations.
+            </h2>
+
+            <p>
+              Combine energy monitoring, AI analysis, Digital Twin intelligence
+              and governed optimisation to identify and validate opportunities
+              across food and beverage operations.
+            </p>
+          </div>
+
+          <div className="foodCapabilityGrid">
+            {capabilities.map((capability) => {
+              const Icon = capability.icon;
+
+              return (
+                <article
+                  className="foodCapabilityCard"
+                  key={capability.title}
+                >
+                  <div className="foodCardIcon">
+                    <Icon size={23} />
+                  </div>
+
+                  <h3>{capability.title}</h3>
+
+                  <p>{capability.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* =====================================================
+            PILOT
+        ===================================================== */}
+
+        <section
+          className="foodPilotSection"
+          id="food-pilot"
+        >
+          <div className="foodPilotContent">
+            <span>30-Day Pilot</span>
+
+            <h2>
+              Start With One Food Manufacturing Energy Problem.
+            </h2>
+
+            <p>
+              Begin with available operational and energy data, identify
+              optimisation opportunities and quantify potential energy,
+              financial and associated CO₂ outcomes before broader deployment.
+            </p>
+
+            <div className="foodPilotChecks">
+              <span>
+                <CheckCircle2 size={18} />
+                Establish an energy baseline
+              </span>
+
+              <span>
+                <CheckCircle2 size={18} />
+                Identify avoidable energy consumption
+              </span>
+
+              <span>
+                <CheckCircle2 size={18} />
+                Evaluate AI optimisation opportunities
+              </span>
+
+              <span>
+                <CheckCircle2 size={18} />
+                Quantify cost &amp; CO₂ outcomes
+              </span>
+            </div>
+          </div>
+
+          <div className="foodPilotAction">
+            <span>Start small. Prove the value.</span>
+
+            <strong>
+              30-Day AI Energy &amp; Environmental Sustainability
+              Optimisation Pilot
+            </strong>
+
+            <Link
+              to="/book-discussion"
+              className="foodPilotButton"
+            >
+              Book a 30-Minute Discussion
+              <ChevronRight size={19} />
+            </Link>
+          </div>
+        </section>
+
+        {/* =====================================================
+            FINAL CTA
+        ===================================================== */}
+
+        <section className="foodFinalCta">
+          <span>Food &amp; Beverage Manufacturing AI</span>
+
+          <h2>
+            Find the Energy Waste. Quantify the Savings.
+            Prove the CO₂ Impact.
+          </h2>
+
+          <p>
+            Start with one facility, one high-value use case and measurable
+            outcomes before scaling across production sites.
           </p>
 
-          <div className="foodManufacturingHeroActions">
+          <div>
             <Link
               to="/book-discussion"
               className="foodPrimaryButton"
@@ -213,531 +741,20 @@ export default function FoodManufacturingAIPage() {
               <ChevronRight size={18} />
             </Link>
 
-            <a
-              href="#food-pilot"
+            <Link
+              to="/pilot-program"
               className="foodSecondaryButton"
             >
-              Explore 30-Day Pilot
-            </a>
+              Explore Pilot Program
+            </Link>
           </div>
-
-          <div className="foodManufacturingHeroPoints">
-            <span>
-              <CheckCircle2 size={17} />
-              Lower Energy Consumption
-            </span>
-
-            <span>
-              <CheckCircle2 size={17} />
-              Reduce Peak Demand
-            </span>
-
-            <span>
-              <CheckCircle2 size={17} />
-              Lower Energy-Related CO₂
-            </span>
-          </div>
-        </div>
-
-        {/* =================================================
-            RIGHT - ENERGY INTELLIGENCE PANEL
-        ================================================= */}
-
-        <div className="foodManufacturingHeroPanel">
-          <div className="foodHeroPanelHeader">
-            <div>
-              <strong>Food Production Energy Optimisation</strong>
-              <span>Production & utilities overview</span>
-            </div>
-
-            <span className="foodLiveBadge">
-              <Activity size={14} />
-              LIVE
-            </span>
-          </div>
-
-          {/* METRICS */}
-
-          <div className="foodHeroMetricGrid">
-            <div className="foodHeroMetric">
-              <span>FOOD PRODUCTION SITES</span>
-
-              <strong>4</strong>
-
-              <small>Connected operations</small>
-            </div>
-
-            <div className="foodHeroMetric">
-              <span>ASSET CLASSES</span>
-
-              <strong>15</strong>
-
-              <small>Energy-intensive systems</small>
-            </div>
-
-            <div className="foodHeroMetric">
-              <span>OPPORTUNITIES</span>
-
-              <strong>60</strong>
-
-              <small>Energy optimisation items</small>
-            </div>
-
-            <div className="foodHeroMetric">
-              <span>PEAK REDUCTION</span>
-
-              <strong>
-                428 <em>kW</em>
-              </strong>
-
-              <small>Indicative current opportunity</small>
-            </div>
-          </div>
-
-          {/* ENERGY DEMAND CHART */}
-
-          <div className="foodEnergyChart">
-            <div className="foodEnergyChartHeader">
-              <div>
-                <strong>Site Energy Demand</strong>
-
-                <span>
-                  AI baseline versus actual food-production load
-                </span>
-              </div>
-
-              <span className="foodPriorityBadge">
-                HIGH PRIORITY
-              </span>
-            </div>
-
-            <div className="foodChartArea">
-              <div className="foodChartBaseline" />
-
-              <div className="foodChartBars">
-                {chartBars.map((bar) => (
-                  <div
-                    className="foodChartColumn"
-                    key={bar.label}
-                  >
-                    <div
-                      className={`foodChartBar ${
-                        bar.priority ? "priority" : ""
-                      }`}
-                      style={{
-                        height: `${bar.height}%`,
-                      }}
-                    />
-
-                    <span>{bar.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* AI RECOMMENDATION */}
-
-          <div className="foodHeroInsight">
-            <div className="foodHeroInsightIcon">
-              <BrainCircuit size={22} />
-            </div>
-
-            <div className="foodHeroInsightCopy">
-              <span>AI ENERGY RECOMMENDATION</span>
-
-              <p>
-                Refrigeration compressor demand remains elevated during
-                reduced-production periods. Review compressor staging,
-                suction pressure and defrost timing to reduce peak demand
-                while maintaining required product temperatures.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          ENERGY CHALLENGE
-      ===================================================== */}
-
-      <section className="foodSection foodChallengeSection">
-        <div className="foodSectionHeading">
-          <span>Food Manufacturing Energy Challenge</span>
-
-          <h2>
-            Find Energy Waste Across Production &amp; Utilities.
-          </h2>
-
-          <p>
-            Analyse energy-intensive systems together rather than viewing
-            individual assets in isolation.
-          </p>
-        </div>
-
-        <div className="foodEnergyGrid">
-          {energyLoads.map((item) => {
-            const Icon = item.icon;
-
-            return (
-              <article
-                key={item.title}
-                className="foodEnergyCard"
-              >
-                <div className="foodCardIcon">
-                  <Icon size={23} />
-                </div>
-
-                <h3>{item.title}</h3>
-
-                <p>{item.text}</p>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* =====================================================
-          WORKFLOW
-      ===================================================== */}
-
-      <section className="foodSection foodWorkflowSection">
-        <div className="foodSectionHeading">
-          <span>AI-Driven Optimisation Workflow</span>
-
-          <h2>
-            From Energy Waste to Governed Optimisation.
-          </h2>
-
-          <p>
-            EnerG IQ Tech combines operational data, AI intelligence,
-            Digital Twin investigation and human approval into a measurable
-            optimisation workflow.
-          </p>
-        </div>
-
-        <div className="foodWorkflowGrid">
-          {workflow.map((item) => (
-            <div
-              className="foodWorkflowCard"
-              key={item.step}
-            >
-              <span className="foodWorkflowNumber">
-                {item.step}
-              </span>
-
-              <h3>{item.title}</h3>
-
-              <p>{item.text}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="foodWorkflowLine">
-          <span>Detect</span>
-          <ChevronRight />
-
-          <span>Analyse</span>
-          <ChevronRight />
-
-          <span>Simulate</span>
-          <ChevronRight />
-
-          <span>Recommend</span>
-          <ChevronRight />
-
-          <span>Human Approves</span>
-          <ChevronRight />
-
-          <span>Measure</span>
-        </div>
-      </section>
-
-      {/* =====================================================
-          OUTCOMES
-      ===================================================== */}
-
-      <section className="foodOutcomeSection">
-        <div className="foodOutcomeContent">
-          <span className="foodOutcomeEyebrow">
-            Energy + Financial + Environmental Outcomes
-          </span>
-
-          <h2>
-            Reduce Cost. Reduce Energy. Reduce Associated CO₂.
-          </h2>
-
-          <p>
-            Turn food-production energy data into measurable operational,
-            financial and sustainability outcomes.
-          </p>
-        </div>
-
-        <div className="foodOutcomeMetrics">
-          <div>
-            <Zap size={25} />
-
-            <span>Energy Consumption</span>
-
-            <strong>↓</strong>
-          </div>
-
-          <div>
-            <Gauge size={25} />
-
-            <span>Peak Demand</span>
-
-            <strong>↓</strong>
-          </div>
-
-          <div>
-            <BarChart3 size={25} />
-
-            <span>Operating Cost</span>
-
-            <strong>↓</strong>
-          </div>
-
-          <div>
-            <Leaf size={25} />
-
-            <span>Energy-Related CO₂</span>
-
-            <strong>↓</strong>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          FOOD SECTORS
-      ===================================================== */}
-
-      <section className="foodSection foodSectorSection">
-        <div className="foodSectionHeading">
-          <span>Food-Sector Applications</span>
-
-          <h2>
-            One AI Energy Architecture Across Food &amp; Beverage Operations.
-          </h2>
-
-          <p>
-            Apply the same EnerG IQ platform across different food-processing
-            environments while adapting optimisation intelligence to each
-            facility's operating requirements.
-          </p>
-        </div>
-
-        <div className="foodSectorGrid">
-          {sectors.map((sector) => (
-            <div
-              className="foodSectorItem"
-              key={sector}
-            >
-              <CheckCircle2 size={19} />
-
-              <span>{sector}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* =====================================================
-          EXISTING INFRASTRUCTURE
-      ===================================================== */}
-
-      <section className="foodInfrastructureSection">
-        <div className="foodInfrastructureContent">
-          <span>Existing Infrastructure</span>
-
-          <h2>
-            Work With the Systems You Already Have.
-          </h2>
-
-          <p>
-            EnerG IQ Tech can complement existing smart meters, BMS,
-            IoT devices, PLC/SCADA systems and operational data sources
-            rather than requiring organisations to replace their existing
-            control and automation infrastructure.
-          </p>
-
-          <div className="foodInfrastructureTags">
-            <span>Smart Meters</span>
-            <span>BMS</span>
-            <span>PLC / SCADA</span>
-            <span>IoT Sensors</span>
-            <span>Refrigeration Controls</span>
-            <span>Production Data</span>
-            <span>Solar PV</span>
-            <span>BESS</span>
-          </div>
-        </div>
-
-        <div className="foodArchitecturePanel">
-          <div className="foodArchitectureNode">
-            <Network size={23} />
-            <span>Operational &amp; Energy Assets</span>
-          </div>
-
-          <ChevronRight />
-
-          <div className="foodArchitectureNode foodArchitectureActive">
-            <Cpu size={23} />
-            <span>AI Energy Gateway</span>
-          </div>
-
-          <ChevronRight />
-
-          <div className="foodArchitectureNode">
-            <BrainCircuit size={23} />
-            <span>EnerG IQ Intelligence</span>
-          </div>
-
-          <ChevronRight />
-
-          <div className="foodArchitectureNode">
-            <ShieldCheck size={23} />
-            <span>Human-Approved Actions</span>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          CAPABILITIES
-      ===================================================== */}
-
-      <section className="foodSection foodCapabilitiesSection">
-        <div className="foodSectionHeading">
-          <span>Core AI Capabilities</span>
-
-          <h2>
-            Intelligence Built Around Energy-Intensive Food Operations.
-          </h2>
-
-          <p>
-            Combine energy monitoring, AI analysis, Digital Twin intelligence
-            and governed optimisation to identify and validate opportunities
-            across food and beverage operations.
-          </p>
-        </div>
-
-        <div className="foodCapabilityGrid">
-          {capabilities.map((capability) => {
-            const Icon = capability.icon;
-
-            return (
-              <article
-                className="foodCapabilityCard"
-                key={capability.title}
-              >
-                <div className="foodCardIcon">
-                  <Icon size={23} />
-                </div>
-
-                <h3>{capability.title}</h3>
-
-                <p>{capability.text}</p>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* =====================================================
-          PILOT
-      ===================================================== */}
-
-      <section
-        className="foodPilotSection"
-        id="food-pilot"
-      >
-        <div className="foodPilotContent">
-          <span>30-Day Pilot</span>
-
-          <h2>
-            Start With One Food Manufacturing Energy Problem.
-          </h2>
-
-          <p>
-            Begin with available operational and energy data, identify
-            optimisation opportunities and quantify potential energy,
-            financial and associated CO₂ outcomes before broader deployment.
-          </p>
-
-          <div className="foodPilotChecks">
-            <span>
-              <CheckCircle2 size={18} />
-              Establish an energy baseline
-            </span>
-
-            <span>
-              <CheckCircle2 size={18} />
-              Identify avoidable energy consumption
-            </span>
-
-            <span>
-              <CheckCircle2 size={18} />
-              Evaluate AI optimisation opportunities
-            </span>
-
-            <span>
-              <CheckCircle2 size={18} />
-              Quantify cost &amp; CO₂ outcomes
-            </span>
-          </div>
-        </div>
-
-        <div className="foodPilotAction">
-          <span>Start small. Prove the value.</span>
-
-          <strong>
-            30-Day AI Energy &amp; Environmental Sustainability
-            Optimisation Pilot
-          </strong>
-
-          <Link
-            to="/book-discussion"
-            className="foodPilotButton"
-          >
-            Book a 30-Minute Discussion
-            <ChevronRight size={19} />
-          </Link>
-        </div>
-      </section>
-
-      {/* =====================================================
-          FINAL CTA
-      ===================================================== */}
-
-      <section className="foodFinalCta">
-        <span>Food &amp; Beverage Manufacturing AI</span>
-
-        <h2>
-          Find the Energy Waste. Quantify the Savings.
-          Prove the CO₂ Impact.
-        </h2>
-
-        <p>
-          Start with one facility, one high-value use case and measurable
-          outcomes before scaling across production sites.
-        </p>
-
-        <div>
-          <Link
-            to="/book-discussion"
-            className="foodPrimaryButton"
-          >
-            Book a Discussion
-            <ChevronRight size={18} />
-          </Link>
-
-          <Link
-            to="/pilot-program"
-            className="foodSecondaryButton"
-          >
-            Explore Pilot Program
-          </Link>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    
+    
+    
+    
+    </>
+    
   );
 }

@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 
 import "../styles/WarehouseLogisticsAI.css";
+import SEO from "./SEO";
 
 
 const fadeUp = {
@@ -308,905 +309,919 @@ export default function WarehouseLogisticsAI({ openPilotModal }) {
 
 
   return (
-    <main className="warehouseLogisticsPage">
+    <>
+    
+      <SEO
+        title="Warehouse & Logistics AI Energy Optimisation | EnerG IQ Tech"
+        description="Reduce warehouse and logistics facility energy costs, peak demand and CO₂ emissions with EnerG IQ Tech. Optimise HVAC, refrigeration, lighting and connected energy assets using Edge AI, digital twins and predictive analytics."
+        path="/warehouse-logistics-ai"
+      />
 
-      {/* =========================================================
-          HERO
-      ========================================================= */}
+      <main className="warehouseLogisticsPage">
 
-      <section className="warehouseLogisticsHero">
+        {/* =========================================================
+            HERO
+        ========================================================= */}
 
-        <motion.div
-          className="warehouseLogisticsHeroContent"
-          variants={stagger}
-          initial="hidden"
-          animate="show"
-        >
-
-          <motion.div
-            className="warehouseLogisticsBadge"
-            variants={fadeUp}
-          >
-            <Warehouse size={17} />
-            EnerG IQ Tech Warehouse & Logistics AI
-          </motion.div>
-
-
-          <motion.h1 variants={fadeUp}>
-            Reduce Warehouse & Logistics Energy Costs & CO₂ Emissions
-            Without Compromising Throughput.
-          </motion.h1>
-
-
-          <motion.p
-            className="warehouseLogisticsLead"
-            variants={fadeUp}
-          >
-            EnerG IQ Tech Warehouse & Logistics AI helps warehouse operators,
-            distribution centres and logistics facilities identify and reduce
-            energy waste, peak demand and associated CO₂ emissions across
-            material handling, refrigeration, HVAC, charging and automation -
-            while protecting throughput, dispatch schedules, temperature
-            requirements and operational reliability.
-          </motion.p>
-
-
-          <motion.p
-            className="warehouseLogisticsDescription"
-            variants={fadeUp}
-          >
-            Edge AI analyses conveyors, sortation, cold storage, warehouse
-            HVAC, automation, charging and other operational systems in real
-            time. The AI Energy Gateway connects BMS, meters, warehouse
-            equipment, Solar PV, batteries and available telemetry so
-            EnerG IQ Tech can identify inefficiencies, recommend governed
-            optimisation actions and measure resulting energy, financial and
-            carbon outcomes.
-          </motion.p>
-
+        <section className="warehouseLogisticsHero">
 
           <motion.div
-            className="warehouseLogisticsHeroButtons"
-            variants={fadeUp}
+            className="warehouseLogisticsHeroContent"
+            variants={stagger}
+            initial="hidden"
+            animate="show"
           >
 
-          
-             
-            <Link to="/book-discussion" className="warehouseLogisticsPrimaryBtn">
-              Book a Discussion
-              <ChevronRight size={19} />
-            </Link>
-
-
-            <a
-              href="#warehouse-logistics-workflow"
-              className="warehouseLogisticsSecondaryBtn"
+            <motion.div
+              className="warehouseLogisticsBadge"
+              variants={fadeUp}
             >
-              View AI Workflow
-            </a>
-
-          </motion.div>
-
-
-          <motion.div
-            className="warehouseLogisticsHeroTags"
-            variants={fadeUp}
-          >
-
-            <span>
-              <Zap size={15} />
-              Energy Cost Reduction
-            </span>
-
-            <span>
-              <Leaf size={15} />
-              CO₂ Reduction
-            </span>
-
-            <span>
-              <Gauge size={15} />
-              Peak Demand
-            </span>
-
-            <span>
-              <PackageSearch size={15} />
-              Throughput Protected
-            </span>
-
-          </motion.div>
-
-        </motion.div>
+              <Warehouse size={17} />
+              EnerG IQ Tech Warehouse & Logistics AI
+            </motion.div>
 
 
-        {/* =====================================================
-            HERO DASHBOARD
-        ===================================================== */}
-
-        <motion.div
-          className="warehouseLogisticsHeroVisual"
-          initial={{
-            opacity: 0,
-            y: 28,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.15,
-          }}
-        >
-
-          <div className="warehouseLogisticsDashboard">
-
-            <div className="warehouseLogisticsDashboardTop">
-
-              <div>
-
-                <strong>
-                  Warehouse Energy Optimisation
-                </strong>
-
-                <span>
-                  Energy, demand and operational overview
-                </span>
-
-              </div>
+            <motion.h1 variants={fadeUp}>
+              Reduce Warehouse & Logistics Energy Costs & CO₂ Emissions
+              Without Compromising Throughput.
+            </motion.h1>
 
 
-              <b>
-                <Activity size={14} />
-                Live
-              </b>
-
-            </div>
-
-
-            <div className="warehouseLogisticsKpis">
-
-              <div>
-
-                <small>
-                  Warehouse Sites
-                </small>
-
-                <strong>
-                  4
-                </strong>
-
-                <span>
-                  Connected logistics facilities
-                </span>
-
-              </div>
+            <motion.p
+              className="warehouseLogisticsLead"
+              variants={fadeUp}
+            >
+              EnerG IQ Tech Warehouse & Logistics AI helps warehouse operators,
+              distribution centres and logistics facilities identify and reduce
+              energy waste, peak demand and associated CO₂ emissions across
+              material handling, refrigeration, HVAC, charging and automation -
+              while protecting throughput, dispatch schedules, temperature
+              requirements and operational reliability.
+            </motion.p>
 
 
-              <div>
-
-                <small>
-                  Asset Classes
-                </small>
-
-                <strong>
-                  15
-                </strong>
-
-                <span>
-                  Energy-intensive systems
-                </span>
-
-              </div>
+            <motion.p
+              className="warehouseLogisticsDescription"
+              variants={fadeUp}
+            >
+              Edge AI analyses conveyors, sortation, cold storage, warehouse
+              HVAC, automation, charging and other operational systems in real
+              time. The AI Energy Gateway connects BMS, meters, warehouse
+              equipment, Solar PV, batteries and available telemetry so
+              EnerG IQ Tech can identify inefficiencies, recommend governed
+              optimisation actions and measure resulting energy, financial and
+              carbon outcomes.
+            </motion.p>
 
 
-              <div>
+            <motion.div
+              className="warehouseLogisticsHeroButtons"
+              variants={fadeUp}
+            >
 
-                <small>
-                  Opportunities
-                </small>
-
-                <strong>
-                  42
-                </strong>
-
-                <span>
-                  Energy optimisation items
-                </span>
-
-              </div>
+            
+              
+              <Link to="/book-discussion" className="warehouseLogisticsPrimaryBtn">
+                Book a Discussion
+                <ChevronRight size={19} />
+              </Link>
 
 
-              <div>
+              <a
+                href="#warehouse-logistics-workflow"
+                className="warehouseLogisticsSecondaryBtn"
+              >
+                View AI Workflow
+              </a>
 
-                <small>
-                  After-Hours Load
-                </small>
-
-                <strong>
-                  17%
-                </strong>
-
-                <span>
-                  Indicative opportunity
-                </span>
-
-              </div>
-
-            </div>
+            </motion.div>
 
 
-            <div className="warehouseLogisticsInsightCard">
-
-              <div className="warehouseLogisticsInsightIcon">
-                <Brain size={22} />
-              </div>
-
-
-              <div>
-
-                <strong>
-                  AI Energy Recommendation
-                </strong>
-
-                <p>
-                  Sortation Line 2 and aisle lighting remain active after the
-                  evening dispatch window. Review an approved shutdown
-                  sequence to reduce unnecessary energy consumption while
-                  retaining dock, security and safety lighting.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="warehouseLogisticsApproval">
+            <motion.div
+              className="warehouseLogisticsHeroTags"
+              variants={fadeUp}
+            >
 
               <span>
-                <ShieldCheck size={18} />
-                Operations approval required before execution
+                <Zap size={15} />
+                Energy Cost Reduction
               </span>
 
-              <button type="button">
-                Review Action
-              </button>
+              <span>
+                <Leaf size={15} />
+                CO₂ Reduction
+              </span>
+
+              <span>
+                <Gauge size={15} />
+                Peak Demand
+              </span>
+
+              <span>
+                <PackageSearch size={15} />
+                Throughput Protected
+              </span>
+
+            </motion.div>
+
+          </motion.div>
+
+
+          {/* =====================================================
+              HERO DASHBOARD
+          ===================================================== */}
+
+          <motion.div
+            className="warehouseLogisticsHeroVisual"
+            initial={{
+              opacity: 0,
+              y: 28,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
+          >
+
+            <div className="warehouseLogisticsDashboard">
+
+              <div className="warehouseLogisticsDashboardTop">
+
+                <div>
+
+                  <strong>
+                    Warehouse Energy Optimisation
+                  </strong>
+
+                  <span>
+                    Energy, demand and operational overview
+                  </span>
+
+                </div>
+
+
+                <b>
+                  <Activity size={14} />
+                  Live
+                </b>
+
+              </div>
+
+
+              <div className="warehouseLogisticsKpis">
+
+                <div>
+
+                  <small>
+                    Warehouse Sites
+                  </small>
+
+                  <strong>
+                    4
+                  </strong>
+
+                  <span>
+                    Connected logistics facilities
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    Asset Classes
+                  </small>
+
+                  <strong>
+                    15
+                  </strong>
+
+                  <span>
+                    Energy-intensive systems
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    Opportunities
+                  </small>
+
+                  <strong>
+                    42
+                  </strong>
+
+                  <span>
+                    Energy optimisation items
+                  </span>
+
+                </div>
+
+
+                <div>
+
+                  <small>
+                    After-Hours Load
+                  </small>
+
+                  <strong>
+                    17%
+                  </strong>
+
+                  <span>
+                    Indicative opportunity
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div className="warehouseLogisticsInsightCard">
+
+                <div className="warehouseLogisticsInsightIcon">
+                  <Brain size={22} />
+                </div>
+
+
+                <div>
+
+                  <strong>
+                    AI Energy Recommendation
+                  </strong>
+
+                  <p>
+                    Sortation Line 2 and aisle lighting remain active after the
+                    evening dispatch window. Review an approved shutdown
+                    sequence to reduce unnecessary energy consumption while
+                    retaining dock, security and safety lighting.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div className="warehouseLogisticsApproval">
+
+                <span>
+                  <ShieldCheck size={18} />
+                  Operations approval required before execution
+                </span>
+
+                <button type="button">
+                  Review Action
+                </button>
+
+              </div>
 
             </div>
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            VALUE FLOW
+        ========================================================= */}
+
+        <section className="warehouseLogisticsStrip">
+
+          <span>
+            Connect
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Detect Waste
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Analyse
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Optimise
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Approve
+          </span>
+
+          <ArrowRight size={15} />
+
+          <span>
+            Measure Savings
+          </span>
+
+        </section>
+
+
+        {/* =========================================================
+            WAREHOUSE & LOGISTICS ENERGY CHALLENGE
+        ========================================================= */}
+
+        <section className="warehouseLogisticsSection warehouseLogisticsChallengeSection">
+
+          <div className="warehouseLogisticsSectionHeader">
+
+            <p>
+              Warehouse & Logistics Energy Challenge
+            </p>
+
+
+            <h2>
+              High Energy Costs & CO₂ Emissions Across Automation,
+              Refrigeration and Shift-Based Operations.
+            </h2>
+
+
+            <span>
+              Warehouses and logistics facilities combine conveyors,
+              refrigeration, HVAC, lighting, charging and automated systems
+              across changing operational schedules. The challenge is reducing
+              energy consumption, peak demand and associated emissions without
+              compromising fulfilment throughput, cold-chain integrity,
+              dispatch schedules or safety.
+            </span>
 
           </div>
 
-        </motion.div>
 
-      </section>
+          <div className="warehouseLogisticsChallengeGrid">
 
+            <article>
 
-      {/* =========================================================
-          VALUE FLOW
-      ========================================================= */}
+              <div className="warehouseLogisticsIcon">
+                <Zap size={24} />
+              </div>
 
-      <section className="warehouseLogisticsStrip">
+              <h3>
+                High Energy Costs & Peak Demand
+              </h3>
 
-        <span>
-          Connect
-        </span>
+              <p>
+                Conveyors, refrigeration, HVAC, automation and charging can
+                create significant electricity expenditure and rapidly changing
+                demand peaks.
+              </p>
 
-        <ArrowRight size={15} />
-
-        <span>
-          Detect Waste
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Analyse
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Optimise
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Approve
-        </span>
-
-        <ArrowRight size={15} />
-
-        <span>
-          Measure Savings
-        </span>
-
-      </section>
+            </article>
 
 
-      {/* =========================================================
-          WAREHOUSE & LOGISTICS ENERGY CHALLENGE
-      ========================================================= */}
+            <article>
 
-      <section className="warehouseLogisticsSection warehouseLogisticsChallengeSection">
+              <div className="warehouseLogisticsIcon">
+                <Leaf size={24} />
+              </div>
 
-        <div className="warehouseLogisticsSectionHeader">
+              <h3>
+                CO₂ Reduction Requirements
+              </h3>
 
-          <p>
-            Warehouse & Logistics Energy Challenge
-          </p>
+              <p>
+                Reducing unnecessary electricity consumption and improving
+                renewable-energy utilisation can lower associated CO₂ emissions
+                and support logistics sustainability objectives.
+              </p>
 
-
-          <h2>
-            High Energy Costs & CO₂ Emissions Across Automation,
-            Refrigeration and Shift-Based Operations.
-          </h2>
-
-
-          <span>
-            Warehouses and logistics facilities combine conveyors,
-            refrigeration, HVAC, lighting, charging and automated systems
-            across changing operational schedules. The challenge is reducing
-            energy consumption, peak demand and associated emissions without
-            compromising fulfilment throughput, cold-chain integrity,
-            dispatch schedules or safety.
-          </span>
-
-        </div>
+            </article>
 
 
-        <div className="warehouseLogisticsChallengeGrid">
+            <article>
 
-          <article>
+              <div className="warehouseLogisticsIcon">
+                <PackageSearch size={24} />
+              </div>
 
-            <div className="warehouseLogisticsIcon">
-              <Zap size={24} />
-            </div>
+              <h3>
+                Throughput & Dispatch Constraints
+              </h3>
 
-            <h3>
-              High Energy Costs & Peak Demand
-            </h3>
+              <p>
+                Optimisation must preserve fulfilment speed, sortation capacity,
+                dispatch windows and critical warehouse operating requirements.
+              </p>
+
+            </article>
+
+
+            <article>
+
+              <div className="warehouseLogisticsIcon">
+                <Refrigerator size={24} />
+              </div>
+
+              <h3>
+                Cold-Chain & Temperature Requirements
+              </h3>
+
+              <p>
+                Refrigeration optimisation must maintain required temperatures,
+                cold-chain compliance and product integrity.
+              </p>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            CONNECTED WAREHOUSE ASSETS
+        ========================================================= */}
+
+        <section className="warehouseLogisticsSection warehouseLogisticsAssetsSection">
+
+          <div className="warehouseLogisticsSectionHeader">
 
             <p>
-              Conveyors, refrigeration, HVAC, automation and charging can
-              create significant electricity expenditure and rapidly changing
-              demand peaks.
+              Connected Warehouse Assets
             </p>
 
-          </article>
+
+            <h2>
+              Optimise the Systems Driving Warehouse & Logistics Energy Costs.
+            </h2>
 
 
-          <article>
+            <span>
+              The AI Energy Gateway connects existing warehouse infrastructure,
+              automation, refrigeration, meters and available telemetry so
+              EnerG IQ Tech can identify energy waste and optimisation
+              opportunities without requiring wholesale replacement of
+              existing logistics systems.
+            </span>
 
-            <div className="warehouseLogisticsIcon">
-              <Leaf size={24} />
-            </div>
-
-            <h3>
-              CO₂ Reduction Requirements
-            </h3>
-
-            <p>
-              Reducing unnecessary electricity consumption and improving
-              renewable-energy utilisation can lower associated CO₂ emissions
-              and support logistics sustainability objectives.
-            </p>
-
-          </article>
+          </div>
 
 
-          <article>
+          <motion.div
+            className="warehouseLogisticsAssetsGrid"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+              once: true,
+              amount: 0.08,
+            }}
+          >
 
-            <div className="warehouseLogisticsIcon">
-              <PackageSearch size={24} />
-            </div>
+            {warehouseAssets.map((asset) => {
+              const Icon = asset.icon;
 
-            <h3>
-              Throughput & Dispatch Constraints
-            </h3>
-
-            <p>
-              Optimisation must preserve fulfilment speed, sortation capacity,
-              dispatch windows and critical warehouse operating requirements.
-            </p>
-
-          </article>
-
-
-          <article>
-
-            <div className="warehouseLogisticsIcon">
-              <Refrigerator size={24} />
-            </div>
-
-            <h3>
-              Cold-Chain & Temperature Requirements
-            </h3>
-
-            <p>
-              Refrigeration optimisation must maintain required temperatures,
-              cold-chain compliance and product integrity.
-            </p>
-
-          </article>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          CONNECTED WAREHOUSE ASSETS
-      ========================================================= */}
-
-      <section className="warehouseLogisticsSection warehouseLogisticsAssetsSection">
-
-        <div className="warehouseLogisticsSectionHeader">
-
-          <p>
-            Connected Warehouse Assets
-          </p>
-
-
-          <h2>
-            Optimise the Systems Driving Warehouse & Logistics Energy Costs.
-          </h2>
-
-
-          <span>
-            The AI Energy Gateway connects existing warehouse infrastructure,
-            automation, refrigeration, meters and available telemetry so
-            EnerG IQ Tech can identify energy waste and optimisation
-            opportunities without requiring wholesale replacement of
-            existing logistics systems.
-          </span>
-
-        </div>
-
-
-        <motion.div
-          className="warehouseLogisticsAssetsGrid"
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true,
-            amount: 0.08,
-          }}
-        >
-
-          {warehouseAssets.map((asset) => {
-            const Icon = asset.icon;
-
-            return (
-              <motion.article
-                className="warehouseLogisticsAssetCard"
-                variants={fadeUp}
-                key={asset.title}
-              >
-
-                <div className="warehouseLogisticsIcon">
-                  <Icon size={23} />
-                </div>
-
-                <h3>
-                  {asset.title}
-                </h3>
-
-                <p>
-                  {asset.text}
-                </p>
-
-              </motion.article>
-            );
-          })}
-
-        </motion.div>
-
-      </section>
-
-
-      {/* =========================================================
-          AI OPTIMISATION SCENARIOS
-      ========================================================= */}
-
-      <section className="warehouseLogisticsSection warehouseLogisticsScenarioSection">
-
-        <div className="warehouseLogisticsSectionHeader">
-
-          <p>
-            AI Optimisation Scenarios
-          </p>
-
-
-          <h2>
-            Turn Warehouse Energy Waste Into Measurable Cost & Carbon
-            Reduction Opportunities.
-          </h2>
-
-
-          <span>
-            EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
-            Decision Agents and human-in-the-loop governance to identify
-            practical optimisation opportunities while protecting throughput,
-            temperature, dispatch schedules and operational reliability.
-          </span>
-
-        </div>
-
-
-        <div className="warehouseLogisticsScenarioGrid">
-
-          {scenarios.map((scenario) => {
-            const Icon = scenario.icon;
-
-            return (
-              <article
-                className="warehouseLogisticsScenarioCard"
-                key={scenario.title}
-              >
-
-                <div className="warehouseLogisticsScenarioTop">
+              return (
+                <motion.article
+                  className="warehouseLogisticsAssetCard"
+                  variants={fadeUp}
+                  key={asset.title}
+                >
 
                   <div className="warehouseLogisticsIcon">
                     <Icon size={23} />
                   </div>
 
-                  <span>
-                    AI Scenario
-                  </span>
+                  <h3>
+                    {asset.title}
+                  </h3>
+
+                  <p>
+                    {asset.text}
+                  </p>
+
+                </motion.article>
+              );
+            })}
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            AI OPTIMISATION SCENARIOS
+        ========================================================= */}
+
+        <section className="warehouseLogisticsSection warehouseLogisticsScenarioSection">
+
+          <div className="warehouseLogisticsSectionHeader">
+
+            <p>
+              AI Optimisation Scenarios
+            </p>
+
+
+            <h2>
+              Turn Warehouse Energy Waste Into Measurable Cost & Carbon
+              Reduction Opportunities.
+            </h2>
+
+
+            <span>
+              EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
+              Decision Agents and human-in-the-loop governance to identify
+              practical optimisation opportunities while protecting throughput,
+              temperature, dispatch schedules and operational reliability.
+            </span>
+
+          </div>
+
+
+          <div className="warehouseLogisticsScenarioGrid">
+
+            {scenarios.map((scenario) => {
+              const Icon = scenario.icon;
+
+              return (
+                <article
+                  className="warehouseLogisticsScenarioCard"
+                  key={scenario.title}
+                >
+
+                  <div className="warehouseLogisticsScenarioTop">
+
+                    <div className="warehouseLogisticsIcon">
+                      <Icon size={23} />
+                    </div>
+
+                    <span>
+                      AI Scenario
+                    </span>
+
+                  </div>
+
+
+                  <h3>
+                    {scenario.title}
+                  </h3>
+
+                  <p>
+                    {scenario.text}
+                  </p>
+
+
+                  <div className="warehouseLogisticsOutcome">
+
+                    <CheckCircle2 size={17} />
+
+                    {scenario.outcome}
+
+                  </div>
+
+                </article>
+              );
+            })}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            END-TO-END WORKFLOW
+        ========================================================= */}
+
+        <section
+          className="warehouseLogisticsSection warehouseLogisticsWorkflowSection"
+          id="warehouse-logistics-workflow"
+        >
+
+          <div className="warehouseLogisticsSectionHeader warehouseLogisticsSectionHeaderLight">
+
+            <p>
+              End-to-End AI Workflow
+            </p>
+
+
+            <h2>
+              From Warehouse Energy Data to Measurable Savings.
+            </h2>
+
+
+            <span>
+              EnerG IQ Tech transforms warehouse and logistics telemetry into
+              explainable, governed optimisation recommendations and measures
+              resulting energy, financial and associated CO₂ outcomes while
+              keeping operations and facilities teams in control.
+            </span>
+
+          </div>
+
+
+          <div className="warehouseLogisticsWorkflow">
+
+            {workflowSteps.map((step) => (
+
+              <div
+                className="warehouseLogisticsWorkflowStep"
+                key={step.number}
+              >
+
+                <b>
+                  {step.number}
+                </b>
+
+
+                <div>
+
+                  <h3>
+                    {step.title}
+                  </h3>
+
+                  <p>
+                    {step.text}
+                  </p>
 
                 </div>
 
+              </div>
 
-                <h3>
-                  {scenario.title}
-                </h3>
+            ))}
 
-                <p>
-                  {scenario.text}
-                </p>
+          </div>
 
-
-                <div className="warehouseLogisticsOutcome">
-
-                  <CheckCircle2 size={17} />
-
-                  {scenario.outcome}
-
-                </div>
-
-              </article>
-            );
-          })}
-
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          END-TO-END WORKFLOW
-      ========================================================= */}
+        {/* =========================================================
+            SHARED PLATFORM
+        ========================================================= */}
 
-      <section
-        className="warehouseLogisticsSection warehouseLogisticsWorkflowSection"
-        id="warehouse-logistics-workflow"
-      >
+        <section className="warehouseLogisticsSection warehouseLogisticsPlatformSection">
 
-        <div className="warehouseLogisticsSectionHeader warehouseLogisticsSectionHeaderLight">
+          <div className="warehouseLogisticsPlatformPanel">
 
-          <p>
-            End-to-End AI Workflow
-          </p>
+            <div className="warehouseLogisticsPlatformCopy">
 
-
-          <h2>
-            From Warehouse Energy Data to Measurable Savings.
-          </h2>
+              <p>
+                Shared EnerG IQ Tech Platform
+              </p>
 
 
-          <span>
-            EnerG IQ Tech transforms warehouse and logistics telemetry into
-            explainable, governed optimisation recommendations and measures
-            resulting energy, financial and associated CO₂ outcomes while
-            keeping operations and facilities teams in control.
-          </span>
-
-        </div>
+              <h2>
+                Warehouse & Logistics Optimisation Built on One Energy
+                Intelligence Architecture.
+              </h2>
 
 
-        <div className="warehouseLogisticsWorkflow">
-
-          {workflowSteps.map((step) => (
-
-            <div
-              className="warehouseLogisticsWorkflowStep"
-              key={step.number}
-            >
-
-              <b>
-                {step.number}
-              </b>
+              <span>
+                Warehouse & Logistics AI uses the shared EnerG IQ Tech
+                architecture to connect operational assets, identify energy
+                waste, recommend governed optimisation actions and quantify
+                energy, financial and associated carbon outcomes.
+              </span>
 
 
-              <div>
+              <ul>
 
-                <h3>
-                  {step.title}
-                </h3>
+                <li>
+                  <CheckCircle2 size={18} />
+                  AI Energy Gateway connectivity
+                </li>
 
-                <p>
-                  {step.text}
-                </p>
+                <li>
+                  <CheckCircle2 size={18} />
+                  Digital Twin warehouse context
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Configurable AI Decision Agents
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Human-in-the-loop operations governance
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Energy, cost, CO₂ and ROI intelligence
+                </li>
+
+              </ul>
+
+            </div>
+
+
+            <div className="warehouseLogisticsPlatformFlow">
+
+              <div className="warehouseLogisticsPlatformNode">
+
+                <Warehouse size={25} />
+
+                <span>
+                  Warehouse Assets
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="warehouseLogisticsPlatformNode featured">
+
+                <Cpu size={25} />
+
+                <span>
+                  AI Energy Gateway
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="warehouseLogisticsPlatformNode">
+
+                <Layers3 size={25} />
+
+                <span>
+                  Digital Twin
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="warehouseLogisticsPlatformNode">
+
+                <Brain size={25} />
+
+                <span>
+                  AI Optimisation
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="warehouseLogisticsPlatformNode">
+
+                <ShieldCheck size={25} />
+
+                <span>
+                  Measured Outcomes
+                </span>
 
               </div>
 
             </div>
 
-          ))}
+          </div>
 
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          SHARED PLATFORM
-      ========================================================= */}
+        {/* =========================================================
+            PILOT PROGRAM
+        ========================================================= */}
 
-      <section className="warehouseLogisticsSection warehouseLogisticsPlatformSection">
+        <section
+          className="warehouseLogisticsSection warehouseLogisticsPilotSection"
+          id="warehouse-logistics-pilot"
+        >
 
-        <div className="warehouseLogisticsPlatformPanel">
+          <div className="warehouseLogisticsPilotBox">
 
-          <div className="warehouseLogisticsPlatformCopy">
+            <div className="warehouseLogisticsPilotCopy">
+
+              <p>
+                Warehouse & Logistics Pilot Program
+              </p>
+
+
+              <h2>
+                Start With One Warehouse Energy Problem. Prove the Savings
+                Before Scaling.
+              </h2>
+
+
+              <span>
+                Establish an energy baseline for one warehouse, distribution
+                centre or high-value operational system, identify optimisation
+                opportunities and quantify potential energy-cost, peak-demand
+                and associated CO₂ outcomes while validating throughput,
+                temperature, safety and dispatch safeguards before broader
+                deployment.
+              </span>
+
+
+              <button
+                type="button"
+                className="warehouseLogisticsPrimaryBtn"
+                onClick={handlePilotClick}
+              >
+                Discuss a Warehouse Pilot
+                <ChevronRight size={18} />
+              </button>
+
+            </div>
+
+
+            <div className="warehouseLogisticsPilotList">
+
+              <h3>
+                Indicative Pilot Scope
+              </h3>
+
+
+              <ul>
+
+                {pilotItems.map((item) => (
+
+                  <li key={item}>
+
+                    <CheckCircle2 size={18} />
+
+                    <span>
+                      {item}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            FINAL CTA
+        ========================================================= */}
+
+        <section className="warehouseLogisticsCta">
+
+          <div>
 
             <p>
-              Shared EnerG IQ Tech Platform
+              Now Onboarding Warehouse & Logistics Pilot Partners
             </p>
 
 
             <h2>
-              Warehouse & Logistics Optimisation Built on One Energy
-              Intelligence Architecture.
+              Reduce Warehouse Energy Costs & CO₂ Emissions Without
+              Compromising Throughput or Temperature.
             </h2>
 
 
             <span>
-              Warehouse & Logistics AI uses the shared EnerG IQ Tech
-              architecture to connect operational assets, identify energy
-              waste, recommend governed optimisation actions and quantify
-              energy, financial and associated carbon outcomes.
+              Start with one measurable warehouse or logistics energy
+              challenge. Establish the baseline, identify energy waste and
+              determine whether the potential financial and carbon outcomes
+              justify broader deployment - while protecting throughput,
+              cold-chain requirements, dispatch schedules and operational
+              reliability.
             </span>
 
-
-            <ul>
-
-              <li>
-                <CheckCircle2 size={18} />
-                AI Energy Gateway connectivity
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Digital Twin warehouse context
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Configurable AI Decision Agents
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Human-in-the-loop operations governance
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Energy, cost, CO₂ and ROI intelligence
-              </li>
-
-            </ul>
-
           </div>
 
 
-          <div className="warehouseLogisticsPlatformFlow">
+          <div className="warehouseLogisticsCtaActions">
 
-            <div className="warehouseLogisticsPlatformNode">
-
-              <Warehouse size={25} />
-
-              <span>
-                Warehouse Assets
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="warehouseLogisticsPlatformNode featured">
-
-              <Cpu size={25} />
-
-              <span>
-                AI Energy Gateway
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="warehouseLogisticsPlatformNode">
-
-              <Layers3 size={25} />
-
-              <span>
-                Digital Twin
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="warehouseLogisticsPlatformNode">
-
-              <Brain size={25} />
-
-              <span>
-                AI Optimisation
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="warehouseLogisticsPlatformNode">
-
-              <ShieldCheck size={25} />
-
-              <span>
-                Measured Outcomes
-              </span>
-
-            </div>
+          
+            <Link to="/book-discussion" className="warehouseLogisticsPrimaryBtn">
+              Book a Discussion
+              <ChevronRight size={19} />
+            </Link>
 
           </div>
 
-        </div>
+        </section>
 
-      </section>
-
-
-      {/* =========================================================
-          PILOT PROGRAM
-      ========================================================= */}
-
-      <section
-        className="warehouseLogisticsSection warehouseLogisticsPilotSection"
-        id="warehouse-logistics-pilot"
-      >
-
-        <div className="warehouseLogisticsPilotBox">
-
-          <div className="warehouseLogisticsPilotCopy">
-
-            <p>
-              Warehouse & Logistics Pilot Program
-            </p>
-
-
-            <h2>
-              Start With One Warehouse Energy Problem. Prove the Savings
-              Before Scaling.
-            </h2>
-
-
-            <span>
-              Establish an energy baseline for one warehouse, distribution
-              centre or high-value operational system, identify optimisation
-              opportunities and quantify potential energy-cost, peak-demand
-              and associated CO₂ outcomes while validating throughput,
-              temperature, safety and dispatch safeguards before broader
-              deployment.
-            </span>
-
-
-            <button
-              type="button"
-              className="warehouseLogisticsPrimaryBtn"
-              onClick={handlePilotClick}
-            >
-              Discuss a Warehouse Pilot
-              <ChevronRight size={18} />
-            </button>
-
-          </div>
-
-
-          <div className="warehouseLogisticsPilotList">
-
-            <h3>
-              Indicative Pilot Scope
-            </h3>
-
-
-            <ul>
-
-              {pilotItems.map((item) => (
-
-                <li key={item}>
-
-                  <CheckCircle2 size={18} />
-
-                  <span>
-                    {item}
-                  </span>
-
-                </li>
-
-              ))}
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          FINAL CTA
-      ========================================================= */}
-
-      <section className="warehouseLogisticsCta">
-
-        <div>
-
-          <p>
-            Now Onboarding Warehouse & Logistics Pilot Partners
-          </p>
-
-
-          <h2>
-            Reduce Warehouse Energy Costs & CO₂ Emissions Without
-            Compromising Throughput or Temperature.
-          </h2>
-
-
-          <span>
-            Start with one measurable warehouse or logistics energy
-            challenge. Establish the baseline, identify energy waste and
-            determine whether the potential financial and carbon outcomes
-            justify broader deployment - while protecting throughput,
-            cold-chain requirements, dispatch schedules and operational
-            reliability.
-          </span>
-
-        </div>
-
-
-        <div className="warehouseLogisticsCtaActions">
-
-        
-          <Link to="/book-discussion" className="warehouseLogisticsPrimaryBtn">
-            Book a Discussion
-            <ChevronRight size={19} />
-          </Link>
-
-        </div>
-
-      </section>
-
-    </main>
+      </main>
+    
+    
+    
+    
+    </>
+    
   );
 }

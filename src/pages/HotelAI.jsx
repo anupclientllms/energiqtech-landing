@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 
 import "../styles/HotelAI.css";
+import SEO from "./SEO";
 
 
 const fadeUp = {
@@ -309,820 +310,836 @@ export default function HotelAI({ openPilotModal }) {
 
 
   return (
-    <main className="hotelPage">
 
-      {/* =========================================================
-          HERO
-      ========================================================= */}
+    <>
 
-      <section className="hotelHero">
+    
+      <SEO
+        title="Hotel AI Energy Optimisation & Cost Reduction | EnerG IQ Tech"
+        description="Reduce hotel energy costs, peak demand and CO₂ emissions with EnerG IQ Tech. Optimise HVAC, chillers, hot water systems and connected assets using Edge AI, digital twins and predictive analytics while maintaining guest comfort."
+        path="/hotel-ai"
+      />
 
-        <motion.div
-          className="hotelHeroContent"
-          variants={stagger}
-          initial="hidden"
-          animate="show"
-        >
+      <main className="hotelPage">
 
-          <motion.div
-            className="hotelBadge"
-            variants={fadeUp}
-          >
-            <Hotel size={17} />
-            EnerG IQ Tech Hotel AI
-          </motion.div>
+        {/* =========================================================
+            HERO
+        ========================================================= */}
 
-
-          <motion.h1 variants={fadeUp}>
-            Reduce Hotel Energy Costs & CO₂ Emissions Without
-            Compromising Guest Comfort.
-          </motion.h1>
-
-
-          <motion.p
-            className="hotelLead"
-            variants={fadeUp}
-          >
-            EnerG IQ Tech Hotel AI helps hotels reduce energy waste,
-            peak demand and associated CO₂ emissions across guest rooms,
-            central plant and hotel services - while protecting guest
-            comfort, service quality and operational reliability.
-          </motion.p>
-
-
-          <motion.p
-            className="hotelDescription"
-            variants={fadeUp}
-          >
-            Edge AI analyses guest-room HVAC, chillers, boilers, hot water,
-            kitchens, laundry, refrigeration, event spaces and other hotel
-            systems in real time. The AI Energy Gateway connects BMS, meters,
-            room controls and connected energy assets so EnerG IQ Tech can
-            identify inefficiencies, recommend governed optimisation actions
-            and measure resulting energy, financial and carbon outcomes.
-          </motion.p>
-
+        <section className="hotelHero">
 
           <motion.div
-            className="hotelHeroButtons"
-            variants={fadeUp}
+            className="hotelHeroContent"
+            variants={stagger}
+            initial="hidden"
+            animate="show"
           >
 
-           
-            <Link to="/book-discussion" className="hotelPrimaryBtn">
-              Book a Discussion
-              <ChevronRight size={19} />
-            </Link>
-
-            <a
-              href="#hotel-workflow"
-              className="hotelSecondaryBtn"
+            <motion.div
+              className="hotelBadge"
+              variants={fadeUp}
             >
-              View AI Workflow
-            </a>
-
-          </motion.div>
-
-
-          <motion.div
-            className="hotelHeroTags"
-            variants={fadeUp}
-          >
-
-            <span>
-              <Zap size={15} />
-              Energy Cost Reduction
-            </span>
-
-            <span>
-              <Leaf size={15} />
-              CO₂ Reduction
-            </span>
-
-            <span>
-              <Gauge size={15} />
-              Peak Demand
-            </span>
-
-            <span>
-              <Hotel size={15} />
-              Guest Comfort
-            </span>
-
-          </motion.div>
-
-        </motion.div>
+              <Hotel size={17} />
+              EnerG IQ Tech Hotel AI
+            </motion.div>
 
 
-        {/* =====================================================
-            HERO DASHBOARD
-        ===================================================== */}
-
-        <motion.div
-          className="hotelHeroVisual"
-          initial={{
-            opacity: 0,
-            y: 28,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.15,
-          }}
-        >
-
-          <div className="hotelDashboard">
-
-            <div className="hotelDashboardTop">
-
-              <div>
-                <strong>
-                  Hotel Energy Optimisation
-                </strong>
-
-                <span>
-                  Energy, demand and guest-comfort overview
-                </span>
-              </div>
+            <motion.h1 variants={fadeUp}>
+              Reduce Hotel Energy Costs & CO₂ Emissions Without
+              Compromising Guest Comfort.
+            </motion.h1>
 
 
-              <b>
-                <Activity size={14} />
-                Live
-              </b>
-
-            </div>
-
-
-            <div className="hotelKpis">
-
-              <div>
-                <small>Hotels</small>
-                <strong>4</strong>
-                <span>Connected properties</span>
-              </div>
+            <motion.p
+              className="hotelLead"
+              variants={fadeUp}
+            >
+              EnerG IQ Tech Hotel AI helps hotels reduce energy waste,
+              peak demand and associated CO₂ emissions across guest rooms,
+              central plant and hotel services - while protecting guest
+              comfort, service quality and operational reliability.
+            </motion.p>
 
 
-              <div>
-                <small>Asset Classes</small>
-                <strong>15</strong>
-                <span>Energy-intensive systems</span>
-              </div>
+            <motion.p
+              className="hotelDescription"
+              variants={fadeUp}
+            >
+              Edge AI analyses guest-room HVAC, chillers, boilers, hot water,
+              kitchens, laundry, refrigeration, event spaces and other hotel
+              systems in real time. The AI Energy Gateway connects BMS, meters,
+              room controls and connected energy assets so EnerG IQ Tech can
+              identify inefficiencies, recommend governed optimisation actions
+              and measure resulting energy, financial and carbon outcomes.
+            </motion.p>
 
 
-              <div>
-                <small>Opportunities</small>
-                <strong>39</strong>
-                <span>Energy optimisation items</span>
-              </div>
+            <motion.div
+              className="hotelHeroButtons"
+              variants={fadeUp}
+            >
+
+            
+              <Link to="/book-discussion" className="hotelPrimaryBtn">
+                Book a Discussion
+                <ChevronRight size={19} />
+              </Link>
+
+              <a
+                href="#hotel-workflow"
+                className="hotelSecondaryBtn"
+              >
+                View AI Workflow
+              </a>
+
+            </motion.div>
 
 
-              <div>
-                <small>Room HVAC Waste</small>
-                <strong>16%</strong>
-                <span>Indicative opportunity</span>
-              </div>
-
-            </div>
-
-
-            <div className="hotelInsightCard">
-
-              <div className="hotelInsightIcon">
-                <Brain size={22} />
-              </div>
-
-
-              <div>
-
-                <strong>
-                  AI Energy Recommendation
-                </strong>
-
-                <p>
-                  Twelve unoccupied rooms are maintaining full cooling after
-                  checkout. Review approved setback temperatures until the
-                  next confirmed check-in window to reduce unnecessary energy
-                  consumption while preserving guest-comfort requirements.
-                </p>
-
-              </div>
-
-            </div>
-
-
-            <div className="hotelApproval">
+            <motion.div
+              className="hotelHeroTags"
+              variants={fadeUp}
+            >
 
               <span>
-                <ShieldCheck size={18} />
-                Engineering approval required before execution
+                <Zap size={15} />
+                Energy Cost Reduction
               </span>
 
-              <button type="button">
-                Review Action
-              </button>
+              <span>
+                <Leaf size={15} />
+                CO₂ Reduction
+              </span>
+
+              <span>
+                <Gauge size={15} />
+                Peak Demand
+              </span>
+
+              <span>
+                <Hotel size={15} />
+                Guest Comfort
+              </span>
+
+            </motion.div>
+
+          </motion.div>
+
+
+          {/* =====================================================
+              HERO DASHBOARD
+          ===================================================== */}
+
+          <motion.div
+            className="hotelHeroVisual"
+            initial={{
+              opacity: 0,
+              y: 28,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+              delay: 0.15,
+            }}
+          >
+
+            <div className="hotelDashboard">
+
+              <div className="hotelDashboardTop">
+
+                <div>
+                  <strong>
+                    Hotel Energy Optimisation
+                  </strong>
+
+                  <span>
+                    Energy, demand and guest-comfort overview
+                  </span>
+                </div>
+
+
+                <b>
+                  <Activity size={14} />
+                  Live
+                </b>
+
+              </div>
+
+
+              <div className="hotelKpis">
+
+                <div>
+                  <small>Hotels</small>
+                  <strong>4</strong>
+                  <span>Connected properties</span>
+                </div>
+
+
+                <div>
+                  <small>Asset Classes</small>
+                  <strong>15</strong>
+                  <span>Energy-intensive systems</span>
+                </div>
+
+
+                <div>
+                  <small>Opportunities</small>
+                  <strong>39</strong>
+                  <span>Energy optimisation items</span>
+                </div>
+
+
+                <div>
+                  <small>Room HVAC Waste</small>
+                  <strong>16%</strong>
+                  <span>Indicative opportunity</span>
+                </div>
+
+              </div>
+
+
+              <div className="hotelInsightCard">
+
+                <div className="hotelInsightIcon">
+                  <Brain size={22} />
+                </div>
+
+
+                <div>
+
+                  <strong>
+                    AI Energy Recommendation
+                  </strong>
+
+                  <p>
+                    Twelve unoccupied rooms are maintaining full cooling after
+                    checkout. Review approved setback temperatures until the
+                    next confirmed check-in window to reduce unnecessary energy
+                    consumption while preserving guest-comfort requirements.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              <div className="hotelApproval">
+
+                <span>
+                  <ShieldCheck size={18} />
+                  Engineering approval required before execution
+                </span>
+
+                <button type="button">
+                  Review Action
+                </button>
+
+              </div>
 
             </div>
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            VALUE FLOW
+        ========================================================= */}
+
+        <section className="hotelStrip">
+
+          <span>Connect</span>
+          <ArrowRight size={15} />
+
+          <span>Detect Waste</span>
+          <ArrowRight size={15} />
+
+          <span>Analyse</span>
+          <ArrowRight size={15} />
+
+          <span>Optimise</span>
+          <ArrowRight size={15} />
+
+          <span>Approve</span>
+          <ArrowRight size={15} />
+
+          <span>Measure Savings</span>
+
+        </section>
+
+
+        {/* =========================================================
+            HOTEL ENERGY CHALLENGE
+        ========================================================= */}
+
+        <section className="hotelSection hotelChallengeSection">
+
+          <div className="hotelSectionHeader">
+
+            <p>
+              Hotel Energy Challenge
+            </p>
+
+            <h2>
+              High Hotel Energy Costs & CO₂ Emissions - With Guest
+              Comfort Always Protected.
+            </h2>
+
+            <span>
+              Hotels operate energy-intensive HVAC, hot water, central plant,
+              kitchens, laundry, refrigeration and event facilities against
+              highly variable occupancy. The challenge is reducing energy
+              consumption, peak demand and associated emissions without
+              affecting guest comfort or service quality.
+            </span>
 
           </div>
 
-        </motion.div>
 
-      </section>
+          <div className="hotelChallengeGrid">
 
+            <article>
 
-      {/* =========================================================
-          VALUE FLOW
-      ========================================================= */}
+              <div className="hotelIcon">
+                <Zap size={24} />
+              </div>
 
-      <section className="hotelStrip">
+              <h3>
+                High Energy Costs
+              </h3>
 
-        <span>Connect</span>
-        <ArrowRight size={15} />
+              <p>
+                HVAC, hot water, chillers, boilers, kitchens and laundry create
+                significant electricity and thermal energy expenditure.
+              </p>
 
-        <span>Detect Waste</span>
-        <ArrowRight size={15} />
-
-        <span>Analyse</span>
-        <ArrowRight size={15} />
-
-        <span>Optimise</span>
-        <ArrowRight size={15} />
-
-        <span>Approve</span>
-        <ArrowRight size={15} />
-
-        <span>Measure Savings</span>
-
-      </section>
+            </article>
 
 
-      {/* =========================================================
-          HOTEL ENERGY CHALLENGE
-      ========================================================= */}
+            <article>
 
-      <section className="hotelSection hotelChallengeSection">
+              <div className="hotelIcon">
+                <Leaf size={24} />
+              </div>
 
-        <div className="hotelSectionHeader">
+              <h3>
+                CO₂ Reduction Requirements
+              </h3>
 
-          <p>
-            Hotel Energy Challenge
-          </p>
+              <p>
+                Reducing unnecessary energy consumption can lower associated
+                CO₂ emissions and support hotel sustainability and
+                decarbonisation objectives.
+              </p>
 
-          <h2>
-            High Hotel Energy Costs & CO₂ Emissions - With Guest
-            Comfort Always Protected.
-          </h2>
-
-          <span>
-            Hotels operate energy-intensive HVAC, hot water, central plant,
-            kitchens, laundry, refrigeration and event facilities against
-            highly variable occupancy. The challenge is reducing energy
-            consumption, peak demand and associated emissions without
-            affecting guest comfort or service quality.
-          </span>
-
-        </div>
+            </article>
 
 
-        <div className="hotelChallengeGrid">
+            <article>
 
-          <article>
+              <div className="hotelIcon">
+                <Hotel size={24} />
+              </div>
 
-            <div className="hotelIcon">
-              <Zap size={24} />
-            </div>
+              <h3>
+                Guest Comfort Constraints
+              </h3>
 
-            <h3>
-              High Energy Costs
-            </h3>
+              <p>
+                Optimisation must protect room comfort, hot-water availability,
+                indoor environmental conditions and service expectations.
+              </p>
 
-            <p>
-              HVAC, hot water, chillers, boilers, kitchens and laundry create
-              significant electricity and thermal energy expenditure.
-            </p>
-
-          </article>
+            </article>
 
 
-          <article>
+            <article>
 
-            <div className="hotelIcon">
-              <Leaf size={24} />
-            </div>
+              <div className="hotelIcon">
+                <Gauge size={24} />
+              </div>
 
-            <h3>
-              CO₂ Reduction Requirements
-            </h3>
+              <h3>
+                Occupancy & Peak Demand
+              </h3>
 
-            <p>
-              Reducing unnecessary energy consumption can lower associated
-              CO₂ emissions and support hotel sustainability and
-              decarbonisation objectives.
-            </p>
+              <p>
+                Guest activity, check-in patterns, events, kitchens and
+                back-of-house operations can create rapidly changing loads and
+                expensive demand peaks.
+              </p>
 
-          </article>
+            </article>
+
+          </div>
+
+        </section>
 
 
-          <article>
+        {/* =========================================================
+            CONNECTED HOTEL ASSETS
+        ========================================================= */}
 
-            <div className="hotelIcon">
-              <Hotel size={24} />
-            </div>
+        <section className="hotelSection hotelAssetsSection">
 
-            <h3>
-              Guest Comfort Constraints
-            </h3>
+          <div className="hotelSectionHeader">
 
             <p>
-              Optimisation must protect room comfort, hot-water availability,
-              indoor environmental conditions and service expectations.
+              Connected Hotel Assets
             </p>
 
-          </article>
+            <h2>
+              Optimise the Systems Driving Hotel Energy Costs.
+            </h2>
+
+            <span>
+              The AI Energy Gateway connects existing BMS, room controls,
+              meters, hotel services and energy assets so EnerG IQ Tech can
+              identify energy waste and optimisation opportunities without
+              requiring wholesale replacement of hotel infrastructure.
+            </span>
+
+          </div>
 
 
-          <article>
+          <motion.div
+            className="hotelAssetsGrid"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{
+              once: true,
+              amount: 0.08,
+            }}
+          >
 
-            <div className="hotelIcon">
-              <Gauge size={24} />
-            </div>
+            {hotelAssets.map((asset) => {
+              const Icon = asset.icon;
 
-            <h3>
-              Occupancy & Peak Demand
-            </h3>
-
-            <p>
-              Guest activity, check-in patterns, events, kitchens and
-              back-of-house operations can create rapidly changing loads and
-              expensive demand peaks.
-            </p>
-
-          </article>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          CONNECTED HOTEL ASSETS
-      ========================================================= */}
-
-      <section className="hotelSection hotelAssetsSection">
-
-        <div className="hotelSectionHeader">
-
-          <p>
-            Connected Hotel Assets
-          </p>
-
-          <h2>
-            Optimise the Systems Driving Hotel Energy Costs.
-          </h2>
-
-          <span>
-            The AI Energy Gateway connects existing BMS, room controls,
-            meters, hotel services and energy assets so EnerG IQ Tech can
-            identify energy waste and optimisation opportunities without
-            requiring wholesale replacement of hotel infrastructure.
-          </span>
-
-        </div>
-
-
-        <motion.div
-          className="hotelAssetsGrid"
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{
-            once: true,
-            amount: 0.08,
-          }}
-        >
-
-          {hotelAssets.map((asset) => {
-            const Icon = asset.icon;
-
-            return (
-              <motion.article
-                className="hotelAssetCard"
-                variants={fadeUp}
-                key={asset.title}
-              >
-
-                <div className="hotelIcon">
-                  <Icon size={23} />
-                </div>
-
-                <h3>
-                  {asset.title}
-                </h3>
-
-                <p>
-                  {asset.text}
-                </p>
-
-              </motion.article>
-            );
-          })}
-
-        </motion.div>
-
-      </section>
-
-
-      {/* =========================================================
-          AI OPTIMISATION SCENARIOS
-      ========================================================= */}
-
-      <section className="hotelSection hotelScenarioSection">
-
-        <div className="hotelSectionHeader">
-
-          <p>
-            AI Optimisation Scenarios
-          </p>
-
-          <h2>
-            Turn Hotel Energy Waste Into Measurable Cost & Carbon
-            Reduction Opportunities.
-          </h2>
-
-          <span>
-            EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
-            Decision Agents and human-in-the-loop governance to identify
-            practical optimisation opportunities while protecting guest
-            comfort and hotel operations.
-          </span>
-
-        </div>
-
-
-        <div className="hotelScenarioGrid">
-
-          {scenarios.map((scenario) => {
-            const Icon = scenario.icon;
-
-            return (
-              <article
-                className="hotelScenarioCard"
-                key={scenario.title}
-              >
-
-                <div className="hotelScenarioTop">
+              return (
+                <motion.article
+                  className="hotelAssetCard"
+                  variants={fadeUp}
+                  key={asset.title}
+                >
 
                   <div className="hotelIcon">
                     <Icon size={23} />
                   </div>
 
-                  <span>
-                    AI Scenario
-                  </span>
+                  <h3>
+                    {asset.title}
+                  </h3>
+
+                  <p>
+                    {asset.text}
+                  </p>
+
+                </motion.article>
+              );
+            })}
+
+          </motion.div>
+
+        </section>
+
+
+        {/* =========================================================
+            AI OPTIMISATION SCENARIOS
+        ========================================================= */}
+
+        <section className="hotelSection hotelScenarioSection">
+
+          <div className="hotelSectionHeader">
+
+            <p>
+              AI Optimisation Scenarios
+            </p>
+
+            <h2>
+              Turn Hotel Energy Waste Into Measurable Cost & Carbon
+              Reduction Opportunities.
+            </h2>
+
+            <span>
+              EnerG IQ Tech combines the AI Energy Gateway, Digital Twin,
+              Decision Agents and human-in-the-loop governance to identify
+              practical optimisation opportunities while protecting guest
+              comfort and hotel operations.
+            </span>
+
+          </div>
+
+
+          <div className="hotelScenarioGrid">
+
+            {scenarios.map((scenario) => {
+              const Icon = scenario.icon;
+
+              return (
+                <article
+                  className="hotelScenarioCard"
+                  key={scenario.title}
+                >
+
+                  <div className="hotelScenarioTop">
+
+                    <div className="hotelIcon">
+                      <Icon size={23} />
+                    </div>
+
+                    <span>
+                      AI Scenario
+                    </span>
+
+                  </div>
+
+
+                  <h3>
+                    {scenario.title}
+                  </h3>
+
+                  <p>
+                    {scenario.text}
+                  </p>
+
+
+                  <div className="hotelOutcome">
+                    <CheckCircle2 size={17} />
+                    {scenario.outcome}
+                  </div>
+
+                </article>
+              );
+            })}
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            END-TO-END WORKFLOW
+        ========================================================= */}
+
+        <section
+          className="hotelSection hotelWorkflowSection"
+          id="hotel-workflow"
+        >
+
+          <div className="hotelSectionHeader hotelSectionHeaderLight">
+
+            <p>
+              End-to-End AI Workflow
+            </p>
+
+            <h2>
+              From Hotel Energy Data to Measurable Savings.
+            </h2>
+
+            <span>
+              EnerG IQ Tech transforms hotel telemetry into explainable,
+              governed optimisation recommendations and measures resulting
+              energy, financial and associated CO₂ outcomes while keeping
+              engineering and hotel operations teams in control.
+            </span>
+
+          </div>
+
+
+          <div className="hotelWorkflow">
+
+            {workflowSteps.map((step) => (
+
+              <div
+                className="hotelWorkflowStep"
+                key={step.number}
+              >
+
+                <b>
+                  {step.number}
+                </b>
+
+
+                <div>
+
+                  <h3>
+                    {step.title}
+                  </h3>
+
+                  <p>
+                    {step.text}
+                  </p>
 
                 </div>
 
+              </div>
 
-                <h3>
-                  {scenario.title}
-                </h3>
+            ))}
 
-                <p>
-                  {scenario.text}
-                </p>
+          </div>
 
-
-                <div className="hotelOutcome">
-                  <CheckCircle2 size={17} />
-                  {scenario.outcome}
-                </div>
-
-              </article>
-            );
-          })}
-
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          END-TO-END WORKFLOW
-      ========================================================= */}
+        {/* =========================================================
+            SHARED PLATFORM
+        ========================================================= */}
 
-      <section
-        className="hotelSection hotelWorkflowSection"
-        id="hotel-workflow"
-      >
+        <section className="hotelSection hotelPlatformSection">
 
-        <div className="hotelSectionHeader hotelSectionHeaderLight">
+          <div className="hotelPlatformPanel">
 
-          <p>
-            End-to-End AI Workflow
-          </p>
+            <div className="hotelPlatformCopy">
 
-          <h2>
-            From Hotel Energy Data to Measurable Savings.
-          </h2>
+              <p>
+                Shared EnerG IQ Tech Platform
+              </p>
 
-          <span>
-            EnerG IQ Tech transforms hotel telemetry into explainable,
-            governed optimisation recommendations and measures resulting
-            energy, financial and associated CO₂ outcomes while keeping
-            engineering and hotel operations teams in control.
-          </span>
+              <h2>
+                Hotel-Specific Optimisation Built on One Energy Intelligence
+                Architecture.
+              </h2>
 
-        </div>
+              <span>
+                Hotel AI uses the shared EnerG IQ Tech architecture to connect
+                hotel systems, identify energy waste, recommend governed
+                optimisation actions and quantify energy, financial and
+                associated carbon outcomes.
+              </span>
 
 
-        <div className="hotelWorkflow">
+              <ul>
 
-          {workflowSteps.map((step) => (
+                <li>
+                  <CheckCircle2 size={18} />
+                  AI Energy Gateway connectivity
+                </li>
 
-            <div
-              className="hotelWorkflowStep"
-              key={step.number}
-            >
+                <li>
+                  <CheckCircle2 size={18} />
+                  Digital Twin operational context
+                </li>
 
-              <b>
-                {step.number}
-              </b>
+                <li>
+                  <CheckCircle2 size={18} />
+                  Configurable AI Decision Agents
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Human-in-the-loop governance
+                </li>
+
+                <li>
+                  <CheckCircle2 size={18} />
+                  Energy, cost, CO₂ and ROI intelligence
+                </li>
+
+              </ul>
+
+            </div>
 
 
-              <div>
+            <div className="hotelPlatformFlow">
 
-                <h3>
-                  {step.title}
-                </h3>
+              <div className="hotelPlatformNode">
 
-                <p>
-                  {step.text}
-                </p>
+                <Hotel size={25} />
+
+                <span>
+                  Hotel Assets
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="hotelPlatformNode featured">
+
+                <Cpu size={25} />
+
+                <span>
+                  AI Energy Gateway
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="hotelPlatformNode">
+
+                <Layers3 size={25} />
+
+                <span>
+                  Digital Twin
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="hotelPlatformNode">
+
+                <Brain size={25} />
+
+                <span>
+                  AI Optimisation
+                </span>
+
+              </div>
+
+
+              <ChevronRight size={20} />
+
+
+              <div className="hotelPlatformNode">
+
+                <ShieldCheck size={25} />
+
+                <span>
+                  Measured Outcomes
+                </span>
 
               </div>
 
             </div>
 
-          ))}
+          </div>
 
-        </div>
-
-      </section>
+        </section>
 
 
-      {/* =========================================================
-          SHARED PLATFORM
-      ========================================================= */}
+        {/* =========================================================
+            PILOT PROGRAM
+        ========================================================= */}
 
-      <section className="hotelSection hotelPlatformSection">
+        <section
+          className="hotelSection hotelPilotSection"
+          id="hotel-pilot"
+        >
 
-        <div className="hotelPlatformPanel">
+          <div className="hotelPilotBox">
 
-          <div className="hotelPlatformCopy">
+            <div className="hotelPilotCopy">
+
+              <p>
+                Hotel Pilot Program
+              </p>
+
+              <h2>
+                Start With One Hotel Energy Problem. Prove the Savings
+                Before Scaling.
+              </h2>
+
+              <span>
+                Establish an energy baseline for one property or high-value
+                hotel system, identify optimisation opportunities and quantify
+                potential energy-cost, peak-demand and associated CO₂ outcomes
+                while validating guest-comfort and operational safeguards before
+                portfolio-wide deployment.
+              </span>
+
+
+              <button
+                type="button"
+                className="hotelPrimaryBtn"
+                onClick={handlePilotClick}
+              >
+                Discuss a Hotel Pilot
+                <ChevronRight size={18} />
+              </button>
+
+            </div>
+
+
+            <div className="hotelPilotList">
+
+              <h3>
+                Indicative Pilot Scope
+              </h3>
+
+
+              <ul>
+
+                {pilotItems.map((item) => (
+
+                  <li key={item}>
+
+                    <CheckCircle2 size={18} />
+
+                    <span>
+                      {item}
+                    </span>
+
+                  </li>
+
+                ))}
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================================================
+            FINAL CTA
+        ========================================================= */}
+
+        <section className="hotelCta">
+
+          <div>
 
             <p>
-              Shared EnerG IQ Tech Platform
+              Now Onboarding Hotel Pilot Partners
             </p>
 
             <h2>
-              Hotel-Specific Optimisation Built on One Energy Intelligence
-              Architecture.
+              Reduce Hotel Energy Costs & CO₂ Emissions Without
+              Compromising Guest Comfort.
             </h2>
 
             <span>
-              Hotel AI uses the shared EnerG IQ Tech architecture to connect
-              hotel systems, identify energy waste, recommend governed
-              optimisation actions and quantify energy, financial and
-              associated carbon outcomes.
+              Start with one measurable hotel energy challenge. Establish the
+              baseline, identify energy waste and determine whether the
+              potential financial and carbon outcomes justify broader
+              deployment - while protecting guest comfort, service quality and
+              operational reliability.
             </span>
 
-
-            <ul>
-
-              <li>
-                <CheckCircle2 size={18} />
-                AI Energy Gateway connectivity
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Digital Twin operational context
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Configurable AI Decision Agents
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Human-in-the-loop governance
-              </li>
-
-              <li>
-                <CheckCircle2 size={18} />
-                Energy, cost, CO₂ and ROI intelligence
-              </li>
-
-            </ul>
-
           </div>
 
 
-          <div className="hotelPlatformFlow">
+          <div className="hotelCtaActions">
 
-            <div className="hotelPlatformNode">
-
-              <Hotel size={25} />
-
-              <span>
-                Hotel Assets
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="hotelPlatformNode featured">
-
-              <Cpu size={25} />
-
-              <span>
-                AI Energy Gateway
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="hotelPlatformNode">
-
-              <Layers3 size={25} />
-
-              <span>
-                Digital Twin
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="hotelPlatformNode">
-
-              <Brain size={25} />
-
-              <span>
-                AI Optimisation
-              </span>
-
-            </div>
-
-
-            <ChevronRight size={20} />
-
-
-            <div className="hotelPlatformNode">
-
-              <ShieldCheck size={25} />
-
-              <span>
-                Measured Outcomes
-              </span>
-
-            </div>
+          
+            <Link to="/book-discussion" className="hotelPrimaryBtn">
+              Book a Discussion
+              <ChevronRight size={19} />
+            </Link>
 
           </div>
 
-        </div>
+        </section>
 
-      </section>
-
-
-      {/* =========================================================
-          PILOT PROGRAM
-      ========================================================= */}
-
-      <section
-        className="hotelSection hotelPilotSection"
-        id="hotel-pilot"
-      >
-
-        <div className="hotelPilotBox">
-
-          <div className="hotelPilotCopy">
-
-            <p>
-              Hotel Pilot Program
-            </p>
-
-            <h2>
-              Start With One Hotel Energy Problem. Prove the Savings
-              Before Scaling.
-            </h2>
-
-            <span>
-              Establish an energy baseline for one property or high-value
-              hotel system, identify optimisation opportunities and quantify
-              potential energy-cost, peak-demand and associated CO₂ outcomes
-              while validating guest-comfort and operational safeguards before
-              portfolio-wide deployment.
-            </span>
-
-
-            <button
-              type="button"
-              className="hotelPrimaryBtn"
-              onClick={handlePilotClick}
-            >
-              Discuss a Hotel Pilot
-              <ChevronRight size={18} />
-            </button>
-
-          </div>
-
-
-          <div className="hotelPilotList">
-
-            <h3>
-              Indicative Pilot Scope
-            </h3>
-
-
-            <ul>
-
-              {pilotItems.map((item) => (
-
-                <li key={item}>
-
-                  <CheckCircle2 size={18} />
-
-                  <span>
-                    {item}
-                  </span>
-
-                </li>
-
-              ))}
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* =========================================================
-          FINAL CTA
-      ========================================================= */}
-
-      <section className="hotelCta">
-
-        <div>
-
-          <p>
-            Now Onboarding Hotel Pilot Partners
-          </p>
-
-          <h2>
-            Reduce Hotel Energy Costs & CO₂ Emissions Without
-            Compromising Guest Comfort.
-          </h2>
-
-          <span>
-            Start with one measurable hotel energy challenge. Establish the
-            baseline, identify energy waste and determine whether the
-            potential financial and carbon outcomes justify broader
-            deployment - while protecting guest comfort, service quality and
-            operational reliability.
-          </span>
-
-        </div>
-
-
-        <div className="hotelCtaActions">
-
-        
-          <Link to="/book-discussion" className="hotelPrimaryBtn">
-            Book a Discussion
-            <ChevronRight size={19} />
-          </Link>
-
-        </div>
-
-      </section>
-
-    </main>
+      </main>
+    
+    
+    
+    
+    </>
+    
   );
 }
